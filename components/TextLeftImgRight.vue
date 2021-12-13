@@ -7,22 +7,15 @@
 
           <p class="mt-4 text-gray-500 lg:max-w-md">
             Hi I am jane , software engineer
-            <a class="font-bold text-indigo-600" href="#">@BakaTeam</a> , Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Illum in sed non alias, fugiat,
-            commodi nemo ut fugit corrupti dolorem sequi ex veniam consequuntur id, maiores beatae
-            ipsa omnis aliquam?
+            <a class="font-bold text-blue-600" href="#">@BakaTeam</a> , Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Illum in sed non alias, fugiat, commodi nemo ut fugit
+            corrupti dolorem sequi ex veniam consequuntur id, maiores beatae ipsa omnis aliquam?
           </p>
 
           <div class="flex items-center mt-6 -mx-2">
             <a class="mx-2" href="#" aria-label="Twitter">
               <svg
-                class="
-                  w-5
-                  h-5
-                  text-gray-700
-                  fill-current
-                  hover:text-gray-600
-                "
+                class="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -34,13 +27,7 @@
 
             <a class="mx-2" href="#" aria-label="Facebook">
               <svg
-                class="
-                  w-5
-                  h-5
-                  text-gray-700
-                  fill-current
-                  hover:text-gray-600
-                "
+                class="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -52,13 +39,7 @@
 
             <a class="mx-2" href="#" aria-label="Linkden">
               <svg
-                class="
-                  w-5
-                  h-5
-                  text-gray-700
-                  fill-current
-                  hover:text-gray-600
-                "
+                class="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -70,13 +51,7 @@
 
             <a class="mx-2" href="#" aria-label="Github">
               <svg
-                class="
-                  w-5
-                  h-5
-                  text-gray-700
-                  fill-current
-                  hover:text-gray-600
-                "
+                class="w-5 h-5 text-gray-700 fill-current hover:text-gray-600"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >

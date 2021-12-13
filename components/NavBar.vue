@@ -4,7 +4,7 @@
     <div>
       <p class="text-2xl font-bold">EZ.</p>
     </div>
-    <div class="flex">
+    <div class="flex font-medium">
       <a v-for="item in navigation" :key="item" :href="item.href" class="px-4">{{ item.name }}</a>
       <NuxtLink to="/blog" class="px-4">Blog</NuxtLink>
     </div>

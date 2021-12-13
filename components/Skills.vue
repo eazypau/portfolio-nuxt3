@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center py-16 bg-gray-100" id="skills">
+  <div class="flex flex-col items-center py-24" id="skills">
     <div class="mb-8">
       <h3 class="text-3xl font-bold text-gray-800">Skills</h3>
     </div>
@@ -18,5 +18,6 @@
     "Firebase",
     "TypeScript",
     "Bootstrap",
+    "Nuxt"
   ];
 </script>

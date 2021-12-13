@@ -10,6 +10,8 @@ export default defineNuxtConfig({
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    // todo: add keywords and author in meta
+    // todo: update favicon
     link: [{ rel: 'icon', href: '/td.png' }]
   },
   build: {

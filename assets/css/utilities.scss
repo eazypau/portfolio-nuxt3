@@ -1,13 +1,20 @@
 .navPadding {
-    padding: 10px 50px;
+  padding: 10px 50px;
 }
 
 .glassEffect {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
+
+// list of bg colors to consider or use
+$bg-primary-dark: #264653;
+$bg-secondary-dark: #2a9d8f;
+$bg-light: #e9c46a;
+$bg-light-secondary: #f4a261;
+$bg-secondary: #e76f51

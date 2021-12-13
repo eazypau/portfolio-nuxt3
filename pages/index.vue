@@ -1,22 +1,26 @@
 <template>
   <div>
     <Header />
-    <TextLeftImgRight />
-    <TextRightImgLeft />
+    <div class="w-8/12 mx-auto">
+      <TextLeftImgRight />
+      <TextRightImgLeft />
+    </div>
+    <!-- use dark bg color below -->
     <Skills />
     <!-- Need project section -->
-    <div class="flex flex-col items-center py-16 bg-gray-100">
+    <div class="flex flex-col items-center py-24">
       <h2 class="text-3xl font-bold text-gray-800 mb-8">Some of My Favourite Activities</h2>
       <div class="w-11/12 flex space-x-3">
-          <CardsHobby
-        v-for="item in hobbies"
-        :key="item"
-        :title="item.title"
-        :content="item.text"
-        :classBg="item.classBg"
-      />
+        <CardsHobby
+          v-for="item in hobbies"
+          :key="item"
+          :title="item.title"
+          :content="item.text"
+          :classBg="item.classBg"
+        />
       </div>
     </div>
+    <!-- use dark bg color above -->
     <Contact />
   </div>
 </template>
