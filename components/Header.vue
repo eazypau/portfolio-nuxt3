@@ -24,4 +24,5 @@
 <script setup>
   import { ArrowNarrowRightIcon } from "@heroicons/vue/outline";
   //* maybe can try gradient text with very light bg color or with out any bg color
+  //*ref https://daily-dev-tips.com/posts/making-gradient-text-with-tailwind-css/
 </script>
