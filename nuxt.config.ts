@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     ],
     // todo: add keywords and author in meta
     // todo: update favicon
+    // todo: add seo meta tags
     link: [{ rel: 'icon', href: '/td.png' }]
   },
   build: {

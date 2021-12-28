@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-12">
     <Header />
     <div class="w-8/12 mx-auto">
       <TextLeftImgRight />
@@ -7,16 +7,27 @@
     </div>
     <!-- use dark bg color below -->
     <Skills />
+    <div>
+      <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Projects That I Have Worked On</h2>
+      <div class="px-5 lg:w-10/12 xl:w-9/12 space-y-7 mx-auto">
+        <CardsProject />
+        <CardsProject />
+        <CardsProject />
+        <CardsProject />
+        <CardsProject />
+      </div>
+    </div>
     <!-- Need project section -->
     <div class="flex flex-col items-center py-24">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8">Some of My Favourite Activities</h2>
-      <div class="w-11/12 flex space-x-3">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-10">Some of My Favourite Activities</h2>
+      <div class="px-5 grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-10">
         <CardsHobby
           v-for="item in hobbies"
           :key="item"
           :title="item.title"
           :content="item.text"
           :classBg="item.classBg"
+          class="relative"
         />
       </div>
     </div>

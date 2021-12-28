@@ -23,4 +23,5 @@
 </template>
 <script setup>
   import { ArrowNarrowRightIcon } from "@heroicons/vue/outline";
+  //* maybe can try gradient text with very light bg color or with out any bg color
 </script>
