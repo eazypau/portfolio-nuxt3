@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white">
+  <section>
     <div class="container px-6 py-8 mx-auto">
       <div class="items-center lg:flex lg:flex-row-reverse">
         <div class="lg:w-1/2">

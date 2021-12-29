@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full flex rounded-lg overflow-hidden shadow-xl">
-    <div class="relative w-full flex-grow">
+  <div class="w-full flex rounded-lg overflow-hidden shadow-md hover:shadow-xl transition ease-linear duration-300">
+    <div class="relative w-full 2xl:w-1/2 flex-grow">
       <!-- img -->
       <img src="/tictactoe.JPG" alt="project image" class="w-full h-full" />
     </div>

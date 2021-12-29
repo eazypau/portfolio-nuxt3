@@ -8,7 +8,7 @@
       md:max-w-full
       lg:max-w-screen-xl
       md:px-24
-      lg:px-8 lg:py-20
+      lg:px-8 lg:py-32
     "
   >
     <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -28,7 +28,7 @@
             bg-teal-accent-400
           "
         >
-          Brand new
+          My Blog
         </p>
       </div>
       <h2
@@ -46,7 +46,7 @@
         "
       >
         <span class="relative inline-block">
-          <svg
+          <!-- <svg
             viewBox="0 0 52 24"
             fill="currentColor"
             class="
@@ -75,7 +75,7 @@
               </pattern>
             </defs>
             <rect fill="url(#db164e35-2a0e-4c0f-ab05-f14edc6d4d30)" width="52" height="24"></rect>
-          </svg>
+          </svg> -->
           <span class="relative">The</span>
         </span>
         quick, brown fox jumps over a lazy dog
@@ -98,7 +98,7 @@
       "
     >
       <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-        <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:shadow-lg cursor-pointer">
           <img
             src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
             class="object-cover w-full h-64"
@@ -156,7 +156,7 @@
             >
           </div>
         </div>
-        <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:shadow-lg cursor-pointer">
           <img
             src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
             class="object-cover w-full h-64"
@@ -214,7 +214,7 @@
             >
           </div>
         </div>
-        <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:shadow-lg cursor-pointer">
           <img
             src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
             class="object-cover w-full h-64"

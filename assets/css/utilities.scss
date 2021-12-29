@@ -1,5 +1,10 @@
 .navPadding {
-  padding: 15px 50px;
+  padding: 15px 30px;
+}
+@media (min-width: 768px) {
+  .navPadding {
+    padding: 15px 50px;
+  }
 }
 
 .glassEffect {
@@ -11,10 +16,17 @@
 body {
   background-color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.bgLight {
+  background-color: #f8f9fa;
+}
 
 // list of bg colors to consider or use
 $bg-primary-dark: #264653;
 $bg-secondary-dark: #2a9d8f;
 $bg-light: #e9c46a;
 $bg-light-secondary: #f4a261;
-$bg-secondary: #e76f51
+$bg-secondary: #e76f51;

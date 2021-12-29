@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
+  <div class="bgLight pt-4 sm:pt-10 lg:pt-12">
     <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
       <div class="flex flex-col items-center border-t pt-6">
         <!-- nav - start -->
