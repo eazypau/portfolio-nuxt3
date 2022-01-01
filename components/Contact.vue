@@ -71,12 +71,12 @@
       </div>
     </div>
   </div> -->
-  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="px-10 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 xl:pb-32">
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <a href="/" class="mb-6 sm:mx-auto">
           <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-            <svg class="w-10 h-10" stroke="currentColor" viewBox="0 0 52 52">
+            <!-- <svg class="w-10 h-10" stroke="currentColor" viewBox="0 0 52 52">
               <polygon
                 stroke-width="3"
                 stroke-linecap="round"
@@ -84,7 +84,8 @@
                 fill="none"
                 points="29 13 14 29 25 29 23 39 38 23 27 23"
               ></polygon>
-            </svg>
+            </svg> -->
+            <UserIcon class="w-7 h-7" />
           </div>
         </a>
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -102,15 +103,15 @@
                 </defs>
                 <rect fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)" width="52" height="24"></rect>
               </svg>
-              <span class="relative">The</span>
+              <span class="relative">Get</span>
             </span>
-            quick, brown fox jumps over a lazy dog
+            in touch with me
           </h2>
           <p class="text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
           </p>
         </div>
-        <div>
+        <div class="space-x-3 flex justify-center">
           <a
             href="/"
             class="
@@ -128,10 +129,32 @@
               focus:shadow-outline focus:outline-none
             "
           >
-            Get started
+            My Resume
+          </a>
+          <a
+            href="/"
+            class="
+              inline-flex
+              items-center
+              justify-center
+              h-12
+              px-6
+              font-medium
+              tracking-wide
+              transition
+              duration-200
+              rounded
+              shadow-md
+              focus:shadow-outline focus:outline-none
+            "
+          >
+            Get in Touch
           </a>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+  import { UserIcon } from "@heroicons/vue/outline";
+</script>

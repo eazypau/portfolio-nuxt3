@@ -4,11 +4,11 @@
       <div class="flex flex-col items-center border-t pt-6">
         <!-- nav - start -->
         <nav class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4">
-          <a href="#" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">About</a>
-          <a href="#" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Skills</a>
-          <a href="#" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Projects</a>
-          <a href="#" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Contact</a>
-          <a href="#" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Blog</a>
+          <a href="/#about" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">About</a>
+          <a href="/#skills" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Skills</a>
+          <a href="/#projects" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Projects</a>
+          <a href="/#contact" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Contact</a>
+          <a href="/blog" class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Blog</a>
         </nav>
         <!-- nav - end -->
 

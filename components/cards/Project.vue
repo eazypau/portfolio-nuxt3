@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full flex rounded-lg overflow-hidden shadow-md hover:shadow-xl transition ease-linear duration-300">
+  <div class="w-full flex flex-col sm:flex-row rounded-lg overflow-hidden shadow-md hover:shadow-xl transition ease-linear duration-300">
     <div class="relative w-full 2xl:w-1/2 flex-grow">
       <!-- img -->
-      <img src="/tictactoe.JPG" alt="project image" class="w-full h-full" />
+      <img src="/tictactoe.JPG" alt="project image" class="w-full h-full object-cover" />
     </div>
     <div class="px-6 py-4 flex flex-col justify-between">
       <!-- content -->
@@ -13,7 +13,7 @@
           natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.
         </p>
       </div>
-      <div class="flex max-h-9 space-x-5">
+      <div class="flex max-h-9 space-x-5 mt-8 md:mt-5 lg:mt-0">
         <div class="flex items-center">
           <p>HTML</p>
           <p class="px-1 font-bold">&#183;</p>

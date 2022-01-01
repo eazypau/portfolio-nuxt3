@@ -9,7 +9,7 @@
       <NuxtLink to="/blog" @click="scrollTop" class="text-lg px-4 hover:opacity-60 hover:underline">Blog</NuxtLink>
     </div>
     <Menu as="div" class="md:hidden">
-      <div>
+      <div class="flex items-center">
         <MenuButton>
           <MenuIcon class="w-8 h-8" />
         </MenuButton>

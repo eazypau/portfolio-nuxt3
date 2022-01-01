@@ -3,7 +3,6 @@
 @import "tailwindcss/utilities";
 @import "utilities.scss";
 
-
 .skillStyle {
   @apply border-b-2 border-l-2 border-r-2 border-gray-50 rounded-md font-semibold text-lg py-2 px-4 shadow-lg mx-2 mt-4 lg:mt-0 ease-in duration-200 transform hover:-translate-y-2;
 }

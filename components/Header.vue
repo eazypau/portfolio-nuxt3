@@ -1,11 +1,75 @@
 <template>
-  <div class="w-full py-5">
-    <div class="text-center py-32 flex flex-col items-center justify-center">
+  <div class="w-full h-screen sm:h-auto sm:px-2 sm:py-5 flex items-center justify-center">
+    <div class="text-center sm:pt-32 sm:pb-24 flex flex-col items-center justify-center">
       <!-- previous bg colors: bg-gradient-to-b from-primary-dark via-secondary-dark to-transparent -->
-      <p class="firstLineHeight text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Hey there, my name is Po</p>
-      <p class="hugeHeading text-6xl font-bold text-center py-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Mechanical Engineer</p>
-      <p class="text-4xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">turned into</p>
-      <p class="hugeHeading text-6xl font-bold text-center py-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Web Developer</p>
+      <p
+        class="
+          firstLineHeight
+          text-3xl
+          md:text-4xl
+          2xl:text-5xl
+          font-bold
+          bg-clip-text
+          text-transparent
+          bg-gradient-to-r
+          from-purple-400
+          to-pink-600
+        "
+      >
+        Hey there, <br class="sm:hidden"> my name is Po
+      </p>
+      <p
+        class="
+          hugeHeading
+          text-5xl
+          md:text-6xl
+          2xl:text-7xl
+          font-bold
+          text-center
+          py-2
+          bg-clip-text
+          text-transparent
+          bg-gradient-to-r
+          from-purple-400
+          to-pink-600
+        "
+      >
+        Mechanical Engineer
+      </p>
+      <p
+        class="
+          text-3xl
+          md:text-4xl
+          2xl:text-5xl
+          font-semibold
+          text-center
+          bg-clip-text
+          text-transparent
+          bg-gradient-to-r
+          from-purple-400
+          to-pink-600
+        "
+      >
+        turned into
+      </p>
+      <p
+        class="
+          hugeHeading
+          text-5xl
+          md:text-6xl
+          2xl:text-7xl
+          font-bold
+          text-center
+          py-2
+          bg-clip-text
+          text-transparent
+          bg-gradient-to-r
+          from-purple-400
+          to-pink-600
+        "
+      >
+        Web Developer
+      </p>
     </div>
   </div>
 </template>
@@ -16,9 +80,22 @@
 </script>
 <style lang="scss" scoped>
   .firstLineHeight {
-    min-height: 43px;
+    min-height: 35px;
   }
   .hugeHeading {
     min-height: 78px;
+  }
+  @media (min-width: 768px) {
+    .firstLineHeight {
+      min-height: 43px;
+    }
+  }
+  @media (min-width: 1580px) {
+    .firstLineHeight {
+      min-height: 55px;
+    }
+    .hugeHeading {
+      min-height: 93px;
+    }
   }
 </style>

@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Portfolio using Nuxt3
 
 A personal porfolio website using nuxt3 with tailwindCSS
 
