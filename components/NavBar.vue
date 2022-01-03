@@ -26,7 +26,7 @@
           class="
             absolute
             right-0
-            w-56
+            w-64
             mt-2
             mr-8
             origin-top-right
@@ -43,8 +43,8 @@
               <a
                 :href="item.href"
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-3 py-2 font-medium',
+                  active ? 'bg-gray-500 text-white' : 'text-gray-900',
+                  'group flex rounded-md items-center w-full px-4 py-3 font-medium text-lg',
                 ]"
               >
                 {{ item.name }}
@@ -54,8 +54,8 @@
               <a
                 href="/blog"
                 :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-3 py-2 font-medium',
+                  active ? 'bg-gray-500 text-white' : 'text-gray-900',
+                  'group flex rounded-md items-center w-full px-4 py-3 font-medium text-lg',
                 ]"
               >
                 Blog

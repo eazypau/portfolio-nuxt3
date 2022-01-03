@@ -1,6 +1,8 @@
 <template>
-  <div class="w-full flex flex-col sm:flex-row rounded-lg overflow-hidden shadow-md hover:shadow-xl transition ease-linear duration-300">
-    <div class="relative w-full 2xl:w-1/2 flex-grow">
+  <div
+    :class="[isReverse ? 'sm:flex-row-reverse': 'sm:flex-row' ,'w-full flex flex-col rounded-lg overflow-hidden shadow-md hover:shadow-xl transition ease-linear duration-300']"
+  >
+    <div class="relative w-full flex-grow">
       <!-- img -->
       <img src="/tictactoe.JPG" alt="project image" class="w-full h-full object-cover" />
     </div>
@@ -41,4 +43,11 @@
 </template>
 <script setup>
   import { PencilAltIcon } from "@heroicons/vue/outline";
+
+  const props = defineProps({
+    isReverse: {
+      type: Boolean,
+      default: false,
+    },
+  });
 </script>
