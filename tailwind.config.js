@@ -20,6 +20,7 @@ module.exports = {
         grocer: "url('/grocer.jpg')",
       },
       minWidth: {
+        sm: "20rem",
         md: "28rem",
       },
       // color scheme

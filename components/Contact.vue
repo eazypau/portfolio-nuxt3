@@ -108,45 +108,21 @@
             in touch with me
           </h2>
           <p class="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+            I'm seeking out opportunities to work with companies that are able to improve my skills not just in tech but also to be able to
+            lead and teach others. If I am the person you are looking for, feel free to reach me through email or my contact information in
+            my resume.
           </p>
         </div>
         <div class="space-x-3 flex justify-center">
           <a
             href="/"
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              px-6
-              font-medium
-              tracking-wide
-              transition
-              duration-200
-              rounded
-              shadow-md
-              focus:shadow-outline focus:outline-none
-            "
+            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
           >
             My Resume
           </a>
           <a
             href="/"
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              px-6
-              font-medium
-              tracking-wide
-              transition
-              duration-200
-              rounded
-              shadow-md
-              focus:shadow-outline focus:outline-none
-            "
+            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
           >
             Get in Touch
           </a>

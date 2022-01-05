@@ -11,7 +11,7 @@
     <div class="py-20 lg:pt-24 px-2 sm:px-0">
       <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Working Experience</h2>
       <div class="w-full max-w-md md:max-w-lg lg:max-w-3xl p-2 bg-gray-50 shadow mx-auto rounded-2xl space-y-2">
-        <Disclosure v-slot="{ open }" v-for="job in career" :key="job">
+        <Disclosure v-slot="{ open, close }" v-for="job in career" :key="job.id">
           <DisclosureButton
             class="
               flex
@@ -29,6 +29,7 @@
               focus:outline-none
               focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75
             "
+            @click="accept(close)"
           >
             <span>{{ job.companyName }}</span>
             <ChevronUpIcon :class="open ? 'transform rotate-180' : ''" class="w-5 h-5 text-gray-700" />
@@ -108,6 +109,7 @@
   ];
   const career = [
     {
+      id: 1,
       companyName: "Protech Builders Sdn. Bhd.",
       position: "Assistant Engineer Intern",
       duration: "March 2018 ~ June 2018",
@@ -119,6 +121,7 @@
       ],
     },
     {
+      id: 2,
       companyName: "Durianê Professional Sdn. Bhd.",
       position: "Mechanical Engineer",
       duration: "August 2019 ~ September 2021",
