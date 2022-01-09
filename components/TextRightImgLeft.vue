@@ -5,7 +5,7 @@
         <div class="lg:w-1/2">
           <h2 class="text-3xl font-bold text-gray-800">Who do I do?</h2>
 
-          <p class="mt-4 text-gray-500 lg:max-w-md">
+          <p class="mt-4 text-gray-500 text-justify lg:max-w-md">
             Hi I am jane , software engineer
             <a class="font-bold text-blue-600" href="#">@BakaTeam</a> , Lorem ipsum, dolor sit amet
             consectetur adipisicing elit. Illum in sed non alias, fugiat, commodi nemo ut fugit

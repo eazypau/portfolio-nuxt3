@@ -2,7 +2,7 @@
   <div class="md:pt-10">
     <Header id="top" />
     <div>
-      <div class="md:w-8/12 md:py-20 lg:pt-24 mx-auto" id="about">
+      <div class="md:w-8/12 lg:w-10/12 xl:w-7/12 2xl:w-6/12 md:py-20 lg:pt-24 mx-auto" id="about">
         <TextLeftImgRight />
         <TextRightImgLeft />
       </div>
@@ -13,22 +13,7 @@
       <div class="w-full max-w-md md:max-w-lg lg:max-w-3xl p-2 bg-gray-50 shadow mx-auto rounded-2xl space-y-2">
         <Disclosure v-slot="{ open, close }" v-for="job in career" :key="job.id">
           <DisclosureButton
-            class="
-              flex
-              justify-between
-              w-full
-              px-4
-              py-2
-              text-lg
-              font-medium
-              text-left text-black
-              bg-white
-              shadow-md
-              rounded-lg
-              hover:bg-yellow-50
-              focus:outline-none
-              focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75
-            "
+            class="flex justify-between w-full px-4 py-2 text-lg font-medium text-left text-black bg-white shadow-md rounded-lg hover:bg-yellow-50 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
             @click="accept(close)"
           >
             <span>{{ job.companyName }}</span>
@@ -62,11 +47,11 @@
     <div class="py-20 lg:pt-28" id="projects">
       <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Projects That I Have Worked On</h2>
       <div class="px-5 lg:w-10/12 xl:w-9/12 2xl:w-8/12 space-y-7 2xl:space-y-14 mx-auto">
+        <CardsProject v-for="project in projects" :key="project" :project-details="project" :is-reverse="project.isReverse" />
+        <!-- <CardsProject :is-reverse="reversed" />
         <CardsProject />
         <CardsProject :is-reverse="reversed" />
-        <CardsProject />
-        <CardsProject :is-reverse="reversed" />
-        <CardsProject />
+        <CardsProject /> -->
       </div>
     </div>
     <!-- Need project section -->
@@ -83,7 +68,7 @@
 <script setup>
   import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
   import { ChevronUpIcon } from "@heroicons/vue/solid";
-  const reversed = true
+  const reversed = true;
   const hobbies = [
     {
       title: "Drink Black tea",
@@ -135,6 +120,63 @@
         "Prepare authority submission for repective authorities required for the project",
         "Work with other multidiscipline Engineers and other professional including Architect and Surveyor in projects.",
       ],
+    },
+  ];
+  const projects = [
+    {
+      isReverse: false,
+      title: "Tic Tac Toe",
+      imageUrl: "/tictactoe.JPG",
+      gifUrl: "/project-gif/tictactoe.gif",
+      description: "A game of tic tac toe in HTML, CSS and JavaScript.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      isUrl: true,
+      urlLink: "https://eazypau.github.io/tictactoe/",
+      githubLink: "https://github.com/eazypau/tictactoe",
+    },
+    {
+      isReverse: true,
+      title: "Todo Web App",
+      imageUrl: "/todolist.JPG",
+      gifUrl: "/project-gif/todo.gif",
+      description: "A simply todo list with priority filtering features using Vuejs, TailwindCSS and Firebase. Here is the link to the web app",
+      techStack: ["Vue", "Vite", "TailwindCSS", "Firebase", "Vue-router"],
+      isUrl: true,
+      urlLink: "https://bloginvue-2c3c7.web.app/",
+      githubLink: "https://github.com/eazypau/todolist",
+    },
+    {
+      isReverse: false,
+      title: "Tic Tac Toe",
+      imageUrl: "/tictactoe.JPG",
+      gifUrl: "/project-gif/tictactoe.gif",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      isUrl: true,
+      urlLink: "https://eazypau.github.io/tictactoe/",
+      githubLink: "https://github.com/eazypau/tictactoe",
+    },
+    {
+      isReverse: true,
+      title: "Tic Tac Toe",
+      imageUrl: "/tictactoe.JPG",
+      gifUrl: "/project-gif/tictactoe.gif",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      isUrl: true,
+      urlLink: "https://eazypau.github.io/tictactoe/",
+      githubLink: "https://github.com/eazypau/tictactoe",
+    },
+    {
+      isReverse: false,
+      title: "Tic Tac Toe",
+      imageUrl: "/tictactoe.JPG",
+      gifUrl: "/project-gif/tictactoe.gif",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      isUrl: true,
+      urlLink: "https://eazypau.github.io/tictactoe/",
+      githubLink: "https://github.com/eazypau/tictactoe",
     },
   ];
   onMounted(() => {

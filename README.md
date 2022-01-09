@@ -14,6 +14,7 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] project card and section
 - [ ] decide whether to use vuepress for blog contents
 - [ ] navbar
+- [ ] convert images to .webp and try to make the img size to less than 1mb if possible and modify the dimension
 - [ ] complete contact section (including contact by email and download my resume button)
 - [ ] complete footer
 - [ ] animation on scroll...on load...(to consider) - might involve using gsap

@@ -12,8 +12,8 @@
           bg-clip-text
           text-transparent
           bg-gradient-to-r
-          from-purple-400
-          to-pink-600
+          from-sky-500
+          to-green-300
         "
       >
         Hey there, <br class="sm:hidden"> my name is Po
@@ -24,14 +24,14 @@
           text-5xl
           md:text-6xl
           2xl:text-7xl
-          font-bold
+          font-extrabold
           text-center
           py-2
           bg-clip-text
           text-transparent
           bg-gradient-to-r
-          from-purple-400
-          to-pink-600
+          from-green-300
+          to-sky-500
         "
       >
         Mechanical Engineer
@@ -41,13 +41,13 @@
           text-3xl
           md:text-4xl
           2xl:text-5xl
-          font-semibold
+          font-bold
           text-center
           bg-clip-text
           text-transparent
           bg-gradient-to-r
-          from-purple-400
-          to-pink-600
+          from-sky-500
+          to-green-300
         "
       >
         turned into
@@ -58,14 +58,14 @@
           text-5xl
           md:text-6xl
           2xl:text-7xl
-          font-bold
+          font-extrabold
           text-center
           py-2
           bg-clip-text
           text-transparent
           bg-gradient-to-r
-          from-purple-400
-          to-pink-600
+          from-green-300
+          to-sky-500
         "
       >
         Web Developer
