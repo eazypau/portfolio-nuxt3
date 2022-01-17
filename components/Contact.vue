@@ -121,7 +121,7 @@
             My Resume
           </a>
           <a
-            href="/"
+            href="mailto:poyizhi@gmail.com"
             class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
           >
             Get in Touch

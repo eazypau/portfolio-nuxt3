@@ -5,12 +5,12 @@
       <a href="/#top" class="text-2xl font-bold">EZ.</a>
     </div>
     <div class="hidden md:flex font-medium">
-      <transition-group tag="span" appear @before-enter="beforeOneByOne" @enter="enterOneByOne">
+      <transition-group tag="span" appear @before-enter="beforeOneByOne" @enter="enterOneByOne" class="space-x-5">
         <a
           v-for="item in navigation"
           :key="item.id"
           :href="item.href"
-          class="text-lg px-4 hover:opacity-60 hover:underline transition ease-linear duration-300"
+          class="text-lg hover:text-green-500 underAnimation"
           >{{ item.name }}</a
         >
       </transition-group>
@@ -160,3 +160,24 @@
     loading.value = false;
   });
 </script>
+<style scoped>
+  .underAnimation {
+    position: relative;
+  }
+  .underAnimation::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #22d3ee; /* #3cefff */
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  .underAnimation:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+</style>
