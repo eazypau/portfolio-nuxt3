@@ -1,6 +1,9 @@
 <template>
-  <div class="w-full h-screen sm:h-auto sm:px-2 sm:py-5 flex items-center justify-center">
-    <div class="text-center sm:pt-32 sm:pb-24 flex flex-col items-center justify-center">
+  <header class="relative w-full h-screen sm:h-auto sm:px-2 sm:py-5 flex items-center justify-center bg-black overflow-hidden">
+    <div class="absolute ">
+      <img src="/negative-space-abstract-particle-snow.jpg" alt="bg" class="w-full h-full object-cover mix-blend-hard-light">
+    </div>
+    <div class="relative text-center sm:pt-32 xl:pt-40 sm:pb-24 xl:pb-32 flex flex-col items-center justify-center">
       <!-- previous bg colors: bg-gradient-to-b from-primary-dark via-secondary-dark to-transparent -->
       <p
         class="
@@ -11,9 +14,10 @@
           font-bold
           bg-clip-text
           text-transparent
-          bg-gradient-to-r
-          from-sky-500
-          to-green-300
+          bg-gradient-to-t
+          from-gray-400
+          via-white
+          to-gray-400
         "
       >
         Hey there, <br class="sm:hidden"> my name is Po
@@ -29,9 +33,10 @@
           py-2
           bg-clip-text
           text-transparent
-          bg-gradient-to-r
-          from-green-300
-          to-sky-500
+          bg-gradient-to-t
+          from-gray-400
+          via-white
+          to-gray-400
         "
       >
         Mechanical Engineer
@@ -45,9 +50,10 @@
           text-center
           bg-clip-text
           text-transparent
-          bg-gradient-to-r
-          from-sky-500
-          to-green-300
+          bg-gradient-to-t
+          from-gray-400
+          via-white
+          to-gray-400
         "
       >
         turned into
@@ -63,15 +69,16 @@
           py-2
           bg-clip-text
           text-transparent
-          bg-gradient-to-r
-          from-green-300
-          to-sky-500
+          bg-gradient-to-t
+          from-gray-400
+          via-white
+          to-gray-400
         "
       >
         Web Developer
       </p>
     </div>
-  </div>
+  </header>
 </template>
 <script setup>
   import { ArrowNarrowRightIcon } from "@heroicons/vue/outline";
@@ -81,6 +88,7 @@
 <style lang="scss" scoped>
   .firstLineHeight {
     min-height: 35px;
+    // text-shadow: 0 0 30px #fff;
   }
   .hugeHeading {
     min-height: 78px;

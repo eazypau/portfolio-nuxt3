@@ -2,9 +2,9 @@
   <div class="md:pt-10">
     <Header id="top" />
     <div>
-      <div class="md:w-8/12 lg:w-10/12 xl:w-7/12 2xl:w-6/12 md:py-20 lg:pt-24 mx-auto" id="about">
+      <div class="md:w-8/12 lg:w-10/12 xl:w-7/12 md:py-20 lg:pt-24 mx-auto" id="about">
         <TextLeftImgRight />
-        <TextRightImgLeft />
+        <!-- <TextRightImgLeft /> -->
       </div>
     </div>
     <!-- work experience -->
@@ -48,10 +48,6 @@
       <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Projects That I Have Worked On</h2>
       <div class="px-5 lg:w-10/12 xl:w-9/12 2xl:w-8/12 space-y-7 2xl:space-y-14 mx-auto">
         <CardsProject v-for="project in projects" :key="project" :project-details="project" :is-reverse="project.isReverse" />
-        <!-- <CardsProject :is-reverse="reversed" />
-        <CardsProject />
-        <CardsProject :is-reverse="reversed" />
-        <CardsProject /> -->
       </div>
     </div>
     <!-- Need project section -->
@@ -125,32 +121,35 @@
   const projects = [
     {
       isReverse: false,
-      title: "Tic Tac Toe",
-      imageUrl: "/tictactoe.JPG",
-      gifUrl: "/project-gif/tictactoe.gif",
-      description: "A game of tic tac toe in HTML, CSS and JavaScript.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      isUrl: true,
-      urlLink: "https://eazypau.github.io/tictactoe/",
-      githubLink: "https://github.com/eazypau/tictactoe",
+      title: "Spotify Clone Web App",
+      imageUrl: "/project-ss/spotify-ss.png",
+      gifUrl: "/project-gif/spotify-clone-short.gif",
+      description:
+        "Spotify clone web app using Vue and TailwindCSS to view your saved and created playlist. You can use it to control your spotify app playback state. Note: Please on your spotify app before initialing the web app.",
+      techStack: ["Vue", "Vite", "TailwindCSS", "Vuex", "Vue-router", "Spotify Web API"],
+      isUrl: false,
+      // urlLink: "https://eazypau.github.io/tictactoe/",
+      githubLink: "https://github.com/eazypau/spotify-clone-web",
     },
     {
       isReverse: true,
-      title: "Todo Web App",
-      imageUrl: "/todolist.JPG",
-      gifUrl: "/project-gif/todo.gif",
-      description: "A simply todo list with priority filtering features using Vuejs, TailwindCSS and Firebase. Here is the link to the web app",
-      techStack: ["Vue", "Vite", "TailwindCSS", "Firebase", "Vue-router"],
+      title: "Eazy Chat App",
+      imageUrl: "/project-ss/chatapp-ss.png",
+      gifUrl: "/project-gif/tictactoe.gif",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
+      techStack: ["Vue", "TS", "Vite", "TailwindCSS", "Firebase", "Pinia", "Vue-router"],
       isUrl: true,
-      urlLink: "https://bloginvue-2c3c7.web.app/",
-      githubLink: "https://github.com/eazypau/todolist",
+      urlLink: "https://eazy-chat-app.netlify.app/login",
+      githubLink: "https://github.com/eazypau/chatApp",
     },
     {
       isReverse: false,
       title: "Saloon Booking Web",
-      imageUrl: "/tictactoe.JPG",
-      gifUrl: "/project-gif/tictactoe.gif",
-      description: "Book your door-to-door saloon appointment. It lets the user choose the date and time they prefer and also the services they need. The hairstylist will travel to customer's place at the appointed time and date.",
+      imageUrl: "/project-ss/saloonbooking-ss.png",
+      gifUrl: "/project-gif/saloonbooking.gif",
+      description:
+        "Book your door-to-door saloon appointment. It lets the user choose the date and time they prefer and also the services they need. The hairstylist will travel to customer's place at the appointed time and date.",
       techStack: ["Vue", "TS", "Vite", "TailwindCSS", "Firebase", "Vuex", "Vue-router"],
       isUrl: true,
       urlLink: "https://saloonbooking-95d49.web.app/",
@@ -158,21 +157,22 @@
     },
     {
       isReverse: true,
-      title: "Eazy Chat App",
-      imageUrl: "/tictactoe.JPG",
-      gifUrl: "/project-gif/tictactoe.gif",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
-      techStack: ["Vue", "TS", "Vite", "TailwindCSS", "Firebase", "Pinia", "Vue-router"],
+      title: "Todo Web App",
+      imageUrl: "/project-ss/todo-ss.png",
+      gifUrl: "/project-gif/todo.gif",
+      description:
+        "A simply todo list with priority filtering features using Vuejs, TailwindCSS and Firebase. Here is the link to the web app",
+      techStack: ["Vue", "Vite", "TailwindCSS", "Firebase"],
       isUrl: true,
-      urlLink: "https://eazypau.github.io/tictactoe/",
-      githubLink: "https://github.com/eazypau/tictactoe",
+      urlLink: "https://bloginvue-2c3c7.web.app/",
+      githubLink: "https://github.com/eazypau/todolist",
     },
     {
       isReverse: false,
-      title: "Spotify Clone Web App",
-      imageUrl: "/tictactoe.JPG",
+      title: "Tic Tac Toe",
+      imageUrl: "/project-ss/tictactoe-ss.png",
       gifUrl: "/project-gif/tictactoe.gif",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
+      description: "A game of tic tac toe in HTML, CSS and JavaScript.",
       techStack: ["HTML", "CSS", "JavaScript"],
       isUrl: true,
       urlLink: "https://eazypau.github.io/tictactoe/",
@@ -182,14 +182,4 @@
   onMounted(() => {
     window.scrollTo(0, 0);
   });
-  // TODO create a draft design template
-  // testing to see whether add todo action is working after the push
-  // labels: testing
-  // assignees: eazypau
-  // milestone: 1
-  // TODO pick the right font family
-  // testing 2nd commit to add new todo
-  // labels: testing
-  // assignees: eazypau
-  // milestone: 1
 </script>

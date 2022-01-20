@@ -28,3 +28,6 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] Target to get the 1st draft by 19th December and then ask friends for feedback
 - [ ] Receive feedback and refactor. Hopefully by 26th December and ask for feedbacks again
 - [ ] Finalize and final deployment
+
+# resources
+- https://favicon.io/favicon-generator/

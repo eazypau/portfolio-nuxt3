@@ -1,76 +1,4 @@
 <template>
-  <!-- <div class="bg-white py-6 sm:py-8 lg:py-12">
-    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <div class="flex flex-col items-center rounded-lg p-4 sm:p-8">
-        <div class="mb-4 sm:mb-8">
-          <h2 class="text-indigo-500 text-xl sm:text-2xl lg:text-3xl font-bold text-center">
-            Get the latest updates
-          </h2>
-          <p class="text-gray-500 text-center">Sign up for our newsletter</p>
-        </div>
-
-        <form class="w-full max-w-md flex gap-2 mb-3 sm:mb-5">
-          <input
-            placeholder="Email"
-            class="
-              w-full
-              flex-1
-              bg-gray-white
-              text-gray-800
-              placeholder-gray-400
-              border border-gray-300
-              focus:ring
-              ring-indigo-300
-              rounded
-              outline-none
-              transition
-              duration-100
-              px-3
-              py-2
-            "
-          />
-
-          <button
-            class="
-              inline-block
-              bg-indigo-500
-              hover:bg-indigo-600
-              active:bg-indigo-700
-              focus-visible:ring
-              ring-indigo-300
-              text-white text-sm
-              md:text-base
-              font-semibold
-              text-center
-              rounded
-              outline-none
-              transition
-              duration-100
-              px-8
-              py-2
-            "
-          >
-            Send
-          </button>
-        </form>
-
-        <p class="text-gray-400 text-xs text-center">
-          By signing up to our newsletter you agree to our
-          <a
-            href="#"
-            class="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100"
-            >Term of Service</a
-          >
-          and
-          <a
-            href="#"
-            class="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100"
-            >Privacy Policy</a
-          >.
-        </p>
-      </div>
-    </div>
-  </div> -->
   <div class="px-10 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 xl:pb-32">
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
@@ -118,13 +46,13 @@
             href="/"
             class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
           >
-            My Resume
+            <ClipboardListIcon class="w-5 h-5 mr-2" />  My Resume
           </a>
           <a
             href="mailto:poyizhi@gmail.com"
             class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
           >
-            Get in Touch
+            <MailIcon class="w-5 h-5 mr-2" /> Get in Touch
           </a>
         </div>
       </div>
@@ -132,5 +60,5 @@
   </div>
 </template>
 <script setup>
-  import { UserIcon } from "@heroicons/vue/outline";
+  import { UserIcon, MailIcon, ClipboardListIcon } from "@heroicons/vue/outline";
 </script>

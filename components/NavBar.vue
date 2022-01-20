@@ -2,15 +2,17 @@
 <template>
   <nav v-if="!loading" class="z-30 navPadding flex items-center justify-between fixed top-0 w-full bgLight shadow">
     <div>
-      <a href="/#top" class="text-2xl font-bold">EZ.</a>
+      <a href="/#top" class="flex text-2xl font-bold">
+        <img src="/favicon.png" alt="favicon" class="w-10 h-10">
+      </a>
     </div>
     <div class="hidden md:flex font-medium">
-      <transition-group tag="span" appear @before-enter="beforeOneByOne" @enter="enterOneByOne" class="space-x-5">
+      <transition-group tag="span" appear @before-enter="before" @enter="entering" class="space-x-5 lg:space-x-8">
         <a
           v-for="item in navigation"
           :key="item.id"
           :href="item.href"
-          class="text-lg hover:text-green-500 underAnimation"
+          class="text-lg underAnimation"
           >{{ item.name }}</a
         >
       </transition-group>
@@ -85,26 +87,6 @@
     </Menu>
   </nav>
 </template>
-<script>
-  export default {
-    methods: {
-      beforeOneByOne(el) {
-        gsap.set(el, {
-          opacity: 0,
-        });
-      },
-      enterOneByOne(el, done) {
-        gsap.to(el, {
-          opacity: 1,
-          duration: 2,
-          delay: el.dataset.index * 0.4,
-          onComplete: done,
-        });
-        console.log("complete entering 1 by 1...");
-      },
-    },
-  };
-</script>
 <script setup>
   import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
   import { MenuIcon } from "@heroicons/vue/outline";
@@ -150,8 +132,8 @@
   const entering = (el, done) => {
     gsap.to(el, {
       opacity: 1,
-      duration: 5,
-      delay: el.dataset.index * 1.0,
+      duration: 2,
+      delay: el.dataset.index * 0.4,
       onComplete: done,
     });
     console.log("complete entering 1 by 1...");
