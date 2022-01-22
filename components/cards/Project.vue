@@ -1,13 +1,13 @@
 <template>
-  <div class="relative w-full rounded-lg overflow-hidden shadow-md hover:shadow-xl transition ease-linear duration-300">
+  <div class="relative w-full rounded-lg border-gray-200 overflow-hidden shadow-md shadow-gray-400 hover:shadow-xl hover:shadow-gray-500 transition ease-out duration-300">
     <div
       :class="[isReverse ? 'right-0' : 'left-0', 'md:absolute md:w-8/12 md:h-full']"
       @mouseover="hovered = true"
       @mouseout="hovered = false"
     >
       <!-- img -->
-      <img v-if="!hovered" :src="projectDetails.imageUrl" alt="project image" class="w-full h-full object-cover" />
-      <img v-if="hovered" :src="projectDetails.gifUrl" alt="project image" class="w-full h-full object-cover" />
+      <img :src="hovered ? projectDetails.gifUrl : projectDetails.imageUrl" alt="project image" class="w-full h-full object-cover" />
+      <!-- <img v-if="hovered" :src="projectDetails.gifUrl" alt="project image" class="w-full h-full object-cover" /> -->
     </div>
     <div :class="[isReverse ? 'md:float-left' : 'md:float-right', 'px-6 py-4 flex flex-col justify-between min-h-56 md:h-96 md:w-4/12']">
       <!-- content -->
@@ -30,7 +30,7 @@
         </div>
         <div class="flex items-center space-x-2 pb-0.5">
           <!-- <div> -->
-          <a v-if="projectDetails.isUrl" :href="projectDetails.linkUrl" class="cursor-pointer">
+          <a v-if="projectDetails.isUrl" :href="projectDetails.urlLink" target="blank" class="cursor-pointer">
             <!-- <PencilAltIcon class="w-6 h-6 hover:text-gray-600" /> -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
           </a>
           <!-- </div> -->
           <!-- <div> -->
-          <a class="mx-2" :href="projectDetails.githubLink" aria-label="Github">
+          <a class="mx-2" :href="projectDetails.githubLink" target="blank" aria-label="Github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"

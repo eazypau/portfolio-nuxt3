@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container px-6 py-8 mx-auto">
-      <div class="items-center lg:flex">
+      <div class="items-center lg:flex lg:space-x-6">
         <div class="lg:w-1/2">
           <h2 class="text-3xl font-bold text-gray-800">Who am I?</h2>
 
@@ -52,8 +52,8 @@
           <div class="flex items-center justify-center lg:justify-end">
             <div class="sm:min-w-sm lg:min-w-min lg:max-w-lg xl:min-w-sm">
               <img
-                class="object-cover object-center w-full h-64 rounded-md shadow"
-                src="/profile.jpg"
+                class="object-cover object-top w-full h-64 rounded-md shadow-md shadow-gray-300"
+                src="/profile-pics/profile.jpg"
                 alt=""
               />
             </div>

@@ -16,11 +16,11 @@
         <div class="mt-8 lg:mt-0 lg:w-1/2">
           <div class="flex items-center justify-center lg:justify-start">
             <div class="max-w-lg">
-              <img
+              <!-- <img
                 class="object-cover object-left w-full h-64 rounded-md shadow"
                 src="/see-mountain.jpg"
                 alt=""
-              />
+              /> -->
             </div>
           </div>
         </div>

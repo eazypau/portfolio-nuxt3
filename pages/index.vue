@@ -8,7 +8,7 @@
       </div>
     </div>
     <!-- work experience -->
-    <div class="py-20 lg:pt-24 px-2 sm:px-0">
+    <!-- <div class="py-20 lg:pt-24 px-2 sm:px-0">
       <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Working Experience</h2>
       <div class="w-full max-w-md md:max-w-lg lg:max-w-3xl p-2 bg-gray-50 shadow mx-auto rounded-2xl space-y-2">
         <Disclosure v-slot="{ open, close }" v-for="job in career" :key="job.id">
@@ -42,11 +42,11 @@
           </transition>
         </Disclosure>
       </div>
-    </div>
+    </div> -->
     <Skills id="skills" />
     <div class="py-20 lg:pt-28" id="projects">
       <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Projects That I Have Worked On</h2>
-      <div class="px-5 lg:w-10/12 xl:w-9/12 2xl:w-8/12 space-y-7 2xl:space-y-14 mx-auto">
+      <div class="px-5 lg:w-10/12 xl:w-9/12 2xl:w-8/12 space-y-7 md:space-y-10 lg:space-y-14 2xl:space-y-20 mx-auto">
         <CardsProject v-for="project in projects" :key="project" :project-details="project" :is-reverse="project.isReverse" />
       </div>
     </div>
@@ -125,7 +125,7 @@
       imageUrl: "/project-ss/spotify-ss.png",
       gifUrl: "/project-gif/spotify-clone-short.gif",
       description:
-        "Spotify clone web app using Vue and TailwindCSS to view your saved and created playlist. You can use it to control your spotify app playback state. Note: Please on your spotify app before initialing the web app.",
+        "Spotify clone web app using Vue and TailwindCSS to view your saved and created playlist. Designed to control your spotify app playback state.",
       techStack: ["Vue", "Vite", "TailwindCSS", "Vuex", "Vue-router", "Spotify Web API"],
       isUrl: false,
       // urlLink: "https://eazypau.github.io/tictactoe/",
@@ -135,9 +135,9 @@
       isReverse: true,
       title: "Eazy Chat App",
       imageUrl: "/project-ss/chatapp-ss.png",
-      gifUrl: "/project-gif/tictactoe.gif",
+      gifUrl: "/project-gif/chatapp.gif",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate eveniet harum est dolorem, cum, quos non laudantium natus nobis maxime repellendus, debitis nam nulla. Error repellat saepe optio omnis.",
+        "Building a scalable realtime chat app using Vue, Tailwind, Pinia and Firebase. Designed to send and receive messages from users.",
       techStack: ["Vue", "TS", "Vite", "TailwindCSS", "Firebase", "Pinia", "Vue-router"],
       isUrl: true,
       urlLink: "https://eazy-chat-app.netlify.app/login",
@@ -161,7 +161,7 @@
       imageUrl: "/project-ss/todo-ss.png",
       gifUrl: "/project-gif/todo.gif",
       description:
-        "A simply todo list with priority filtering features using Vuejs, TailwindCSS and Firebase. Here is the link to the web app",
+        "A simple todo app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
       techStack: ["Vue", "Vite", "TailwindCSS", "Firebase"],
       isUrl: true,
       urlLink: "https://bloginvue-2c3c7.web.app/",

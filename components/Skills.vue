@@ -18,6 +18,7 @@
     "Firebase",
     "TypeScript",
     "Bootstrap",
-    "Nuxt"
+    "Nuxt",
+    "Git"
   ];
 </script>

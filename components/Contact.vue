@@ -2,17 +2,8 @@
   <div class="px-10 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 xl:pb-32">
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
-        <a href="/" class="mb-6 sm:mx-auto">
+        <a class="mb-6 sm:mx-auto">
           <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-            <!-- <svg class="w-10 h-10" stroke="currentColor" viewBox="0 0 52 52">
-              <polygon
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              ></polygon>
-            </svg> -->
             <UserIcon class="w-7 h-7" />
           </div>
         </a>
@@ -41,16 +32,15 @@
             my resume.
           </p>
         </div>
-        <div class="space-x-3 flex justify-center">
+        <div class="md:space-x-3 space-y-3 md:space-y-0 flex flex-col md:flex-row justify-center">
           <a
-            href="/"
-            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center cursor-not-allowed h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
           >
             <ClipboardListIcon class="w-5 h-5 mr-2" />  My Resume
           </a>
           <a
             href="mailto:poyizhi@gmail.com"
-            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
           >
             <MailIcon class="w-5 h-5 mr-2" /> Get in Touch
           </a>
