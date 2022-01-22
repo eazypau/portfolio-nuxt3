@@ -7,7 +7,7 @@
 
           <p class="mt-4 text-gray-500 lg:max-w-md text-justify">
             Hi, I am Po Yi Zhi, frontend web developer in
-            <a class="font-bold text-blue-600" href="https://hackercollective.co/teams">The Hacker Collective</a> . I was borned in Melaka, Malaysia. Graduated with
+            <a class="font-bold text-blue-600" href="https://hackercollective.co/teams">The Hacker Collective</a> . I was born in Melaka, Malaysia. Graduated with
             Bachelor of degree in Mechanical Engineering in year 2019 from Multimedia University (MMU). Previously I worked as a mechanical
             engineer for about 2 years in M&E consultancy industry.
           </p>
