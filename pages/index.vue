@@ -122,7 +122,7 @@
     {
       isReverse: false,
       title: "Spotify Clone Web App",
-      imageUrl: "/project-ss/spotify-ss.png",
+      imageUrl: "/project-ss/spotify-ss.webp",
       gifUrl: "/project-gif/spotify-clone-short.gif",
       description:
         "Spotify clone web app using Vue and TailwindCSS to view your saved and created playlist. Designed to control your spotify app playback state.",
@@ -134,7 +134,7 @@
     {
       isReverse: true,
       title: "Eazy Chat App",
-      imageUrl: "/project-ss/chatapp-ss.png",
+      imageUrl: "/project-ss/chatapp-ss.webp",
       gifUrl: "/project-gif/chatapp.gif",
       description:
         "Building a scalable realtime chat app using Vue, Tailwind, Pinia and Firebase. Designed to send and receive messages from users.",
@@ -146,7 +146,7 @@
     {
       isReverse: false,
       title: "Saloon Booking Web",
-      imageUrl: "/project-ss/saloonbooking-ss.png",
+      imageUrl: "/project-ss/saloonbooking-ss.webp",
       gifUrl: "/project-gif/saloonbooking.gif",
       description:
         "Book your door-to-door saloon appointment. It lets the user choose the date and time they prefer and also the services they need. The hairstylist will travel to customer's place at the appointed time and date.",
@@ -158,7 +158,7 @@
     {
       isReverse: true,
       title: "Todo Web App",
-      imageUrl: "/project-ss/todo-ss.png",
+      imageUrl: "/project-ss/todo-ss.webp",
       gifUrl: "/project-gif/todo.gif",
       description:
         "A simple todo app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
@@ -170,7 +170,7 @@
     {
       isReverse: false,
       title: "Tic Tac Toe",
-      imageUrl: "/project-ss/tictactoe-ss.png",
+      imageUrl: "/project-ss/tictactoe-ss.webp",
       gifUrl: "/project-gif/tictactoe.gif",
       description: "A game of tic tac toe in HTML, CSS and JavaScript.",
       techStack: ["HTML", "CSS", "JavaScript"],

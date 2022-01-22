@@ -1,7 +1,7 @@
 <template>
   <header class="relative w-full h-screen md:h-auto px-2 sm:px-2 sm:py-5 flex items-center justify-center bg-black overflow-hidden">
     <div class="absolute w-full h-full">
-      <img src="/negative-space-abstract-particle-snow.jpg" alt="bg" class="w-full h-full object-cover mix-blend-hard-light" />
+      <img src="/negative-space-abstract-particle-snow.webp" alt="bg" class="w-full h-full object-cover mix-blend-hard-light" />
     </div>
     <div class="relative text-center pt-28 pb-16 sm:pt-32 xl:pt-40 sm:pb-24 xl:pb-32 flex flex-col items-center justify-center">
       <!-- previous bg colors: bg-gradient-to-b from-primary-dark via-secondary-dark to-transparent -->

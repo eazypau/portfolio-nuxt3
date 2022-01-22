@@ -34,7 +34,7 @@
         </div>
         <div class="md:space-x-3 space-y-3 md:space-y-0 flex flex-col md:flex-row justify-center">
           <a
-            class="inline-flex items-center justify-center cursor-not-allowed h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center cursor-not-allowed h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
           >
             <ClipboardListIcon class="w-5 h-5 mr-2" />  My Resume
           </a>

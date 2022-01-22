@@ -1,12 +1,12 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <nav v-if="!loading" class="z-30 navPadding flex items-center justify-between fixed top-0 w-full bgLight shadow">
+  <nav class="z-30 navPadding flex items-center justify-between fixed top-0 w-full bgLight shadow">
     <div>
       <a href="/#top" class="flex text-2xl font-bold">
         <img src="/favicon.png" alt="favicon" class="w-10 h-10">
       </a>
     </div>
-    <div class="hidden md:flex font-medium">
+    <div v-if="!loading" class="hidden md:flex font-medium">
       <transition-group tag="span" appear @before-enter="before" @enter="entering" class="space-x-5 lg:space-x-8">
         <a
           v-for="item in navigation"
