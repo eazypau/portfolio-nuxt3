@@ -3,30 +3,30 @@
 A personal porfolio website using nuxt3 with tailwindCSS
 
 ## Todo list:
-- [/] create a draft design template
+- [x] create a draft design template
 - [ ] pick the right font family
 - [ ] pick the right color scheme (text color and bg color)
-- [/] make sure to use suitable font size
-- [/] choose the right photos
-- [ ] consider to add a floating fix icons for user to return to the top/to blog page/to my social media profile
+- [x] make sure to use suitable font size
+- [x] choose the right photos
+- [ ] consider to add a floating fix icons for user to return to the topxto blog pagexto my social media profile
 - [ ] full home page
 - [ ] full blog page
-- [/] project card and section
+- [x] project card and section
 - [ ] decide whether to use vuepress for blog contents
-- [/] navbar
-- [/] convert images to .webp and try to make the img size to less than 1mb if possible and modify the dimension
+- [x] navbar
+- [x] convert images to .webp and try to make the img size to less than 1mb if possible and modify the dimension
 - [ ] complete contact section (including contact by email and download my resume button)
-- [/] complete footer
+- [x] complete footer
 - [ ] animation on scroll...on load...(to consider) - might involve using gsap
 - [ ] remove unused photos and styling
 - [ ] make sure all SEO tags are included in the header (nuxt.config)
 - [ ] shift images to assets folder
 - [ ] get a domain (need to do some research)
-- [/] test deployment
+- [x] test deployment
 - [ ] Deployment (vercel/netlify?)
 
 ## milestone:
-- [/] 1st draft done by 22nd January and then ask friends for feedback
+- [x] 1st draft done by 22nd January and then ask friends for feedback
 - [ ] Receive feedback and refactor. Hopefully by 5th February and ask for feedbacks again
 - [ ] Finalize and final deployment
 
