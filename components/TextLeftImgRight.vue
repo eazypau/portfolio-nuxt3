@@ -3,9 +3,9 @@
     <div class="container px-6 py-8 mx-auto">
       <div class="items-center lg:flex lg:space-x-6">
         <div class="lg:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-800">Who am I?</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mainFontFamily">Who am I?</h2>
 
-          <p class="mt-4 text-gray-500 lg:max-w-md text-justify">
+          <p class="mt-4 text-gray-500 lg:max-w-md text-justify subFontFamily">
             Hi, I am Po Yi Zhi, frontend web developer in
             <a class="font-bold text-blue-600" href="https://hackercollective.co/teams">The Hacker Collective</a> . I was born in Melaka, Malaysia. Graduated with
             Bachelor of degree in Mechanical Engineering in year 2019 from Multimedia University (MMU). Previously I worked as a mechanical
@@ -50,12 +50,14 @@
 
         <div class="mt-8 lg:mt-0 lg:w-1/2">
           <div class="flex items-center justify-center lg:justify-end">
-            <div class="sm:min-w-sm lg:min-w-min lg:max-w-lg xl:min-w-sm">
+            <div class="relative sm:min-w-sm lg:min-w-min lg:max-w-lg xl:min-w-sm bg-green-300 rounded-xl">
               <img
-                class="object-cover object-top w-full h-64 rounded-md shadow-md shadow-gray-300"
+                class="object-cover object-top w-full h-64 rounded-xl shadow-md hover:shadow-lg hover:shadow-gray-400 mix-blend-darken hover:mix-blend-normal shadow-gray-300 transition ease-linear duration-300"
                 src="/profile-pics/profile.webp"
-                alt=""
+                alt="profile image"
+                loading="lazy"
               />
+              <div class="w-full h-full border-2 border-gray-100 bg-gray-100 absolute bottom-0 right-0 -mb-5 -mr-5 rounded-xl" style="z-index: -1;"></div>
             </div>
           </div>
         </div>

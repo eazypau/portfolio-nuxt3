@@ -1,16 +1,43 @@
+// reference from: https://www.developerdrive.com/how-to-easily-use-google-fonts-with-sass/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+
+// https://99designs.com/blog/tips/font-pairings/
+//* current pairing: Vidaloka + Roboto
+//* font pairing to consider: Roboto + Montserrat, Oswald + Lato
+.mainFontFamily {
+  //  font-family: 'Playfair Display', serif;
+  // font-family: "Vidaloka", serif;
+  font-family: 'Oswald', sans-serif;
+}
+.subFontFamily {
+  // font-family: 'Cormorant Garamond', serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
+  // font-family: 'Roboto Slab', serif;
+}
+.headerFont {
+  font-family: 'Roboto Slab', serif;
+}
+
 .navPadding {
   padding: 12px 30px;
 }
 @media (min-width: 768px) {
   .navPadding {
-    padding: 12px 50px;
+    padding: 15px 50px;
   }
 }
 
 .glassEffect {
   background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 body {

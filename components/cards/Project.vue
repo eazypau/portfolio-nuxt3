@@ -4,9 +4,9 @@
     @mouseover="hovered = true"
     @mouseout="hovered = false"
   >
-    <div :class="[isReverse ? 'right-0' : 'left-0', 'md:absolute md:w-8/12 md:h-full']">
+    <div :class="[isReverse ? 'right-0 border-l' : 'left-0', 'md:absolute md:w-8/12 md:h-full']">
       <!-- img -->
-      <img :src="hovered ? projectDetails.gifUrl : projectDetails.imageUrl" alt="project image" class="w-full h-full object-cover" :class="hovered ? '' : 'grayscale'" />
+      <img :src="hovered ? projectDetails.gifUrl : projectDetails.imageUrl" alt="project image" class="w-full h-full object-cover" :class="hovered ? '' : 'grayscale'" loading="lazy" />
       <!-- <img v-if="hovered" :src="projectDetails.gifUrl" alt="project image" class="w-full h-full object-cover" /> -->
     </div>
     <div :class="[isReverse ? 'md:float-left' : 'md:float-right', 'px-6 py-4 flex flex-col justify-between min-h-56 md:h-96 md:w-4/12']">

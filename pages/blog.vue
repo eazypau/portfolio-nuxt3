@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white pt-24 md:pt-28 pb-10 md:pb-20">
+  <div class="bg-white pt-10 md:pt-20 pb-10 md:pb-20">
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
       <!-- text - start -->
       <div class="mb-10 md:mb-16">

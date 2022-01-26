@@ -1,20 +1,18 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <nav class="z-30 navPadding flex items-center justify-between fixed top-0 w-full bgLight shadow">
+  <nav
+    class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow"
+    :class="currentOffsetHeight < 870 && route.path === '/' ? 'bg-black text-white' : 'bgLight text-black'"
+    id="navBar"
+  >
     <div>
-      <a href="/#top" class="flex text-2xl font-bold">
-        <img src="/favicon.png" alt="favicon" class="w-10 h-10">
+      <a href="/#navBar" class="flex text-2xl font-bold cursor-pointer">
+        <img src="/favicon.png" alt="favicon" class="w-10 h-10" loading="lazy" />
       </a>
     </div>
     <div v-if="!loading" class="hidden md:flex font-medium">
       <transition-group tag="span" appear @before-enter="before" @enter="entering" class="space-x-5 lg:space-x-8">
-        <a
-          v-for="item in navigation"
-          :key="item.id"
-          :href="item.href"
-          class="text-lg underAnimation"
-          >{{ item.name }}</a
-        >
+        <a v-for="item in navigation" :key="item.id" :href="item.href" class="text-lg underAnimation">{{ item.name }}</a>
       </transition-group>
 
       <!-- <NuxtLink to="/blog" @click="scrollTop" class="text-lg px-4 hover:opacity-60 hover:underline">Blog</NuxtLink> -->
@@ -91,7 +89,14 @@
   import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
   import { MenuIcon } from "@heroicons/vue/outline";
   import { gsap } from "gsap";
+  import scrollToTop from "~~/composables/scrollToTop";
   let loading = ref(true);
+  let navDom = ref("");
+  const route = useRoute();
+  const router = useRouter();
+  const { scrollTop } = scrollToTop();
+  //! need to a dynamic offsetHeight params based on screen width
+  const { trackNavBarPosition, currentOffsetHeight } = trackNavBar();
   const navigation = [
     {
       id: 1,
@@ -119,11 +124,6 @@
       href: "/blog",
     },
   ];
-  const scrollTop = () => {
-    if (typeof window !== "undefined") {
-      window.scrollTo(0, 0);
-    }
-  };
   const before = (el) => {
     gsap.set(el, {
       opacity: 0,
@@ -138,8 +138,16 @@
     });
     console.log("complete entering 1 by 1...");
   };
+  const trackScroll = () => {
+    trackNavBarPosition("navBar");
+  };
+  // const goToHome = () => {
+  //   router.push("/");
+  //   scrollTop()
+  // };
   onMounted(() => {
     loading.value = false;
+    window.addEventListener("scroll", trackScroll);
   });
 </script>
 <style scoped>
@@ -147,7 +155,7 @@
     position: relative;
   }
   .underAnimation::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;

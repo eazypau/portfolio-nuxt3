@@ -1,8 +1,8 @@
 <template>
-  <div class="md:pt-10">
-    <Header id="top" />
+  <div>
+    <Header />
     <div>
-      <div class="md:w-8/12 lg:w-10/12 xl:w-7/12 md:py-20 lg:pt-24 mx-auto" id="about">
+      <div class="md:w-8/12 lg:w-10/12 xl:w-7/12 2xl:w-6/12 pt-14 md:py-20 lg:pt-24 mx-auto" id="about">
         <TextLeftImgRight />
         <!-- <TextRightImgLeft /> -->
       </div>

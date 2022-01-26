@@ -24,6 +24,7 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] get a domain (need to do some research)
 - [x] test deployment
 - [ ] Deployment (vercel/netlify?)
+- [ ] fix anchor tag position in all media query and scroll bar color change
 
 ## milestone:
 - [x] 1st draft done by 22nd January and then ask friends for feedback
