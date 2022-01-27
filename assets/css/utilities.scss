@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 
 // https://99designs.com/blog/tips/font-pairings/
 //* current pairing: Vidaloka + Roboto
@@ -24,13 +25,31 @@
 .headerFont {
   font-family: 'Roboto Slab', serif;
 }
+.logoFont {
+  font-family: 'Carter One', cursive;
+}
 
 .navPadding {
-  padding: 12px 30px;
+  padding: 20px 30px;
 }
 @media (min-width: 768px) {
   .navPadding {
-    padding: 15px 50px;
+    padding: 20px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .navPadding {
+    padding: 25px 108px;
+  }
+}
+@media (min-width: 1440px) {
+  .navPadding {
+    padding: 25px 160px;
+  }
+}
+@media (min-width: 1536px) {
+  .navPadding {
+    padding: 25px 325px;
   }
 }
 

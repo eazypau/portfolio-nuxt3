@@ -3,8 +3,8 @@
     <div class="mb-4 lg:mb-8">
       <h3 class="text-3xl lg:text-4xl font-bold text-gray-800">Skills</h3>
     </div>
-    <div class="flex flex-wrap justify-center">
-      <p class="skillStyle" v-for="skill in skillSet" :key="skill">{{ skill }}</p>
+    <div class="flex flex-wrap justify-center lg:px-20">
+      <p class="skillStyle lg:mb-4" v-for="skill in skillSet" :key="skill">{{ skill }}</p>
     </div>
   </section>
 </template>

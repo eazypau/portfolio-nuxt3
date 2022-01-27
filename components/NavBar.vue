@@ -6,18 +6,19 @@
     id="navBar"
   >
     <div>
-      <a href="/#navBar" class="flex text-2xl font-bold cursor-pointer">
+      <a href="/#navBar" class="flex items-center text-2xl font-bold cursor-pointer">
         <img src="/favicon.png" alt="favicon" class="w-10 h-10" loading="lazy" />
+        <p class="hidden lg:block text-3xl font-bold ml-2 logoFont tracking-widest">YZ.</p>
       </a>
     </div>
-    <div v-if="!loading" class="hidden md:flex font-medium">
-      <transition-group tag="span" appear @before-enter="before" @enter="entering" class="space-x-5 lg:space-x-8">
-        <a v-for="item in navigation" :key="item.id" :href="item.href" class="text-lg underAnimation">{{ item.name }}</a>
+    <div v-if="!loading" class="hidden lg:flex font-medium">
+      <transition-group tag="span" appear @before-enter="before" @enter="entering" class="space-x-5 lg:space-x-8 xl:space-x-10">
+        <a v-for="item in navigation" :key="item.id" :href="item.href" class="text-lg lg:text-xl underAnimation">{{ item.name }}</a>
       </transition-group>
 
       <!-- <NuxtLink to="/blog" @click="scrollTop" class="text-lg px-4 hover:opacity-60 hover:underline">Blog</NuxtLink> -->
     </div>
-    <Menu as="div" class="md:hidden">
+    <Menu as="div" class="lg:hidden">
       <div class="flex items-center">
         <MenuButton>
           <MenuIcon class="w-8 h-8" />
@@ -32,7 +33,7 @@
         leave-to-class="transform scale-95 opacity-0"
       >
         <MenuItems
-          class="absolute right-0 w-64 mt-2 mr-8 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="absolute right-0 w-64 mt-5 mr-8 md:mr-10 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
           <div class="px-1 py-1">
             <MenuItem v-slot="{ active }" v-for="item in navigation" :key="item">
@@ -46,40 +47,7 @@
                 {{ item.name }}
               </a>
             </MenuItem>
-            <!-- <MenuItem v-slot="{ active }">
-              <a
-                href="/blog"
-                :class="[
-                  active ? 'bg-gray-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-4 py-3 font-medium text-lg',
-                ]"
-              >
-                Blog
-              </a>
-            </MenuItem> -->
           </div>
-          <!-- <div class="px-1 py-1">
-            <MenuItem v-slot="{ active }">
-              <button
-                :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-2 py-2 text-sm',
-                ]"
-              >
-                Archive
-              </button>
-            </MenuItem>
-            <MenuItem v-slot="{ active }">
-              <button
-                :class="[
-                  active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-2 py-2 text-sm',
-                ]"
-              >
-                Move
-              </button>
-            </MenuItem>
-          </div> -->
         </MenuItems>
       </transition>
     </Menu>
