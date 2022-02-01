@@ -10,7 +10,7 @@
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span class="relative inline-block">
-              <svg
+              <!-- <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
                 class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
@@ -21,7 +21,8 @@
                   </pattern>
                 </defs>
                 <rect fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)" width="52" height="24"></rect>
-              </svg>
+              </svg> -->
+              <IconsUserSvg class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" />
               <span class="relative">Get</span>
             </span>
             in touch with me

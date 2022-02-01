@@ -15,6 +15,9 @@
 .headerStyle {
   background-color: $bg-primary-dark;
 }
+.IconInProfile {
+  @apply w-5 h-5 text-gray-700 fill-current hover:text-gray-600
+}
 
 /* width */
 ::-webkit-scrollbar {
