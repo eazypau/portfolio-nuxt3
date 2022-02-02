@@ -19,20 +19,31 @@
   @apply w-5 h-5 xl:w-6 xl:h-6 text-gray-700 fill-current hover:text-gray-600
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 7px;
+// }
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: transparent;
+// }
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #d1d5db;
+//   border-radius: 5px;
+// }
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #9ca3af;
+// }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
 }
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 5px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

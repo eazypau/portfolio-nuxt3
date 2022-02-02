@@ -42,6 +42,9 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - change todo to to-do
 - add filter in project card image
 - make my name bigger in header
+- give bg color for CTA button in contact section
+- change favicon design (font and color)
+- add individual on hover color for its original logo color for skills section
 
 ## resources
 - https://favicon.io/favicon-generator/
