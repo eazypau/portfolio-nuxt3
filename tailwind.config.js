@@ -29,6 +29,9 @@ module.exports = {
         "light-secondary": "#f4a261",
         "secondary": "#e76f51",
       },
+      screens: {
+        "iphone": '414px'
+      }
     },
   },
   plugins: [

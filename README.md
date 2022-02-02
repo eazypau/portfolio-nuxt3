@@ -4,7 +4,7 @@ A personal porfolio website using nuxt3 with tailwindCSS
 
 ## Todo list:
 - [x] create a draft design template
-- [ ] pick the right font family
+- [x] pick the right font family
 - [ ] pick the right color scheme (text color and bg color)
 - [x] make sure to use suitable font size
 - [x] choose the right photos

@@ -1,55 +1,47 @@
 // reference from: https://www.developerdrive.com/how-to-easily-use-google-fonts-with-sass/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"); // looks slightly distorted in chrome
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 // https://99designs.com/blog/tips/font-pairings/
-//* current pairing: Vidaloka + Roboto
-//* font pairing to consider: Roboto + Montserrat, Oswald + Lato
-.mainFontFamily {
-  //  font-family: 'Playfair Display', serif;
-  // font-family: "Vidaloka", serif;
-  font-family: 'Oswald', sans-serif;
-}
 .subFontFamily {
-  // font-family: 'Cormorant Garamond', serif;
-  // font-family: "Roboto", sans-serif;
-  font-family: 'Lato', sans-serif;
-  // font-family: 'Roboto Slab', serif;
+  // font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .headerFont {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .logoFont {
   font-family: 'Carter One', cursive;
 }
 
 .navPadding {
-  padding: 20px 30px;
+  padding: 15px 30px;
 }
 @media (min-width: 768px) {
   .navPadding {
-    padding: 20px 50px;
+    padding: 15px 50px;
   }
 }
 @media (min-width: 1024px) {
   .navPadding {
-    padding: 25px 108px;
+    padding: 15px 108px;
   }
 }
 @media (min-width: 1440px) {
   .navPadding {
-    padding: 25px 160px;
+    padding: 15px 160px;
   }
 }
 @media (min-width: 1536px) {
   .navPadding {
-    padding: 25px 325px;
+    padding: 15px 200px;
+  }
+}
+@media (min-width: 1660px) {
+  .navPadding {
+    padding: 15px 260px;
   }
 }
 

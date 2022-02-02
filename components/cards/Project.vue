@@ -15,11 +15,11 @@
 			/>
 			<!-- <img v-if="hovered" :src="projectDetails.gifUrl" alt="project image" class="w-full h-full object-cover" /> -->
 		</div>
-		<div :class="[isReverse ? 'md:float-left' : 'md:float-right', 'px-6 py-4 flex flex-col justify-between min-h-56 md:h-96 md:w-4/12']">
+		<div :class="[isReverse ? 'md:float-left' : 'md:float-right', 'px-6 py-4 flex flex-col justify-between min-h-56 md:h-96 md:w-4/12 subFontFamily']">
 			<!-- content -->
 			<div>
 				<h1 class="text-lg font-bold underline">{{ projectDetails.title }}</h1>
-				<p>
+				<p class="font-medium">
 					{{ projectDetails.description }}
 				</p>
 			</div>

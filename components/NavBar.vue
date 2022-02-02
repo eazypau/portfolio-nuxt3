@@ -13,7 +13,7 @@
     </div>
     <div v-if="!loading" class="hidden lg:flex font-medium">
       <transition-group tag="span" appear @before-enter="before" @enter="entering" class="space-x-5 lg:space-x-8 xl:space-x-10">
-        <a v-for="item in navigation" :key="item.id" :href="item.href" class="text-lg lg:text-xl underAnimation">{{ item.name }}</a>
+        <a v-for="item in navigation" :key="item.id" :href="item.href" class="text-lg lg:text-lg xl:text-xl headerFont underAnimation">{{ item.name }}</a>
       </transition-group>
 
       <!-- <NuxtLink to="/blog" @click="scrollTop" class="text-lg px-4 hover:opacity-60 hover:underline">Blog</NuxtLink> -->

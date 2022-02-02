@@ -44,15 +44,15 @@
       </div>
     </div> -->
     <Skills id="skills" />
-    <div class="py-20 lg:pt-28 px-4" id="projects">
-      <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10">Projects That I Have Worked On</h2>
+    <div class="py-20 lg:pt-28 px-4 iphone:px-6 md:px-4" id="projects">
+      <h2 class="text-3xl lg:text-4xl text-center font-bold text-gray-800 mb-10 subFontFamily">Projects That I Have Worked On</h2>
       <div class="lg:w-10/12 xl:w-9/12 2xl:w-8/12 space-y-7 md:space-y-10 lg:space-y-14 2xl:space-y-20 mx-auto">
         <CardsProject v-for="project in projects" :key="project" :project-details="project" :is-reverse="project.isReverse" />
       </div>
     </div>
     <!-- Need project section -->
     <div class="flex flex-col items-center px-4 py-24">
-      <h2 class="text-center text-3xl lg:text-4xl font-bold text-gray-800 mb-10 md:mb-16">Some of My Favourite Activities</h2>
+      <h2 class="text-center text-3xl lg:text-4xl font-bold text-gray-800 mb-10 md:mb-16 subFontFamily">Some of My Favourite Activities</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-10">
         <CardsHobby v-for="item in hobbies" :key="item" :title="item.title" :content="item.text" :classBg="item.classBg" class="relative" />
       </div>

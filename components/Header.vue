@@ -1,56 +1,11 @@
 <template>
-	<!-- <header class="relative w-full h-screen md:h-auto px-2 sm:px-2 sm:py-5 flex items-center justify-center bg-black overflow-hidden">
-    <div class="absolute w-full h-full">
-      <img src="/negative-space-abstract-particle-snow.webp" alt="bg" class="w-full h-full object-cover mix-blend-hard-light" />
-    </div>
-    <div class="relative text-center pt-28 pb-16 sm:pt-32 xl:pt-40 sm:pb-24 xl:pb-32 flex flex-col items-center justify-center"> -->
-	<!-- previous bg colors: bg-gradient-to-b from-primary-dark via-secondary-dark to-transparent -->
-	<!-- <p
-        class="firstLineHeight text-4xl xl:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-gray-300 via-white to-gray-400"
-      >
-        Hey there
-      </p>
-      <p
-        class="firstLineHeight text-4xl xl:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-gray-300 via-white to-gray-400"
-      >
-        my name is <span class="text-6xl">Po</span>
-      </p>
-      <p
-        class="hugeHeading text-6xl  font-extrabold text-center py-2 bg-clip-text text-transparent bg-gradient-to-t from-gray-400 via-white to-gray-400"
-      >
-        Mechanical Engineer
-      </p>
-      <p
-        class="text-4xl 2xl:text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-400 via-white to-gray-400"
-      >
-        turned into
-      </p>
-      <p
-        class="hugeHeading text-6xl font-extrabold text-center py-2 bg-clip-text text-transparent bg-gradient-to-t from-gray-400 via-white to-gray-400"
-      >
-        Web Developer
-      </p>
-      <p
-        class="text-3xl md:text-4xl xl:text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-400 via-white to-gray-400"
-      >
-        Previouly worked as
-      </p>
-      <p
-        class="hugeHeading text-6xl font-extrabold text-center py-2 bg-clip-text text-transparent bg-gradient-to-t from-gray-400 via-white to-gray-400"
-      >
-        Mechanical Engineer
-      </p>
-    </div>
-  </header> -->
 	<header class="relative w-full headerHeight overflow-hidden flex items-top">
 		<div class="absolute w-full h-full">
 			<img src="/wide-laptop-gradient-bg.jpg" alt="bg" class="w-full h-full object-cover object-top" />
 		</div>
-		<div class="relative w-full text-center px-7 md:px-16 lg:px-28 xl:px-40 pt-5">
-			<!-- previous bg colors: bg-gradient-to-b from-primary-dark via-secondary-dark to-transparent -->
-			<!-- next version: bg-clip-text text-transparent bg-gradient-to-b from-gray-300 via-white to-gray-400 -->
+		<div class="relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 headerFont text-4xl md:text-6xl font-bold">
 			<div>
-				<p class="text-4xl md:text-5xl font-extrabold text-white flex justify-center">
+				<p class="text-white flex justify-center">
 					Hi there
 					<span>
 					  <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" class="ml-3">
@@ -62,15 +17,15 @@
 					  <IconsHiIcon class="ml-3" />
 					</span>
 				</p>
-				<p class="mt-1 text-4xl md:text-6xl font-extrabold tracking-wide text-white">
+				<p class="mt-1 tracking-wide text-white">
 					My name is Po
 				</p>
 			</div>
 			<div class="mt-2">
-				<p class="text-4xl md:text-6xl font-extrabold tracking-wide text-white">
+				<p class="tracking-wide text-white">
 					A Frontend
 				</p>
-				<p class="py-2 text-4xl md:text-6xl font-extrabold tracking-wide text-white">Web Developer</p>
+				<p class="py-2 tracking-wide text-white">Web Developer</p>
 			</div>
 		</div>
 	</header>
@@ -82,39 +37,6 @@
 </script>
 <style lang="scss" scoped>
 	.headerHeight {
-		height: calc(100vh - 80px);
-	}
-	.firstLineHeight {
-		min-height: 35px;
-		// text-shadow: 0 0 30px #fff;
-	}
-	.hugeHeading {
-		min-height: 78px;
-	}
-	@media (min-width: 768px) {
-		// .headerHeight {
-		//   height: calc(100vh - 20px);
-		// }
-		.firstLineHeight {
-			min-height: 43px;
-		}
-	}
-	@media (min-width: 1024px) {
-		.headerHeight {
-			height: calc(100vh - 90px);
-		}
-	}
-	@media (min-width: 1280px) {
-		.firstLineHeight {
-			min-height: 55px;
-		}
-		.hugeHeading {
-			min-height: 93px;
-		}
-	}
-	@media (min-width: 1440px) {
-		.headerHeight {
-			height: calc(100vh - 90px);
-		}
+		height: calc(100vh - 30px);
 	}
 </style>

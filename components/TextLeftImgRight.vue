@@ -2,10 +2,10 @@
   <section>
     <div class="container px-6 py-8 mx-auto">
       <div class="items-center lg:flex lg:space-x-6">
-        <div class="lg:w-1/2 2xl:w-8/12">
-          <h2 class="text-3xl 2xl:text-4xl font-bold text-gray-800 headerFont">Who am I?</h2>
+        <div class="lg:w-1/2 2xl:w-9/12 subFontFamily">
+          <h2 class="text-3xl 2xl:text-4xl font-bold text-gray-800">Who am I?</h2>
 
-          <p class="mt-4 text-gray-500 lg:max-w-md 2xl:max-w-lg text-justify xl:text-lg 2xl:text-xl subFontFamily">
+          <p class="mt-4 text-gray-500 lg:max-w-md 2xl:max-w-xl text-justify xl:text-lg 2xl:text-2xl">
             Hi, I am Po Yi Zhi, frontend web developer in
             <a class="font-bold text-blue-600" href="https://hackercollective.co/teams">The Hacker Collective</a> . I was born in Melaka, Malaysia. Graduated with
             Bachelor of degree in Mechanical Engineering in year 2019 from Multimedia University (MMU). Previously I worked as a mechanical
