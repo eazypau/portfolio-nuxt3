@@ -22,7 +22,7 @@
                 </defs>
                 <rect fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)" width="52" height="24"></rect>
               </svg> -->
-              <IconsUserSvg class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" />
+              <!-- <IconsUserSvg class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" /> -->
               <span class="relative">Get</span>
             </span>
             in touch with me
