@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center py-24" id="skills">
+  <section class="flex flex-col items-center pt-28 pb-20 lg:py-24" id="skills">
     <div class="mb-4 lg:mb-8">
       <h3 class="text-3xl lg:text-4xl font-bold text-gray-800 subFontFamily">Skills</h3>
     </div>

@@ -3,7 +3,7 @@
 		<div class="absolute w-full h-full">
 			<img src="/wide-laptop-gradient-bg.jpg" alt="bg" class="w-full h-full object-cover object-top" />
 		</div>
-		<div class="relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 headerFont text-4xl md:text-6xl font-bold">
+		<div class="relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10 headerFont text-4xl md:text-6xl 2xl:text-7xl font-bold">
 			<div>
 				<p class="text-white flex justify-center">
 					Hi there

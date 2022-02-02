@@ -1,5 +1,5 @@
 <template>
-  <div class="px-10 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 xl:pb-32">
+  <div class="px-10 pt-24 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 md:py-20 lg:px-8 lg:py-20 xl:pb-32">
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0 subFontFamily tracking-wide">
         <a class="mb-6 sm:mx-auto">
@@ -27,7 +27,7 @@
             </span>
             in touch with me
           </h2>
-          <p class="text-base text-gray-700 md:text-lg xl:text-2xl">
+          <p class="text-base text-gray-500 md:text-lg xl:text-2xl">
             I'm seeking out opportunities to work with companies that are able to improve my skills not just in tech but also to be able to
             lead and teach others. If I am the person you are looking for, feel free to reach me through email or my contact information in
             my resume.

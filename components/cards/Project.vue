@@ -26,7 +26,7 @@
 			<div class="flex justify-between items-end max-h-9 space-x-5 mt-8 md:mt-5 lg:mt-0">
 				<div class="flex flex-wrap items-center">
 					<div v-for="(tech, index) in projectDetails.techStack" :key="tech">
-						<p>{{ tech }}<span v-if="index !== projectDetails.techStack.length - 1" class="px-1 font-bold">&#183;</span></p>
+						<p class="text-sm font-medium">{{ tech }}<span v-if="index !== projectDetails.techStack.length - 1" class="px-1 font-bold">&#183;</span></p>
 					</div>
 				</div>
 				<div class="flex items-center space-x-2 pb-0.5">

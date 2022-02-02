@@ -30,7 +30,8 @@ module.exports = {
         "secondary": "#e76f51",
       },
       screens: {
-        "iphone": '414px'
+        "iphone": "414px",
+        "3xl": "1680px"
       }
     },
   },

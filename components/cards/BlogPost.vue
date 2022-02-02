@@ -1,5 +1,5 @@
 <template>
-  <a :href="details.route" class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative">
+  <a :href="details.route" class="group h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative">
     <img
       :src="details.imgUrl"
       loading="lazy"

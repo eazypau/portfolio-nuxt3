@@ -5,11 +5,11 @@ A personal porfolio website using nuxt3 with tailwindCSS
 ## Todo list:
 - [x] create a draft design template
 - [x] pick the right font family
-- [ ] pick the right color scheme (text color and bg color)
+- [ ] pick the right color scheme (text color, btn color and bg color)
 - [x] make sure to use suitable font size
 - [x] choose the right photos
 - [ ] consider to add a floating fix icons for user to return to the topxto blog pagexto my social media profile
-- [ ] full home page
+- [x] full home page
 - [ ] full blog page
 - [x] project card and section
 - [ ] decide whether to use vuepress for blog contents
@@ -24,6 +24,7 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] get a domain (need to do some research)
 - [x] test deployment
 - [ ] Deployment (vercel/netlify?)
+- [ ] Remove packages that are not in use
 - [ ] fix anchor tag position in all media query and scroll bar color change
 
 ## milestone:
