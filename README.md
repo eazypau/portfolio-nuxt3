@@ -46,5 +46,10 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - change favicon design (font and color)
 - add individual on hover color for its original logo color for skills section
 
-## resources
+## resources and reference
 - https://favicon.io/favicon-generator/
+- https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/
+- https://resumake.io/
+- https://convertio.co/jpg-webp/
+- https://ezgif.com/resize
+- https://www.onlineconverter.com/video-to-gif
