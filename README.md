@@ -62,3 +62,4 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - https://convertio.co/jpg-webp/
 - https://ezgif.com/resize
 - https://www.onlineconverter.com/video-to-gif
+- https://coolors.co/palettes/trending

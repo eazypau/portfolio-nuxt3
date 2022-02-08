@@ -6,65 +6,67 @@
 
 // https://99designs.com/blog/tips/font-pairings/
 .subFontFamily {
-  // font-family: 'Lato', sans-serif;
-  font-family: 'Raleway', sans-serif;
+	// font-family: 'Lato', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 .headerFont {
-  font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 .logoFont {
-  font-family: 'Carter One', cursive;
+	font-family: "Carter One", cursive;
 }
-
 .navPadding {
-  padding: 15px 30px;
+	padding: 15px 30px;
 }
 @media (min-width: 768px) {
-  .navPadding {
-    padding: 15px 50px;
-  }
+	.navPadding {
+		padding: 15px 50px;
+	}
 }
 @media (min-width: 1024px) {
-  .navPadding {
-    padding: 15px 108px;
-  }
+	.navPadding {
+		padding: 15px 108px;
+	}
 }
 @media (min-width: 1440px) {
-  .navPadding {
-    padding: 15px 160px;
-  }
+	.navPadding {
+		padding: 15px 160px;
+	}
 }
 @media (min-width: 1536px) {
-  .navPadding {
-    padding: 15px 200px;
-  }
+	.navPadding {
+		padding: 15px 200px;
+	}
 }
 @media (min-width: 1660px) {
-  .navPadding {
-    padding: 15px 260px;
-  }
+	.navPadding {
+		padding: 15px 260px;
+	}
 }
-
-.glassEffect {
-  background-color: #ffffff10;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+// .glassEffect {
+//   background-color: #ffffff10;
+//   backdrop-filter: blur(1px);
+//   -webkit-backdrop-filter: blur(1px);
+// }
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
 }
-
-body {
-  background-color: #ffffff;
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
 }
-html {
-  scroll-behavior: smooth;
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	border-radius: 5px;
+	opacity: 0.2;
 }
-
-.bgLight {
-  background-color: #f8f9fa;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #9ca3af;
 }
 
 // list of bg colors to consider or use
-$bg-primary-dark: #264653;
-$bg-secondary-dark: #2a9d8f;
-$bg-light: #e9c46a;
-$bg-light-secondary: #f4a261;
-$bg-secondary: #e76f51;
+$bg-light: #f8f9fa;
+$bg-body-color: #ffffff;
