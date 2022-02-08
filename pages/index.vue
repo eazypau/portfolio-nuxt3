@@ -4,7 +4,6 @@
     <div>
       <div class="md:w-8/12 lg:w-9/12 xl:w-8/12 3xl:w-7/12 pt-16 md:py-20 lg:pt-24 mx-auto" id="about">
         <TextLeftImgRight />
-        <!-- <TextRightImgLeft /> -->
       </div>
     </div>
     <!-- work experience -->
