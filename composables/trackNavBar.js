@@ -5,7 +5,6 @@ export default () => {
   const trackNavBarPosition = (domElementName) => {
     const NavDom = document.getElementById(domElementName);
     currentOffsetHeight.value = NavDom.offsetTop;
-    // console.log(currentOffsetHeight);
   };
   return { currentOffsetHeight, trackNavBarPosition };
 };

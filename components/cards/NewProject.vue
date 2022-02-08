@@ -1,33 +1,37 @@
 <template>
 	<div
-		class="relative w-full rounded-lg border-gray-200 overflow-hidden shadow-md shadow-gray-400 hover:shadow-xl hover:shadow-gray-500 transition ease-out duration-300"
-		@mouseover="hovered = true"
-		@mouseout="hovered = false"
+		class="projectCardContainer"
+        @mouseover="hovered = true"
+        @mouseleave="hovered = false"
 	>
-		<div :class="[isReverse ? 'right-0 border-l' : 'left-0', 'md:absolute md:w-8/12 md:h-full']">
+		<div class="z-10 relative w-full h-full">
 			<!-- img -->
 			<!-- previously is on hover change to gif :src="hovered ? projectDetails.gifUrl : projectDetails.imageUrl" -->
 			<img
 				:src="projectDetails.imageUrl"
 				alt="project image"
 				class="w-full h-full object-cover object-top"
-				:class="hovered ? '' : 'grayscale'"
 				loading="lazy"
 			/>
+            <div v-if="!hovered" class="absolute inset-0 w-full h-full flex items-center justify-center bg-slate-500 mix-blend-hard-light">
+                <h3 class="font-bold text-3xl text-white subFontFamily">{{ projectDetails.title }}</h3>
+            </div>
 			<!-- <img v-if="hovered" :src="projectDetails.gifUrl" alt="project image" class="w-full h-full object-cover" /> -->
 		</div>
-		<div :class="[isReverse ? 'md:float-left' : 'md:float-right', 'px-6 py-4 flex flex-col justify-between min-h-56 md:h-96 md:w-4/12 subFontFamily']">
+		<div v-if="hovered" class="projectTextContainer subFontFamily">
 			<!-- content -->
 			<div>
-				<h1 class="text-lg font-bold underline">{{ projectDetails.title }}</h1>
-				<p class="font-medium">
+				<h1 class="md:text-lg font-bold underline">{{ projectDetails.title }}</h1>
+				<p class="text-sm md:text-base font-medium">
 					{{ projectDetails.description }}
 				</p>
 			</div>
 			<div class="flex justify-between items-end max-h-9 space-x-5 mt-8 md:mt-5 lg:mt-0">
 				<div class="flex flex-wrap items-center">
 					<div v-for="(tech, index) in projectDetails.techStack" :key="tech">
-						<p class="text-sm font-medium">{{ tech }}<span v-if="index !== projectDetails.techStack.length - 1" class="px-1 font-bold">&#183;</span></p>
+						<p class="text-xs md:text-sm font-medium">
+							{{ tech }}<span v-if="index !== projectDetails.techStack.length - 1" class="px-1 font-bold">&#183;</span>
+						</p>
 					</div>
 				</div>
 				<div class="flex items-center space-x-2 pb-0.5">

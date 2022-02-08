@@ -21,6 +21,9 @@ module.exports = {
         sm: "20rem",
         md: "28rem",
       },
+      minHeight: {
+        'project-card': '12rem',
+      },
       // color scheme
       colors: {
         "primary-dark": "#264653",

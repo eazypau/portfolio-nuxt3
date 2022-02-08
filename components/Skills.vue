@@ -1,10 +1,10 @@
 <template>
-	<section class="flex flex-col items-center pt-28 pb-20 lg:py-24" id="skills">
+	<section class="flex flex-col items-center pt-28 pb-20 lg:py-28" id="skills">
 		<div class="mb-4 lg:mb-8">
-			<h3 class="text-3xl lg:text-4xl font-bold text-gray-800 subFontFamily">Skills</h3>
+			<h3 class="subTitle subFontFamily">Technologies & Framework</h3>
 		</div>
-		<div class="flex flex-wrap justify-center lg:px-20">
-			<p class="skillStyle lg:mb-4 subFontFamily" v-for="skill in skillSet" :key="skill">{{ skill }}</p>
+		<div class="flex flex-wrap justify-center lg:w-10/12 3xl:w-7/12">
+			<p class="skillStyle subFontFamily" v-for="skill in skillSet" :key="skill">{{ skill }}</p>
 		</div>
 	</section>
 </template>
