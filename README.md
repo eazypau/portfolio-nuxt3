@@ -34,10 +34,9 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] implement full animation
 - [x] improve the button color in contact section
 - [x] change favicon design
-- [ ] add individual on hover color for its original logo color for skills section
+- [ ] draft blog page?
 - [ ] get domain name (namecheap)
 - [ ] implement github actions for dependency updates and others
-- [ ] draft blog page?
 - [ ] full resume
 - [ ] tidy up code base
 - [ ] fix project card design
