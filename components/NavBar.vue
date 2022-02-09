@@ -11,12 +11,7 @@
         class="flex items-center text-2xl font-bold cursor-pointer"
         @click="goToHome"
       >
-        <img
-          src="/favicon.png"
-          alt="favicon"
-          class="w-10 h-10"
-          loading="lazy"
-        />
+        <img :src="logo" alt="favicon" class="w-10 h-10" loading="lazy" />
         <p
           class="hidden lg:block text-3xl font-bold ml-2 logoFont tracking-widest"
         >
@@ -86,6 +81,8 @@
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
 import { MenuIcon } from "@heroicons/vue/outline";
 import { gsap } from "gsap";
+import blackWhiteFavicon from "/favicon-bw.png";
+import whiteBlackFavicon from "/favicon-wb.png";
 
 let loading = ref(true);
 const route = useRoute();
@@ -95,6 +92,7 @@ const { trackNavBarPosition, currentOffsetHeight } = trackNavBar();
 const screenHeight = ref(0);
 const heightOfNav = ref(0);
 const navBgTextColor = ref("bg-black text-white");
+const logo = ref(whiteBlackFavicon);
 const navigation = [
   {
     id: 1,
@@ -129,6 +127,7 @@ const goToHome = () => {
   if (route.path !== "/") {
     router.push("/");
     scrollTop();
+    // window.location.href = "/";
   } else {
     scrollTop();
   }
@@ -152,14 +151,17 @@ const entering = (el, done) => {
 
 watchEffect(() => {
   if (
-    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2.5 &&
+    currentOffsetHeight.value > screenHeight.value - heightOfNav.value / 2 &&
     route.name === "index"
   ) {
     navBgTextColor.value = "bgLight text-black";
+    logo.value = blackWhiteFavicon;
   } else if (route.path === "/blog") {
     navBgTextColor.value = "bgLight text-black";
+    logo.value = blackWhiteFavicon;
   } else {
     navBgTextColor.value = "bg-black text-white";
+    logo.value = whiteBlackFavicon;
   }
 });
 onMounted(() => {

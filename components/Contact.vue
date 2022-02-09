@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-10 pt-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 md:py-20 lg:px-8 lg:py-20 xl:pt-24 2xl:pb-28"
+    class="px-10 pt-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 md:py-20 lg:px-8 lg:py-20 xl:pt-24 2xl:pb-28 3xl:pb-32"
   >
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div
@@ -8,9 +8,9 @@
       >
         <a class="mb-6 sm:mx-auto">
           <div
-            class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50"
+            class="flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-indigo-50"
           >
-            <UserIcon class="w-7 h-7" />
+            <UserIcon class="w-9 h-9 lg:w-10 lg:h-10" />
           </div>
         </a>
         <div
@@ -54,13 +54,13 @@
             href="/resume/my-resume.pdf"
             download="my-resume"
             target="_blank"
-            class="inline-flex items-center justify-center h-12 px-6 text-lg font-medium transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-gray-600 to-gray-900 hover:from-gray-600 hover:to-gray-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
           >
             <ClipboardListIcon class="w-5 h-5 mr-2" /> My Resume
           </a>
           <a
             href="mailto:poyizhi@gmail.com"
-            class="inline-flex items-center justify-center h-12 px-6 text-lg font-medium transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
           >
             <MailIcon class="w-5 h-5 mr-2" /> Get in Touch
           </a>

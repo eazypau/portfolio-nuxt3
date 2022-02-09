@@ -40,7 +40,7 @@ export default defineNuxtConfig({
     // todo: update favicon
     // todo: add seo meta tags
     // todo: set og meta tagsss
-    link: [{ rel: "icon", href: "/favicon.png" }],
+    link: [{ rel: "icon", href: "/favicon-wb.png" }],
   },
   build: {
     postcss: {

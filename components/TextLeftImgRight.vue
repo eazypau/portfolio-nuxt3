@@ -2,13 +2,14 @@
   <section>
     <div class="container px-6 py-8 mx-auto">
       <div class="items-center lg:flex lg:space-x-6">
-        <div class="lg:w-1/2 2xl:w-9/12 subFontFamily">
-          <h2 class="text-3xl 2xl:text-4xl font-bold text-gray-800">
+        <div class="lg:w-7/12 xl:w-9/12 subFontFamily">
+          <h2 class="text-3xl xl:text-4xl font-bold text-gray-800">
             Who am I?
           </h2>
 
           <p
-            class="mt-4 text-gray-500 lg:max-w-md 2xl:max-w-lg 3xl:max-w-xl text-justify lg:text-lg 2xl:text-2xl"
+            class="mt-4 text-gray-500 lg:max-w-md xl:max-w-lg 3xl:max-w-xl md:text-lg xl:text-xl"
+            style="word-spacing: 5px"
           >
             Hi, I am Po Yi Zhi, frontend web developer in
             <a
@@ -61,7 +62,7 @@
           </div>
         </div>
 
-        <div class="mt-8 lg:mt-0 lg:w-1/2 2xl:w-4/12">
+        <div class="mt-8 lg:mt-0 lg:w-1/2 xl:w-4/12">
           <div class="flex items-center justify-center lg:justify-end">
             <div
               class="relative sm:min-w-sm lg:min-w-min lg:max-w-lg xl:min-w-sm bg-green-300 rounded-xl"
