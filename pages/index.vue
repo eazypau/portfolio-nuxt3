@@ -77,8 +77,10 @@ const projects = [
   {
     isReverse: false,
     title: "Eazy Chat App",
+    titleColor: "text-white",
+    filterColor: "bg-slate-900 bg-opacity-60",
     imageUrl: "/project-ss/chatapp-ss.webp",
-    gifUrl: "/project-gif/chatapp.gif",
+    // gifUrl: "/project-gif/chatapp.gif",
     description:
       "A scalable real-time chat app designed to send and receive messages from users.",
     techStack: [
@@ -97,8 +99,10 @@ const projects = [
   {
     isReverse: true,
     title: "Spotify Clone",
+    titleColor: "text-white",
+    filterColor: "bg-slate-500 mix-blend-hard-light",
     imageUrl: "/project-ss/spotify-ss.webp",
-    gifUrl: "/project-gif/spotify-clone-short.gif",
+    // gifUrl: "/project-gif/spotify-clone-short.gif",
     description:
       "A Spotify clone web app. Built to view your saved and created playlist. It also can control your Spotify app playback state.",
     techStack: [
@@ -116,8 +120,10 @@ const projects = [
   {
     isReverse: false,
     title: "Saloon Booking Web",
+    titleColor: "text-white",
+    filterColor: "bg-slate-900 bg-opacity-60",
     imageUrl: "/project-ss/saloonbooking-ss.webp",
-    gifUrl: "/project-gif/saloonbooking.gif",
+    // gifUrl: "/project-gif/saloonbooking.gif",
     description:
       "A door to door saloon appointment booking website allowing users to book their appointment at anytime.",
     techStack: [
@@ -136,8 +142,10 @@ const projects = [
   {
     isReverse: true,
     title: "Kanban Board",
+    titleColor: "text-white",
+    filterColor: "bg-slate-800 bg-opacity-60",
     imageUrl: "/project-ss/kanban-board.webp",
-    gifUrl: "/project-gif/kanban-board.gif",
+    // gifUrl: "/project-gif/kanban-board.gif",
     description:
       "A simple todo app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
     techStack: [
@@ -153,9 +161,11 @@ const projects = [
   },
   {
     isReverse: false,
-    title: "Todo Web App",
+    title: "To Do List App",
+    titleColor: "text-white",
+    filterColor: "bg-slate-700 bg-opacity-60",
     imageUrl: "/project-ss/todo-ss.webp",
-    gifUrl: "/project-gif/todo.gif",
+    // gifUrl: "/project-gif/todo.gif",
     description:
       "A simple todo app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
     techStack: ["Vue", "Vite", "TailwindCSS", "Firebase"],
@@ -166,8 +176,10 @@ const projects = [
   {
     isReverse: true,
     title: "Tic Tac Toe",
+    titleColor: "text-white",
+    filterColor: "bg-slate-700 mix-blend-hard-light",
     imageUrl: "/project-ss/tictactoe-ss.webp",
-    gifUrl: "/project-gif/tictactoe.gif",
+    // gifUrl: "/project-gif/tictactoe.gif",
     description: "A game of tic tac toe in HTML, CSS and JavaScript.",
     techStack: ["HTML", "CSS", "JavaScript"],
     isUrl: true,

@@ -19,7 +19,7 @@ html {
   @apply relative w-full h-full min-h-project-card rounded-lg border-gray-200 overflow-hidden shadow-md shadow-gray-400 hover:shadow-xl hover:shadow-gray-500 transition ease-out duration-300
 }
 .projectTextContainer {
-  @apply z-20 absolute inset-0 px-3 md:px-6 py-2 xl:py-4 w-full h-full flex flex-col justify-between bg-gray-900 bg-opacity-95 text-white mix-blend-darken
+  @apply z-20 absolute inset-0 px-3 md:px-6 py-2 xl:py-4 w-full h-full flex flex-col justify-between bg-gray-900 bg-opacity-95 text-white
 }
 .skillStyle {
   @apply border-b-2 border-l-2 border-r-2 border-gray-50 rounded-md font-semibold md:text-xl py-2 px-4 shadow-lg mx-2 mt-4 lg:mt-0 lg:mb-4 2xl:mb-6 ease-out duration-200 transform hover:-translate-y-2;

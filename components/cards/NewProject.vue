@@ -15,9 +15,13 @@
       />
       <div
         v-if="!hovered"
-        class="absolute inset-0 w-full h-full flex items-center justify-center bg-slate-500 mix-blend-hard-light"
+        class="absolute inset-0 w-full h-full flex items-center justify-center"
+        :class="projectDetails.filterColor"
       >
-        <h3 class="font-bold text-3xl text-white subFontFamily">
+        <h3
+          class="font-extrabold text-4xl subFontFamily"
+          :class="projectDetails.titleColor"
+        >
           {{ projectDetails.title }}
         </h3>
       </div>

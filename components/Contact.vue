@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-10 pt-24 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 md:py-20 lg:px-8 lg:py-20 xl:pb-32"
+    class="px-10 pt-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 md:py-20 lg:px-8 lg:py-20 xl:pt-24 2xl:pb-28"
   >
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div
