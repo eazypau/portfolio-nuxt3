@@ -36,11 +36,12 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] improve the gif and phone sizing for projects to make it look seamless
 - [ ] change favicon design
 - [ ] add individual on hover color for its original logo color for skills section
-- [ ] get domain name
+- [ ] get domain name (namecheap)
 - [ ] implement github actions for dependency updates and others
 - [ ] draft blog page?
 - [ ] full resume
 - [ ] tidy up code base
+- [ ] fix project card design
 
 ## feedbacks
 - [x] change font family

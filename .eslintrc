@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:nuxt/recommended",
+      "plugin:vue/vue3-recommended",
+      "plugin:prettier/recommended"
+      // "prettier"
+    ],
+    "plugins": [],
+    "rules": {
+      // "vue/require-default-value" : false,
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    }
+  }
