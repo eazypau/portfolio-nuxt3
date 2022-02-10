@@ -63,3 +63,4 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - https://ezgif.com/resize
 - https://www.onlineconverter.com/video-to-gif
 - https://coolors.co/palettes/trending
+- https://www.youtube.com/watch?v=qk7Xj4Q0IuE&ab_channel=TheDevEnv

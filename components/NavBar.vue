@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <nav
     id="navBar"
@@ -19,17 +18,15 @@
         </p>
       </button>
     </div>
-    <div v-if="!loading" class="hidden lg:flex font-medium">
-      <transition-group
-        class="space-x-5 lg:space-x-8 xl:space-x-10"
-        tag="span"
-        appear
-        @before-enter="before"
-        @enter="entering"
-      >
+    <div
+      v-if="!loading"
+      class="hidden lg:flex font-medium space-x-5 lg:space-x-8 xl:space-x-10"
+    >
+      <transition-group appear @before-enter="before" @enter="entering">
         <a
-          v-for="item in navigation"
+          v-for="(item, index) in navigation"
           :key="item.id"
+          :data-index="index"
           :href="item.href"
           class="text-lg lg:text-lg xl:text-xl headerFont underAnimation"
           >{{ item.name }}</a
@@ -138,6 +135,7 @@ const before = (el) => {
   gsap.set(el, {
     opacity: 0,
   });
+  // el.style.opacity = 0;
 };
 const entering = (el, done) => {
   gsap.to(el, {
@@ -151,7 +149,7 @@ const entering = (el, done) => {
 
 watchEffect(() => {
   if (
-    currentOffsetHeight.value > screenHeight.value - heightOfNav.value / 2 &&
+    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2 &&
     route.name === "index"
   ) {
     navBgTextColor.value = "bgLight text-black";
