@@ -24,14 +24,17 @@ module.exports = {
       minHeight: {
         "project-card": "12rem",
       },
-      // color scheme
-      colors: {
-        "primary-dark": "#264653",
-        "secondary-dark": "#2a9d8f",
-        light: "#e9c46a",
-        "light-secondary": "#f4a261",
-        secondary: "#e76f51",
+      maxWidth: {
+        xxs: "16rem",
       },
+      // color scheme
+      // colors: {
+      //   "primary-dark": "#264653",
+      //   "secondary-dark": "#2a9d8f",
+      //   light: "#e9c46a",
+      //   "light-secondary": "#f4a261",
+      //   secondary: "#e76f51",
+      // },
       screens: {
         iphone: "414px",
         "3xl": "1680px",

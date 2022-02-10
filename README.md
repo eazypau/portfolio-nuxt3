@@ -5,21 +5,16 @@ A personal porfolio website using nuxt3 with tailwindCSS
 ## Todo list:
 - [x] create a draft design template
 - [x] pick the right font family
-- [ ] pick the right color scheme (text color, btn color and bg color)
+- [x] pick the right color scheme (text color, btn color and bg color)
 - [x] make sure to use suitable font size
 - [x] choose the right photos
 - [x] full home page
-- [ ] full blog page
 - [x] project card and section
 - [x] navbar
-- [x] convert images to .webp and try to make the img size to less than 1mb if possible and modify the dimension
 - [x] complete contact section (including contact by email and download my resume button)
 - [x] complete footer
-- [ ] animation on scroll...on load...(to consider) - might involve using gsap
-- [ ] remove unused photos and styling
+- [x] remove unused photos and styling
 - [ ] make sure all SEO tags are included in the header (nuxt.config)
-- [ ] shift images to assets folder?
-- [ ] get a domain (need to do some research)
 - [x] test deployment
 - [ ] Deployment (vercel/netlify?)
 - [ ] Remove packages that are not in use
@@ -31,15 +26,17 @@ A personal porfolio website using nuxt3 with tailwindCSS
 ## last milestone:
 - [ ] fix all text description for profile, contact and projects (grammer, better text, etc)
 - [x] fix nav bar color change funtionality
-- [ ] implement full animation
+- [x] implement full animation
 - [x] improve the button color in contact section
 - [x] change favicon design
-- [ ] draft blog page?
+- [ ] draft blog page (on hold for now)
 - [ ] get domain name (namecheap)
 - [ ] implement github actions for dependency updates and others
-- [ ] full resume
-- [ ] tidy up code base
-- [ ] fix project card design
+- [ ] full resume (check grammer and typo)
+- [x] tidy up code base
+- [x] fix project card design
+- [ ] include license
+- [ ] make sure to resize thumbnail images to thumbnail resolution and convert all images to webp
 
 ## feedbacks
 - [x] change font family
@@ -47,13 +44,13 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [x] maybe change styling for header
 - [x] anchor tag not accurate in mobile view
 - [x] in contact, change teach to guide, change not just to not only
-- settle grammer issue (profile captions and project captions)
-- change todo to to-do
+- [ ] settle grammer issue (profile captions and project captions)
+- [x] change todo to to do
 - [x] add filter in project card image
 - [x] make my name bigger in header
-- give bg color for CTA button in contact section
-- change favicon design (font and color)
-- add individual on hover color for its original logo color for skills section
+- [x] give bg color for CTA button in contact section
+- [x] change favicon design (font and color)
+- add individual on hover color for its original logo color for skills section (good to have but it might ruin the design)
 
 ## resources and reference
 - https://favicon.io/favicon-generator/

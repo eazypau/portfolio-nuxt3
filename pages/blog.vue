@@ -1,15 +1,12 @@
 <template>
-  <div class="bg-white pt-10 md:pt-20 pb-10 md:pb-20">
+  <div class="bg-white pt-10 md:pt-16 pb-10 md:pb-20">
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
       <!-- text - start -->
-      <div class="mb-10 md:mb-16">
-        <h2
-          class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+      <div class="mb-10 md:mb-16 subFontFamily">
+        <h2 class="subTitle mb-4 md:mb-6">Blog</h2>
+        <p
+          class="max-w-screen-md text-gray-500 md:text-lg xl:text-xl text-center mx-auto"
         >
-          Blog
-        </h2>
-
-        <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
           This is a section of some simple filler text, also known as
           placeholder text. It shares some characteristics of a real written
           text but is random or otherwise generated.

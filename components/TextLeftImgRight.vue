@@ -2,7 +2,7 @@
   <section>
     <div class="container px-6 py-8 mx-auto">
       <div class="items-center lg:flex lg:space-x-6">
-        <div class="lg:w-7/12 xl:w-9/12 subFontFamily">
+        <div class="lg:w-7/12 xl:w-9/12 subFontFamily leftText">
           <h2 class="text-3xl xl:text-4xl font-bold text-gray-800">
             Who am I?
           </h2>
@@ -13,7 +13,7 @@
           >
             Hi, I am Po Yi Zhi, frontend web developer in
             <a
-              class="font-bold text-blue-600"
+              class="font-bold text-indigo-600"
               href="https://hackercollective.co/teams"
               >The Hacker Collective</a
             >
@@ -64,19 +64,17 @@
 
         <div class="mt-8 lg:mt-0 lg:w-1/2 xl:w-4/12">
           <div class="flex items-center justify-center lg:justify-end">
-            <div
-              class="relative sm:min-w-sm lg:min-w-min lg:max-w-lg xl:min-w-sm bg-green-300 rounded-xl"
-            >
+            <div class="profileImgContainer">
               <img
-                class="object-cover object-top w-full h-64 rounded-xl shadow-md hover:shadow-lg hover:shadow-gray-300 hover:mix-blend-darken mix-blend-normal shadow-gray-300 transition ease-linear duration-300"
-                src="/profile-pics/profile.webp"
+                class="bg-white p-1.5 object-cover object-top rounded-full"
+                src="/profile-pics/resized.jpg"
                 alt="profile image"
                 loading="lazy"
               />
-              <div
-                class="w-full h-full border-2 border-gray-100 bg-gray-100 absolute bottom-0 right-0 -mb-5 -mr-5 rounded-xl"
+              <!-- <div
+                class="w-full h-full border-2 border-gray-100 bg-gray-100 absolute bottom-0 right-0 -mr-6 rounded-full"
                 style="z-index: -1"
-              ></div>
+              ></div> -->
             </div>
           </div>
         </div>
@@ -84,3 +82,25 @@
     </div>
   </section>
 </template>
+<script setup>
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
+// onMounted(() => {
+//   let tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".leftText",
+//       start: "top center",
+//       end: "top 100px",
+//       markers: true,
+//       // toggleActions: "restart pause reverse pause",
+//       scrub: 1, // scrub is use set the amount of time to catch up, it kinda looks the scroll animation with ur scroller
+//     },
+//   });
+//   tl.addLabel("start")
+//     .from(".leftText", { opacity: 0, translateX: "-300px" })
+//     .addLabel("entering")
+//     .to(".leftText", { opacity: 1, translateX: "0px", duration: 1 })
+//     .addLabel("end");
+// });
+</script>

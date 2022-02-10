@@ -3,26 +3,30 @@
     id="navBar"
     class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow"
     :class="navBgTextColor"
+    style="height: 70px"
   >
     <div>
-      <button
-        type="button"
-        class="flex items-center text-2xl font-bold cursor-pointer"
-        @click="goToHome"
-      >
-        <img :src="logo" alt="favicon" class="w-10 h-10" loading="lazy" />
-        <p
-          class="hidden lg:block text-3xl font-bold ml-2 logoFont tracking-widest"
+      <Transition appear name="fadeIn">
+        <button
+          v-if="!loading"
+          type="button"
+          class="flex items-center text-2xl font-bold cursor-pointer"
+          @click="goToHome"
         >
-          YZ.
-        </p>
-      </button>
+          <img :src="logo" alt="favicon" class="w-10 h-10" loading="lazy" />
+          <p
+            class="hidden lg:block text-3xl font-bold ml-2 logoFont tracking-widest"
+          >
+            YZ.
+          </p>
+        </button>
+      </Transition>
     </div>
     <div
       v-if="!loading"
       class="hidden lg:flex font-medium space-x-5 lg:space-x-8 xl:space-x-10"
     >
-      <transition-group appear @before-enter="before" @enter="entering">
+      <TransitionGroup appear @before-enter="before" @enter="entering">
         <a
           v-for="(item, index) in navigation"
           :key="item.id"
@@ -31,7 +35,7 @@
           class="text-lg lg:text-lg xl:text-xl headerFont underAnimation"
           >{{ item.name }}</a
         >
-      </transition-group>
+      </TransitionGroup>
 
       <!-- <NuxtLink to="/blog" @click="scrollTop" class="text-lg px-4 hover:opacity-60 hover:underline">Blog</NuxtLink> -->
     </div>
@@ -41,7 +45,7 @@
           <MenuIcon class="w-8 h-8" />
         </MenuButton>
       </div>
-      <transition
+      <Transition
         enter-active-class="transition duration-100 ease-out"
         enter-from-class="transform scale-95 opacity-0"
         enter-to-class="transform scale-100 opacity-100"
@@ -70,7 +74,7 @@
             </MenuItem>
           </div>
         </MenuItems>
-      </transition>
+      </Transition>
     </Menu>
   </nav>
 </template>
@@ -83,7 +87,7 @@ import whiteBlackFavicon from "/favicon-wb.png";
 
 let loading = ref(true);
 const route = useRoute();
-const router = useRouter();
+// const router = useRouter();
 const { scrollTop } = scrollToTop();
 const { trackNavBarPosition, currentOffsetHeight } = trackNavBar();
 const screenHeight = ref(0);
@@ -111,20 +115,20 @@ const navigation = [
     name: "Contact",
     href: "/#contact",
   },
-  {
-    id: 5,
-    name: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   id: 5,
+  //   name: "Blog",
+  //   href: "/blog",
+  // },
 ];
 const trackScroll = () => {
   trackNavBarPosition("navBar");
 };
 const goToHome = () => {
   if (route.path !== "/") {
-    router.push("/");
-    scrollTop();
-    // window.location.href = "/";
+    // router.push("/");
+    // scrollTop();
+    window.location.href = "/";
   } else {
     scrollTop();
   }
@@ -140,11 +144,11 @@ const before = (el) => {
 const entering = (el, done) => {
   gsap.to(el, {
     opacity: 1,
-    duration: 2,
-    delay: el.dataset.index * 0.4,
+    // duration: 1.0,
+    duration: 0.8,
+    delay: el.dataset.index * 0.2,
     onComplete: done,
   });
-  console.log("complete entering 1 by 1...");
 };
 
 watchEffect(() => {
@@ -191,5 +195,18 @@ onMounted(() => {
 .underAnimation:hover::before {
   transform-origin: bottom left;
   transform: scaleX(1);
+}
+.fadeIn-enter-active {
+  animation: fadeIn 0.4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* transform: translateX(-20px); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
 }
 </style>

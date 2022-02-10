@@ -146,8 +146,7 @@ const projects = [
     filterColor: "bg-slate-800 bg-opacity-60",
     imageUrl: "/project-ss/kanban-board.webp",
     // gifUrl: "/project-gif/kanban-board.gif",
-    description:
-      "A simple todo app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
+    description: "A Kanban board to store user's task list.",
     techStack: [
       "React",
       "SASS",
@@ -167,7 +166,7 @@ const projects = [
     imageUrl: "/project-ss/todo-ss.webp",
     // gifUrl: "/project-gif/todo.gif",
     description:
-      "A simple todo app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
+      "A simple to do app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
     techStack: ["Vue", "Vite", "TailwindCSS", "Firebase"],
     isUrl: true,
     urlLink: "https://bloginvue-2c3c7.web.app/",
@@ -177,7 +176,7 @@ const projects = [
     isReverse: true,
     title: "Tic Tac Toe",
     titleColor: "text-white",
-    filterColor: "bg-slate-700 mix-blend-hard-light",
+    filterColor: "bg-zinc-700 mix-blend-hard-light",
     imageUrl: "/project-ss/tictactoe-ss.webp",
     // gifUrl: "/project-gif/tictactoe.gif",
     description: "A game of tic tac toe in HTML, CSS and JavaScript.",
