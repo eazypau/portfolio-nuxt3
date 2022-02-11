@@ -31,7 +31,7 @@ html {
   @apply border-b-2 border-l-2 border-r-2 border-gray-50 rounded-md font-semibold md:text-xl py-2 px-4 shadow-lg mx-2 mt-4 lg:mt-0 lg:mb-4 2xl:mb-6 ease-out duration-200 transform hover:-translate-y-2;
 }
 .footerBtn {
-  @apply text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100
+  @apply text-gray-500 hover:text-black active:text-black transition duration-100
 }
 .footerIcon {
   @apply text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100

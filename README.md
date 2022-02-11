@@ -14,32 +14,30 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [x] complete contact section (including contact by email and download my resume button)
 - [x] complete footer
 - [x] remove unused photos and styling
-- [ ] make sure all SEO tags are included in the header (nuxt.config)
+- [x] make sure all SEO tags are included in the header (nuxt.config - only left the og website link)
 - [x] test deployment
-- [ ] Deployment (vercel/netlify?)
-- [ ] Remove packages that are not in use (exp: tailwind-aspect-ratio)
+- [ ] Deployment (netlify)
+- [x] Remove packages that are not in use (exp: tailwind-aspect-ratio)
 
 ## milestone:
 - [x] 1st draft done by 22nd January and then ask friends for feedback
 - [ ] Finalize and final deployment
 
 ## last milestone:
-- [ ] fix all text description for profile, contact and projects (grammer, better text, etc) https://www.freecodecamp.org/news/level-up-developer-portfolio/
+- [x] fix all text description for profile, contact and projects (grammer, better text, etc) https://www.freecodecamp.org/news/level-up-developer-portfolio/
 - [ ] create a modal (use on before route leave to prompt user to take my resume - good to have but is it really neceesary?)
 - [x] fix nav bar color change funtionality
 - [x] implement full animation
 - [x] improve the button color in contact section
 - [x] change favicon design
-- [ ] draft blog page (create a separate repo for this, on hold for now)
 - [ ] get domain name (namecheap)
-- [ ] implement github actions for dependency updates and others
-- [ ] full resume (check grammer and typo, remark: for project, either remove the links or only put github link)
+- [x] full resume (check grammer and typo, remark: for project, either remove the links or only put github link)
 - [x] tidy up code base
 - [x] fix project card design
 - [x] include license
-- [ ] make sure to resize thumbnail images to thumbnail resolution and convert all images to webp
+- [x] make sure to resize thumbnail images to thumbnail resolution and convert all images to webp
 - [ ] double check every project is working fine
-- [ ] floating social media icon
+- [ ] update README (last step)
 
 ## feedbacks
 - [x] change font family

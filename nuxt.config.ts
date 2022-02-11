@@ -16,12 +16,12 @@ export default defineNuxtConfig({
       },
       {
         property: "og:site_name",
-        content: "Po YZ",
+        content: "Web developer portfolio | Front End Developer",
       },
-      // {
-      //   property: "og:site",
-      //   content: "https://hackercollective.co/", // todo left this one
-      // },
+      {
+        property: "og:site",
+        content: "https://eazypau.com/",
+      },
       {
         property: "og:title",
         content: "Web developer portfolio | Front End Developer",

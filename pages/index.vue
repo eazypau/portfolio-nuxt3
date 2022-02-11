@@ -4,7 +4,7 @@
     <div>
       <div
         id="about"
-        class="md:w-8/12 lg:w-9/12 xl:w-8/12 3xl:w-7/12 pt-16 md:py-20 lg:pt-24 mx-auto"
+        class="md:w-10/12 lg:w-10/12 xl:w-9/12 pt-16 md:py-20 lg:pt-24 mx-auto"
       >
         <TextLeftImgRight />
       </div>
@@ -104,7 +104,7 @@ const projects = [
     imageUrl: "/project-ss/saloonbooking-ss.webp",
     // gifUrl: "/project-gif/saloonbooking.gif",
     description:
-      "A door to door saloon appointment booking website allowing users to book their appointment at anytime.",
+      "A door-to-door saloon appointment booking website allows users to book their appointment at any time.",
     techStack: [
       "Vue",
       "TS",
@@ -125,7 +125,7 @@ const projects = [
     filterColor: "bg-slate-800 bg-opacity-60",
     imageUrl: "/project-ss/kanban-board.webp",
     // gifUrl: "/project-gif/kanban-board.gif",
-    description: "A Kanban board to store user's task list.",
+    description: "A Kanban board to store the user's task list.",
     techStack: [
       "React",
       "SASS",
@@ -139,13 +139,12 @@ const projects = [
   },
   {
     isReverse: false,
-    title: "To Do List App",
+    title: "To-do List App",
     titleColor: "text-white",
     filterColor: "bg-slate-700 bg-opacity-60",
     imageUrl: "/project-ss/todo-ss.webp",
     // gifUrl: "/project-gif/todo.gif",
-    description:
-      "A simple to do app with priority filtering features using Vuejs, TailwindCSS and Firebase.",
+    description: "A simple to-do app with priority filtering features.",
     techStack: ["Vue", "Vite", "TailwindCSS", "Firebase"],
     isUrl: true,
     urlLink: "https://bloginvue-2c3c7.web.app/",
@@ -158,7 +157,7 @@ const projects = [
     filterColor: "bg-zinc-700 mix-blend-hard-light",
     imageUrl: "/project-ss/tictactoe-ss.webp",
     // gifUrl: "/project-gif/tictactoe.gif",
-    description: "A game of tic tac toe in HTML, CSS and JavaScript.",
+    description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
     techStack: ["HTML", "CSS", "JavaScript"],
     isUrl: true,
     urlLink: "https://eazypau.github.io/tictactoe/",

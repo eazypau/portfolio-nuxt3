@@ -25,13 +25,13 @@
             in touch with me
           </h2>
           <p
-            class="text-base text-gray-500 md:text-lg xl:text-2xl"
+            class="text-base text-gray-600 md:text-lg xl:text-xl"
             style="word-spacing: 5px"
           >
-            I'm seeking out opportunities to work with companies that are able
-            to improve my skills not just in tech but also to be able to lead
-            and teach others. If I am the person you are looking for, feel free
-            to reach me through email or my contact information in my resume.
+            I'm seeking opportunities to work with companies that can improve my
+            skills not just in tech but also to be able to learn to lead and
+            teach others. If I am the person you are looking for, feel free to
+            reach me through email or my contact information in my resume.
           </p>
         </div>
         <div
@@ -39,7 +39,7 @@
         >
           <a
             href="/resume/my-resume.pdf"
-            download="my-resume"
+            download="yzpo-resume"
             target="_blank"
             class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-gray-600 to-gray-900 hover:from-gray-600 hover:to-gray-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
           >

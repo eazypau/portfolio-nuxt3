@@ -10,7 +10,7 @@
           <a href="/#skills" class="footerBtn">Skills</a>
           <a href="/#projects" class="footerBtn">Projects</a>
           <a href="/#contact" class="footerBtn">Contact</a>
-          <a href="/blog" class="footerBtn">Blog</a>
+          <!-- <a href="/blog" class="footerBtn">Blog</a> -->
         </nav>
         <!-- nav - end -->
 
