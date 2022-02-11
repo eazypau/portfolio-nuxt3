@@ -83,24 +83,39 @@
   </section>
 </template>
 <script setup>
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-// onMounted(() => {
-//   let tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".leftText",
-//       start: "top center",
-//       end: "top 100px",
-//       markers: true,
-//       // toggleActions: "restart pause reverse pause",
-//       scrub: 1, // scrub is use set the amount of time to catch up, it kinda looks the scroll animation with ur scroller
-//     },
-//   });
-//   tl.addLabel("start")
-//     .from(".leftText", { opacity: 0, translateX: "-300px" })
-//     .addLabel("entering")
-//     .to(".leftText", { opacity: 1, translateX: "0px", duration: 1 })
-//     .addLabel("end");
-// });
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".leftText",
+      start: "top center",
+      end: "top center",
+      // markers: true,
+      // toggleActions: "restart pause reverse pause",
+      // scrub: 1, // scrub is use set the amount of time to catch up, it kinda looks the scroll animation with ur scroller
+    },
+  });
+  tl.addLabel("start")
+    .from(".leftText", { opacity: 0, translateX: "-300px" })
+    .addLabel("entering")
+    .to(".leftText", { opacity: 1, translateX: "0px", duration: 1 })
+    .addLabel("end");
+
+  let imgTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".profileImgContainer",
+      start: "-75px center",
+      end: "top center",
+      // markers: true,
+    },
+  });
+  imgTl
+    .addLabel("start")
+    .from(".profileImgContainer", { opacity: 0, scale: 0.5 })
+    .addLabel("entering")
+    .to(".profileImgContainer", { opacity: 1, scale: 1, duration: 1 })
+    .addLabel("end");
+});
 </script>
