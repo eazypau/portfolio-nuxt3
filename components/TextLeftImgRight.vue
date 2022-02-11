@@ -71,10 +71,6 @@
                 alt="profile image"
                 loading="lazy"
               />
-              <!-- <div
-                class="w-full h-full border-2 border-gray-100 bg-gray-100 absolute bottom-0 right-0 -mr-6 rounded-full"
-                style="z-index: -1"
-              ></div> -->
             </div>
           </div>
         </div>
