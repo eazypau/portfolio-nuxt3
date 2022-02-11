@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       },
       {
         property: "og:site",
-        content: "https://eazypau.com/",
+        content: "https://www.eazypau.com/",
       },
       {
         property: "og:title",
