@@ -9,48 +9,27 @@
         <TextLeftImgRight />
       </div>
     </div>
-    <Skills id="skills" />
+    <Skills id="skills" :skill-set="skillSet" />
     <div id="projects"></div>
-    <div class="pt-28 pb-20 px-4 lg:px-0">
-      <h2 class="subTitle mb-10 subFontFamily">
-        Projects That I Have Worked On
-      </h2>
-      <!-- <div class="lg:w-10/12 xl:w-9/12 2xl:w-8/12 space-y-7 md:space-y-10 lg:space-y-14 2xl:space-y-20 mx-auto">
-				<CardsNewProject v-for="project in projects" :key="project" :project-details="project" :is-reverse="project.isReverse" />
-			</div> -->
-      <div
-        class="px-4 md:px-0 md:w-8/12 lg:w-10/12 xl:w-10/12 2xl:w-8/12 grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto"
-      >
-        <CardsNewProject
-          v-for="project in projects"
-          :key="project"
-          :project-details="project"
-          :is-reverse="project.isReverse"
-        />
-      </div>
-    </div>
-    <div class="flex flex-col items-center px-4 py-24">
-      <h2 class="subTitle mb-10 md:mb-16 subFontFamily">
-        Some of My Favourite Activities
-      </h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <CardsHobby
-          v-for="item in hobbies"
-          :key="item"
-          :title="item.title"
-          :content="item.text"
-          :class-bg="item.classBg"
-          class="relative"
-        />
-      </div>
-    </div>
+    <ProjectSection :projects="projects" />
+    <HobbySection :hobbies="hobbies" />
     <Contact id="contact" />
   </div>
 </template>
 <script setup>
-// import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
-// import { ChevronUpIcon } from "@heroicons/vue/solid";
-// const reversed = true;
+const skillSet = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Vue",
+  "Nuxt",
+  "React",
+  "Tailwind",
+  "Firebase",
+  "TypeScript",
+  "Bootstrap",
+  "Git",
+];
 const hobbies = [
   {
     title: "Drink Black tea",

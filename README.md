@@ -24,19 +24,23 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] Finalize and final deployment
 
 ## last milestone:
-- [ ] fix all text description for profile, contact and projects (grammer, better text, etc)
+- [ ] fix all text description for profile, contact and projects (grammer, better text, etc) https://www.freecodecamp.org/news/level-up-developer-portfolio/
+- [ ] create a modal (use on before route leave to prompt user to take my resume)
 - [x] fix nav bar color change funtionality
-- [x] implement full animation
+- [ ] implement full animation
 - [x] improve the button color in contact section
 - [x] change favicon design
-- [ ] draft blog page (on hold for now)
+- [ ] draft blog page (create a separate repo for this, on hold for now)
 - [ ] get domain name (namecheap)
 - [ ] implement github actions for dependency updates and others
-- [ ] full resume (check grammer and typo)
+- [ ] full resume (check grammer and typo, remark: for project, either remove the links or only put github link)
 - [x] tidy up code base
 - [x] fix project card design
-- [ ] include license
+- [x] include license
 - [ ] make sure to resize thumbnail images to thumbnail resolution and convert all images to webp
+- [ ] double check every project is working fine
+- [ ] create a robot.txt file in public
+- [ ] need a loading screen
 
 ## feedbacks
 - [x] change font family
@@ -61,3 +65,4 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - https://www.onlineconverter.com/video-to-gif
 - https://coolors.co/palettes/trending
 - https://www.youtube.com/watch?v=qk7Xj4Q0IuE&ab_channel=TheDevEnv
+- https://www.upgrad.com/blog/technical-seo-best-practices/

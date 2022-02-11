@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
-// https://99designs.com/blog/tips/font-pairings/
 .subFontFamily {
 	// font-family: 'Lato', sans-serif;
 	font-family: "Raleway", sans-serif;
@@ -15,6 +14,7 @@
 .logoFont {
 	font-family: "Carter One", cursive;
 }
+
 .navPadding {
 	padding: 15px 30px;
 }
@@ -67,6 +67,6 @@
 	background: #9ca3af;
 }
 
-// list of bg colors to consider or use
+// bg colors
 $bg-light: #f8f9fa;
 $bg-body-color: #ffffff;

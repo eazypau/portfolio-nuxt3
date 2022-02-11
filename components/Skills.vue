@@ -15,17 +15,10 @@
   </section>
 </template>
 <script setup>
-const skillSet = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Vue",
-  "Nuxt",
-  "React",
-  "Tailwind",
-  "Firebase",
-  "TypeScript",
-  "Bootstrap",
-  "Git",
-];
+const props = defineProps({
+  skillSet: {
+    type: Array,
+    default: () => [],
+  },
+});
 </script>
