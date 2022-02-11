@@ -17,7 +17,7 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [ ] make sure all SEO tags are included in the header (nuxt.config)
 - [x] test deployment
 - [ ] Deployment (vercel/netlify?)
-- [ ] Remove packages that are not in use
+- [ ] Remove packages that are not in use (exp: tailwind-aspect-ratio)
 
 ## milestone:
 - [x] 1st draft done by 22nd January and then ask friends for feedback
@@ -25,9 +25,9 @@ A personal porfolio website using nuxt3 with tailwindCSS
 
 ## last milestone:
 - [ ] fix all text description for profile, contact and projects (grammer, better text, etc) https://www.freecodecamp.org/news/level-up-developer-portfolio/
-- [ ] create a modal (use on before route leave to prompt user to take my resume)
+- [ ] create a modal (use on before route leave to prompt user to take my resume - good to have but is it really neceesary?)
 - [x] fix nav bar color change funtionality
-- [ ] implement full animation
+- [x] implement full animation
 - [x] improve the button color in contact section
 - [x] change favicon design
 - [ ] draft blog page (create a separate repo for this, on hold for now)
@@ -39,8 +39,7 @@ A personal porfolio website using nuxt3 with tailwindCSS
 - [x] include license
 - [ ] make sure to resize thumbnail images to thumbnail resolution and convert all images to webp
 - [ ] double check every project is working fine
-- [ ] create a robot.txt file in public
-- [ ] need a loading screen
+- [ ] floating social media icon
 
 ## feedbacks
 - [x] change font family

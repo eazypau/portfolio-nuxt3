@@ -2,7 +2,7 @@
   <header class="relative w-full headerHeight overflow-hidden flex items-top">
     <div class="absolute w-full h-full">
       <img
-        src="/wide-laptop-gradient-bg.jpg"
+        src="/wide-laptop-gradient-bg.webp"
         alt="laptop with black background"
         class="w-full h-full object-cover object-top"
       />

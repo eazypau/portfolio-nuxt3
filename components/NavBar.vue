@@ -153,7 +153,7 @@ const entering = (el, done) => {
 
 watchEffect(() => {
   if (
-    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2 &&
+    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2.5 &&
     route.name === "index"
   ) {
     navBgTextColor.value = "bgLight text-black";

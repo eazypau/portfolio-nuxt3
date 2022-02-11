@@ -67,7 +67,7 @@
             <div class="profileImgContainer">
               <img
                 class="bg-white p-1.5 object-cover object-top rounded-full"
-                src="/profile-pics/resized.jpg"
+                src="/profile-pics/profile.webp"
                 alt="profile image"
                 loading="lazy"
               />
