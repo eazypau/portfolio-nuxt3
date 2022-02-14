@@ -15,7 +15,7 @@
           <p v-if="!loading" class="text-white flex justify-center">
             Hi there
             <span>
-              <IconsHiIcon class="ml-3" />
+              <IconsHiIcon class="ml-3 p-1" />
             </span>
           </p>
         </MyTransition>

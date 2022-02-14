@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div>
+    <div class="bg-white">
       <div
         id="about"
         class="md:w-10/12 lg:w-10/12 xl:w-9/12 pt-16 md:py-20 lg:pt-24 mx-auto"
@@ -13,7 +13,9 @@
     <div id="projects"></div>
     <ProjectSection :projects="projects" />
     <HobbySection :hobbies="hobbies" />
-    <Contact id="contact" />
+    <div class="bg-white">
+      <Contact id="contact" />
+    </div>
   </div>
 </template>
 <script setup>

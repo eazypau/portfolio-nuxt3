@@ -28,7 +28,7 @@ onMounted(() => {
   let titleTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".techTitle",
-      start: "top center",
+      start: "-50px center",
       end: "top center",
       // markers: true,
       // toggleActions: "restart pause reverse pause",
@@ -44,7 +44,7 @@ onMounted(() => {
 
   gsap.set(".skillStyle", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".skillStyle", {
-    start: "top center",
+    start: "-100px center",
     end: "top center",
     // markers: true,
     onEnter: (batch) => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),

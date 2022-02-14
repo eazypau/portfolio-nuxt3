@@ -28,7 +28,7 @@ onMounted(() => {
   let titleTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".hobbyTitle",
-      start: "top center",
+      start: "-40px center",
       end: "top center",
       // markers: true,
       // toggleActions: "restart pause reverse pause",
@@ -44,7 +44,7 @@ onMounted(() => {
 
   gsap.set(".hobbyCardContainer", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".hobbyCardContainer", {
-    start: "top center",
+    start: "-70px center",
     end: "top center",
     // markers: true,
     onEnter: (batch) =>

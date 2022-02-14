@@ -50,11 +50,12 @@
               class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
               style="word-spacing: 5px"
             >
-              When I saw an advertisement from THC promoting their self-learning
-              program for web development, the next thing that came to mind is
-              let's try this and see how it goes. My coding journey continues. I
-              was coding every day, sometimes late at night, and on weekends
-              while still having my full-time job.
+              When I saw an advertisement from The Hacker Collective (THC)
+              promoting their self-learning program for web development, the
+              next thing that came to mind is let's try this and see how it
+              goes. My coding journey continues. I was coding every day,
+              sometimes late at night, and on weekends while still having my
+              full-time job.
             </p>
             <p
               class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
@@ -173,7 +174,7 @@ onMounted(() => {
   let imgTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".profileImgContainer",
-      start: "-75px center",
+      start: "-200px center",
       end: "top center",
       // markers: true,
     },

@@ -1,28 +1,28 @@
 <template>
   <div
-    class="px-10 pt-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 md:py-20 lg:px-8 lg:py-20 xl:pt-24 2xl:pb-28 3xl:pb-32"
+    class="contactSectionHeight px-10 pt-24 md:pt-16 flex items-center justify-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
   >
-    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+    <div class="max-w-xl sm:mx-auto lg:max-w-2xl xl:max-w-3xl">
       <div
         class="flex flex-col mb-16 sm:text-center sm:mb-0 subFontFamily tracking-wide"
       >
-        <a class="mb-6 sm:mx-auto">
+        <div class="mb-6 sm:mx-auto">
           <div
             class="flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-indigo-50"
           >
             <UserIcon class="w-9 h-9 lg:w-10 lg:h-10" />
           </div>
-        </a>
+        </div>
         <div
-          class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+          class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl xl:max-w-3xl md:mb-12"
         >
           <h2
-            class="max-w-lg mb-6 text-3xl font-bold leading-none text-gray-900 sm:text-4xl md:mx-auto"
+            class="max-w-lg lg:max-w-3xl mb-6 text-3xl font-extrabold leading-none text-gray-900 sm:text-5xl lg:text-6xl md:mx-auto"
           >
-            <span class="relative inline-block">
+            <!-- <span class="relative inline-block">
               <span class="relative">Get</span>
-            </span>
-            in touch with me
+            </span> -->
+            Get in touch with me
           </h2>
           <p
             class="text-base text-gray-600 md:text-lg xl:text-xl"
@@ -39,7 +39,7 @@
         >
           <a
             href="/resume/my-resume.pdf"
-            download="yzpo-resume"
+            download="resume_poyizhi"
             target="_blank"
             class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-gray-600 to-gray-900 hover:from-gray-600 hover:to-gray-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
           >

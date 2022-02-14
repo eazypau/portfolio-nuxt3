@@ -43,11 +43,14 @@
 		padding: 15px 260px;
 	}
 }
-// .glassEffect {
-//   background-color: #ffffff10;
-//   backdrop-filter: blur(1px);
-//   -webkit-backdrop-filter: blur(1px);
-// }
+.contactSectionHeight {
+	height: auto;
+  }
+  @media (min-width: 768px) {
+	.contactSectionHeight {
+	  height: calc(100vh - 173px);
+	}
+  }
 /* width */
 ::-webkit-scrollbar {
 	width: 7px;
@@ -68,5 +71,6 @@
 }
 
 // bg colors
-$bg-light: #f8f9fa;
-$bg-body-color: #ffffff;
+$bg-light: #f8f9fa; // f8f9fa
+// $bg-secondary-light: #f8f9fa;
+// $bg-white: #ffffff;

@@ -1,6 +1,6 @@
 <template>
   <div class="pt-28 pb-20 px-4 lg:px-0">
-    <h2 class="subTitle mb-10 subFontFamily projectTitle">
+    <h2 class="subTitle mb-10 'subFontFamily' projectTitle">
       Projects That I Have Worked On
     </h2>
     <div
@@ -29,7 +29,7 @@ onMounted(() => {
   let titleTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".projectTitle",
-      start: "top center",
+      start: "-100px center",
       end: "top center",
       // markers: true,
       // toggleActions: "restart pause reverse pause",
@@ -45,7 +45,7 @@ onMounted(() => {
 
   gsap.set(".projectCardContainer", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".projectCardContainer", {
-    start: "top center",
+    start: "-130px center",
     end: "top center",
     // markers: true,
     onEnter: (batch) =>

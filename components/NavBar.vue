@@ -156,10 +156,10 @@ watchEffect(() => {
     currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2.5 &&
     route.name === "index"
   ) {
-    navBgTextColor.value = "bgLight text-black";
+    navBgTextColor.value = "bg-white text-black";
     logo.value = blackWhiteFavicon;
   } else if (route.path === "/blog") {
-    navBgTextColor.value = "bgLight text-black";
+    navBgTextColor.value = "bg-white text-black";
     logo.value = blackWhiteFavicon;
   } else {
     navBgTextColor.value = "bg-black text-white";
@@ -172,11 +172,11 @@ onMounted(() => {
   // use scroll event to update the current position of nav bar
   window.addEventListener("scroll", trackScroll);
   screenHeight.value = screen.height;
-  heightOfNav.value = document.getElementById("navBar").clientHeight;
+  heightOfNav.value = document.getElementById("navBar").offsetHeight;
   loading.value = false;
 });
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .underAnimation {
   position: relative;
 }
