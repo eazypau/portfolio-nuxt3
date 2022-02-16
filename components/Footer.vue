@@ -10,7 +10,6 @@
           <a href="/#skills" class="footerBtn">Skills</a>
           <a href="/#projects" class="footerBtn">Projects</a>
           <a href="/#contact" class="footerBtn">Contact</a>
-          <!-- <a href="/blog" class="footerBtn">Blog</a> -->
         </nav>
         <!-- nav - end -->
 
@@ -18,6 +17,7 @@
         <div class="flex gap-4">
           <a
             href="https://www.instagram.com/yzpo/"
+            aria-label="Instagram"
             target="_blank"
             class="footerIcon"
           >
@@ -26,6 +26,7 @@
 
           <a
             href="https://www.facebook.com/yizhipo"
+            aria-label="Facebook"
             target="_blank"
             class="footerIcon"
           >
@@ -34,6 +35,7 @@
 
           <a
             href="https://www.linkedin.com/in/yzpo/"
+            aria-label="Linkden"
             target="_blank"
             class="footerIcon"
           >
@@ -42,6 +44,7 @@
 
           <a
             href="https://github.com/eazypau"
+            aria-label="Github"
             target="_blank"
             class="footerIcon"
           >
@@ -51,7 +54,7 @@
         <!-- social - end -->
       </div>
 
-      <div class="text-gray-400 text-sm text-center py-8 headerFont">
+      <div class="text-gray-500 text-sm text-center py-8 headerFont">
         © 2022 - Present Po YZ. All rights reserved.
       </div>
     </footer>

@@ -31,8 +31,6 @@ onMounted(() => {
       start: "-40px center",
       end: "top center",
       // markers: true,
-      // toggleActions: "restart pause reverse pause",
-      // scrub: 1, // scrub is use set the amount of time to catch up, it kinda looks the scroll animation with ur scroller
     },
   });
   titleTl

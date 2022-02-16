@@ -4,7 +4,6 @@
 @import "utilities.scss";
 
 body {
-	// background-color: $bg-body-color;
   background-color: $bg-light;
 }
 html {
@@ -35,7 +34,7 @@ html {
   @apply text-gray-500 hover:text-black active:text-black transition duration-100
 }
 .footerIcon {
-  @apply text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100
+  @apply text-gray-500 hover:text-gray-500 active:text-gray-600 transition duration-100
 }
 .IconInProfile {
   @apply w-5 h-5 xl:w-6 xl:h-6 text-gray-700 fill-current hover:text-gray-600

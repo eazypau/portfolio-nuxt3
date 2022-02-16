@@ -7,13 +7,6 @@
             Who am I?
           </h2>
           <div>
-            <!-- <p
-              class="mt-4 text-gray-600 lg:max-w-md xl:max-w-lg 2xl:max-w-2xl"
-              style="word-spacing: 5px"
-            >
-              I am an ex mechanical engineer who likes to build things with
-              code.
-            </p> -->
             <p
               class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
               style="word-spacing: 5px"
@@ -78,21 +71,6 @@
               Currently, I'm open to new opportunities where I can contribute my
               skills to help companies achieve their goals.
             </p>
-            <!-- <p
-              class="mt-4 text-gray-500 lg:max-w-md xl:max-w-lg 3xl:max-w-xl md:text-lg xl:text-xl"
-              style="word-spacing: 5px"
-            >
-              Hi, I am Po Yi Zhi, frontend web developer in
-              <a
-                class="font-bold text-indigo-600"
-                href="https://hackercollective.co/teams"
-                >The Hacker Collective</a
-              >
-              . I was born in Melaka, Malaysia. Graduated with Bachelor of
-              degree in Mechanical Engineering in year 2019 from Multimedia
-              University (MMU). Previously I worked as a mechanical engineer for
-              about 2 years in M&E consultancy industry.
-            </p> -->
           </div>
 
           <div class="flex items-center mt-6 -mx-2">
@@ -140,6 +118,8 @@
               <img
                 class="bg-white p-1.5 object-cover object-top rounded-full"
                 src="/profile-pics/profile.webp"
+                width="350"
+                height="350"
                 alt="profile image"
                 loading="lazy"
               />

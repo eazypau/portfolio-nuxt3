@@ -1,8 +1,8 @@
 <template>
   <div class="pt-28 pb-20 px-4 lg:px-0">
-    <h2 class="subTitle mb-10 'subFontFamily' projectTitle">
+    <h3 class="subTitle mb-10 'subFontFamily' projectTitle">
       Projects That I Have Worked On
-    </h2>
+    </h3>
     <div
       class="px-4 md:px-0 md:w-8/12 lg:w-10/12 xl:w-10/12 2xl:w-8/12 grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto"
     >
@@ -32,8 +32,6 @@ onMounted(() => {
       start: "-100px center",
       end: "top center",
       // markers: true,
-      // toggleActions: "restart pause reverse pause",
-      // scrub: 1, // scrub is use set the amount of time to catch up, it kinda looks the scroll animation with ur scroller
     },
   });
   titleTl

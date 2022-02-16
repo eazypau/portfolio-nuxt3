@@ -9,6 +9,8 @@
       <!-- previously is on hover change to gif :src="hovered ? projectDetails.gifUrl : projectDetails.imageUrl" -->
       <img
         :src="projectDetails.imageUrl"
+        width="535"
+        height="261"
         alt="project image"
         class="w-full h-full object-cover object-top"
         loading="lazy"
@@ -24,7 +26,6 @@
           {{ projectDetails.title }}
         </h3>
       </div>
-      <!-- <img v-if="hovered" :src="projectDetails.gifUrl" alt="project image" class="w-full h-full object-cover" /> -->
     </div>
     <TransitionRoot
       :show="hovered"

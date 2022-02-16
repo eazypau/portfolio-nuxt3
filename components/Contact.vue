@@ -16,14 +16,11 @@
         <div
           class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl xl:max-w-3xl md:mb-12"
         >
-          <h2
+          <h3
             class="max-w-lg lg:max-w-3xl mb-6 text-3xl font-extrabold leading-none text-gray-900 sm:text-5xl lg:text-6xl md:mx-auto"
           >
-            <!-- <span class="relative inline-block">
-              <span class="relative">Get</span>
-            </span> -->
             Get in touch with me
-          </h2>
+          </h3>
           <p
             class="text-base text-gray-600 md:text-lg xl:text-xl"
             style="word-spacing: 5px"

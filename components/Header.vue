@@ -3,6 +3,8 @@
     <div class="absolute w-full h-full">
       <img
         src="/wide-laptop-gradient-bg.webp"
+        width="1920"
+        height="980"
         alt="laptop with black background"
         class="w-full h-full object-cover object-top"
       />
@@ -12,27 +14,27 @@
     >
       <div>
         <MyTransition>
-          <p v-if="!loading" class="text-white flex justify-center">
+          <h1 v-if="!loading" class="text-white flex justify-center">
             Hi there
             <span>
               <IconsHiIcon class="ml-3 p-1" />
             </span>
-          </p>
+          </h1>
         </MyTransition>
         <MyTransition :delay="Number(1.3)">
-          <p v-if="!loading" class="mt-1 tracking-wide text-white">
+          <h1 v-if="!loading" class="mt-1 tracking-wide text-white">
             My name is Po
-          </p>
+          </h1>
         </MyTransition>
       </div>
       <div class="mt-2">
         <MyTransition :delay="Number(1.6)">
-          <p v-if="!loading" class="tracking-wide text-white">A Frontend</p>
+          <h1 v-if="!loading" class="tracking-wide text-white">A Frontend</h1>
         </MyTransition>
         <MyTransition :delay="Number(1.9)">
-          <p v-if="!loading" class="py-2 tracking-wide text-white">
+          <h1 v-if="!loading" class="py-2 tracking-wide text-white">
             Web Developer
-          </p>
+          </h1>
         </MyTransition>
       </div>
     </div>

@@ -95,7 +95,6 @@ const projects = [
       "Spotify Web API",
     ],
     isUrl: false,
-    // urlLink: "https://eazypau.github.io/tictactoe/",
     githubLink: "https://github.com/eazypau/spotify-clone-web",
   },
   {

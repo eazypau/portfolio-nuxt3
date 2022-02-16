@@ -11,6 +11,7 @@
           v-if="!loading"
           type="button"
           class="flex items-center text-2xl font-bold cursor-pointer"
+          aria-label="Website Logo"
           @click="goToHome"
         >
           <img :src="logo" alt="favicon" class="w-10 h-10" loading="lazy" />
@@ -36,12 +37,10 @@
           >{{ item.name }}</a
         >
       </TransitionGroup>
-
-      <!-- <NuxtLink to="/blog" @click="scrollTop" class="text-lg px-4 hover:opacity-60 hover:underline">Blog</NuxtLink> -->
     </div>
     <Menu as="div" class="lg:hidden">
       <div class="flex items-center">
-        <MenuButton>
+        <MenuButton aria-label="Menu">
           <MenuIcon class="w-8 h-8" />
         </MenuButton>
       </div>
@@ -87,7 +86,6 @@ import whiteBlackFavicon from "/favicon-wb.png";
 
 let loading = ref(true);
 const route = useRoute();
-// const router = useRouter();
 const { scrollTop } = scrollToTop();
 const { trackNavBarPosition, currentOffsetHeight } = trackNavBar();
 const screenHeight = ref(0);
@@ -115,19 +113,12 @@ const navigation = [
     name: "Contact",
     href: "/#contact",
   },
-  // {
-  //   id: 5,
-  //   name: "Blog",
-  //   href: "/blog",
-  // },
 ];
 const trackScroll = () => {
   trackNavBarPosition("navBar");
 };
 const goToHome = () => {
   if (route.path !== "/") {
-    // router.push("/");
-    // scrollTop();
     window.location.href = "/";
   } else {
     scrollTop();
@@ -139,7 +130,6 @@ const before = (el) => {
   gsap.set(el, {
     opacity: 0,
   });
-  // el.style.opacity = 0;
 };
 const entering = (el, done) => {
   gsap.to(el, {
@@ -156,9 +146,6 @@ watchEffect(() => {
     currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2.5 &&
     route.name === "index"
   ) {
-    navBgTextColor.value = "bg-white text-black";
-    logo.value = blackWhiteFavicon;
-  } else if (route.path === "/blog") {
     navBgTextColor.value = "bg-white text-black";
     logo.value = blackWhiteFavicon;
   } else {
