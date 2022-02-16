@@ -1,9 +1,9 @@
 <div>
-    <img src="https://www.eazypau.com/_nuxt/favicon-wb.png" alt="favicon" width="250"/>
+    <img src="https://www.eazypau.com/_nuxt/favicon-wb.png" alt="favicon" width="150"/>
 </div>
 
 # Personal Portfolio Website
-A personal porfolio website to showcase my skills and projects
+A personal porfolio website built with Nuxt3 and tailwindCSS
 
 ## Technologies used
 - [Nuxt 3](https://v3.nuxtjs.org/) 
