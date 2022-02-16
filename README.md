@@ -1,3 +1,7 @@
+<div>
+    <img src="https://www.eazypau.com/_nuxt/favicon-wb.png" alt="favicon" width="250"/>
+</div>
+
 # Personal Portfolio Website
 A personal porfolio website to showcase my skills and projects
 
@@ -38,8 +42,3 @@ $ npm run start
 - [Learn our UX/UI process - Real client project](https://www.youtube.com/watch?v=gRqHEjATSCE&ab_channel=Malewicz)
 - [Beautiful, High-Resolution No Cost Stock Images](https://negativespace.co/)
 - [15 Web Developer Portfolios to Inspire You](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
-
-
-## Todo list:
-- [ ] create a modal (use on before route leave to prompt user to see my resume - good to have but is it really neceesary?)
-- [ ] fix animation scroll start point
