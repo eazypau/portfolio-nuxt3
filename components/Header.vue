@@ -3,8 +3,8 @@
     <div class="absolute w-full h-full">
       <img
         src="/wide-laptop-gradient-bg.webp"
-        width="1920"
-        height="980"
+        width="1600"
+        height="1200"
         alt="laptop with black background"
         class="w-full h-full object-cover object-top"
       />

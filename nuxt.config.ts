@@ -42,6 +42,7 @@ export default defineNuxtConfig({
     link: [{ rel: "icon", href: "/favicon-wb.png" }],
   },
   build: {
+    transpile: ["gsap", "@headlessui/vue", "@heroicons/vue"],
     postcss: {
       postcssOptions: {
         plugins: {
