@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        tea: "url('https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2019/07/beverage-blur-cup-370018-1200x875.jpg')",
+        tea: "url('/hobbies/tea-cup.webp')",
         blog: "url('/hobbies/myblog.webp')",
         music:
           "url('/hobbies/negative-space-headphones-black-white-corey-blaz.webp')",

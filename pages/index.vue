@@ -165,6 +165,7 @@ const projects = [
     githubLink: "https://github.com/eazypau/tictactoe",
   },
 ];
-// todo create a modal (use on before route leave to prompt user to see my resume - good to have but is it really neceesary?)
-// todo double check and fix animation scroll start point
+// TODO: create a modal (is it really neceesary?)
+// TODO: double check and fix animation scroll start point
+// TODO: add scrolling indicator?
 </script>

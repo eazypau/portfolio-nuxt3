@@ -14,7 +14,14 @@
           aria-label="Website Logo"
           @click="goToHome"
         >
-          <img :src="logo" alt="favicon" class="w-10 h-10" loading="lazy" />
+          <img
+            :src="logo"
+            width="40"
+            height="50"
+            alt="favicon"
+            class="w-10 h-10"
+            loading="lazy"
+          />
           <p
             class="hidden lg:block text-3xl font-bold ml-2 logoFont tracking-widest"
           >
