@@ -152,7 +152,7 @@ const entering = (el, done) => {
 watchEffect(() => {
   if (
     currentScreenWidth.value < 500 &&
-    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 1.5
+    currentOffsetHeight.value > screenHeight.value
   ) {
     // navbar style change on mobile view
     navBgTextColor.value = "bg-white text-black";
