@@ -165,7 +165,4 @@ const projects = [
     githubLink: "https://github.com/eazypau/tictactoe",
   },
 ];
-// TODO: create a modal (is it really neceesary?)
-// TODO: double check and fix animation scroll start point
-// TODO: add scrolling indicator?
 </script>

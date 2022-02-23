@@ -17,7 +17,7 @@
           <img
             :src="logo"
             width="40"
-            height="50"
+            height="40"
             alt="favicon"
             class="w-10 h-10"
             loading="lazy"
@@ -97,6 +97,7 @@ const { scrollTop } = scrollToTop();
 const { trackNavBarPosition, currentOffsetHeight } = trackNavBar();
 const screenHeight = ref(0);
 const heightOfNav = ref(0);
+const currentScreenWidth = ref(0);
 const navBgTextColor = ref("bg-black text-white");
 const logo = ref(whiteBlackFavicon);
 const navigation = [
@@ -150,9 +151,17 @@ const entering = (el, done) => {
 
 watchEffect(() => {
   if (
-    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 2.5 &&
-    route.name === "index"
+    currentScreenWidth.value < 500 &&
+    currentOffsetHeight.value > screenHeight.value - heightOfNav.value * 1.5
   ) {
+    // navbar style change on mobile view
+    navBgTextColor.value = "bg-white text-black";
+    logo.value = blackWhiteFavicon;
+  } else if (
+    currentOffsetHeight.value >
+    screenHeight.value - heightOfNav.value * 2.5
+  ) {
+    // navbar style change on desktop view
     navBgTextColor.value = "bg-white text-black";
     logo.value = blackWhiteFavicon;
   } else {
@@ -167,6 +176,8 @@ onMounted(() => {
   window.addEventListener("scroll", trackScroll);
   screenHeight.value = screen.height;
   heightOfNav.value = document.getElementById("navBar").offsetHeight;
+  currentScreenWidth.value = screen.width;
+  // console.log(currentScreenWidth.value);
   loading.value = false;
 });
 </script>
