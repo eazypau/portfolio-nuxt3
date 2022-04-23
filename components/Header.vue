@@ -1,10 +1,14 @@
 <template>
   <header class="relative w-full headerHeight overflow-hidden flex items-top">
     <div class="absolute w-full h-full">
+      <!-- previously set width 1600 height 1200 -->
       <img
         src="/wide-laptop-gradient-bg.webp"
-        width="1600"
-        height="1200"
+        sizes="(max-width: 768px) 50vw, (max-width: 1024px) 80vw, (max-width: 1439px) 100vw"
+        srcset="
+          /wide-laptop-gradient-bg-min.webp  768w,
+          /wide-laptop-gradient-bg.webp     1024w
+        "
         alt="laptop with black background"
         class="w-full h-full object-cover object-top"
       />
