@@ -1,8 +1,8 @@
 <script>
-	import "./assets/css/tailwind.scss";
+import "./assets/css/tailwind.scss";
 </script>
 <template>
-	<div>
-		<NuxtPage />
-	</div>
+  <div>
+    <NuxtPage />
+  </div>
 </template>

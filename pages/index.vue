@@ -1,24 +1,29 @@
 <template>
-  <div>
-    <Header />
-    <div class="bg-white">
-      <div
-        id="about"
-        class="md:w-10/12 lg:w-10/12 xl:w-9/12 pt-16 md:py-20 lg:pt-24 mx-auto"
-      >
-        <TextLeftImgRight />
+  <NuxtLayout name="default">
+    <div>
+      <Header />
+      <div class="bg-white">
+        <div
+          id="about"
+          class="md:w-10/12 lg:w-10/12 xl:w-9/12 pt-16 md:py-20 lg:pt-24 mx-auto"
+        >
+          <TextLeftImgRight />
+        </div>
+      </div>
+      <Skills id="skills" :skill-set="skillSet" />
+      <div id="projects"></div>
+      <ProjectSection :projects="projects" />
+      <HobbySection :hobbies="hobbies" />
+      <div class="bg-white">
+        <Contact id="contact" />
       </div>
     </div>
-    <Skills id="skills" :skill-set="skillSet" />
-    <div id="projects"></div>
-    <ProjectSection :projects="projects" />
-    <HobbySection :hobbies="hobbies" />
-    <div class="bg-white">
-      <Contact id="contact" />
-    </div>
-  </div>
+  </NuxtLayout>
 </template>
 <script setup>
+definePageMeta({
+  layout: false,
+});
 const skillSet = [
   "HTML",
   "CSS",
