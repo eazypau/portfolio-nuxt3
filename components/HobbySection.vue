@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center px-4 py-24">
+  <section class="flex flex-col items-center px-4 py-24">
     <h2 class="subTitle mb-10 md:mb-16 subFontFamily hobbyTitle">
       Some of My Favourite Activities
     </h2>
@@ -13,7 +13,7 @@
         class="relative"
       />
     </div>
-  </div>
+  </section>
 </template>
 <script setup>
 import gsap from "gsap";

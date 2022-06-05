@@ -150,16 +150,21 @@ const entering = (el, done) => {
 };
 
 watchEffect(() => {
-  if (
-    currentOffsetHeight.value >
-    screenHeight.value - heightOfNav.value * 2.5
-  ) {
-    // navbar style change on desktop view
+  if (route.path === "/") {
+    if (
+      currentOffsetHeight.value >
+      screenHeight.value - heightOfNav.value * 2.5
+    ) {
+      // navbar style change on desktop view
+      navBgTextColor.value = "bg-white text-black";
+      logo.value = blackWhiteFavicon;
+    } else {
+      navBgTextColor.value = "bg-black text-white";
+      logo.value = whiteBlackFavicon;
+    }
+  } else {
     navBgTextColor.value = "bg-white text-black";
     logo.value = blackWhiteFavicon;
-  } else {
-    navBgTextColor.value = "bg-black text-white";
-    logo.value = whiteBlackFavicon;
   }
 });
 onMounted(() => {
