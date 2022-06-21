@@ -8,7 +8,7 @@ import { gsap } from "gsap";
 const props = defineProps({
   delay: {
     type: Number,
-    default: 1,
+    default: 0.9,
   },
 });
 const beforeEnter = (el) => {

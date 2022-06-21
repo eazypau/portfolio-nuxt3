@@ -25,17 +25,17 @@
             </span>
           </h1>
         </MyTransition>
-        <MyTransition :delay="Number(1.3)">
+        <MyTransition :delay="Number(1.1)">
           <h1 v-if="!loading" class="mt-1 tracking-wide text-white">
             My name is Po
           </h1>
         </MyTransition>
       </div>
       <div class="mt-2">
-        <MyTransition :delay="Number(1.6)">
+        <MyTransition :delay="Number(1.3)">
           <h1 v-if="!loading" class="tracking-wide text-white">A Frontend</h1>
         </MyTransition>
-        <MyTransition :delay="Number(1.9)">
+        <MyTransition :delay="Number(1.5)">
           <h1 v-if="!loading" class="py-2 tracking-wide text-white">
             Web Developer
           </h1>

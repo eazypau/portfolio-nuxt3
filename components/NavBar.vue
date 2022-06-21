@@ -200,7 +200,7 @@ onMounted(() => {
   transform: scaleX(1);
 }
 .fadeIn-enter-active {
-  animation: fadeIn 0.4s;
+  animation: fadeIn 0.2s;
 }
 @keyframes fadeIn {
   0% {

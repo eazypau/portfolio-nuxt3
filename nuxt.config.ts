@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     },
     title: "Web developer portfolio | Front End Developer",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue. Checkout my projects and github repositories" },
+      { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
+      { name: "description", content: "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories" },
       { name: "format-detection", content: "telephone=no" },
       { name: "author", content: "Po Yi Zhi" },
       {
@@ -17,6 +17,7 @@ export default defineNuxtConfig({
         content:
           "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Self Taught, Po Yi Zhi, Yi Zhi, Po YZ, YZ Po, yzpo, eazypau",
       },
+      // social meta tags
       {
         property: "og:site_name",
         content: "Web developer portfolio | Front End Developer",
@@ -31,12 +32,12 @@ export default defineNuxtConfig({
       },
       {
         property: "og:description",
-        content: "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue. Checkout my projects and github repositories", // todo need to update the description
+        content: "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
       },
       // sharing thumbmail img
       {
         property: "og:image",
-        content: "https://www.eazypau.com/_nuxt/favicon-wb.png", ///favicon-wb.png
+        content: "https://www.eazypau.com/favicon-bw.png", ///favicon-wb.png
       },
     ],
     link: [{ rel: "icon", href: "/favicon-wb.png" }],
