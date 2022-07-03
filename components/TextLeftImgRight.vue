@@ -56,20 +56,22 @@
             >
               After six months, the co-founder from THC approached me. He asked
               whether I would be interested to take up an internship in their
-              company. I accepted their offer and, here I am working as a
-              front-end web developer in
+              company. I accepted their offer and worked as a front-end web
+              developer in
               <a
-                class="font-bold text-indigo-600"
+                class="font-bold text-indigo-600 hover:underline"
                 href="https://hackercollective.co/teams"
                 >The Hacker Collective</a
-              >.
+              >&nbsp;for a period of time.
             </p>
             <p
               class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
               style="word-spacing: 5px"
             >
-              Currently, I'm open to new opportunities where I can contribute my
-              skills to help companies achieve their goals.
+              Currently, I am working as a front-end web developer in
+              <a class="font-bold hover:underline" href="https://limitless.my/"
+                >Limitless Technology</a
+              >.
             </p>
           </div>
 

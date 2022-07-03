@@ -30,7 +30,7 @@
             >
               Get in touch with me
             </h3>
-            <p
+            <!-- <p
               class="text-base text-justify text-gray-600 md:text-lg 2xl:text-xl"
               style="word-spacing: 5px"
             >
@@ -39,6 +39,15 @@
               and teach others. If I am the person you are looking for, feel
               free to reach me through email or my contact information in my
               resume.
+            </p> -->
+            <p
+              class="text-base md:text-center lg:text-justify text-gray-600 md:text-lg 2xl:text-xl"
+              style="word-spacing: 5px"
+            >
+              Although I’m not currently looking for any new opportunities, my
+              inbox is always open. Whether you have a question, want to work
+              together or just want to say hi, I’ll try my best to get back to
+              you!
             </p>
           </div>
           <div
@@ -56,7 +65,7 @@
               href="mailto:poyizhi@gmail.com"
               class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
             >
-              <MailIcon class="w-5 h-5 mr-2" /> Get in Touch
+              <MailIcon class="w-5 h-5 mr-2" /> Say Hello!
             </a>
           </div>
         </div>
@@ -65,5 +74,5 @@
   </div>
 </template>
 <script setup>
-import { UserIcon, MailIcon, ClipboardListIcon } from "@heroicons/vue/outline";
+import { MailIcon, ClipboardListIcon } from "@heroicons/vue/outline";
 </script>
