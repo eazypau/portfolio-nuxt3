@@ -13,7 +13,12 @@
             <UserIcon class="w-9 h-9 lg:w-10 lg:h-10" />
           </div> -->
           <div class="w-1/2 sm:w-1/4 lg:w-64 xl:w-full mx-auto">
-            <img src="/undraw_personal_email.svg" alt="personal email svg" />
+            <img
+              src="/undraw_personal_email.svg"
+              alt="personal email svg"
+              width="890"
+              height="730"
+            />
           </div>
         </div>
         <div>
