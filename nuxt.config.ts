@@ -4,12 +4,19 @@ import { defineNuxtConfig } from "nuxt";
 export default defineNuxtConfig({
   meta: {
     htmlAttrs: {
-      lang: 'en'
+      lang: "en",
     },
     title: "Web developer portfolio | Front End Developer",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { name: "description", content: "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, viewport-fit=cover",
+      },
+      {
+        name: "description",
+        content:
+          "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+      },
       { name: "format-detection", content: "telephone=no" },
       { name: "author", content: "Po Yi Zhi" },
       {
@@ -32,7 +39,8 @@ export default defineNuxtConfig({
       },
       {
         property: "og:description",
-        content: "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+        content:
+          "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
       },
       // sharing thumbmail img
       {
@@ -41,6 +49,17 @@ export default defineNuxtConfig({
       },
     ],
     link: [{ rel: "icon", href: "/favicon-wb.png" }],
+    script: [
+      {
+        async: "",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-98SHRX2R23",
+      },
+      {
+        type: "text/javascript",
+        src: "js/useGtag.js",
+        body: true,
+      },
+    ],
   },
   build: {
     transpile: ["gsap", "@headlessui/vue", "@heroicons/vue"],
