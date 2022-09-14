@@ -33,6 +33,8 @@ const skillSet = [
   "React",
   "TypeScript",
   "Tailwind",
+  "Shopify",
+  "Liquid",
   "SASS",
   "Bootstrap",
   "Firebase",
@@ -56,7 +58,7 @@ const hobbies = [
   },
   {
     title: "Listening to music",
-    text: "Recent favourites: Alec Benjamin, HONNE and Yoasobi",
+    text: "Recent favourites: Bastille, HONNE, Milet and Yoasobi",
     classBg: "bg-music",
   },
 ];
