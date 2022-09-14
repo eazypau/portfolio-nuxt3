@@ -33,6 +33,8 @@ const skillSet = [
   "React",
   "TypeScript",
   "Tailwind",
+  "Shopify",
+  "Liquid",
   "SASS",
   "Bootstrap",
   "Firebase",
@@ -56,7 +58,7 @@ const hobbies = [
   },
   {
     title: "Listening to music",
-    text: "Recent favourites: Alec Benjamin, HONNE and Yoasobi",
+    text: "Recent favourites: Bastille, HONNE, Milet and Yoasobi",
     classBg: "bg-music",
   },
 ];
@@ -67,7 +69,6 @@ const projects = [
     titleColor: "text-white",
     filterColor: "bg-slate-900 bg-opacity-60",
     imageUrl: "/project-ss/chatapp-ss.webp",
-    // gifUrl: "/project-gif/chatapp.gif",
     description:
       "A scalable real-time chat app designed to send and receive messages from users.",
     techStack: [
@@ -89,7 +90,6 @@ const projects = [
     titleColor: "text-white",
     filterColor: "bg-slate-500 mix-blend-hard-light",
     imageUrl: "/project-ss/spotify-ss.webp",
-    // gifUrl: "/project-gif/spotify-clone-short.gif",
     description:
       "A Spotify clone web app. Built to view your saved and created playlist. It also can control your Spotify app playback state.",
     techStack: [
@@ -109,7 +109,6 @@ const projects = [
     titleColor: "text-white",
     filterColor: "bg-slate-700 bg-opacity-60",
     imageUrl: "/project-ss/shopping-cart-ss.webp",
-    // gifUrl: "/project-gif/todo.gif",
     description:
       "A static E-Commerce website to demonstrate the flow of a user purchase",
     techStack: ["React", "SASS", "React-router"],
@@ -123,7 +122,6 @@ const projects = [
     titleColor: "text-white",
     filterColor: "bg-slate-800 bg-opacity-60",
     imageUrl: "/project-ss/kanban-board.webp",
-    // gifUrl: "/project-gif/kanban-board.gif",
     description: "A Kanban board to store the user's task list.",
     techStack: [
       "React",
@@ -136,26 +134,12 @@ const projects = [
     urlLink: "https://eazypau.github.io/kanban-board-react/",
     githubLink: "https://github.com/eazypau/kanban-board-react",
   },
-  // {
-  //   isReverse: false,
-  //   title: "To-do List App",
-  //   titleColor: "text-white",
-  //   filterColor: "bg-slate-700 bg-opacity-60",
-  //   imageUrl: "/project-ss/todo-ss.webp",
-  //   // gifUrl: "/project-gif/todo.gif",
-  //   description: "A simple to-do app with priority filtering features.",
-  //   techStack: ["Vue", "Vite", "TailwindCSS", "Firebase"],
-  //   isUrl: true,
-  //   urlLink: "https://bloginvue-2c3c7.web.app/",
-  //   githubLink: "https://github.com/eazypau/todolist",
-  // },
   {
     isReverse: false,
     title: "Saloon Booking Web",
     titleColor: "text-white",
     filterColor: "bg-slate-900 bg-opacity-60",
     imageUrl: "/project-ss/saloonbooking-ss.webp",
-    // gifUrl: "/project-gif/saloonbooking.gif",
     description:
       "A door-to-door saloon appointment booking website allows users to book their appointment at any time.",
     techStack: [
@@ -177,7 +161,6 @@ const projects = [
     titleColor: "text-white",
     filterColor: "bg-zinc-700 mix-blend-hard-light",
     imageUrl: "/project-ss/tictactoe-ss.webp",
-    // gifUrl: "/project-gif/tictactoe.gif",
     description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
     techStack: ["HTML", "CSS", "JavaScript"],
     isUrl: true,
