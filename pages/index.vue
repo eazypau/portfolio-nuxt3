@@ -35,6 +35,7 @@ const skillSet = [
   "Tailwind",
   "Shopify",
   "Liquid",
+  "jQuery",
   "SASS",
   "Bootstrap",
   "Firebase",

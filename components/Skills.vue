@@ -3,15 +3,15 @@
     <div class="mb-4 lg:mb-8">
       <h3 class="subTitle subFontFamily techTitle">Technologies & Framework</h3>
     </div>
-    <div class="flex flex-wrap justify-center lg:w-10/12 2xl:w-8/12 3xl:w-7/12">
-      <p
+    <ul class="flex flex-wrap justify-center lg:w-10/12 2xl:w-8/12 3xl:w-7/12">
+      <li
         v-for="skill in skillSet"
         :key="skill"
         class="skillStyle subFontFamily"
       >
         {{ skill }}
-      </p>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>
 <script setup>
