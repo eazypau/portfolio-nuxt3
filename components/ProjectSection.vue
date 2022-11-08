@@ -1,6 +1,6 @@
 <template>
   <section class="pt-28 pb-20 px-4 lg:px-0">
-    <h3 class="subTitle mb-10 'subFontFamily' projectTitle">
+    <h3 class="subTitle mb-10 subFontFamily projectTitle">
       Projects That I Have Worked On
     </h3>
     <div

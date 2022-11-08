@@ -118,6 +118,11 @@ const navigation = [
   },
   {
     id: 4,
+    name: "Works",
+    href: "/#works",
+  },
+  {
+    id: 5,
     name: "Contact",
     href: "/#contact",
   },

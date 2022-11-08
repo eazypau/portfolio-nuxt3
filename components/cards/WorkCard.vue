@@ -1,6 +1,6 @@
 <template>
-  <div class="h-28 md:w-1/4 rounded-lg shadow-md flex items-center justify-center">
-    <img :src="imgSrc" :alt="imgAlt" class="max-w-[80%] " />
+  <div class="workCardContainer">
+    <img :src="imgSrc" :alt="imgAlt" class="max-w-[80%]" />
     <!-- <span>Flowerchimp</span> -->
   </div>
 </template>
