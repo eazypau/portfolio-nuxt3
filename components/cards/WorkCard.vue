@@ -1,6 +1,6 @@
 <template>
-  <div class="workCardContainer">
-    <img :src="imgSrc" :alt="imgAlt" class="max-w-[80%]" />
+  <div class="workCardContainer" @click="onClickFunction(content)">
+    <img :src="imgSrc" :alt="imgAlt" class="max-w-[70%] md:max-w-[80%]" />
     <!-- <span>Flowerchimp</span> -->
   </div>
 </template>
@@ -19,6 +19,18 @@ export default defineComponent({
     bgColor: {
       type: String,
       default: "bg-white",
+    },
+    onClickFunction: {
+      type: Function,
+      default: () => {
+        return "Default function";
+      },
+    },
+    content: {
+      type: Object,
+      default: () => {
+        return {};
+      },
     },
   },
 });

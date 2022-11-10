@@ -156,16 +156,30 @@ const entering = (el, done) => {
 
 watchEffect(() => {
   if (route.path === "/") {
-    if (
-      currentOffsetHeight.value >
-      screenHeight.value - heightOfNav.value * 2.5
-    ) {
-      // navbar style change on desktop view
-      navBgTextColor.value = "bg-white text-black";
-      logo.value = blackWhiteFavicon;
+    if (currentScreenWidth.value <= 640) {
+      if (
+        currentOffsetHeight.value >
+        screenHeight.value + heightOfNav.value / 2
+      ) {
+        // navbar style change on desktop view
+        navBgTextColor.value = "bg-white text-black";
+        logo.value = blackWhiteFavicon;
+      } else {
+        navBgTextColor.value = "bg-black text-white";
+        logo.value = whiteBlackFavicon;
+      }
     } else {
-      navBgTextColor.value = "bg-black text-white";
-      logo.value = whiteBlackFavicon;
+      if (
+        currentOffsetHeight.value >
+        screenHeight.value - heightOfNav.value / 2
+      ) {
+        // navbar style change on desktop view
+        navBgTextColor.value = "bg-white text-black";
+        logo.value = blackWhiteFavicon;
+      } else {
+        navBgTextColor.value = "bg-black text-white";
+        logo.value = whiteBlackFavicon;
+      }
     }
   } else {
     navBgTextColor.value = "bg-white text-black";
@@ -177,10 +191,9 @@ onMounted(() => {
   trackScroll();
   // use scroll event to update the current position of nav bar
   window.addEventListener("scroll", trackScroll);
-  screenHeight.value = screen.height;
+  screenHeight.value = window.innerHeight;
   heightOfNav.value = document.getElementById("navBar").offsetHeight;
-  currentScreenWidth.value = screen.width;
-  // console.log(currentScreenWidth.value);
+  currentScreenWidth.value = window.innerWidth;
   loading.value = false;
 });
 </script>
