@@ -22,7 +22,7 @@ html {
   @apply relative w-full h-full min-h-project-card rounded-lg border-gray-200 overflow-hidden shadow-md shadow-gray-400 hover:shadow-xl hover:shadow-gray-500 transition ease-out duration-300
 }
 .workCardContainer {
-  @apply py-2 h-28 md:h-auto lg:py-0 lg:h-28 w-[200px] flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md flex items-center justify-center hover:cursor-pointer
+  @apply py-2 h-28 md:h-auto lg:py-0 lg:h-28 w-[200px] flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out
 }
 .workCardLane {
   @apply py-2 md:py-0 px-4 md:px-0 w-full overflow-x-auto md:overflow-visible md:w-10/12 lg:w-10/12 2xl:w-8/12 flex md:justify-around gap-7 md:gap-3 lg:gap-10 flex-nowrap mx-auto

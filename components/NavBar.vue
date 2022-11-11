@@ -1,7 +1,7 @@
 <template>
   <nav
     id="navBar"
-    class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow"
+    class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow transition-all duration-200 ease-in-out"
     :class="navBgTextColor"
     style="height: 70px"
   >

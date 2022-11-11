@@ -12,28 +12,30 @@
       />
     </div>
     <div
-      class="pt-10 px-8 md:px-0 md:w-8/12 lg:w-8/12 xl:w-1/2 2xl:w-8/12 mx-auto subFontFamily overflow-hidden transition-all duration-1000 ease-in-out"
+      class="md:w-10/12 lg:w-10/12 2xl:w-8/12 mx-6 md:mx-auto border-b-2 border-gray-100 subFontFamily overflow-hidden transition-all duration-500 ease-in-out"
       :class="{
-        'h-0': isHeightZero,
-        'h-[430px] md:h-80 lg:h-72': isHeightAuto,
+        'pt-7 h-0.5': isHeightZero,
+        'pt-10 h-[430px] md:h-[360px] lg:h-80 2xl:h-72': isHeightAuto,
       }"
     >
-      <p class="text-xl font-semibold text-center">
-        {{ websiteContent.heading }}
-      </p>
-      <hr class="mb-2" />
-      <p class="mb-2 lg:mb-5 text-justify">
-        {{ websiteContent.description }}
-      </p>
-      <div class="flex items-center justify-center">
-        <LinkIcon class="w-5 h-5 mr-1 text-gray-500" />
-        <a
-          class="block text-center text-gray-400 underline"
-          :href="websiteContent.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          >{{ websiteContent.url }}</a
-        >
+      <div class="md:w-8/12 lg:w-8/12 xl:w-1/2 2xl:w-8/12 mx-auto">
+        <p class="text-xl font-semibold text-center mb-2">
+          {{ websiteContent.heading }}
+        </p>
+        <!-- <hr class="mb-2" /> -->
+        <p class="mb-2 md:mb-4 lg:mb-5 text-justify">
+          {{ websiteContent.description }}
+        </p>
+        <div class="flex items-center justify-center">
+          <LinkIcon class="w-5 h-5 mr-1 text-gray-500" />
+          <a
+            class="block text-center text-gray-400 underline"
+            :href="websiteContent.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ websiteContent.url }}</a
+          >
+        </div>
       </div>
     </div>
   </section>
@@ -113,7 +115,7 @@ const revealDescription = (content) => {
       websiteContent.value = nextContent;
       isHeightAuto.value = true;
       isHeightZero.value = false;
-    }, 700);
+    }, 500);
     return;
   }
 };
