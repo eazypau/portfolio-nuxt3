@@ -12,30 +12,43 @@
       />
     </div>
     <div
-      class="md:w-10/12 lg:w-10/12 2xl:w-8/12 mx-6 md:mx-auto border-b-2 border-gray-100 subFontFamily overflow-hidden transition-all duration-500 ease-in-out"
+      class="flex flex-col justify-between md:w-10/12 lg:w-10/12 2xl:w-8/12 mx-6 md:mx-auto border-b-2 border-gray-100 subFontFamily overflow-hidden transition-all duration-500 ease-in-out"
       :class="{
         'pt-7 h-0.5': isHeightZero,
-        'pt-10 h-[430px] md:h-[360px] lg:h-80 2xl:h-72': isHeightAuto,
+        'pt-10 h-[410px] md:h-[360px] lg:h-80 2xl:h-72': isHeightAuto,
       }"
     >
       <div class="md:w-8/12 lg:w-8/12 xl:w-1/2 2xl:w-8/12 mx-auto">
         <p class="text-xl font-semibold text-center mb-2">
           {{ websiteContent.heading }}
         </p>
-        <!-- <hr class="mb-2" /> -->
-        <p class="mb-2 md:mb-4 lg:mb-5 text-justify">
+        <p class="mb-2 md:mb-4 lg:mb-5 text-center">
           {{ websiteContent.description }}
         </p>
-        <div class="flex items-center justify-center">
-          <LinkIcon class="w-5 h-5 mr-1 text-gray-500" />
+      </div>
+      <div
+        class="flex items-center justify-center flex-wrap md:w-8/12 lg:w-8/12 xl:w-1/2 2xl:w-8/12 mx-auto mb-2"
+      >
+        <LinkIcon class="w-5 h-5 mr-1 text-gray-500" />
+        <!-- <a
+          class="block text-center text-gray-400 underline"
+          :href="websiteContent.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ websiteContent.url }}</a
+        > -->
+        <p v-for="(url, index) in websiteContent.urls" :key="url" class="flex">
           <a
             class="block text-center text-gray-400 underline"
-            :href="websiteContent.url"
+            :href="url.link"
             target="_blank"
             rel="noopener noreferrer"
-            >{{ websiteContent.url }}</a
+            >{{ url.name }}</a
           >
-        </div>
+          <span v-if="index !== websiteContent.urls.length - 1"
+            >&nbsp;&#183;&nbsp;</span
+          >
+        </p>
       </div>
     </div>
   </section>

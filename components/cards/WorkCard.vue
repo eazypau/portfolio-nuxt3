@@ -1,6 +1,11 @@
 <template>
   <div class="workCardContainer" @click="onClickFunction(content)">
-    <img :src="imgSrc" :alt="imgAlt" class="max-w-[70%] md:max-w-[80%]" />
+    <img
+      :src="imgSrc"
+      :alt="imgAlt"
+      loading="lazy"
+      class="max-w-[70%] md:max-w-[80%]"
+    />
     <!-- <span>Flowerchimp</span> -->
   </div>
 </template>

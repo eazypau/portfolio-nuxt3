@@ -115,10 +115,10 @@
         </div>
 
         <div class="mt-8 lg:mt-0 lg:w-4/12 xl:w-4/12">
-          <div class="flex items-center justify-center lg:justify-end">
+          <div class="flex items-center justify-center lg:justify-end group">
             <div class="profileImgContainer">
               <img
-                class="bg-white p-1.5 object-cover object-top rounded-full"
+                class="bg-white object-cover object-top rounded-full group-hover:grayscale transition-all ease-out duration-300"
                 src="/profile-pics/profile.webp"
                 width="350"
                 height="350"

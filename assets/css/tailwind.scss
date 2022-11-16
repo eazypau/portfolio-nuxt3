@@ -16,7 +16,7 @@ html {
   @apply text-3xl lg:text-4xl text-center font-bold text-gray-800
 }
 .profileImgContainer {
-  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md bg-gradient-to-br hover:bg-gradient-to-tr from-indigo-600 hover:from-sky-600 via-red-300 hover:via-cyan-300 to-orange-600 hover:to-green-500 p-1.5 rounded-full shadow-md shadow-gray-300
+  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md p-1.5 rounded-full shadow-btm-right group-hover:shadow-top-right transition-all duration-300 ease-in
 }
 .projectCardContainer {
   @apply relative w-full h-full min-h-project-card rounded-lg border-gray-200 overflow-hidden shadow-md shadow-gray-400 hover:shadow-xl hover:shadow-gray-500 transition ease-out duration-300
