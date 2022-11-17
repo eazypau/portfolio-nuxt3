@@ -1,8 +1,10 @@
 <template>
   <div class="workCardContainer" @click="onClickFunction(content)">
     <img
-      :src="imgSrc"
-      :alt="imgAlt"
+      :src="image.src"
+      :alt="image.alt"
+      :width="image.width"
+      :height="image.height"
       loading="lazy"
       class="max-w-[70%] md:max-w-[80%]"
     />
@@ -12,14 +14,9 @@
 <script>
 export default defineComponent({
   props: {
-    imgSrc: {
-      type: String,
-      default:
-        "https://cdn.shopify.com/s/files/1/1252/1803/files/FC-MY-Rectangle_410x.png?v=1666837710",
-    },
-    imgAlt: {
-      type: String,
-      default: "Flowerchimp",
+    image: {
+      type: Object,
+      default: () => {},
     },
     bgColor: {
       type: String,

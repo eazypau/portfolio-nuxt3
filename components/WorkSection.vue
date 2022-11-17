@@ -5,8 +5,7 @@
       <CardsWorkCard
         v-for="project in workingProjects"
         :key="project.imgSrc"
-        :img-src="project.imgSrc"
-        :img-alt="project.imgAlt"
+        :image="project.image"
         :on-click-function="revealDescription"
         :content="project"
       />
