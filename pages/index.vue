@@ -13,6 +13,7 @@
       <Skills id="skills" :skill-set="skillSet" />
       <div id="projects"></div>
       <ProjectSection :projects="projects" />
+      <!-- <WorkSection id="works" :working-projects="workingProjects" /> -->
       <HobbySection :hobbies="hobbies" />
       <div class="bg-white">
         <Contact id="contact" />
@@ -167,6 +168,114 @@ const projects = [
     isUrl: true,
     urlLink: "https://eazypau.github.io/tictactoe/",
     githubLink: "https://github.com/eazypau/tictactoe",
+  },
+];
+const workingProjects = [
+  {
+    image: {
+      src: "/work/LVLY_logo.jpg",
+      alt: "LVLY",
+      width: "410",
+      height: "117",
+    },
+    heading: "LVLY",
+    description: `LVLY is an e-commerce website for selling flower products. 
+    Customers can choose their desired delivery date and timeslot for their order. 
+    This was created using Shopify Liquid, HTML, CSS, and Javascript. The online 
+    stores are available mainly in Southeast Asia (MY and SG) and Australia. 
+    It allows customers to select their desired flower products, add-on products, 
+    jar message, and greeting cards (only available in AU) and add them to their 
+    orders.`,
+    urls: [
+      {
+        name: "LVLY AU",
+        link: "https://www.lvly.com.au/",
+      },
+      {
+        name: "LVLY MY",
+        link: "https://www.lvly.my/",
+      },
+      {
+        name: "LVLY SG",
+        link: "https://www.lvly.sg/",
+      },
+    ],
+  },
+  {
+    image: {
+      src: "/work/BR_Logo.jpg",
+      alt: "Bloomeroo",
+      width: "410",
+      height: "82",
+    },
+    heading: "Bloomeroo",
+    description: `Bloomeroo is an e-commerce website for selling flower products. 
+    This was created using Shopify Liquid, HTML, CSS, and Javascript. The online 
+    store is available only in Australia. Customer can choose their desired 
+    delivery date and timeslot based on their postcode area. It allows customers 
+    to select their desired flower products & add-on products and add them to 
+    their orders.`,
+    urls: [
+      {
+        name: "Bloomeroo",
+        link: "https://www.bloomeroo.com.au/",
+      },
+    ],
+  },
+  {
+    image: {
+      src: "/work/FC-MY.jpg",
+      alt: "Flowerchimp",
+      width: "410",
+      height: "205",
+    },
+    heading: "Flowerchimp",
+    description: `Flowerchimp is an e-commerce website for selling flower products. 
+    Customers can choose their desired delivery date and timeslot for their order. 
+    This was created using Shopify Liquid, HTML, CSS, and Javascript. The online 
+    stores are available in Southeast Asia (MY, SG, PH, HK, and ID). It allows customers 
+    to select their desired flower products & add-on products and add them to 
+    their orders.`,
+    urls: [
+      {
+        name: "Flowerchimp MY",
+        link: "https://www.flowerchimp.com/",
+      },
+      {
+        name: "Flowerchimp SG",
+        link: "https://www.flowerchimp.sg/",
+      },
+      {
+        name: "Flowerchimp PH",
+        link: "https://www.flowerchimp.com.PH/",
+      },
+      {
+        name: "Flowerchimp HK",
+        link: "https://www.flowerchimp.com.hk/",
+      },
+      {
+        name: "Flowerchimp ID",
+        link: "https://www.flowerchimp.com.id/",
+      },
+    ],
+  },
+  {
+    image: {
+      src: "/work/thc-logo.webp",
+      alt: "The Hacker Collection Website",
+      width: "62",
+      height: "65",
+    },
+    heading: "The Hacker Collection Website",
+    description: `A landing page website to display company information, businesses, 
+    learning programs, etc. This was created using Vue, Nuxt3, TailwindCSS, 
+    Javascript, and Headless UI.`,
+    urls: [
+      {
+        name: "THC Website",
+        link: "https://hackercollective.co/",
+      },
+    ],
   },
 ];
 </script>

@@ -25,11 +25,11 @@
           <div
             class="max-w-xl mb-10 md:mx-auto sm:text-center lg:text-left lg:max-w-2xl xl:max-w-3xl md:mb-12 xl:mb-8 2xl:mb-12"
           >
-            <h3
+            <h2
               class="max-w-lg lg:max-w-3xl mb-6 text-3xl font-extrabold leading-none text-gray-900 sm:text-4xl xl:text-5xl 2xl:text-6xl md:mx-auto"
             >
               Get in touch with me
-            </h3>
+            </h2>
             <!-- <p
               class="text-base text-justify text-gray-600 md:text-lg 2xl:text-xl"
               style="word-spacing: 5px"

@@ -31,6 +31,10 @@ module.exports = {
         iphone: "414px",
         "3xl": "1680px",
       },
+      boxShadow: {
+        "btm-right": "8px 12px 24px -12px #666565",
+        "top-right": "-12px -8px 24px -12px #666565",
+      },
     },
   },
 };

@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       {
         name: "keywords",
         content:
-          "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Self Taught, Po Yi Zhi, Yi Zhi, Po YZ, YZ Po, yzpo, eazypau",
+          "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, Po YZ, YZ Po, eazypau, Malaysia",
       },
       // social meta tags
       {
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         content: "https://www.eazypau.com/favicon-bw.png", ///favicon-wb.png
       },
     ],
-    link: [{ rel: "icon", href: "/favicon-wb.png" }],
+    link: [{ rel: "icon", href: "/favicon-bw.png" }],
     script: [
       {
         async: "",

@@ -1,7 +1,7 @@
 <template>
   <nav
     id="navBar"
-    class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow"
+    class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow transition-all duration-200 ease-in-out"
     :class="navBgTextColor"
     style="height: 70px"
   >
@@ -116,8 +116,13 @@ const navigation = [
     name: "Projects",
     href: "/#projects",
   },
+  // {
+  //   id: 4,
+  //   name: "Works",
+  //   href: "/#works",
+  // },
   {
-    id: 4,
+    id: 5,
     name: "Contact",
     href: "/#contact",
   },
@@ -151,16 +156,30 @@ const entering = (el, done) => {
 
 watchEffect(() => {
   if (route.path === "/") {
-    if (
-      currentOffsetHeight.value >
-      screenHeight.value - heightOfNav.value * 2.5
-    ) {
-      // navbar style change on desktop view
-      navBgTextColor.value = "bg-white text-black";
-      logo.value = blackWhiteFavicon;
+    if (currentScreenWidth.value <= 640) {
+      if (
+        currentOffsetHeight.value >
+        screenHeight.value + heightOfNav.value / 2
+      ) {
+        // navbar style change on desktop view
+        navBgTextColor.value = "bg-white text-black";
+        logo.value = blackWhiteFavicon;
+      } else {
+        navBgTextColor.value = "bg-black text-white";
+        logo.value = whiteBlackFavicon;
+      }
     } else {
-      navBgTextColor.value = "bg-black text-white";
-      logo.value = whiteBlackFavicon;
+      if (
+        currentOffsetHeight.value >
+        screenHeight.value - heightOfNav.value / 2
+      ) {
+        // navbar style change on desktop view
+        navBgTextColor.value = "bg-white text-black";
+        logo.value = blackWhiteFavicon;
+      } else {
+        navBgTextColor.value = "bg-black text-white";
+        logo.value = whiteBlackFavicon;
+      }
     }
   } else {
     navBgTextColor.value = "bg-white text-black";
@@ -172,10 +191,9 @@ onMounted(() => {
   trackScroll();
   // use scroll event to update the current position of nav bar
   window.addEventListener("scroll", trackScroll);
-  screenHeight.value = screen.height;
+  screenHeight.value = window.innerHeight;
   heightOfNav.value = document.getElementById("navBar").offsetHeight;
-  currentScreenWidth.value = screen.width;
-  // console.log(currentScreenWidth.value);
+  currentScreenWidth.value = window.innerWidth;
   loading.value = false;
 });
 </script>

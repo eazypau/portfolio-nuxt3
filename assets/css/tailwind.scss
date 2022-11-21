@@ -16,10 +16,16 @@ html {
   @apply text-3xl lg:text-4xl text-center font-bold text-gray-800
 }
 .profileImgContainer {
-  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md bg-gradient-to-br hover:bg-gradient-to-tr from-indigo-600 hover:from-sky-600 via-red-300 hover:via-cyan-300 to-orange-600 hover:to-green-500 p-1.5 rounded-full shadow-md shadow-gray-300
+  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md p-1.5 rounded-full shadow-btm-right group-hover:shadow-top-right transition-all duration-300 ease-in
 }
 .projectCardContainer {
   @apply relative w-full h-full min-h-project-card rounded-lg border-gray-200 overflow-hidden shadow-md shadow-gray-400 hover:shadow-xl hover:shadow-gray-500 transition ease-out duration-300
+}
+.workCardContainer {
+  @apply py-2 h-28 md:h-auto lg:py-0 lg:h-28 w-[200px] flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out
+}
+.workCardLane {
+  @apply py-2 md:py-0 px-4 md:px-0 w-full overflow-x-auto md:overflow-visible md:w-10/12 lg:w-10/12 2xl:w-8/12 flex md:justify-around gap-7 md:gap-3 lg:gap-10 flex-nowrap mx-auto
 }
 .projectTextContainer {
   @apply z-20 absolute inset-0 px-3 md:px-6 py-2 xl:py-4 w-full h-full flex flex-col justify-between bg-gray-900 bg-opacity-95 text-white
@@ -38,4 +44,8 @@ html {
 }
 .IconInProfile {
   @apply w-5 h-5 xl:w-6 xl:h-6 text-gray-700 fill-current hover:text-gray-600
+}
+
+.workCardLane::-webkit-scrollbar {
+  display: none;
 }
