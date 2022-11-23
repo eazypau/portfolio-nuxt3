@@ -55,9 +55,14 @@
         <!-- social - end -->
       </div>
 
-      <div class="text-gray-500 text-sm text-center py-8 xl:py-4 2xl:py-8 headerFont">
-        © 2022 - Present Po YZ. All rights reserved.
+      <div
+        class="text-gray-500 text-sm text-center py-8 xl:py-4 2xl:py-8 headerFont"
+      >
+        © {{ CURRENT_YEAR }} - Present Po YZ. All rights reserved.
       </div>
     </footer>
   </div>
 </template>
+<script setup>
+const CURRENT_YEAR = new Date().getFullYear();
+</script>
