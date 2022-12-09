@@ -116,11 +116,11 @@ const navigation = [
     name: "Projects",
     href: "/#projects",
   },
-  // {
-  //   id: 4,
-  //   name: "Works",
-  //   href: "/#works",
-  // },
+  {
+    id: 4,
+    name: "Works",
+    href: "/#works",
+  },
   {
     id: 5,
     name: "Contact",
