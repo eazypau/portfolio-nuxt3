@@ -6,7 +6,7 @@
       :width="image.width"
       :height="image.height"
       loading="lazy"
-      class="max-w-[70%] md:max-w-[80%]"
+      class="max-w-[70%] md:max-w-[80%] 2xl:max-w-[70%]"
     />
     <!-- <span>Flowerchimp</span> -->
   </div>
