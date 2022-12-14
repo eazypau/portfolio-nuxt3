@@ -178,6 +178,26 @@ const workingProjects = [
       width: "410",
       height: "117",
     },
+    imageShowcase: [
+      {
+        src: "/work/LVLY-productpage.png",
+        alt: "LVLY product page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/LVLY-homepage.png",
+        alt: "LVLY home page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/LVLY-cartpage.png",
+        alt: "LVLY cart page",
+        width: "726",
+        height: "460",
+      },
+    ],
     heading: "LVLY",
     description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products. 
     This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired 
@@ -193,14 +213,14 @@ const workingProjects = [
         name: "LVLY MY",
         link: "https://www.lvly.my/",
       },
-      {
-        name: "Bloomeroo",
-        link: "https://www.bloomeroo.com.au/",
-      },
-      {
-        name: "Flowerchimp MY",
-        link: "https://www.flowerchimp.com/",
-      },
+      // {
+      //   name: "Bloomeroo",
+      //   link: "https://www.bloomeroo.com.au/",
+      // },
+      // {
+      //   name: "Flowerchimp MY",
+      //   link: "https://www.flowerchimp.com/",
+      // },
       // {
       //   name: "LVLY SG",
       //   link: "https://www.lvly.sg/",
@@ -214,6 +234,26 @@ const workingProjects = [
       width: "410",
       height: "82",
     },
+    imageShowcase: [
+      {
+        src: "/work/BL-productpage.png",
+        alt: "Bloomeroo product page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/BL-homepage.png",
+        alt: "Bloomeroo home page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/BL-cartpage.png",
+        alt: "Bloomeroo cart page",
+        width: "726",
+        height: "460",
+      },
+    ],
     heading: "Bloomeroo",
     description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products. 
     This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired 
@@ -221,22 +261,22 @@ const workingProjects = [
     , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast 
     Asia and Australia.`,
     urls: [
-      {
-        name: "LVLY AU",
-        link: "https://www.lvly.com.au/",
-      },
-      {
-        name: "LVLY MY",
-        link: "https://www.lvly.my/",
-      },
+      // {
+      //   name: "LVLY AU",
+      //   link: "https://www.lvly.com.au/",
+      // },
+      // {
+      //   name: "LVLY MY",
+      //   link: "https://www.lvly.my/",
+      // },
       {
         name: "Bloomeroo",
         link: "https://www.bloomeroo.com.au/",
       },
-      {
-        name: "Flowerchimp MY",
-        link: "https://www.flowerchimp.com/",
-      },
+      // {
+      //   name: "Flowerchimp MY",
+      //   link: "https://www.flowerchimp.com/",
+      // },
     ],
   },
   {
@@ -246,6 +286,26 @@ const workingProjects = [
       width: "410",
       height: "205",
     },
+    imageShowcase: [
+      {
+        src: "/work/FC-productpage.png",
+        alt: "Flowerchimp product page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/FC-homepage.png",
+        alt: "Flowerchimp home page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/FC-cartpage.png",
+        alt: "Flowerchimp cart page",
+        width: "726",
+        height: "460",
+      },
+    ],
     heading: "Flowerchimp",
     description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products. 
     This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired 
@@ -253,38 +313,22 @@ const workingProjects = [
     , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast 
     Asia and Australia.`,
     urls: [
-      {
-        name: "LVLY AU",
-        link: "https://www.lvly.com.au/",
-      },
-      {
-        name: "LVLY MY",
-        link: "https://www.lvly.my/",
-      },
-      {
-        name: "Bloomeroo",
-        link: "https://www.bloomeroo.com.au/",
-      },
+      // {
+      //   name: "LVLY AU",
+      //   link: "https://www.lvly.com.au/",
+      // },
+      // {
+      //   name: "LVLY MY",
+      //   link: "https://www.lvly.my/",
+      // },
+      // {
+      //   name: "Bloomeroo",
+      //   link: "https://www.bloomeroo.com.au/",
+      // },
       {
         name: "Flowerchimp MY",
         link: "https://www.flowerchimp.com/",
       },
-      // {
-      //   name: "Flowerchimp SG",
-      //   link: "https://www.flowerchimp.sg/",
-      // },
-      // {
-      //   name: "Flowerchimp PH",
-      //   link: "https://www.flowerchimp.com.PH/",
-      // },
-      // {
-      //   name: "Flowerchimp HK",
-      //   link: "https://www.flowerchimp.com.hk/",
-      // },
-      // {
-      //   name: "Flowerchimp ID",
-      //   link: "https://www.flowerchimp.com.id/",
-      // },
     ],
   },
   {
@@ -294,6 +338,26 @@ const workingProjects = [
       width: "62",
       height: "65",
     },
+    imageShowcase: [
+      {
+        src: "/work/THC-startuppage.png",
+        alt: "The Hacker Collective startup page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/THC-homepage.png",
+        alt: "The Hacker Collective home page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/THC-invest.png",
+        alt: "The Hacker Collective invest page",
+        width: "726",
+        height: "460",
+      },
+    ],
     heading: "The Hacker Collection Website",
     description: `A landing page website to display company information, businesses, 
     programs, etc. This was created using Vue, Nuxt3, TailwindCSS, 
