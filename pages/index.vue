@@ -219,18 +219,6 @@ const workingProjects = [
         name: "LVLY MY",
         link: "https://www.lvly.my/",
       },
-      // {
-      //   name: "Bloomeroo",
-      //   link: "https://www.bloomeroo.com.au/",
-      // },
-      // {
-      //   name: "Flowerchimp MY",
-      //   link: "https://www.flowerchimp.com/",
-      // },
-      // {
-      //   name: "LVLY SG",
-      //   link: "https://www.lvly.sg/",
-      // },
     ],
   },
   {
@@ -272,18 +260,6 @@ const workingProjects = [
     can get the perfect arrangement for any event. From classic roses to exotic orchids, Flowerchimp has something 
     for everyone and is the perfect choice for those who want to show their love and appreciation.`,
     urls: [
-      // {
-      //   name: "LVLY AU",
-      //   link: "https://www.lvly.com.au/",
-      // },
-      // {
-      //   name: "LVLY MY",
-      //   link: "https://www.lvly.my/",
-      // },
-      // {
-      //   name: "Bloomeroo",
-      //   link: "https://www.bloomeroo.com.au/",
-      // },
       {
         name: "Flowerchimp MY",
         link: "https://www.flowerchimp.com/",
@@ -329,22 +305,10 @@ const workingProjects = [
     the country, you can get the perfect bouquet delivered to your door. With our wide selection, fast delivery, and 
     exceptional customer service, Bloomeroo is the perfect place to find the perfect floral gift for any occasion.`,
     urls: [
-      // {
-      //   name: "LVLY AU",
-      //   link: "https://www.lvly.com.au/",
-      // },
-      // {
-      //   name: "LVLY MY",
-      //   link: "https://www.lvly.my/",
-      // },
       {
         name: "Bloomeroo",
         link: "https://www.bloomeroo.com.au/",
       },
-      // {
-      //   name: "Flowerchimp MY",
-      //   link: "https://www.flowerchimp.com/",
-      // },
     ],
   },
   {
