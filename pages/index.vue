@@ -199,11 +199,17 @@ const workingProjects = [
       },
     ],
     heading: "LVLY",
-    description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products. 
-    This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired 
-    delivery date and timeslot for their order. It allows customers to select their desired flower products
-    , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast 
-    Asia and Australia.`,
+    // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
+    // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
+    // delivery date and timeslot for their order. It allows customers to select their desired flower products
+    // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
+    // Asia and Australia.`,
+    description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion. 
+    With its wide selection of blooms, LVLY is the perfect choice for those who are looking for a unique and special 
+    way to show their love and appreciation. From classic roses to exotic orchids, LVLY has something for everyone. 
+    Customers can choose from a variety of bouquets, vases and boxes to make sure that their gift is as special and 
+    unique as they are. With same-day delivery options,  LVLY ensures that its customers can get the perfect 
+    arrangement for any occasion.`,
     urls: [
       {
         name: "LVLY AU",
@@ -224,58 +230,6 @@ const workingProjects = [
       // {
       //   name: "LVLY SG",
       //   link: "https://www.lvly.sg/",
-      // },
-    ],
-  },
-  {
-    image: {
-      src: "/work/BR_Logo.jpg",
-      alt: "Bloomeroo",
-      width: "410",
-      height: "82",
-    },
-    imageShowcase: [
-      {
-        src: "/work/BL-productpage.png",
-        alt: "Bloomeroo product page",
-        width: "726",
-        height: "460",
-      },
-      {
-        src: "/work/BL-homepage.png",
-        alt: "Bloomeroo home page",
-        width: "726",
-        height: "460",
-      },
-      {
-        src: "/work/BL-cartpage.png",
-        alt: "Bloomeroo cart page",
-        width: "726",
-        height: "460",
-      },
-    ],
-    heading: "Bloomeroo",
-    description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products. 
-    This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired 
-    delivery date and timeslot for their order. It allows customers to select their desired flower products
-    , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast 
-    Asia and Australia.`,
-    urls: [
-      // {
-      //   name: "LVLY AU",
-      //   link: "https://www.lvly.com.au/",
-      // },
-      // {
-      //   name: "LVLY MY",
-      //   link: "https://www.lvly.my/",
-      // },
-      {
-        name: "Bloomeroo",
-        link: "https://www.bloomeroo.com.au/",
-      },
-      // {
-      //   name: "Flowerchimp MY",
-      //   link: "https://www.flowerchimp.com/",
       // },
     ],
   },
@@ -307,11 +261,16 @@ const workingProjects = [
       },
     ],
     heading: "Flowerchimp",
-    description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products. 
-    This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired 
-    delivery date and timeslot for their order. It allows customers to select their desired flower products
-    , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast 
-    Asia and Australia.`,
+    // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
+    // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
+    // delivery date and timeslot for their order. It allows customers to select their desired flower products
+    // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
+    // Asia and Australia.`,
+    description: `Flowerchimp is an online flower shop that offers a wide selection of beautiful bouquets and 
+    arrangements to suit any occasion. Customers can choose from a variety of flowers, vases and boxes to make 
+    sure their gift is special and unique. With same-day delivery options, Flowerchimp ensures their customers 
+    can get the perfect arrangement for any event. From classic roses to exotic orchids, Flowerchimp has something 
+    for everyone and is the perfect choice for those who want to show their love and appreciation.`,
     urls: [
       // {
       //   name: "LVLY AU",
@@ -329,6 +288,63 @@ const workingProjects = [
         name: "Flowerchimp MY",
         link: "https://www.flowerchimp.com/",
       },
+    ],
+  },
+  {
+    image: {
+      src: "/work/BR_Logo.jpg",
+      alt: "Bloomeroo",
+      width: "410",
+      height: "82",
+    },
+    imageShowcase: [
+      {
+        src: "/work/BL-productpage.png",
+        alt: "Bloomeroo product page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/BL-homepage.png",
+        alt: "Bloomeroo home page",
+        width: "726",
+        height: "460",
+      },
+      {
+        src: "/work/BL-cartpage.png",
+        alt: "Bloomeroo cart page",
+        width: "726",
+        height: "460",
+      },
+    ],
+    heading: "Bloomeroo",
+    // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
+    // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
+    // delivery date and timeslot for their order. It allows customers to select their desired flower products
+    // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
+    // Asia and Australia.`,
+    description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day 
+    delivery in Australia. The company strives to provide customers with the best selection of flowers, from traditional 
+    roses to unique tropical and exotic blooms. Our same-day delivery service ensures that no matter where you are in 
+    the country, you can get the perfect bouquet delivered to your door. With our wide selection, fast delivery, and 
+    exceptional customer service, Bloomeroo is the perfect place to find the perfect floral gift for any occasion.`,
+    urls: [
+      // {
+      //   name: "LVLY AU",
+      //   link: "https://www.lvly.com.au/",
+      // },
+      // {
+      //   name: "LVLY MY",
+      //   link: "https://www.lvly.my/",
+      // },
+      {
+        name: "Bloomeroo",
+        link: "https://www.bloomeroo.com.au/",
+      },
+      // {
+      //   name: "Flowerchimp MY",
+      //   link: "https://www.flowerchimp.com/",
+      // },
     ],
   },
   {
@@ -359,9 +375,14 @@ const workingProjects = [
       },
     ],
     heading: "The Hacker Collection Website",
-    description: `A landing page website to display company information, businesses, 
-    programs, etc. This was created using Vue, Nuxt3, TailwindCSS, 
-    Javascript, and Headless UI.`,
+    // description: `A landing page website to display company information, businesses, 
+    // programs, etc. This was created using Vue, Nuxt3, TailwindCSS, 
+    // Javascript, and Headless UI.`,
+    description: `The Hacker Collection (THC) is an innovative landing page website that offers a comprehensive 
+    overview of a company's mission, products, and services. With a modern and user-friendly design, THC offers 
+    an intuitive way to showcase a company's offerings and provides visually appealing and easy-to-understand 
+    information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to 
+    help customers interact with the company in a meaningful way.`,
     urls: [
       {
         name: "THC Website",
