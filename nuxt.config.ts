@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+            "Personal Portfolio Website. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
         },
         { name: "format-detection", content: "telephone=no" },
         { name: "author", content: "Po Yi Zhi" },
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Personal Portfolio Website. I'm a Front-End Web Developer. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+            "Personal Portfolio Website. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
         },
         // sharing thumbmail img
         {
