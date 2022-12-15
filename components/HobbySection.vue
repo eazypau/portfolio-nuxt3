@@ -3,7 +3,7 @@
     <h2 class="subTitle mb-10 md:mb-16 subFontFamily hobbyTitle">
       Some of My Favourite Activities
     </h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <CardsHobby
         v-for="item in hobbies"
         :key="item"

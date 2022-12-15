@@ -1,6 +1,6 @@
-<script>
+<!-- <script>
 import "./assets/css/tailwind.scss";
-</script>
+</script> -->
 <template>
   <div>
     <NuxtPage />

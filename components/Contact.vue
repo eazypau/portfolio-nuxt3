@@ -1,6 +1,6 @@
 <template>
   <div
-    class="contactSectionHeight px-10 pt-24 sm:pb-16 md:pb-0 md:pt-16 flex items-center justify-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 xl:pb-4 2xl:pb-0"
+    class="contactSectionHeight px-10 pt-24 sm:pb-16 md:pb-7 md:pt-16 flex items-center justify-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-0 xl:pb-4 2xl:pb-0"
   >
     <div class="max-w-xl sm:mx-auto lg:max-w-3xl xl:max-w-5xl">
       <div
@@ -23,7 +23,7 @@
         </div>
         <div>
           <div
-            class="max-w-xl mb-10 md:mx-auto sm:text-center lg:text-left lg:max-w-2xl xl:max-w-3xl md:mb-12 xl:mb-8 2xl:mb-12"
+            class="max-w-xl mb-10 md:mx-auto sm:text-center lg:text-left lg:max-w-2xl xl:max-w-3xl md:mb-5 xl:mb-8 2xl:mb-12"
           >
             <h2
               class="max-w-lg lg:max-w-3xl mb-6 text-3xl font-extrabold leading-none text-gray-900 sm:text-4xl xl:text-5xl 2xl:text-6xl md:mx-auto"

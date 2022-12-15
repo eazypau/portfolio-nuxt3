@@ -1,7 +1,9 @@
 <template>
   <div class="bg-white pt-2 sm:pt-2">
     <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <div class="flex flex-col items-center border-t pt-6 xl:pt-4 2xl:pt-6">
+      <div
+        class="flex flex-col items-center border-t pt-3 lg:pt-6 xl:pt-4 2xl:pt-6"
+      >
         <!-- nav - start -->
         <nav
           class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4 headerFont"
@@ -9,7 +11,7 @@
           <a href="/#about" class="footerBtn">About</a>
           <a href="/#skills" class="footerBtn">Skills</a>
           <a href="/#projects" class="footerBtn">Projects</a>
-          <!-- <a href="/#works" class="footerBtn">Works</a> -->
+          <a href="/#works" class="footerBtn">Works</a>
           <a href="/#contact" class="footerBtn">Contact</a>
         </nav>
         <!-- nav - end -->
@@ -56,7 +58,7 @@
       </div>
 
       <div
-        class="text-gray-500 text-sm text-center py-8 xl:py-4 2xl:py-8 headerFont"
+        class="text-gray-500 text-sm text-center py-4 xl:py-4 2xl:py-8 headerFont"
       >
         © {{ CURRENT_YEAR }} - Present Po YZ. All rights reserved.
       </div>
