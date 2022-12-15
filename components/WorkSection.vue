@@ -21,9 +21,6 @@
       }"
     >
       <div class="md:w-10/12 lg:w-8/12 xl:w-7/12 2xl:w-8/12 mx-auto">
-        <!-- <p class="text-xl font-semibold text-center mb-2">
-          {{ websiteContent.heading }}
-        </p> -->
         <div class="relative">
           <img
             :src="websiteContent.imageShowcase[0].src"
@@ -31,6 +28,7 @@
             :width="websiteContent.imageShowcase[0].width"
             :height="websiteContent.imageShowcase[0].height"
             class="rounded-lg shadow-lg mb-5 md:mb-9 w-9/12 md:w-7/12 2xl:w-1/2 h-auto mx-auto absolute left-3 md:left-10 xl:left-16 2xl:left-28 top-1.5 md:top-3 2xl:top-4"
+            loading="lazy"
           />
           <img
             :src="websiteContent.imageShowcase[1].src"
@@ -38,6 +36,7 @@
             :width="websiteContent.imageShowcase[1].width"
             :height="websiteContent.imageShowcase[1].height"
             class="rounded-lg shadow-lg mb-5 md:mb-9 w-10/12 md:w-8/12 2xl:w-7/12 h-auto mx-auto relative z-10"
+            loading="lazy"
           />
           <img
             :src="websiteContent.imageShowcase[2].src"
@@ -45,6 +44,7 @@
             :width="websiteContent.imageShowcase[2].width"
             :height="websiteContent.imageShowcase[2].height"
             class="rounded-lg shadow-lg mb-5 md:mb-9 w-9/12 md:w-7/12 2xl:w-1/2 h-auto mx-auto absolute right-3 md:right-10 xl:right-16 2xl:right-28 top-1.5 md:top-3 2xl:top-4"
+            loading="lazy"
           />
         </div>
         <p class="mb-2 md:mb-4 lg:mb-5 text-center">
@@ -111,18 +111,54 @@ onMounted(() => {
 const isHeightZero = ref(true);
 const isHeightAuto = ref(false);
 const websiteContent = ref({
-  heading: "",
-  description: "",
-  url: "",
-  imageShowcase: [{}, {}, {}],
+  image: {
+    src: "/work/LVLY_logo.jpg",
+    alt: "LVLY",
+    width: "410",
+    height: "117",
+  },
+  imageShowcase: [
+    {
+      src: "/work/LVLY-productpage.png",
+      alt: "LVLY product page",
+      width: "726",
+      height: "460",
+    },
+    {
+      src: "/work/LVLY-homepage.png",
+      alt: "LVLY home page",
+      width: "726",
+      height: "460",
+    },
+    {
+      src: "/work/LVLY-cartpage.png",
+      alt: "LVLY cart page",
+      width: "726",
+      height: "460",
+    },
+  ],
+  heading: "LVLY",
+  description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion. 
+    With its wide selection of blooms, LVLY is the perfect choice for those who are looking for a unique and special 
+    way to show their love and appreciation. From classic roses to exotic orchids, LVLY has something for everyone. 
+    Customers can choose from a variety of bouquets, vases and boxes to make sure that their gift is as special and 
+    unique as they are. With same-day delivery options,  LVLY ensures that its customers can get the perfect 
+    arrangement for any occasion.`,
+  urls: [
+    {
+      name: "LVLY AU",
+      link: "https://www.lvly.com.au/",
+    },
+    {
+      name: "LVLY MY",
+      link: "https://www.lvly.my/",
+    },
+  ],
 });
-// const generalDropdownStyle =
-//   "pt-10 px-4 md:px-0 md:w-8/12 lg:w-10/12 xl:w-1/2 2xl:w-8/12 mx-auto subFontFamily overflow-hidden transition-all duration-1000 ease-in-out";
 
 const revealDescription = (content) => {
   const previousContent = { ...websiteContent.value };
   const nextContent = { ...content };
-  // websiteContent.value = nextContent;
 
   if (previousContent.heading === nextContent.heading && isHeightAuto.value) {
     isHeightAuto.value = false;
