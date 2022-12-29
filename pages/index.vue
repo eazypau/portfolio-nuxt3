@@ -45,18 +45,18 @@ const personJson = {
   email: "poyizhi@gmail.com",
   url: "https://www.eazypau.com/",
 };
-// useHead({
-//   script: [
-//     {
-//       children: JSON.stringify(jsonLd),
-//       type: "application/ld+json",
-//     },
-//     {
-//       children: JSON.stringify(personJson),
-//       type: "application/ld+json",
-//     },
-//   ],
-// });
+useHead({
+  script: [
+    {
+      children: JSON.stringify(jsonLd),
+      type: "application/ld+json",
+    },
+    {
+      children: JSON.stringify(personJson),
+      type: "application/ld+json",
+    },
+  ],
+});
 definePageMeta({
   layout: false,
 });
