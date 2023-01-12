@@ -13,7 +13,7 @@
       <Skills id="skills" :skill-set="skillSet" />
       <div id="projects"></div>
       <ProjectSection :projects="projects" />
-      <WorkSection id="works" :working-projects="workingProjects" />
+      <!-- <WorkSection id="works" :working-projects="workingProjects" /> -->
       <HobbySection :hobbies="hobbies" />
       <div class="bg-white">
         <Contact id="contact" />

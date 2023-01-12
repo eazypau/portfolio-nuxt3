@@ -11,7 +11,7 @@
           <a href="/#about" class="footerBtn">About</a>
           <a href="/#skills" class="footerBtn">Skills</a>
           <a href="/#projects" class="footerBtn">Projects</a>
-          <a href="/#works" class="footerBtn">Works</a>
+          <!-- <a href="/#works" class="footerBtn">Works</a> -->
           <a href="/#contact" class="footerBtn">Contact</a>
         </nav>
         <!-- nav - end -->
