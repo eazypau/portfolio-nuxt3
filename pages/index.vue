@@ -101,6 +101,26 @@ const hobbies = [
 ];
 const projects = [
   {
+    isReverse: true,
+    title: "Order Management App",
+    titleColor: "text-white",
+    filterColor: "bg-slate-900 bg-opacity-60",
+    imageUrl: "/project-ss/order-management.webp",
+    description: "An order creation and management web app.",
+    techStack: [
+      "NextJS",
+      "TS",
+      "TailwindCSS",
+      "Prisma",
+      "tRPC",
+      "Zod",
+      "HeadlessUI",
+    ],
+    isUrl: true,
+    urlLink: "http://order-creation-web-app-vd9x.vercel.app/",
+    githubLink: "https://github.com/eazypau/order-creation-web-app",
+  },
+  {
     isReverse: false,
     title: "Eazy Chat App",
     titleColor: "text-white",
@@ -192,18 +212,18 @@ const projects = [
     urlLink: "https://saloonbooking-95d49.web.app/",
     githubLink: "https://github.com/eazypau/saloonbooking",
   },
-  {
-    isReverse: true,
-    title: "Tic Tac Toe",
-    titleColor: "text-white",
-    filterColor: "bg-zinc-700 mix-blend-hard-light",
-    imageUrl: "/project-ss/tictactoe-ss.webp",
-    description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    isUrl: true,
-    urlLink: "https://eazypau.github.io/tictactoe/",
-    githubLink: "https://github.com/eazypau/tictactoe",
-  },
+  // {
+  //   isReverse: true,
+  //   title: "Tic Tac Toe",
+  //   titleColor: "text-white",
+  //   filterColor: "bg-zinc-700 mix-blend-hard-light",
+  //   imageUrl: "/project-ss/tictactoe-ss.webp",
+  //   description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
+  //   techStack: ["HTML", "CSS", "JavaScript"],
+  //   isUrl: true,
+  //   urlLink: "https://eazypau.github.io/tictactoe/",
+  //   githubLink: "https://github.com/eazypau/tictactoe",
+  // },
 ];
 const workingProjects = [
   {
