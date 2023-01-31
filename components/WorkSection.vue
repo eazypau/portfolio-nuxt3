@@ -1,7 +1,7 @@
 <template>
   <section class="pt-28 pb-20">
     <h2 class="subTitle mb-5 lg:mb-10 px-3 subFontFamily workTitle">
-      Projects that I Worked On
+      Some Things I've Worked On
     </h2>
     <div class="workCardLane">
       <CardsWorkCard
@@ -13,7 +13,7 @@
       />
     </div>
     <div
-      class="flex flex-col justify-between md:w-10/12 lg:w-10/12 2xl:w-8/12 mx-6 md:mx-auto border-b-2 border-gray-100 subFontFamily overflow-hidden transition-all duration-500 ease-in-out"
+      class="flex flex-col justify-between md:w-10/12 lg:w-10/12 2xl:w-8/12 mx-6 md:mx-auto border-b-2 border-gray-200 subFontFamily overflow-hidden transition-all duration-500 ease-in-out"
       :class="{
         'pt-2 md:pt-7 h-0.5': isHeightZero,
         'pt-5 md:pt-10 h-[570px] md:h-[500px] lg:h-[530px] 2xl:h-[500px]':

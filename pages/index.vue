@@ -11,9 +11,9 @@
         </div>
       </div>
       <Skills id="skills" :skill-set="skillSet" />
+      <WorkSection id="works" :working-projects="workingProjects" />
       <div id="projects"></div>
       <ProjectSection :projects="projects" />
-      <!-- <WorkSection id="works" :working-projects="workingProjects" /> -->
       <HobbySection :hobbies="hobbies" />
       <div class="bg-white">
         <Contact id="contact" />
