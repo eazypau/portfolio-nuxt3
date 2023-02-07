@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title: "Web developer portfolio | Front End Developer",
+      title: "Web developer portfolio | Front End Developer - Po Yi Zhi",
       meta: [
         {
           name: "viewport",
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
             "Personal Portfolio Website. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
         },
         { name: "format-detection", content: "telephone=no" },
-        { name: "author", content: "Po Yi Zhi" },
+        { property: "author", content: "Po Yi Zhi" },
         {
           name: "keywords",
           content:
