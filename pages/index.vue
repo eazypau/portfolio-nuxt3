@@ -25,7 +25,7 @@
 const jsonLd = {
   "@context": "https://schema.org/",
   "@type": "WebSite",
-  name: "Po Yi Zhi, Front End Developer",
+  name: "Web developer portfolio | Front End Developer - Po Yi Zhi",
   author: {
     "@type": "Person",
     "@id": "#poyizhi",
