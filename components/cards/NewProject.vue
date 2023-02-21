@@ -20,7 +20,7 @@
         :class="projectDetails.filterColor"
       >
         <h3
-          class="font-extrabold text-2xl sm:text-4xl subFontFamily text-center"
+          class="font-extrabold text-center text-2xl sm:text-4xl subFontFamily"
           :class="projectDetails.titleColor"
         >
           {{ projectDetails.title }}
