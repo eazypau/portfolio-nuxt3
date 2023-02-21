@@ -73,7 +73,7 @@ const skillSet = [
   "Liquid",
   "jQuery",
   "SASS",
-  "Bootstrap",
+  // "Bootstrap",
   "Firebase",
   "Git",
 ];
@@ -84,15 +84,25 @@ const hobbies = [
     classBg: "bg-tea",
   },
   {
-    title: "Blog Writing",
+    title: "Journaling",
     text: "To pen down my thoughts",
-    classBg: "bg-blog",
+    classBg: "bg-journaling",
   },
   {
-    title: "Grocery Shopping",
-    text: "Buy some of my favourite snacks",
-    classBg: "bg-grocer",
+    title: "Learning new technologies/framework",
+    text: "To explore and expand my skillsets",
+    classBg: "bg-programming",
   },
+  // {
+  //   title: "Blog Writing",
+  //   text: "To pen down my thoughts",
+  //   classBg: "bg-blog",
+  // },
+  // {
+  //   title: "Grocery Shopping",
+  //   text: "Buy some of my favourite snacks",
+  //   classBg: "bg-grocer",
+  // },
   {
     title: "Listening to music",
     text: "Recent favourites: Bastille, HONNE, Milet and Yoasobi",
