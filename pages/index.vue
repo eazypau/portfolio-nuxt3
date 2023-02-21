@@ -73,7 +73,7 @@ const skillSet = [
   "Liquid",
   "jQuery",
   "SASS",
-  "Bootstrap",
+  // "Bootstrap",
   "Firebase",
   "Git",
 ];
