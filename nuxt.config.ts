@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title: "Web developer portfolio | Front End Developer - Po Yi Zhi",
+      title: "Web developer portfolio | Front End Developer",
       meta: [
         {
           name: "viewport",
