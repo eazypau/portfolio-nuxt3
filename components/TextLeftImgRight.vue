@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="container px-6 py-8 mx-auto">
-      <div class="items-center lg:flex lg:space-x-6">
-        <div class="lg:w-8/12 xl:w-9/12 subFontFamily leftText">
+      <div class="items-center justify-between lg:flex lg:space-x-10">
+        <div class="lg:w-7/12 subFontFamily leftText">
           <h2 class="text-3xl xl:text-4xl font-bold text-gray-800">
             Who am I?
           </h2>
@@ -19,6 +19,22 @@
               about it.
             </p>
             <p
+              class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
+              style="word-spacing: 5px"
+            >
+              Previously I worked as a full-time mechanical engineer in an M&E
+              consultancy firm. At first, I thought I loved doing my job. As
+              time goes by, I realize that I don't see myself wanting to
+              continue working in this field in the future. I told myself is
+              either I do something about it to change my life or do nothing
+              about it. Currently, I am working as a front-end web developer in
+              <a
+                class="font-bold text-indigo-600 hover:underline"
+                href="https://limitless.my/"
+                >Limitless Technology</a
+              >.
+            </p>
+            <!-- <p
               class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
               style="word-spacing: 5px"
             >
@@ -63,8 +79,8 @@
                 href="https://hackercollective.co/teams"
                 >The Hacker Collective</a
               >&nbsp;for a period of time.
-            </p>
-            <p
+            </p> -->
+            <!-- <p
               class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
               style="word-spacing: 5px"
             >
@@ -72,7 +88,27 @@
               <a class="font-bold hover:underline" href="https://limitless.my/"
                 >Limitless Technology</a
               >.
+            </p> -->
+
+            <p
+              class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
+              style="word-spacing: 5px"
+            >
+              Here are a few technologies I've been working with recently:
             </p>
+          </div>
+
+          <div class="summary-skill-list-container">
+            <ul class="list-disc list-inside">
+              <li>JavaScript</li>
+              <li>Vue</li>
+              <li>TailwindCSS</li>
+            </ul>
+            <ul class="list-disc list-inside">
+              <li>Shopify Liquid</li>
+              <li>React</li>
+              <li>TypeScript</li>
+            </ul>
           </div>
 
           <div class="flex items-center mt-6 -mx-2">
