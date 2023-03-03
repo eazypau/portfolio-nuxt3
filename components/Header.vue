@@ -14,7 +14,7 @@
       />
     </div>
     <div
-      class="relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10 headerFont text-4xl lg:text-6xl 2xl:text-7xl font-bold"
+      class="relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10 headerFont text-4xl lg:text-6xl 2xl:text-[4.1rem] font-bold"
     >
       <!-- <div>
         <MyTransition>
