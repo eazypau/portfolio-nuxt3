@@ -67,7 +67,7 @@
                 </div>
               </div>
               <hr />
-              <div class="space-y-3 lg:space-y-12 px-2 pb-5">
+              <div class="space-y-7 lg:space-y-12 px-2 pb-5">
                 <!-- right scrollable content -->
                 <div
                   v-for="imageShowcase in modalContent?.imageShowcase"
