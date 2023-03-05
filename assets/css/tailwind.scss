@@ -372,3 +372,49 @@ section.contact-section {
     @apply w-6 h-6;
   }
 }
+
+// modal
+.modal-container {
+  @apply relative z-50;
+
+  .modal-bg {
+    @apply fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity duration-200 ease-out;
+  }
+}
+
+.modal-fixed-wrapper {
+  @apply fixed inset-0 z-10 overflow-y-auto;
+
+  p {
+    @include sub-font-family;
+  }
+
+  .modal-size {
+    @apply flex min-h-full items-center justify-center p-4 text-center sm:p-0;
+
+    .modal {
+      @apply relative p-5 lg:px-10 transform lg:overflow-hidden rounded-lg bg-gray-100 text-left shadow-xl transition-all sm:my-8 h-[600px] 2xl:h-[700px] sm:w-full sm:max-w-lg md:max-w-xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl;
+    }
+
+    .x-icon {
+      @apply w-7 h-7 absolute right-3 lg:top-3 hover:text-red-600 transition duration-300 ease-out cursor-pointer;
+    }
+
+    .modal-heading {
+      @include sub-font-family;
+      @apply text-2xl lg:text-4xl font-bold lg:text-center;
+    }
+
+    hr {
+      @apply my-2 lg:mb-4 text-gray-800;
+    }
+
+    .modal-content-wrapper {
+      @apply space-y-3 lg:space-y-0 gap-7 h-[88%] overflow-y-auto;
+
+      hr {
+        @apply lg:hidden;
+      }
+    }
+  }
+}
