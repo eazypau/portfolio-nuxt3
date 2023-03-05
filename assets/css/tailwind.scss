@@ -114,7 +114,8 @@ header {
     @apply list-disc list-inside;
 
     li {
-      @apply py-1;
+      @include sub-font-family;
+      @apply py-1 text-gray-600;
     }
   }
 }
@@ -160,11 +161,11 @@ section#works {
     @apply mb-5 lg:mb-10 px-3;
   }
 }
-.workCardLane {
+.work-card-lane {
   @apply py-2 md:py-0 px-2 md:px-0 w-full overflow-x-auto md:overflow-visible md:w-10/12 lg:w-10/12 2xl:w-8/12 flex md:justify-around gap-2 md:gap-3 lg:gap-5 flex-nowrap mx-auto;
 
-  .workCardContainer {
-    @apply py-2 h-20 md:h-auto lg:py-0 lg:h-24 xl:h-28 w-[150px] bg-white flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out;
+  .work-card-container {
+    @apply relative py-2 h-20 md:h-auto lg:py-0 lg:h-24 xl:h-28 w-[150px] bg-white flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out;
 
     img {
       @apply max-w-[60%] md:max-w-[70%] 2xl:max-w-[70%];
@@ -172,7 +173,7 @@ section#works {
   }
 }
 
-.workCardLane::-webkit-scrollbar {
+.work-card-lane::-webkit-scrollbar {
   display: none;
 }
 

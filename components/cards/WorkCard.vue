@@ -1,5 +1,5 @@
 <template>
-  <div class="workCardContainer" @click="onClickFunction(content)">
+  <div class="work-card-container" @click="onClickFunction(content)">
     <img
       :src="image.src"
       :alt="image.alt"
