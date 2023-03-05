@@ -95,7 +95,7 @@ header {
 }
 
 // profile section
-.profile-socila-icons {
+.profile-social-icons {
   @apply flex items-center mt-6 -mx-2;
 
   a {
@@ -108,14 +108,14 @@ header {
 }
 
 .summary-skill-list-container {
-  @apply flex mt-5 gap-20;
+  @apply flex mt-3 gap-20;
 
   ul {
     @apply list-disc list-inside;
 
     li {
       @include sub-font-family;
-      @apply py-1 text-gray-600;
+      @apply py-0.5 text-gray-600;
     }
   }
 }
