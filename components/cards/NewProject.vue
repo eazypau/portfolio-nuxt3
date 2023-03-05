@@ -31,7 +31,7 @@
       leave-from="translate-y-0"
       leave-to="-translate-y-full"
     >
-      <div class="projectTextContainer">
+      <div class="project-text-container">
         <!-- content -->
         <div>
           <h4>
@@ -41,7 +41,7 @@
             {{ projectDetails.description }}
           </p>
         </div>
-        <div>
+        <div class="stack-and-project-links">
           <div class="tech-stack-container">
             <div v-for="(tech, index) in projectDetails.techStack" :key="tech">
               <p>

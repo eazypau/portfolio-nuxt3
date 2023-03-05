@@ -210,7 +210,7 @@ section.project-section {
     }
   }
 
-  .projectTextContainer {
+  .project-text-container {
     @include sub-font-family;
     @apply z-20 absolute inset-0 px-3 md:px-6 py-2 xl:py-4 w-full h-full flex flex-col justify-between bg-gray-900 bg-opacity-95 text-white;
 
@@ -222,7 +222,7 @@ section.project-section {
       @apply text-sm md:text-base font-medium;
     }
 
-    div:last-child {
+    .stack-and-project-links {
       @apply flex justify-between items-end max-h-9 space-x-5 mt-8 md:mt-5 lg:mt-0;
 
       .tech-stack-container {
