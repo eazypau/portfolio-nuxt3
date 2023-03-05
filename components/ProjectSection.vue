@@ -1,11 +1,7 @@
 <template>
-  <section class="pt-28 pb-20 px-4 lg:px-0">
-    <h2 class="subTitle mb-10 subFontFamily projectTitle">
-      My Personal Projects
-    </h2>
-    <div
-      class="px-4 md:px-0 md:w-8/12 lg:w-10/12 2xl:w-8/12 grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto"
-    >
+  <section class="project-section">
+    <h2 class="project-title">My Personal Projects</h2>
+    <div class="project-grid">
       <CardsNewProject
         v-for="project in projects"
         :key="project"
@@ -28,7 +24,7 @@ const props = defineProps({
 onMounted(() => {
   let titleTl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".projectTitle",
+      trigger: ".project-title",
       start: "-100px center",
       end: "top center",
       // markers: true,
@@ -36,13 +32,13 @@ onMounted(() => {
   });
   titleTl
     .addLabel("start")
-    .from(".projectTitle", { opacity: 0, translateX: "-100px" })
+    .from(".project-title", { opacity: 0, translateX: "-100px" })
     .addLabel("entering")
-    .to(".projectTitle", { opacity: 1, translateX: "0px", duration: 0.5 })
+    .to(".project-title", { opacity: 1, translateX: "0px", duration: 0.5 })
     .addLabel("end");
 
-  gsap.set(".projectCardContainer", { opacity: 0, y: 20 });
-  ScrollTrigger.batch(".projectCardContainer", {
+  gsap.set(".project-card", { opacity: 0, y: 20 });
+  ScrollTrigger.batch(".project-card", {
     start: "-130px center",
     end: "top center",
     // markers: true,

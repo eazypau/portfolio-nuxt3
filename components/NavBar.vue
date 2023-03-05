@@ -1,7 +1,7 @@
 <template>
   <nav
-    id="navBar"
-    class="z-30 navPadding flex items-center justify-between sticky top-0 w-full shadow transition-all duration-200 ease-in-out"
+    id="nav-bar"
+    class="navPadding"
     :class="navBgTextColor"
     style="height: 70px"
   >
@@ -10,7 +10,6 @@
         <button
           v-if="!loading"
           type="button"
-          class="flex items-center text-2xl font-bold cursor-pointer"
           aria-label="Website Logo"
           @click="goToHome"
         >
@@ -19,36 +18,28 @@
             width="40"
             height="40"
             alt="favicon"
-            class="w-10 h-10"
             loading="lazy"
           />
-          <p
-            class="hidden lg:block text-3xl font-bold ml-2 logoFont tracking-widest"
-          >
-            YZ.
-          </p>
+          <p>YZ.</p>
         </button>
       </Transition>
     </div>
-    <div
-      v-if="!loading"
-      class="hidden lg:flex font-medium space-x-5 lg:space-x-8 xl:space-x-10"
-    >
+    <div v-if="!loading" class="nav-links">
       <TransitionGroup appear @before-enter="before" @enter="entering">
         <a
           v-for="(item, index) in navigation"
           :key="item.id"
           :data-index="index"
           :href="item.href"
-          class="text-lg lg:text-lg xl:text-xl headerFont underAnimation"
+          class="underAnimation"
           >{{ item.name }}</a
         >
       </TransitionGroup>
     </div>
-    <Menu as="div" class="lg:hidden">
-      <div class="flex items-center">
+    <Menu as="div" class="mobile-hamburger">
+      <div class="menu-button">
         <MenuButton aria-label="Menu">
-          <MenuIcon class="w-8 h-8" />
+          <MenuIcon />
         </MenuButton>
       </div>
       <Transition
@@ -59,10 +50,8 @@
         leave-from-class="transform scale-100 opacity-100"
         leave-to-class="transform scale-95 opacity-0"
       >
-        <MenuItems
-          class="absolute right-0 w-64 mt-5 mr-8 md:mr-10 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-        >
-          <div class="px-1 py-1">
+        <MenuItems class="menu-items">
+          <div class="menu-item-padding">
             <MenuItem
               v-for="item in navigation"
               :key="item"
@@ -72,7 +61,7 @@
                 :href="item.href"
                 :class="[
                   active ? 'bg-gray-500 text-white' : 'text-gray-900',
-                  'group flex rounded-md items-center w-full px-4 py-3 font-medium text-lg',
+                  'group',
                 ]"
               >
                 {{ item.name }}
@@ -128,7 +117,7 @@ const navigation = [
   },
 ];
 const trackScroll = () => {
-  trackNavBarPosition("navBar");
+  trackNavBarPosition("nav-bar");
 };
 const goToHome = () => {
   if (route.path !== "/") {
@@ -192,7 +181,7 @@ onMounted(() => {
   // use scroll event to update the current position of nav bar
   window.addEventListener("scroll", trackScroll);
   screenHeight.value = window.innerHeight;
-  heightOfNav.value = document.getElementById("navBar").offsetHeight;
+  heightOfNav.value = document.getElementById("nav-bar").offsetHeight;
   currentScreenWidth.value = window.innerWidth;
   loading.value = false;
 });

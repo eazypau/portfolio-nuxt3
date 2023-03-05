@@ -1,17 +1,18 @@
 <template>
   <NuxtLayout name="default">
     <div>
+      <Modal
+        :is-open="isOpen"
+        :close-modal="closeModal"
+        :modal-content="currentModalContent"
+      />
       <Header />
-      <div class="bg-white">
-        <div
-          id="about"
-          class="md:w-10/12 lg:w-10/12 xl:w-9/12 pt-16 md:py-20 lg:pt-24 mx-auto"
-        >
-          <TextLeftImgRight />
-        </div>
-      </div>
-      <Skills id="skills" :skill-set="skillSet" />
-      <WorkSection id="works" :working-projects="workingProjects" />
+      <TextLeftImgRight />
+      <Skills :skill-set="skillSet" />
+      <WorkSection
+        :working-projects="workingProjects"
+        :on-click-function="showModal"
+      />
       <div id="projects"></div>
       <ProjectSection :projects="projects" />
       <HobbySection :hobbies="hobbies" />
@@ -245,36 +246,47 @@ const workingProjects = [
     },
     imageShowcase: [
       {
-        src: "/work/LVLY-productpage.png",
-        alt: "LVLY product page",
-        width: "726",
-        height: "460",
+        title: "Cart Page - Step 1",
+        src: "/work/lvly-cart-s1.png",
+        alt: "Cart Page - Step 1",
+        width: "800",
+        height: "446",
       },
       {
-        src: "/work/LVLY-homepage.png",
-        alt: "LVLY home page",
-        width: "726",
-        height: "460",
+        title: "Cart Page - Step 2",
+        src: "/work/lvly-cart-s2.png",
+        alt: "Cart Page - Step 2",
+        width: "800",
+        height: "404",
       },
       {
-        src: "/work/LVLY-cartpage.png",
-        alt: "LVLY cart page",
-        width: "726",
-        height: "460",
+        title: "Cart Page - Step 3",
+        src: "/work/lvly-cart-s3.png",
+        alt: "Cart Page - Step 3",
+        width: "800",
+        height: "637",
+      },
+      {
+        title: "Cart Page - Step 4",
+        src: "/work/lvly-cart-s4.png",
+        alt: "Cart Page - Step 4",
+        width: "800",
+        height: "520",
       },
     ],
     heading: "LVLY",
-    // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
-    // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
-    // delivery date and timeslot for their order. It allows customers to select their desired flower products
-    // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
-    // Asia and Australia.`,
+    // description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion.
+    // With its wide selection of blooms, LVLY is the perfect choice for those who are looking for a unique and special
+    // way to show their love and appreciation. From classic roses to exotic orchids, LVLY has something for everyone.
+    // Customers can choose from a variety of bouquets, vases and boxes to make sure that their gift is as special and
+    // unique as they are. With same-day delivery options,  LVLY ensures that its customers can get the perfect
+    // arrangement for any occasion.`,
     description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion.
-    With its wide selection of blooms, LVLY is the perfect choice for those who are looking for a unique and special
-    way to show their love and appreciation. From classic roses to exotic orchids, LVLY has something for everyone.
-    Customers can choose from a variety of bouquets, vases and boxes to make sure that their gift is as special and
-    unique as they are. With same-day delivery options,  LVLY ensures that its customers can get the perfect
-    arrangement for any occasion.`,
+    The aim was to work on the features for the cart page. Creating a step by step user interface to guide customer 
+    to checkout page. It allows the customer to pick their desired delivery date based on the postcode and suburb 
+    provided. Moreover, customer can also provide their card message, choose their desired jar message and greeting 
+    cards.`,
+    techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
     urls: [
       {
         name: "LVLY AU",
@@ -295,22 +307,32 @@ const workingProjects = [
     },
     imageShowcase: [
       {
-        src: "/work/FC-productpage.png",
-        alt: "Flowerchimp product page",
-        width: "726",
-        height: "460",
+        title: "Product Page",
+        src: "/work/fc-product-page.png",
+        alt: "Product Page",
+        width: "745",
+        height: "432",
       },
       {
-        src: "/work/FC-homepage.png",
-        alt: "Flowerchimp home page",
-        width: "726",
-        height: "460",
+        title: "Product Page - Addon Product Modal",
+        src: "/work/fc-product-addon-modal.png",
+        alt: "Product Page - Addon Product Modal",
+        width: "1000",
+        height: "492",
       },
       {
-        src: "/work/FC-cartpage.png",
-        alt: "Flowerchimp cart page",
-        width: "726",
-        height: "460",
+        title: "Cart Page",
+        src: "/work/fc-cart-page.png",
+        alt: "Cart Page",
+        width: "745",
+        height: "476",
+      },
+      {
+        title: "Cart Page - Empty Cart",
+        src: "/work/fc-empty-cart.png",
+        alt: "Cart Page - Empty Cart",
+        width: "745",
+        height: "351",
       },
     ],
     heading: "Flowerchimp",
@@ -321,9 +343,18 @@ const workingProjects = [
     // Asia and Australia.`,
     description: `Flowerchimp is an online flower shop that offers a wide selection of beautiful bouquets and
     arrangements to suit any occasion. Customers can choose from a variety of flowers, vases and boxes to make
-    sure their gift is special and unique. With same-day delivery options, Flowerchimp ensures their customers
-    can get the perfect arrangement for any event. From classic roses to exotic orchids, Flowerchimp has something
-    for everyone and is the perfect choice for those who want to show their love and appreciation.`,
+    sure their gift is special and unique. The aim was to work on revamping the product page and cart page. 
+    Making the user interface better and user friendly. The process also includes rewrite the functionality 
+    to the website slightly faster, improving user experience and making the codebase easier to maintain.`,
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Shopify Liquid",
+      "Splide",
+      "Modaal",
+    ],
     urls: [
       {
         name: "Flowerchimp MY",
@@ -340,35 +371,23 @@ const workingProjects = [
     },
     imageShowcase: [
       {
-        src: "/work/BL-productpage.png",
-        alt: "Bloomeroo product page",
-        width: "726",
-        height: "460",
-      },
-      {
-        src: "/work/BL-homepage.png",
-        alt: "Bloomeroo home page",
-        width: "726",
-        height: "460",
-      },
-      {
-        src: "/work/BL-cartpage.png",
-        alt: "Bloomeroo cart page",
-        width: "726",
-        height: "460",
+        title: "Cart Page",
+        src: "/work/bl-cart.png",
+        alt: "Cart Page",
+        width: "800",
+        height: "543",
       },
     ],
     heading: "Bloomeroo",
-    // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
-    // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
-    // delivery date and timeslot for their order. It allows customers to select their desired flower products
-    // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
-    // Asia and Australia.`,
+    // description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day
+    // delivery in Australia. The company strives to provide customers with the best selection of flowers, from traditional
+    // roses to unique tropical and exotic blooms. Our same-day delivery service ensures that no matter where you are in
+    // the country, you can get the perfect bouquet delivered to your door. `,
     description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day
-    delivery in Australia. The company strives to provide customers with the best selection of flowers, from traditional
-    roses to unique tropical and exotic blooms. Our same-day delivery service ensures that no matter where you are in
-    the country, you can get the perfect bouquet delivered to your door. With our wide selection, fast delivery, and
-    exceptional customer service, Bloomeroo is the perfect place to find the perfect floral gift for any occasion.`,
+    delivery in Australia. The aim was to work on generating the date picker by postcode input for the cart page. This 
+    requires user to provide postcode in order to choose their desired delivery date. Moreover, customer can also 
+    provide their card message and choose addon products before going to checkout page.`,
+    techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
     urls: [
       {
         name: "Bloomeroo",
@@ -385,33 +404,27 @@ const workingProjects = [
     },
     imageShowcase: [
       {
-        src: "/work/THC-startuppage.png",
-        alt: "The Hacker Collective startup page",
-        width: "726",
-        height: "460",
+        title: "Home Page",
+        src: "/work/thc-home-full.png",
+        alt: "Home Page",
+        width: "874",
+        height: "4796",
       },
       {
-        src: "/work/THC-homepage.png",
-        alt: "The Hacker Collective home page",
-        width: "726",
-        height: "460",
-      },
-      {
-        src: "/work/THC-invest.png",
-        alt: "The Hacker Collective invest page",
-        width: "726",
-        height: "460",
+        title: "Fundraising Page",
+        src: "/work/thc-fundraising.png",
+        alt: "Fundraising Page",
+        width: "805",
+        height: "5208",
       },
     ],
     heading: "The Hacker Collection Website",
-    // description: `A landing page website to display company information, businesses,
-    // programs, etc. This was created using Vue, Nuxt3, TailwindCSS,
-    // Javascript, and Headless UI.`,
     description: `The Hacker Collection (THC) is an innovative landing page website that offers a comprehensive
     overview of a company's mission, products, and services. With a modern and user-friendly design, THC offers
     an intuitive way to showcase a company's offerings and provides visually appealing and easy-to-understand
     information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to
     help customers interact with the company in a meaningful way.`,
+    techStack: ["Vue", "Nuxt3", "TailwindCSS", "HeadlessUI", "Heroicons"],
     urls: [
       {
         name: "THC Website",
@@ -420,4 +433,26 @@ const workingProjects = [
     ],
   },
 ];
+
+// modal functionality
+const isOpen = ref(false);
+const currentModalContent = ref({});
+const showModal = (content) => {
+  // lock page height?
+  // fill up modals with details
+  // open modal
+  currentModalContent.value = content;
+  isOpen.value = true;
+};
+const closeModal = () => {
+  isOpen.value = false;
+};
+
+onMounted(() => {
+  document.addEventListener("keyup", function (event) {
+    if (isOpen.value && event.key === "Escape") {
+      closeModal();
+    }
+  });
+});
 </script>

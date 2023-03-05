@@ -1,14 +1,10 @@
 <template>
-  <section id="skills" class="flex flex-col items-center pt-28 pb-20 lg:py-28">
-    <div class="mb-4 lg:mb-8">
-      <h2 class="subTitle subFontFamily techTitle">Technologies & Framework</h2>
+  <section id="skills">
+    <div>
+      <h2 class="techTitle">Technologies & Framework</h2>
     </div>
-    <ul class="flex flex-wrap justify-center lg:w-10/12 2xl:w-8/12 3xl:w-7/12">
-      <li
-        v-for="skill in skillSet"
-        :key="skill"
-        class="skillStyle subFontFamily"
-      >
+    <ul>
+      <li v-for="skill in skillSet" :key="skill" class="skillStyle">
         {{ skill }}
       </li>
     </ul>
