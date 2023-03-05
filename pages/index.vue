@@ -10,8 +10,8 @@
           <TextLeftImgRight />
         </div>
       </div>
-      <Skills id="skills" :skill-set="skillSet" />
-      <WorkSection id="works" :working-projects="workingProjects" />
+      <Skills :skill-set="skillSet" />
+      <WorkSection :working-projects="workingProjects" />
       <div id="projects"></div>
       <ProjectSection :projects="projects" />
       <HobbySection :hobbies="hobbies" />

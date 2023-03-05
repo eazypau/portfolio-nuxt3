@@ -1,10 +1,10 @@
 <template>
   <div
-    class="projectCardContainer"
+    class="project-card"
     @mouseover="hovered = true"
     @mouseleave="hovered = false"
   >
-    <div class="z-10 relative w-full h-full">
+    <div class="project-img-container">
       <!-- img -->
       <!-- previously is on hover change to gif :src="hovered ? projectDetails.gifUrl : projectDetails.imageUrl" -->
       <img
@@ -12,17 +12,10 @@
         width="535"
         height="261"
         alt="project image"
-        class="w-full h-full object-cover object-top"
         loading="lazy"
       />
-      <div
-        class="absolute inset-0 w-full h-full flex items-center justify-center"
-        :class="projectDetails.filterColor"
-      >
-        <h3
-          class="font-extrabold text-center text-2xl sm:text-4xl subFontFamily"
-          :class="projectDetails.titleColor"
-        >
+      <div :class="projectDetails.filterColor">
+        <h3 :class="projectDetails.titleColor">
           {{ projectDetails.title }}
         </h3>
       </div>
@@ -38,32 +31,28 @@
       leave-from="translate-y-0"
       leave-to="-translate-y-full"
     >
-      <div class="projectTextContainer subFontFamily">
+      <div class="projectTextContainer">
         <!-- content -->
         <div>
-          <h1 class="md:text-lg font-bold underline">
+          <h4>
             {{ projectDetails.title }}
-          </h1>
-          <p class="text-sm md:text-base font-medium">
+          </h4>
+          <p class="project-description">
             {{ projectDetails.description }}
           </p>
         </div>
-        <div
-          class="flex justify-between items-end max-h-9 space-x-5 mt-8 md:mt-5 lg:mt-0"
-        >
-          <div class="flex flex-wrap items-center">
+        <div>
+          <div class="tech-stack-container">
             <div v-for="(tech, index) in projectDetails.techStack" :key="tech">
-              <p class="text-xs md:text-sm font-medium">
+              <p>
                 {{ tech
-                }}<span
-                  v-if="index !== projectDetails.techStack.length - 1"
-                  class="px-1 font-bold"
+                }}<span v-if="index !== projectDetails.techStack.length - 1"
                   >&#183;</span
                 >
               </p>
             </div>
           </div>
-          <div class="flex items-center space-x-2 pb-0.5">
+          <div class="project-links">
             <a
               v-if="projectDetails.isUrl"
               :href="projectDetails.urlLink"

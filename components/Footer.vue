@@ -1,13 +1,9 @@
 <template>
-  <div class="bg-white pt-2 sm:pt-2">
-    <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <div
-        class="flex flex-col items-center border-t pt-3 lg:pt-6 xl:pt-4 2xl:pt-6"
-      >
+  <div class="footer-section">
+    <footer>
+      <div class="social-icons-and-navigation">
         <!-- nav - start -->
-        <nav
-          class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4 headerFont"
-        >
+        <nav>
           <a href="/#about" class="footerBtn">About</a>
           <a href="/#skills" class="footerBtn">Skills</a>
           <a href="/#works" class="footerBtn">Works</a>
@@ -17,14 +13,14 @@
         <!-- nav - end -->
 
         <!-- social - start -->
-        <div class="flex gap-4">
+        <div>
           <a
             href="https://www.instagram.com/yzpo/"
             aria-label="Instagram"
             target="_blank"
             class="footerIcon"
           >
-            <IconsInstaIcon class="w-6 h-6" />
+            <IconsInstaIcon />
           </a>
 
           <a
@@ -33,7 +29,7 @@
             target="_blank"
             class="footerIcon"
           >
-            <IconsFacebookIcon class="w-6 h-6" />
+            <IconsFacebookIcon />
           </a>
 
           <a
@@ -42,7 +38,7 @@
             target="_blank"
             class="footerIcon"
           >
-            <IconsLinkedInIcon class="w-6 h-6" />
+            <IconsLinkedInIcon />
           </a>
 
           <a
@@ -51,15 +47,13 @@
             target="_blank"
             class="footerIcon"
           >
-            <IconsGithubIcon class="w-6 h-6" />
+            <IconsGithubIcon />
           </a>
         </div>
         <!-- social - end -->
       </div>
 
-      <div
-        class="text-gray-500 text-sm text-center py-4 xl:py-4 2xl:py-8 headerFont"
-      >
+      <div class="copyright">
         © {{ CURRENT_YEAR }} - Present Po YZ. All rights reserved.
       </div>
     </footer>

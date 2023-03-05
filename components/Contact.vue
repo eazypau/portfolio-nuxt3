@@ -1,18 +1,14 @@
 <template>
-  <div
-    class="contactSectionHeight px-10 pt-24 sm:pb-16 md:pb-7 md:pt-16 flex items-center justify-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-0 xl:pb-4 2xl:pb-0"
-  >
-    <div class="max-w-xl sm:mx-auto lg:max-w-3xl xl:max-w-5xl">
-      <div
-        class="flex flex-col lg:flex-row mb-16 sm:text-center sm:mb-0 lg:gap-5 xl:gap-10 subFontFamily tracking-wide"
-      >
-        <div class="mb-10 md:mb-7 mt-3 sm:mx-auto xl:w-5/12">
+  <section class="contact-section">
+    <div class="contact-section-width">
+      <div>
+        <div class="img-container">
           <!-- <div
             class="flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-indigo-50"
           >
             <UserIcon class="w-9 h-9 lg:w-10 lg:h-10" />
           </div> -->
-          <div class="w-1/2 sm:w-1/4 lg:w-64 xl:w-full mx-auto">
+          <div>
             <img
               src="/undraw_personal_email.svg"
               alt="personal email svg"
@@ -21,15 +17,9 @@
             />
           </div>
         </div>
-        <div>
-          <div
-            class="max-w-xl mb-10 md:mx-auto sm:text-center lg:text-left lg:max-w-2xl xl:max-w-3xl md:mb-5 xl:mb-8 2xl:mb-12"
-          >
-            <h2
-              class="max-w-lg lg:max-w-3xl mb-6 text-3xl font-extrabold leading-none text-gray-900 sm:text-4xl xl:text-5xl 2xl:text-6xl md:mx-auto"
-            >
-              Get in touch with me
-            </h2>
+        <div class="details-cta-container">
+          <div>
+            <h2>Get in touch with me</h2>
             <!-- <p
               class="text-base text-justify text-gray-600 md:text-lg 2xl:text-xl"
               style="word-spacing: 5px"
@@ -40,38 +30,27 @@
               free to reach me through email or my contact information in my
               resume.
             </p> -->
-            <p
-              class="text-base md:text-center lg:text-justify text-gray-600 md:text-lg 2xl:text-xl"
-              style="word-spacing: 5px"
-            >
+            <p>
               Although I’m not currently looking for any new opportunities, my
               inbox is always open. Whether you have a question, want to work
               together or just want to say hi, I’ll try my best to get back to
               you!
             </p>
           </div>
-          <div
-            class="md:space-x-3 space-y-3 md:space-y-0 flex flex-col md:flex-row justify-center lg:justify-start"
-          >
+          <div>
             <a
               href="/resume/my-resume.pdf"
               download="resume_poyizhi"
               target="_blank"
-              class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-gray-600 to-gray-900 hover:from-gray-600 hover:to-gray-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
             >
-              <ClipboardListIcon class="w-5 h-5 mr-2" /> My Resume
+              <ClipboardListIcon /> My Resume
             </a>
-            <a
-              href="mailto:poyizhi@gmail.com"
-              class="inline-flex items-center justify-center h-12 px-6 text-lg text-white font-medium bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600 transition duration-200 rounded shadow-md hover:shadow-gray-400 focus:shadow-outline focus:outline-none"
-            >
-              <MailIcon class="w-5 h-5 mr-2" /> Say Hello!
-            </a>
+            <a href="mailto:poyizhi@gmail.com"> <MailIcon /> Say Hello! </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script setup>
 import { MailIcon, ClipboardListIcon } from "@heroicons/vue/outline";

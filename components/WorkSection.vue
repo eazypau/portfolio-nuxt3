@@ -1,8 +1,6 @@
 <template>
-  <section class="pt-28 pb-20">
-    <h2 class="subTitle mb-5 lg:mb-10 px-3 subFontFamily workTitle">
-      Some Things I've Worked On
-    </h2>
+  <section id="works">
+    <h2 class="workTitle">Some Things I've Worked On</h2>
     <div class="workCardLane">
       <CardsWorkCard
         v-for="project in workingProjects"
@@ -12,7 +10,7 @@
         :content="project"
       />
     </div>
-    <div
+    <!-- <div
       class="flex flex-col justify-between md:w-10/12 lg:w-10/12 2xl:w-8/12 mx-6 md:mx-auto border-b-2 border-gray-200 subFontFamily overflow-hidden transition-all duration-500 ease-in-out"
       :class="{
         'pt-2 md:pt-7 h-0.5': isHeightZero,
@@ -68,7 +66,7 @@
           >
         </p>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 <script setup>
@@ -156,35 +154,35 @@ const websiteContent = ref({
   ],
 });
 
-const revealDescription = (content) => {
-  const previousContent = { ...websiteContent.value };
-  const nextContent = { ...content };
+// const revealDescription = (content) => {
+//   const previousContent = { ...websiteContent.value };
+//   const nextContent = { ...content };
 
-  if (previousContent.heading === nextContent.heading && isHeightAuto.value) {
-    isHeightAuto.value = false;
-    isHeightZero.value = true;
-    return;
-  }
-  if (previousContent.heading === nextContent.heading && isHeightZero.value) {
-    isHeightAuto.value = true;
-    isHeightZero.value = false;
-    return;
-  }
-  if (previousContent.heading !== nextContent.heading && isHeightZero.value) {
-    websiteContent.value = nextContent;
-    isHeightAuto.value = true;
-    isHeightZero.value = false;
-    return;
-  }
-  if (previousContent.heading !== nextContent.heading && isHeightAuto.value) {
-    isHeightAuto.value = false;
-    isHeightZero.value = true;
-    setTimeout(() => {
-      websiteContent.value = nextContent;
-      isHeightAuto.value = true;
-      isHeightZero.value = false;
-    }, 500);
-    return;
-  }
-};
+//   if (previousContent.heading === nextContent.heading && isHeightAuto.value) {
+//     isHeightAuto.value = false;
+//     isHeightZero.value = true;
+//     return;
+//   }
+//   if (previousContent.heading === nextContent.heading && isHeightZero.value) {
+//     isHeightAuto.value = true;
+//     isHeightZero.value = false;
+//     return;
+//   }
+//   if (previousContent.heading !== nextContent.heading && isHeightZero.value) {
+//     websiteContent.value = nextContent;
+//     isHeightAuto.value = true;
+//     isHeightZero.value = false;
+//     return;
+//   }
+//   if (previousContent.heading !== nextContent.heading && isHeightAuto.value) {
+//     isHeightAuto.value = false;
+//     isHeightZero.value = true;
+//     setTimeout(() => {
+//       websiteContent.value = nextContent;
+//       isHeightAuto.value = true;
+//       isHeightZero.value = false;
+//     }, 500);
+//     return;
+//   }
+// };
 </script>

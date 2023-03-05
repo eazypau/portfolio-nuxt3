@@ -1,9 +1,7 @@
 <template>
-  <section class="flex flex-col items-center px-4 py-24">
-    <h2 class="subTitle mb-10 md:mb-16 subFontFamily hobbyTitle">
-      Some of My Favourite Activities
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+  <section id="hobbies">
+    <h2 class="hobbyTitle">Some of My Favourite Activities</h2>
+    <div class="hobby-grid">
       <CardsHobby
         v-for="item in hobbies"
         :key="item"

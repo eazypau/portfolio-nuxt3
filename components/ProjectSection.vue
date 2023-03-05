@@ -1,11 +1,7 @@
 <template>
-  <section class="pt-28 pb-20 px-4 lg:px-0">
-    <h2 class="subTitle mb-10 subFontFamily projectTitle">
-      My Personal Projects
-    </h2>
-    <div
-      class="px-4 md:px-0 md:w-8/12 lg:w-10/12 2xl:w-8/12 grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto"
-    >
+  <section class="project-section">
+    <h2 class="projectTitle">My Personal Projects</h2>
+    <div class="project-grid">
       <CardsNewProject
         v-for="project in projects"
         :key="project"

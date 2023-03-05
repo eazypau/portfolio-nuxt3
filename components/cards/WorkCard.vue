@@ -6,7 +6,6 @@
       :width="image.width"
       :height="image.height"
       loading="lazy"
-      class="max-w-[60%] md:max-w-[70%] 2xl:max-w-[70%]"
     />
   </div>
 </template>

@@ -2,15 +2,10 @@
   <section>
     <div class="container px-6 py-8 mx-auto">
       <div class="items-center justify-between lg:flex lg:space-x-10">
-        <div class="lg:w-7/12 subFontFamily leftText">
-          <h2 class="text-3xl xl:text-4xl font-bold text-gray-800">
-            Who am I?
-          </h2>
-          <div>
-            <p
-              class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
-              style="word-spacing: 5px"
-            >
+        <div class="lg:w-7/12 leftText">
+          <h2 class="profile-title">Who am I?</h2>
+          <div class="profile-description-container">
+            <p>
               Previously I worked as a full-time mechanical engineer in an M&E
               consultancy firm. At first, I thought I loved doing my job. As
               time goes by, I realize that I don't see myself wanting to
@@ -18,10 +13,7 @@
               either I do something about it to change my life or do nothing
               about it.
             </p>
-            <p
-              class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
-              style="word-spacing: 5px"
-            >
+            <p>
               Previously I worked as a full-time mechanical engineer in an M&E
               consultancy firm. At first, I thought I loved doing my job. As
               time goes by, I realize that I don't see myself wanting to
@@ -90,62 +82,53 @@
               >.
             </p> -->
 
-            <p
-              class="mt-4 text-gray-600 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl"
-              style="word-spacing: 5px"
-            >
-              Here are a few technologies I've been working with recently:
-            </p>
+            <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
           <div class="summary-skill-list-container">
-            <ul class="list-disc list-inside">
+            <ul>
               <li>JavaScript</li>
               <li>Vue</li>
               <li>TailwindCSS</li>
             </ul>
-            <ul class="list-disc list-inside">
+            <ul>
               <li>Shopify Liquid</li>
               <li>React</li>
               <li>TypeScript</li>
             </ul>
           </div>
 
-          <div class="flex items-center mt-6 -mx-2">
+          <div class="profile-socila-icons">
             <a
-              class="mx-2"
               href="https://www.instagram.com/yzpo/"
               aria-label="Instagram"
               target="blank"
             >
-              <IconsInstaIcon class="IconInProfile" />
+              <IconsInstaIcon />
             </a>
 
             <a
-              class="mx-2"
               href="https://www.facebook.com/yizhipo"
               aria-label="Facebook"
               target="blank"
             >
-              <IconsFacebookIcon class="IconInProfile" />
+              <IconsFacebookIcon />
             </a>
 
             <a
-              class="mx-2"
               href="https://www.linkedin.com/in/yzpo/"
               aria-label="Linkden"
               target="blank"
             >
-              <IconsLinkedInIcon class="IconInProfile" />
+              <IconsLinkedInIcon />
             </a>
 
             <a
-              class="mx-2"
               href="https://github.com/eazypau"
               aria-label="Github"
               target="blank"
             >
-              <IconsGithubIcon class="IconInProfile" />
+              <IconsGithubIcon />
             </a>
           </div>
         </div>
@@ -154,7 +137,6 @@
           <div class="flex items-center justify-center lg:justify-end group">
             <div class="profileImgContainer">
               <img
-                class="bg-white object-cover object-top rounded-full group-hover:grayscale transition-all ease-out duration-300"
                 src="/profile-pics/profile.webp"
                 width="350"
                 height="350"

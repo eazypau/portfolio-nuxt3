@@ -4,70 +4,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
-.subFontFamily {
-	// font-family: 'Lato', sans-serif;
-	font-family: "Raleway", sans-serif;
+// mixins
+@mixin sub-font-family {
+  // font-family: 'Lato', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.headerFont {
-	font-family: "Montserrat", sans-serif;
+@mixin header-font {
+  font-family: "Montserrat", sans-serif;
 }
-.logoFont {
-	font-family: "Carter One", cursive;
+@mixin logo-font {
+  font-family: "Carter One", cursive;
+}
+@mixin sub-title {
+  @apply text-3xl lg:text-4xl text-center font-bold text-gray-800;
 }
 
 .navPadding {
-	padding: 15px 30px;
-}
-@media (min-width: 768px) {
-	.navPadding {
-		padding: 15px 50px;
-	}
-}
-@media (min-width: 1024px) {
-	.navPadding {
-		padding: 15px 108px;
-	}
-}
-@media (min-width: 1440px) {
-	.navPadding {
-		padding: 15px 160px;
-	}
-}
-@media (min-width: 1536px) {
-	.navPadding {
-		padding: 15px 200px;
-	}
-}
-@media (min-width: 1660px) {
-	.navPadding {
-		padding: 15px 260px;
-	}
-}
-.contactSectionHeight {
-	height: auto;
-  }
+  padding: 15px 30px;
+
   @media (min-width: 768px) {
-	.contactSectionHeight {
-	  height: calc(100vh - 173px);
-	}
+    padding: 15px 50px;
   }
+  @media (min-width: 1024px) {
+    padding: 15px 108px;
+  }
+  @media (min-width: 1440px) {
+    padding: 15px 160px;
+  }
+  @media (min-width: 1536px) {
+    padding: 15px 200px;
+  }
+  @media (min-width: 1660px) {
+    padding: 15px 260px;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
-	width: 7px;
+  width: 7px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	background: transparent;
+  background: transparent;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background-color: #000000;
-	border-radius: 5px;
-	opacity: 0.2;
+  background-color: #000000;
+  border-radius: 5px;
+  opacity: 0.2;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #9ca3af;
+  background: #9ca3af;
 }
 
 // bg colors
