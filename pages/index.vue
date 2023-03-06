@@ -286,6 +286,16 @@ const workingProjects = [
     to checkout page. It allows the customer to pick their desired delivery date based on the postcode and suburb 
     provided. Moreover, customer can also provide their card message, choose their desired jar message and greeting 
     cards.`,
+    teamMembers: [
+      {
+        name: "Sylvia Chan",
+        linkedIn: "https://www.linkedin.com/in/sylviaachann/",
+      },
+      {
+        name: "Chan Sin Yee",
+        linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
+      },
+    ],
     techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
     urls: [
       {
@@ -346,6 +356,16 @@ const workingProjects = [
     sure their gift is special and unique. The aim was to work on revamping the product page and cart page. 
     Making the user interface better and user friendly. The process also includes rewrite the functionality 
     to the website slightly faster, improving user experience and making the codebase easier to maintain.`,
+    teamMembers: [
+      {
+        name: "Sylvia Chan",
+        linkedIn: "https://www.linkedin.com/in/sylviaachann/",
+      },
+      {
+        name: "Chan Sin Yee",
+        linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
+      },
+    ],
     techStack: [
       "HTML",
       "CSS",
@@ -388,6 +408,16 @@ const workingProjects = [
     requires user to provide postcode in order to choose their desired delivery date. Moreover, customer can also 
     provide their card message and choose addon products before going to checkout page.`,
     techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
+    teamMembers: [
+      {
+        name: "Sylvia Chan",
+        linkedIn: "https://www.linkedin.com/in/sylviaachann/",
+      },
+      {
+        name: "Chan Sin Yee",
+        linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
+      },
+    ],
     urls: [
       {
         name: "Bloomeroo",
@@ -425,6 +455,7 @@ const workingProjects = [
     information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to
     help customers interact with the company in a meaningful way.`,
     techStack: ["Vue", "Nuxt3", "TailwindCSS", "HeadlessUI", "Heroicons"],
+    teamMembers: [],
     urls: [
       {
         name: "THC Website",
