@@ -137,7 +137,7 @@ header {
 
 // skill section
 section#skills {
-  @apply flex flex-col items-center pt-28 pb-20 lg:py-28;
+  @apply flex flex-col items-center pt-24 md:pt-28 md:pb-20 lg:py-28;
 
   div {
     @apply mb-4 lg:mb-8;
@@ -155,14 +155,14 @@ section#skills {
 
 // work section
 section#works {
-  @apply pt-28 pb-20;
+  @apply pt-24 md:pt-28 md:pb-20;
 
   h2 {
     @apply mb-5 lg:mb-10 px-3;
   }
 }
 .work-card-lane {
-  @apply py-2 md:py-0 px-2 md:px-0 w-full overflow-x-auto md:overflow-visible md:w-10/12 lg:w-10/12 2xl:w-8/12 flex md:justify-around gap-2 md:gap-3 lg:gap-5 flex-nowrap mx-auto;
+  @apply py-2 md:py-0 px-2 md:px-0 md:w-10/12 lg:w-10/12 2xl:w-8/12 flex justify-center md:justify-around gap-2 md:gap-3 lg:gap-5 flex-wrap md:flex-nowrap mx-auto;
 
   .work-card-container {
     @apply relative py-2 h-20 md:h-auto lg:py-0 lg:h-24 xl:h-28 w-[150px] bg-white flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out;
@@ -246,7 +246,7 @@ section.project-section {
 
 // hobby section
 section#hobbies {
-  @apply flex flex-col items-center px-4 py-24;
+  @apply flex flex-col items-center px-4 py-16 md:py-24;
 
   h2 {
     @apply mb-10 md:mb-16;
