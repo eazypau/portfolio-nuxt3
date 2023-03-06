@@ -24,25 +24,52 @@
                 class="lg:flex justify-between gap-10 lg:px-2 lg:mb-7 xl:mb-10"
               >
                 <p class="text-sm lg:text-base lg:w-1/2">
-                  <!-- left content -->
                   {{ modalContent?.description }}
                 </p>
 
                 <div class="lg:flex flex-col justify-between lg:w-1/2">
-                  <div class="mt-3 lg:mt-0">
-                    <p class="text-sm lg:text-base">Tech Stack:</p>
-                    <p class="flex flex-wrap">
-                      <span
-                        v-for="(tech, index) in modalContent?.techStack"
-                        :key="tech"
-                        class="text-sm lg:text-base"
-                        >{{ tech
-                        }}<span
-                          v-if="index !== modalContent?.techStack.length - 1"
-                          >&nbsp;&#183;&nbsp;</span
-                        ></span
-                      >
-                    </p>
+                  <div class="lg:mb-7">
+                    <div
+                      v-if="modalContent.teamMembers.length > 0"
+                      class="mt-3 mb-3 lg:mt-0"
+                    >
+                      <p class="text-sm lg:text-base">Team Member:</p>
+                      <p class="flex flex-wrap">
+                        <span
+                          v-for="(member, index) in modalContent?.teamMembers"
+                          :key="member.name"
+                          class="text-sm lg:text-base"
+                          ><a
+                            :href="member.linkedIn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {{ member.name }}</a
+                          ><span
+                            v-if="
+                              index !== modalContent?.teamMembers.length - 1
+                            "
+                            >&nbsp;&#183;&nbsp;</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+
+                    <div class="mt-3 lg:mt-0">
+                      <p class="text-sm lg:text-base">Tech Stack:</p>
+                      <p class="flex flex-wrap">
+                        <span
+                          v-for="(tech, index) in modalContent?.techStack"
+                          :key="tech"
+                          class="text-sm lg:text-base"
+                          >{{ tech
+                          }}<span
+                            v-if="index !== modalContent?.techStack.length - 1"
+                            >&nbsp;&#183;&nbsp;</span
+                          ></span
+                        >
+                      </p>
+                    </div>
                   </div>
 
                   <div class="flex items-center flex-wrap mt-3 lg:mt-0">
