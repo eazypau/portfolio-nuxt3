@@ -42,3 +42,6 @@ $ npm run start
 - [Learn our UX/UI process - Real client project](https://www.youtube.com/watch?v=gRqHEjATSCE&ab_channel=Malewicz)
 - [Beautiful, High-Resolution No Cost Stock Images](https://negativespace.co/)
 - [15 Web Developer Portfolios to Inspire You](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
+
+## Remarks
+- Please remove my Google Analytic Script before using this project.
