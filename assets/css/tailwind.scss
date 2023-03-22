@@ -162,13 +162,13 @@ section#works {
   }
 }
 .work-card-lane {
-  @apply py-2 md:py-0 px-2 md:px-0 md:w-10/12 lg:w-10/12 2xl:w-8/12 flex justify-center md:justify-around gap-2 md:gap-3 lg:gap-5 flex-wrap md:flex-nowrap mx-auto;
+  @apply py-2 md:py-0 px-2 md:px-0 md:w-10/12 lg:w-10/12 2xl:w-8/12 flex justify-center md:justify-around xl:justify-center gap-6 md:gap-5 lg:gap-7 flex-wrap mx-auto;
 
   .work-card-container {
-    @apply relative py-2 h-20 md:h-auto lg:py-0 lg:h-24 xl:h-28 w-[150px] bg-white flex-shrink-0 md:flex-shrink md:w-1/4 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out;
+    @apply relative py-2 h-36 md:h-[125px] lg:h-[150px] xl:h-[180px] lg:py-0 w-10/12 md:w-[48%] 2xl:w-[45%] bg-white flex-shrink-0 md:flex-shrink rounded-lg shadow-md hover:shadow-lg flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-in-out;
 
     img {
-      @apply max-w-[60%] md:max-w-[70%] 2xl:max-w-[70%];
+      @apply max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%];
     }
   }
 }
