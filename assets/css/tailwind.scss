@@ -137,7 +137,7 @@ header {
 
 // skill section
 section#skills {
-  @apply flex flex-col items-center pt-24 md:pt-28 md:pb-20 lg:py-28;
+  @apply flex flex-col items-center pt-24 md:pt-28 md:pb-20 px-1 lg:py-28;
 
   div {
     @apply mb-4 lg:mb-8;
@@ -148,7 +148,11 @@ section#skills {
 
     li {
       @include sub-font-family;
-      @apply border-b-2 border-l-2 border-r-2 border-gray-50 rounded-md font-semibold md:text-xl py-2.5 px-6 shadow-lg mx-2 mt-4 lg:mt-0 lg:mb-4 2xl:mb-6 cursor-default transition ease-in-out duration-200;
+      @apply w-[29%] md:w-[22%] lg:w-1/5 xl:w-1/6 border-b-2 border-l-2 border-r-2 border-gray-50 rounded-md font-semibold md:text-xl p-2 md:px-6 shadow hover:shadow-lg mx-2 mt-4 lg:mt-0 lg:mb-4 2xl:mb-6 cursor-default transition ease-in-out duration-200;
+
+      p {
+        @apply mt-1 text-center;
+      }
     }
   }
 }

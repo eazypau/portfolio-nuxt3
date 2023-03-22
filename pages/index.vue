@@ -8,7 +8,7 @@
       />
       <Header />
       <TextLeftImgRight />
-      <Skills :skill-set="skillSet" />
+      <Skills :skill-set="skillWithLogo" />
       <WorkSection
         :working-projects="workingProjects"
         :on-click-function="showModal"
@@ -61,22 +61,64 @@ useHead({
 definePageMeta({
   layout: false,
 });
-const skillSet = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Vue",
-  "Nuxt",
-  "React",
-  "TypeScript",
-  "Tailwind",
-  "Shopify",
-  "Liquid",
-  "jQuery",
-  "SASS",
-  // "Bootstrap",
-  "Firebase",
-  "Git",
+const skillWithLogo = [
+  {
+    imgUrl: "/logos/html5-original.svg",
+    name: "HTML",
+  },
+  {
+    imgUrl: "/logos/css3-plain-wordmark.svg",
+    name: "CSS",
+  },
+  {
+    imgUrl: "/logos/javascript-original.svg",
+    name: "JavaScript",
+  },
+  {
+    imgUrl: "/logos/vuejs-original.svg",
+    name: "Vue",
+  },
+  {
+    imgUrl: "/logos/nuxtjs-original.svg",
+    name: "Nuxt",
+  },
+  {
+    imgUrl: "/logos/react-original.svg",
+    name: "React",
+  },
+  {
+    imgUrl: "/logos/tailwindcss-plain.svg",
+    name: "TailwindCSS",
+  },
+  {
+    imgUrl: "/logos/firebase-plain.svg",
+    name: "Firebase",
+  },
+  {
+    imgUrl: "/logos/typescript-original.svg",
+    name: "TypeScript",
+  },
+  {
+    imgUrl: "/logos/nodejs-original.svg",
+    name: "NodeJS",
+  },
+  {
+    imgUrl: "/logos/git-original.svg",
+    name: "Git",
+  },
+  {
+    imgUrl:
+      "https://camo.githubusercontent.com/4da68843d90e7194500a8e2f9de72ecfc7e4554d4b8388b5d4db8e5c439c442f/68747470733a2f2f7777772e636c6f756477617264732e6e65742f77702d636f6e74656e742f75706c6f6164732f323031382f30392f53686f706966792d4c69717569642d50726f674c616e672e706e67",
+    name: "Liquid",
+  },
+  {
+    imgUrl: "/logos/shopify-b&w.png",
+    name: "Shopify",
+  },
+  {
+    imgUrl: "/logos/jquery-original.svg",
+    name: "jQuery",
+  },
 ];
 const hobbies = [
   {

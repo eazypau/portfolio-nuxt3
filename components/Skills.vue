@@ -5,7 +5,8 @@
     </div>
     <ul>
       <li v-for="skill in skillSet" :key="skill" class="skillStyle">
-        {{ skill }}
+        <img :src="skill.imgUrl" :alt="skill.name" loading="lazy" />
+        <p>{{ skill.name }}</p>
       </li>
     </ul>
   </section>
