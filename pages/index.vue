@@ -285,6 +285,7 @@ const workingProjects = [
       alt: "LVLY",
       width: "410",
       height: "117",
+      maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
     },
     imageShowcase: [
       {
@@ -356,6 +357,7 @@ const workingProjects = [
       alt: "Flowerchimp",
       width: "410",
       height: "205",
+      maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
     },
     imageShowcase: [
       {
@@ -430,6 +432,7 @@ const workingProjects = [
       alt: "Bloomeroo",
       width: "410",
       height: "82",
+      maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
     },
     imageShowcase: [
       {
@@ -473,6 +476,7 @@ const workingProjects = [
       alt: "The Hacker Collection Website",
       width: "62",
       height: "65",
+      maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
     },
     imageShowcase: [
       {
