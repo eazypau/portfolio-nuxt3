@@ -41,7 +41,7 @@ onMounted(() => {
 
   gsap.set(".skillStyle", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".skillStyle", {
-    start: "-100px center",
+    start: "-160px center",
     end: "top center",
     // markers: true,
     onEnter: (batch) => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),
