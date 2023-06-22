@@ -495,11 +495,11 @@ const workingProjects = [
       },
     ],
     heading: "Cakerush MY",
-    description: `The Hacker Collection (THC) is an innovative landing page website that offers a comprehensive
-    overview of a company's mission, products, and services. With a modern and user-friendly design, THC offers
-    an intuitive way to showcase a company's offerings and provides visually appealing and easy-to-understand
-    information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to
-    help customers interact with the company in a meaningful way.`,
+    description: `Cakerush MY is an innovative online platform offering a wide selection of exquisite cakes and pastries. 
+    With a user-friendly interface, customers can easily browse and customize their orders for any occasion. From classic 
+    flavors to personalized designs, each cake is meticulously crafted using the finest ingredients. Cakerush MY ensures 
+    timely delivery, bringing fresh and visually stunning cakes to your doorstep. Elevate your celebrations with their 
+    exceptional creations and exceptional service.`,
     techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
     teamMembers: [
       {
