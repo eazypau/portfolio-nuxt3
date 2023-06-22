@@ -520,9 +520,13 @@ const showModal = (content) => {
   // open modal
   currentModalContent.value = content;
   isOpen.value = true;
+  document.body.style.height = "100vh";
+  document.body.style.overflow = "hidden";
 };
 const closeModal = () => {
   isOpen.value = false;
+  document.body.style.height = "auto";
+  document.body.style.overflow = "visible";
 };
 
 onMounted(() => {
