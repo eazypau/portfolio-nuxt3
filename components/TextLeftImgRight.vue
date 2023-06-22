@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="flex items-center bg-white py-16 md:py-20 lg:py-0">
+  <section id="about" class="flex items-center bg-white pt-24 md:py-20 lg:py-0">
     <div class="px-6 mx-auto md:w-10/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12">
       <div class="items-center justify-between lg:flex lg:space-x-10">
         <div class="lg:w-7/12 leftText">
