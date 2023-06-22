@@ -472,6 +472,50 @@ const workingProjects = [
   },
   {
     image: {
+      src: "/work/cr-footer-logo.webp",
+      alt: "Cakerush MY",
+      width: "183",
+      height: "42",
+      maxWidth: "max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%]",
+    },
+    imageShowcase: [
+      {
+        title: "Home Page Top Part",
+        src: "/work/cakerush-main.png",
+        alt: "Home Page Top Part",
+        width: "1918",
+        height: "2368",
+      },
+      {
+        title: "Home Page MultiTab Section",
+        src: "/work/cakerush-tabs.png",
+        alt: "Home Page MultiTab Section",
+        width: "1898",
+        height: "942",
+      },
+    ],
+    heading: "Cakerush MY",
+    description: `The Hacker Collection (THC) is an innovative landing page website that offers a comprehensive
+    overview of a company's mission, products, and services. With a modern and user-friendly design, THC offers
+    an intuitive way to showcase a company's offerings and provides visually appealing and easy-to-understand
+    information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to
+    help customers interact with the company in a meaningful way.`,
+    techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
+    teamMembers: [
+      {
+        name: "Sylvia Chan",
+        linkedIn: "https://www.linkedin.com/in/sylviaachann/",
+      },
+    ],
+    urls: [
+      {
+        name: "Cakerush MY",
+        link: "https://www.cakerush.my/",
+      },
+    ],
+  },
+  {
+    image: {
       src: "/work/thc-logo.webp",
       alt: "The Hacker Collection Website",
       width: "62",
