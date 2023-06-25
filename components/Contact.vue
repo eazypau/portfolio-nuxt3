@@ -38,13 +38,13 @@
             </p>
           </div>
           <div>
-            <a
+            <!-- <a
               href="/resume/my-resume.pdf"
               download="resume_poyizhi"
               target="_blank"
             >
               <ClipboardListIcon /> My Resume
-            </a>
+            </a> -->
             <a href="mailto:poyizhi@gmail.com"> <MailIcon /> Say Hello! </a>
           </div>
         </div>
