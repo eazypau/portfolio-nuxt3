@@ -65,59 +65,87 @@ const skillWithLogo = [
   {
     imgUrl: "/logos/html5-original.svg",
     name: "HTML",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/css3-plain-wordmark.svg",
     name: "CSS",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/javascript-original.svg",
     name: "JavaScript",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/vuejs-original.svg",
     name: "Vue",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/nuxtjs-original.svg",
     name: "Nuxt",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/react-original.svg",
     name: "React",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/tailwindcss-plain.svg",
     name: "TailwindCSS",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/firebase-plain.svg",
     name: "Firebase",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/typescript-original.svg",
     name: "TypeScript",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/nodejs-original.svg",
     name: "NodeJS",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl: "/logos/git-original.svg",
     name: "Git",
+    width: 150,
+    height: 150,
   },
   {
     imgUrl:
       "https://camo.githubusercontent.com/4da68843d90e7194500a8e2f9de72ecfc7e4554d4b8388b5d4db8e5c439c442f/68747470733a2f2f7777772e636c6f756477617264732e6e65742f77702d636f6e74656e742f75706c6f6164732f323031382f30392f53686f706966792d4c69717569642d50726f674c616e672e706e67",
     name: "Liquid",
+    width: 321,
+    height: 315,
   },
   {
     imgUrl: "/logos/shopify-b&w.png",
     name: "Shopify",
+    width: 512,
+    height: 512,
   },
   {
     imgUrl: "/logos/jquery-original.svg",
     name: "jQuery",
+    width: 150,
+    height: 150,
   },
 ];
 const hobbies = [

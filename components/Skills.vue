@@ -5,7 +5,13 @@
     </div>
     <ul>
       <li v-for="skill in skillSet" :key="skill" class="skillStyle">
-        <img :src="skill.imgUrl" :alt="skill.name" loading="lazy" />
+        <img
+          :src="skill.imgUrl"
+          :alt="skill.name"
+          :width="skill.width"
+          :height="skill.height"
+          loading="lazy"
+        />
         <p>{{ skill.name }}</p>
       </li>
     </ul>
