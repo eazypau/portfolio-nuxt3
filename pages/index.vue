@@ -528,6 +528,13 @@ const workingProjects = [
         width: "1920",
         height: "6199",
       },
+      {
+        title: "Explosion Box Product Template",
+        src: "/work/cakerush-explosion-box-page.png",
+        alt: "Explosion Box Product Template",
+        width: "1920",
+        height: "4847",
+      },
     ],
     heading: "Cakerush MY",
     description: `Cakerush MY is an innovative online platform offering a wide selection of exquisite cakes and pastries. 
