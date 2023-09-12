@@ -35,6 +35,7 @@
           >{{ item.name }}</a
         >
       </TransitionGroup>
+      <span @click="toggleDark()">{{ isDark ? "Dark" : "Light" }} mode</span>
     </div>
     <Menu as="div" class="mobile-hamburger">
       <div class="menu-button">
@@ -79,7 +80,11 @@ import { MenuIcon } from "@heroicons/vue/outline";
 import { gsap } from "gsap";
 import blackWhiteFavicon from "/favicon-bw.png";
 import whiteBlackFavicon from "/favicon-wb.png";
+import { useDark, useToggle } from "@vueuse/core";
 
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+const checkIsDark = ref(isDark.value);
 let loading = ref(true);
 const route = useRoute();
 const { scrollTop } = scrollToTop();
@@ -151,7 +156,7 @@ watchEffect(() => {
         screenHeight.value + heightOfNav.value / 2
       ) {
         // navbar style change on desktop view
-        navBgTextColor.value = "bg-white text-black";
+        navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
         logo.value = blackWhiteFavicon;
       } else {
         navBgTextColor.value = "bg-black text-white";
@@ -163,7 +168,7 @@ watchEffect(() => {
         screenHeight.value - heightOfNav.value / 2
       ) {
         // navbar style change on desktop view
-        navBgTextColor.value = "bg-white text-black";
+        navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
         logo.value = blackWhiteFavicon;
       } else {
         navBgTextColor.value = "bg-black text-white";
@@ -171,8 +176,11 @@ watchEffect(() => {
       }
     }
   } else {
-    navBgTextColor.value = "bg-white text-black";
+    navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
     logo.value = blackWhiteFavicon;
+  }
+  if (isDark.value) {
+    logo.value = whiteBlackFavicon;
   }
 });
 onMounted(() => {
