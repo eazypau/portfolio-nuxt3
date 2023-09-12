@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: "class",
   content: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
@@ -34,6 +35,7 @@ module.exports = {
       boxShadow: {
         "btm-right": "8px 12px 24px -12px #666565",
         "top-right": "-12px -8px 24px -12px #666565",
+        around: "0px 0px 17px 2px rgba(255, 255, 255, 0.43)",
       },
     },
   },
