@@ -1,5 +1,8 @@
 <template>
-  <section id="about" class="flex items-center bg-white pt-24 md:py-20 lg:py-0">
+  <section
+    id="about"
+    class="flex items-center bg-white pt-24 md:py-20 lg:py-0 dark:bg-[#121212]"
+  >
     <div class="px-6 mx-auto md:w-10/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12">
       <div class="items-center justify-between lg:flex lg:space-x-10">
         <div class="lg:w-7/12 leftText">
@@ -88,7 +91,7 @@
               change and became a frontend web developer. Currently, I focus on
               building e-commerce websites in
               <a
-                class="font-bold text-indigo-600 hover:underline"
+                class="font-bold text-indigo-600 dark:text-indigo-300 hover:underline"
                 href="https://limitless.my/"
                 >Limitless Technology</a
               >.
