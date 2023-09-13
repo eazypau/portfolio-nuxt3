@@ -46,7 +46,7 @@ nav#nav-bar {
   }
 
   .nav-links {
-    @apply hidden lg:flex font-medium space-x-5 lg:space-x-8 xl:space-x-10;
+    @apply hidden w-8/12 lg:flex justify-center font-medium lg:gap-8;
 
     a {
       @include header-font;
@@ -117,7 +117,7 @@ header {
 
     li {
       @include sub-font-family;
-      @apply py-0.5 text-gray-600 dark:text-white text-lg;
+      @apply py-0.5 text-gray-600 dark:text-white lg:text-lg;
     }
   }
 }
@@ -127,7 +127,7 @@ header {
   @apply pt-4 space-y-4 text-gray-600 dark:text-white lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl;
 
   p {
-    @apply text-lg leading-7;
+    @apply lg:text-lg leading-7;
   }
 
   word-spacing: 5px;

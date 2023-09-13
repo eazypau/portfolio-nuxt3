@@ -5,7 +5,7 @@
     :class="navBgTextColor"
     style="height: 70px"
   >
-    <div>
+    <div class="lg:w-1/12">
       <Transition appear name="fadeIn">
         <button
           v-if="!loading"
@@ -35,48 +35,60 @@
           >{{ item.name }}</a
         >
       </TransitionGroup>
-      <span @click="toggleDark()">{{ isDark ? "Dark" : "Light" }} mode</span>
     </div>
-    <Menu as="div" class="mobile-hamburger">
-      <div class="menu-button">
-        <MenuButton aria-label="Menu">
-          <MenuIcon />
-        </MenuButton>
+    <div class="lg:w-1/12 flex items-center justify-end gap-4">
+      <div class="ml-5 flex items-center">
+        <button @click="toggleDark()">
+          <Transition name="fade" mode="out-in">
+            <SunIcon v-if="!isDark" class="w-5 h-5" />
+            <MoonIcon v-else class="w-5 h-5">Dark mode</MoonIcon>
+          </Transition>
+          <!-- <Transition name="fade">
+          </Transition> -->
+        </button>
       </div>
-      <Transition
-        enter-active-class="transition duration-100 ease-out"
-        enter-from-class="transform scale-95 opacity-0"
-        enter-to-class="transform scale-100 opacity-100"
-        leave-active-class="transition duration-75 ease-in"
-        leave-from-class="transform scale-100 opacity-100"
-        leave-to-class="transform scale-95 opacity-0"
-      >
-        <MenuItems class="menu-items">
-          <div class="menu-item-padding">
-            <MenuItem
-              v-for="item in navigation"
-              :key="item"
-              v-slot="{ active }"
-            >
-              <a
-                :href="item.href"
-                :class="[
-                  active ? 'bg-gray-500 text-white' : 'text-gray-900',
-                  'group',
-                ]"
+      <Menu as="div" class="mobile-hamburger">
+        <div class="menu-button">
+          <MenuButton aria-label="Menu">
+            <MenuIcon />
+          </MenuButton>
+        </div>
+        <Transition
+          enter-active-class="transition duration-100 ease-out"
+          enter-from-class="transform scale-95 opacity-0"
+          enter-to-class="transform scale-100 opacity-100"
+          leave-active-class="transition duration-75 ease-in"
+          leave-from-class="transform scale-100 opacity-100"
+          leave-to-class="transform scale-95 opacity-0"
+        >
+          <MenuItems class="menu-items">
+            <div class="menu-item-padding">
+              <MenuItem
+                v-for="item in navigation"
+                :key="item"
+                v-slot="{ active }"
               >
-                {{ item.name }}
-              </a>
-            </MenuItem>
-          </div>
-        </MenuItems>
-      </Transition>
-    </Menu>
+                <a
+                  :href="item.href"
+                  :class="[
+                    active ? 'bg-gray-500 text-white' : 'text-gray-900',
+                    'group',
+                  ]"
+                >
+                  {{ item.name }}
+                </a>
+              </MenuItem>
+            </div>
+          </MenuItems>
+        </Transition>
+      </Menu>
+    </div>
   </nav>
 </template>
 <script setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { MenuIcon } from "@heroicons/vue/outline";
+import { MenuIcon, MoonIcon, SunIcon } from "@heroicons/vue/outline";
+// import { SunIcon } from "@heroicons/vue";
 import { gsap } from "gsap";
 import blackWhiteFavicon from "/favicon-bw.png";
 import whiteBlackFavicon from "/favicon-wb.png";
@@ -217,6 +229,23 @@ onMounted(() => {
 .fadeIn-enter-active {
   animation: fadeIn 0.2s;
 }
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 0.5s ease;
+}
+.fade-leave-active {
+  transition: all 0.5s ease;
+  width: 100%;
+}
+// .fade-enter-active {
+//   transition: all 0.5s ease;
+// }
+// .fade-leave-active {
+//   transition: all 0.5s ease;
+// }
 @keyframes fadeIn {
   0% {
     opacity: 0;
