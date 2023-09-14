@@ -26,7 +26,6 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "^1.0.5",
-    "@vueuse/core": "^10.4.1",
     "gsap": "^3.9.1"
   }
 }
