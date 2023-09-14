@@ -38,13 +38,11 @@
     </div>
     <div class="lg:w-1/12 flex items-center justify-end gap-4">
       <div class="ml-5 flex items-center">
-        <button @click="toggleDark()">
+        <button @click="toggleTheme()">
           <Transition name="fade" mode="out-in">
-            <SunIcon v-if="!isDark" class="w-5 h-5" />
+            <SunIcon v-if="!enabled" class="w-5 h-5" />
             <MoonIcon v-else class="w-5 h-5">Dark mode</MoonIcon>
           </Transition>
-          <!-- <Transition name="fade">
-          </Transition> -->
         </button>
       </div>
       <Menu as="div" class="mobile-hamburger">
@@ -92,11 +90,23 @@ import { MenuIcon, MoonIcon, SunIcon } from "@heroicons/vue/outline";
 import { gsap } from "gsap";
 import blackWhiteFavicon from "/favicon-bw.png";
 import whiteBlackFavicon from "/favicon-wb.png";
-import { useDark, useToggle } from "@vueuse/core";
+// import { useDark, useToggle } from "@vueuse/core";
 
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
-const checkIsDark = ref(isDark.value);
+// const isDark = useDark();
+// const toggleDark = useToggle(isDark);
+useHead({
+  script: [
+    {
+      children: `if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.setAttribute("data-theme", "dark")
+    } else {
+      document.documentElement.removeAttribute("data-theme")
+    }`,
+    },
+  ],
+});
+
+const { enabled, toggleTheme } = useTheme();
 let loading = ref(true);
 const route = useRoute();
 const { scrollTop } = useScrollToTop();
@@ -191,7 +201,7 @@ watchEffect(() => {
     navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
     logo.value = blackWhiteFavicon;
   }
-  if (isDark.value) {
+  if (enabled.value) {
     logo.value = whiteBlackFavicon;
   }
 });
