@@ -154,7 +154,7 @@ section#skills {
 
     li {
       @include sub-font-family;
-      @apply w-[29%] md:w-[22%] lg:w-1/5 xl:w-[15%] dark:border-t-2 border-b-2 border-l-2 border-r-2 border-gray-50 rounded-md font-semibold md:text-xl p-2 md:px-6 shadow hover:shadow-lg dark:hover:shadow-around dark:hover:shadow-white mx-2 mt-4 lg:mt-0 lg:mb-4 2xl:mb-6 cursor-default transition ease-out duration-500;
+      @apply w-[29%] md:w-[22%] lg:w-1/5 xl:w-[15%] dark:border-2 border-gray-50 rounded-md bg-white dark:bg-transparent font-semibold md:text-xl p-2 md:px-6 shadow hover:shadow-lg dark:hover:shadow-around dark:hover:shadow-white mx-2 mt-4 lg:mt-0 lg:mb-4 2xl:mb-6 cursor-default transition ease-out duration-500;
 
       p {
         @apply mt-1 text-center dark:text-white;
