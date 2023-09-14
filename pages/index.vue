@@ -16,7 +16,7 @@
       <div id="projects"></div>
       <ProjectSection :projects="projects" />
       <HobbySection :hobbies="hobbies" />
-      <div class="bg-white">
+      <div class="bg-white dark:bg-[#121212]">
         <Contact id="contact" />
       </div>
     </div>
