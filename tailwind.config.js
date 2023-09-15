@@ -15,8 +15,8 @@ module.exports = {
         music:
           "url('/hobbies/negative-space-headphones-black-white-corey-blaz.webp')",
         grocer: "url('/hobbies/grocer.webp')",
-        journaling: "url('/hobbies/journaling.jpg')",
-        programming: "url('/hobbies/programming.jpg')",
+        journaling: "url('/hobbies/journaling.webp')",
+        programming: "url('/hobbies/programming.webp')",
       },
       minWidth: {
         sm: "20rem",

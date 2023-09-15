@@ -65,85 +65,98 @@ const skillWithLogo = [
   {
     imgUrl: "/logos/html5-original.svg",
     name: "HTML",
+    alt: "HTML logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/css3-plain-wordmark.svg",
     name: "CSS",
+    alt: "CSS logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/javascript-original.svg",
     name: "JavaScript",
+    alt: "JavaScript logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/vuejs-original.svg",
     name: "Vue",
+    alt: "Vue logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/nuxtjs-original.svg",
     name: "Nuxt",
+    alt: "Nuxt logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/react-original.svg",
     name: "React",
+    alt: "React logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/tailwindcss-plain.svg",
     name: "TailwindCSS",
+    alt: "TailwindCSS logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/firebase-plain.svg",
     name: "Firebase",
+    alt: "Firebase logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/typescript-original.svg",
     name: "TypeScript",
+    alt: "TypeScript logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/nodejs-original.svg",
     name: "NodeJS",
+    alt: "NodeJS logo",
     width: 150,
     height: 150,
   },
   {
     imgUrl: "/logos/git-original.svg",
     name: "Git",
+    alt: "Git logo",
     width: 150,
     height: 150,
   },
   {
-    imgUrl:
-      "https://camo.githubusercontent.com/4da68843d90e7194500a8e2f9de72ecfc7e4554d4b8388b5d4db8e5c439c442f/68747470733a2f2f7777772e636c6f756477617264732e6e65742f77702d636f6e74656e742f75706c6f6164732f323031382f30392f53686f706966792d4c69717569642d50726f674c616e672e706e67",
+    imgUrl: "/logos/shopify-liquid-logo.webp",
     name: "Liquid",
+    alt: "Liquid logo",
     width: 321,
     height: 315,
   },
   {
-    imgUrl: "/logos/shopify-b&w.png",
+    imgUrl: "/logos/shopify-b_w.webp",
     name: "Shopify",
+    alt: "Shopify logo",
     width: 512,
     height: 512,
   },
   {
     imgUrl: "/logos/jquery-original.svg",
     name: "jQuery",
+    alt: "jQuery logo",
     width: 150,
     height: 150,
   },
@@ -309,7 +322,7 @@ const projects = [
 const workingProjects = [
   {
     image: {
-      src: "/work/LVLY_logo.jpg",
+      src: "/work/LVLY_logo.webp",
       alt: "LVLY",
       width: "410",
       height: "117",
@@ -381,7 +394,7 @@ const workingProjects = [
   },
   {
     image: {
-      src: "/work/FC-MY.jpg",
+      src: "/work/FC-MY.webp",
       alt: "Flowerchimp",
       width: "410",
       height: "205",
@@ -456,7 +469,7 @@ const workingProjects = [
   },
   {
     image: {
-      src: "/work/BR_Logo.jpg",
+      src: "/work/BR_Logo.webp",
       alt: "Bloomeroo",
       width: "410",
       height: "82",

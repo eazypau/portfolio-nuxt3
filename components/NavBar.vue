@@ -38,7 +38,7 @@
     </div>
     <div class="lg:w-1/12 flex items-center justify-end gap-4">
       <div class="ml-5 flex items-center">
-        <button @click="toggleTheme()">
+        <button type="button" aria-label="theme toggle" @click="toggleTheme()">
           <Transition name="fade" mode="out-in">
             <SunIcon v-if="!enabled" class="w-5 h-5" />
             <MoonIcon v-else class="w-5 h-5">Dark mode</MoonIcon>

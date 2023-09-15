@@ -7,7 +7,7 @@
       <li v-for="skill in skillSet" :key="skill" class="skillStyle">
         <img
           :src="skill.imgUrl"
-          :alt="skill.name"
+          :alt="skill.alt"
           :width="skill.width"
           :height="skill.height"
           loading="lazy"
