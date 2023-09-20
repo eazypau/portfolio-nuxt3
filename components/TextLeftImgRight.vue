@@ -195,16 +195,16 @@ onMounted(() => {
   let imgTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".profileImgContainer",
-      start: "-200px center",
+      start: "top center",
       end: "top center",
       // markers: true,
     },
   });
   imgTl
     .addLabel("start")
-    .from(".profileImgContainer", { opacity: 0, scale: 0.5 })
+    .from(".profileImgContainer", { opacity: 0 })
     .addLabel("entering")
-    .to(".profileImgContainer", { opacity: 1, scale: 1, duration: 1 })
+    .to(".profileImgContainer", { opacity: 1, duration: 0.3 })
     .addLabel("end");
 });
 </script>
