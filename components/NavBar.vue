@@ -48,7 +48,7 @@
       <Menu as="div" class="mobile-hamburger">
         <div class="menu-button">
           <MenuButton aria-label="Menu">
-            <MenuIcon />
+            <Bars3Icon />
           </MenuButton>
         </div>
         <Transition
@@ -85,7 +85,7 @@
 </template>
 <script setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { MenuIcon, MoonIcon, SunIcon } from "@heroicons/vue/outline";
+import { Bars3Icon, MoonIcon, SunIcon } from "@heroicons/vue/24/outline";
 // import { SunIcon } from "@heroicons/vue";
 import { gsap } from "gsap";
 import blackWhiteFavicon from "/favicon-bw.png";

@@ -12,7 +12,7 @@
       <div class="modal-fixed-wrapper">
         <div class="modal-size">
           <div class="modal">
-            <XIcon class="x-icon" @click="closeModal" />
+            <XMarkIcon class="x-icon" @click="closeModal" />
             <!-- title -->
             <p class="modal-heading">
               {{ modalContent?.heading }}
@@ -122,7 +122,7 @@
   </Transition>
 </template>
 <script setup>
-import { XIcon, LinkIcon } from "@heroicons/vue/outline";
+import { XMarkIcon, LinkIcon } from "@heroicons/vue/24/outline";
 const props = defineProps({
   isOpen: {
     type: Boolean,
