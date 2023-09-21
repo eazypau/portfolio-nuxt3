@@ -3,7 +3,7 @@
     <footer>
       <div class="social-icons-and-navigation">
         <!-- nav - start -->
-        <nav>
+        <nav v-if="showNav">
           <a
             v-for="(item, index) in navigation"
             :key="item.id"
@@ -67,6 +67,15 @@
   </div>
 </template>
 <script setup>
+//props
+const props = defineProps({
+  showNav: {
+    type: Boolean,
+    default: true,
+  },
+});
+
+// utils and hooks
 const { navigation } = useConstants();
 const CURRENT_YEAR = new Date().getFullYear();
 </script>

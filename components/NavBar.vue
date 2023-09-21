@@ -24,7 +24,7 @@
         </button>
       </Transition>
     </div>
-    <div v-if="!loading" class="nav-links">
+    <div v-if="!loading && showNav" class="nav-links">
       <TransitionGroup appear @before-enter="before" @enter="entering">
         <a
           v-for="(item, index) in navigation"
@@ -45,7 +45,7 @@
           </Transition>
         </button>
       </div>
-      <Menu as="div" class="mobile-hamburger">
+      <Menu v-if="showNav" as="div" class="mobile-hamburger">
         <div class="menu-button">
           <MenuButton aria-label="Menu">
             <Bars3Icon />
@@ -100,6 +100,14 @@ useHead({
     }`,
     },
   ],
+});
+
+//props
+const props = defineProps({
+  showNav: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 const { enabled, toggleTheme } = useTheme();
