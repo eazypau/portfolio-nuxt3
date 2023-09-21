@@ -9,6 +9,7 @@
       <Header />
       <TextLeftImgRight />
       <Skills :skill-set="skillWithLogo" />
+      <TimelineSection />
       <WorkSection
         :working-projects="workingProjects"
         :on-click-function="showModal"
