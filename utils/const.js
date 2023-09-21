@@ -11,6 +11,11 @@ export function useConstants() {
       href: "/#skills",
     },
     {
+      id: 6,
+      name: "Timeline",
+      href: "/#timeline",
+    },
+    {
       id: 3,
       name: "Works",
       href: "/#works",
