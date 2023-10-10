@@ -320,7 +320,7 @@ section#hobbies {
 
     p {
       @include sub-font-family;
-      @apply text-sm xl:text-lg  text-white;
+      @apply text-sm xl:text-lg  text-white whitespace-pre-line;
     }
     p:first-child {
       @apply font-semibold xl:font-bold underline capitalize;
