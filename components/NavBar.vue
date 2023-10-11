@@ -24,7 +24,7 @@
         </button>
       </Transition>
     </div>
-    <div v-if="!loading" class="nav-links">
+    <div v-if="!loading && showNav" class="nav-links">
       <TransitionGroup appear @before-enter="before" @enter="entering">
         <a
           v-for="(item, index) in navigation"
@@ -45,10 +45,10 @@
           </Transition>
         </button>
       </div>
-      <Menu as="div" class="mobile-hamburger">
+      <Menu v-if="showNav" as="div" class="mobile-hamburger">
         <div class="menu-button">
           <MenuButton aria-label="Menu">
-            <MenuIcon />
+            <Bars3Icon />
           </MenuButton>
         </div>
         <Transition
@@ -85,15 +85,11 @@
 </template>
 <script setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { MenuIcon, MoonIcon, SunIcon } from "@heroicons/vue/outline";
-// import { SunIcon } from "@heroicons/vue";
+import { Bars3Icon, MoonIcon, SunIcon } from "@heroicons/vue/24/outline";
 import { gsap } from "gsap";
 import blackWhiteFavicon from "/favicon-bw.png";
 import whiteBlackFavicon from "/favicon-wb.png";
-// import { useDark, useToggle } from "@vueuse/core";
 
-// const isDark = useDark();
-// const toggleDark = useToggle(isDark);
 useHead({
   script: [
     {
@@ -106,43 +102,26 @@ useHead({
   ],
 });
 
+//props
+const props = defineProps({
+  showNav: {
+    type: Boolean,
+    default: true,
+  },
+});
+
 const { enabled, toggleTheme } = useTheme();
 let loading = ref(true);
 const route = useRoute();
 const { scrollTop } = useScrollToTop();
 const { trackNavBarPosition, currentOffsetHeight } = useTrackNavBar();
+const { navigation } = useConstants();
 const screenHeight = ref(0);
 const heightOfNav = ref(0);
 const currentScreenWidth = ref(0);
 const navBgTextColor = ref("bg-black text-white");
 const logo = ref(whiteBlackFavicon);
-const navigation = [
-  {
-    id: 1,
-    name: "About",
-    href: "/#about",
-  },
-  {
-    id: 2,
-    name: "Skills",
-    href: "/#skills",
-  },
-  {
-    id: 3,
-    name: "Works",
-    href: "/#works",
-  },
-  {
-    id: 4,
-    name: "Projects",
-    href: "/#projects",
-  },
-  {
-    id: 5,
-    name: "Contact",
-    href: "/#contact",
-  },
-];
+
 const trackScroll = () => {
   trackNavBarPosition("nav-bar");
 };
@@ -250,12 +229,6 @@ onMounted(() => {
   transition: all 0.5s ease;
   width: 100%;
 }
-// .fade-enter-active {
-//   transition: all 0.5s ease;
-// }
-// .fade-leave-active {
-//   transition: all 0.5s ease;
-// }
 @keyframes fadeIn {
   0% {
     opacity: 0;

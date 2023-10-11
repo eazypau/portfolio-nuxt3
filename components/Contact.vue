@@ -43,9 +43,9 @@
               download="resume_poyizhi"
               target="_blank"
             >
-              <ClipboardListIcon /> My Resume
+              <PaperClipIcon /> My Resume
             </a> -->
-            <a href="mailto:poyizhi@gmail.com"> <MailIcon /> Say Hello! </a>
+            <a href="mailto:poyizhi@gmail.com"> <EnvelopeIcon /> Say Hello! </a>
           </div>
         </div>
       </div>
@@ -53,5 +53,5 @@
   </section>
 </template>
 <script setup>
-import { MailIcon, ClipboardListIcon } from "@heroicons/vue/outline";
+import { EnvelopeIcon, PaperClipIcon } from "@heroicons/vue/24/outline";
 </script>

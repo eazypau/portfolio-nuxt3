@@ -3,12 +3,19 @@
     <footer>
       <div class="social-icons-and-navigation">
         <!-- nav - start -->
-        <nav>
-          <a href="/#about" class="footerBtn">About</a>
+        <nav v-if="showNav">
+          <a
+            v-for="(item, index) in navigation"
+            :key="item.id"
+            :href="item.href"
+            class="footerBtn"
+            >{{ item.name }}</a
+          >
+          <!-- <a href="/#about" class="footerBtn">About</a>
           <a href="/#skills" class="footerBtn">Skills</a>
           <a href="/#works" class="footerBtn">Works</a>
           <a href="/#projects" class="footerBtn">Projects</a>
-          <a href="/#contact" class="footerBtn">Contact</a>
+          <a href="/#contact" class="footerBtn">Contact</a> -->
         </nav>
         <!-- nav - end -->
 
@@ -60,5 +67,15 @@
   </div>
 </template>
 <script setup>
+//props
+const props = defineProps({
+  showNav: {
+    type: Boolean,
+    default: true,
+  },
+});
+
+// utils and hooks
+const { navigation } = useConstants();
 const CURRENT_YEAR = new Date().getFullYear();
 </script>

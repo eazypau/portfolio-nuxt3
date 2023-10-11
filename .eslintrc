@@ -13,6 +13,7 @@
     "plugins": [],
     "rules": {
       // "vue/require-default-value" : false,
+      "vue/multi-word-component-names": false,
       "prettier/prettier": [
         "error",
         {

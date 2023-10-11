@@ -16,6 +16,7 @@
 <script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const props = defineProps({
   hobbies: {
     type: Array,
@@ -38,8 +39,8 @@ onMounted(() => {
     .to(".hobbyTitle", { opacity: 1, translateX: "0px", duration: 0.5 })
     .addLabel("end");
 
-  gsap.set(".hobbyCardContainer", { opacity: 0, y: 20 });
-  ScrollTrigger.batch(".hobbyCardContainer", {
+  gsap.set(".hobby-card-container", { opacity: 0, y: 20 });
+  ScrollTrigger.batch(".hobby-card-container", {
     start: "-70px center",
     end: "top center",
     // markers: true,
