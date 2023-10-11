@@ -174,7 +174,7 @@
 <script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
 onMounted(() => {
   let tl = gsap.timeline({
     scrollTrigger: {

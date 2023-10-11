@@ -16,6 +16,7 @@
 <script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const props = defineProps({
   hobbies: {
     type: Array,
