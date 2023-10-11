@@ -156,7 +156,7 @@
 
         <div class="mt-8 lg:mt-0 lg:w-4/12 xl:w-4/12">
           <div class="flex items-center justify-center lg:justify-end group">
-            <div class="profileImgContainer">
+            <div class="profile-img-container">
               <img
                 src="/profile-pics/profile.webp"
                 width="350"
@@ -194,7 +194,7 @@ onMounted(() => {
 
   let imgTl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".profileImgContainer",
+      trigger: ".profile-img-container",
       start: "top center",
       end: "top center",
       // markers: true,
@@ -202,9 +202,9 @@ onMounted(() => {
   });
   imgTl
     .addLabel("start")
-    .from(".profileImgContainer", { opacity: 0 })
+    .from(".profile-img-container", { opacity: 0 })
     .addLabel("entering")
-    .to(".profileImgContainer", { opacity: 1, duration: 0.3 })
+    .to(".profile-img-container", { opacity: 1, duration: 0.3 })
     .addLabel("end");
 });
 </script>

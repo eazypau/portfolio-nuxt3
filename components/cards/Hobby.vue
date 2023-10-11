@@ -1,5 +1,5 @@
 <template>
-  <div :class="[classBg, 'hobbyCardContainer']">
+  <div :class="[classBg, 'hobby-card-container']">
     <div>
       <p>
         {{ title }}
