@@ -145,7 +145,7 @@ export function useConstants() {
     },
     {
       title: "Learning new technologies/framework",
-      text: "To explore and expand my skillsets. \n Recently exploring ThreeJs",
+      text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
       classBg: "bg-programming",
     },
     // {
@@ -583,16 +583,16 @@ export function useConstants() {
   ];
 
   const timeline = [
-    // {
-    //   date: "July 2023",
-    //   title: "Started @ JagaApp",
-    //   description: "Joined the JagaApp team",
-    //   // icon: "",
-    //   link: {
-    //     text: "Visit JagaApp",
-    //     url: "https://jagaapp.com/",
-    //   },
-    // },
+    {
+      date: "July 2023",
+      title: "Started @ JagaApp",
+      description: "Joined the JagaApp team",
+      // icon: "",
+      link: {
+        text: "Visit JagaApp",
+        url: "https://jagasolution.com/jagaapp/",
+      },
+    },
     {
       date: "May 2022",
       title: "Started @ Limitless Technologies",

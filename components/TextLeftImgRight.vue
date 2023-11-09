@@ -88,12 +88,12 @@
               Hi there! I'm a self-taught developer with a background in
               mechanical engineering (graduated from Multimedia University).
               After discovering my passion for web development, I made a career
-              change and became a frontend web developer. Currently, I focus on
-              building e-commerce websites in
+              change and became a frontend web developer. Currently working as a
+              Junior Developer in
               <a
-                class="font-bold text-indigo-600 dark:text-indigo-300 hover:underline"
-                href="https://limitless.my/"
-                >Limitless Technology</a
+                class="font-bold text-red-600 dark:text-red-300 hover:underline"
+                href="https://jagasolution.com/jagaapp/"
+                >JagaApp</a
               >.
             </p>
 
