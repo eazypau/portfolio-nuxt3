@@ -173,7 +173,6 @@
 </template>
 <script setup>
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 onMounted(() => {
   let tl = gsap.timeline({
@@ -211,7 +210,7 @@ onMounted(() => {
 <style scoped>
 @media screen and (min-width: 1024px) {
   section {
-    height: 100vh;
+    height: calc(100vh - 212px);
   }
 }
 </style>
