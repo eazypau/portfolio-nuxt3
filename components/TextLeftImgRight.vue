@@ -210,7 +210,7 @@ onMounted(() => {
 <style scoped>
 @media screen and (min-width: 1024px) {
   section {
-    height: calc(100vh - 212px);
+    height: calc(100vh - 227px);
   }
 }
 </style>
