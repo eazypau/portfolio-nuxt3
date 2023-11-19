@@ -52,7 +52,7 @@ onMounted(() => {
 
   gsap.set(".timeline-item", { opacity: 0, x: -20 });
   ScrollTrigger.batch(".timeline-item", {
-    start: "-70px center",
+    start: "-45px center",
     end: "top center",
     // markers: true,
     onEnter: (batch) =>
