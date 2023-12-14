@@ -18,6 +18,9 @@
 @mixin sub-title {
   @apply text-3xl lg:text-4xl text-center font-bold text-gray-800;
 }
+@mixin section-vertical-padding {
+  @apply py-8 md:py-14;
+}
 
 .navPadding {
   padding: 15px 30px;
