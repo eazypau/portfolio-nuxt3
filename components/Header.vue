@@ -50,6 +50,6 @@ onMounted(() => {
 </script>
 <style lang="scss" scoped>
 .headerHeight {
-  height: calc(100vh - 30px);
+  height: calc(100vh - 70px);
 }
 </style>

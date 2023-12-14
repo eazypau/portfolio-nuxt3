@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="flex items-center bg-white pt-24 md:py-20 lg:py-0 dark:bg-[#121212]"
+    class="flex items-center bg-white py-8 2xl:pb-10 md:py-20 lg:py-0 dark:bg-[#121212]"
   >
     <div class="px-6 mx-auto md:w-10/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12">
       <div class="items-center justify-between lg:flex lg:space-x-10">
@@ -154,7 +154,7 @@
           </div>
         </div>
 
-        <div class="mt-8 lg:mt-0 lg:w-4/12 xl:w-4/12">
+        <div class="mt-8 lg:mt-0 lg:w-4/12 xl:w-4/12 right-img-container">
           <div class="flex items-center justify-center lg:justify-end group">
             <div class="profile-img-container">
               <img
@@ -173,7 +173,6 @@
 </template>
 <script setup>
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 onMounted(() => {
   let tl = gsap.timeline({
@@ -194,7 +193,7 @@ onMounted(() => {
 
   let imgTl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".profile-img-container",
+      trigger: ".right-img-container",
       start: "top center",
       end: "top center",
       // markers: true,
@@ -202,16 +201,20 @@ onMounted(() => {
   });
   imgTl
     .addLabel("start")
-    .from(".profile-img-container", { opacity: 0 })
+    .from(".right-img-container", { opacity: 0, translateX: "100px" })
     .addLabel("entering")
-    .to(".profile-img-container", { opacity: 1, duration: 0.3 })
+    .to(".right-img-container", {
+      opacity: 1,
+      translateX: "0px",
+      duration: 1,
+    })
     .addLabel("end");
 });
 </script>
 <style scoped>
 @media screen and (min-width: 1024px) {
   section {
-    height: 100vh;
+    height: calc(100vh - 227px);
   }
 }
 </style>

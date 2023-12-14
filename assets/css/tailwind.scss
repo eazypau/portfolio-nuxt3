@@ -35,7 +35,7 @@ h3 {
 nav#nav-bar {
   @apply z-30 flex items-center justify-between sticky top-0 w-full shadow transition-all duration-200 ease-in-out;
 
-  button {
+  .home-button {
     @apply flex items-center text-2xl font-bold cursor-pointer;
 
     img {
@@ -99,6 +99,14 @@ header {
   }
 }
 
+// about
+#about {
+  height: auto;
+  @media screen and (min-width: 768px) {
+    min-height: calc(100vh - 70px);
+  }
+}
+
 // profile section
 .profile-social-icons {
   @apply flex items-center mt-6 -mx-2;
@@ -137,7 +145,7 @@ header {
 }
 
 .profile-img-container {
-  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md p-1.5 dark:p-0 rounded-full shadow-btm-right group-hover:shadow-top-right transition-all duration-300 ease-in;
+  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md rounded-full shadow-btm-right group-hover:shadow-top-right transition-all duration-300 ease-in;
 
   img {
     @apply bg-white object-cover object-top rounded-full group-hover:grayscale transition-all ease-out duration-300;
@@ -147,7 +155,8 @@ header {
 // timeline section
 section#timeline {
   @include sub-font-family;
-  @apply max-w-[600px] mx-auto px-1 md:px-0 py-20 md:py-24;
+  @include section-vertical-padding;
+  @apply max-w-[600px] mx-auto px-1.5 md:px-0;
 
   h3 {
     @apply md:text-xl text-black dark:text-white font-bold;
@@ -188,7 +197,8 @@ section#timeline {
 
 // skill section
 section#skills {
-  @apply flex flex-col items-center pt-24 md:pt-28 md:pb-20 px-1 lg:py-28;
+  @apply flex flex-col items-center px-1;
+  @include section-vertical-padding;
 
   div {
     @apply mb-4 lg:mb-8;
@@ -210,17 +220,22 @@ section#skills {
 
 // work section
 section#works {
-  @apply pt-24 md:pt-28 md:pb-20;
+  height: auto;
+  @include section-vertical-padding;
+
+  @media screen and (min-width: 1280px) {
+    height: calc(100vh - 227px);
+  }
 
   h2 {
     @apply mb-5 lg:mb-10 px-3;
   }
 }
 .work-card-lane {
-  @apply py-2 md:py-0 px-2 md:px-0 md:w-10/12 lg:w-10/12 2xl:w-8/12 flex justify-center md:justify-around xl:justify-center gap-2 md:gap-5 lg:gap-7 flex-wrap mx-auto;
+  @apply py-2 md:py-0 px-2 md:px-0 md:w-11/12 lg:w-10/12 2xl:w-8/12 flex justify-center md:justify-around xl:justify-center gap-5 lg:gap-7 flex-wrap mx-auto;
 
   .work-card-container {
-    @apply relative py-2 h-24 md:h-[125px] lg:h-[150px] xl:h-[150px] lg:py-0 w-[48%] md:w-[48%] xl:w-[31%] bg-white flex-shrink-0 md:flex-shrink rounded-lg dark:border-2 dark:border-[#121212] dark:hover:border-white shadow-md dark:shadow-none dark:shadow-white hover:shadow-lg dark:hover:shadow-around flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-out;
+    @apply relative py-2 h-32 md:h-[140px] lg:h-[150px] xl:h-[160px] lg:py-0 w-11/12 md:w-[48%] xl:w-[31%] bg-white flex-shrink-0 md:flex-shrink rounded-lg dark:border-2 dark:border-[#121212] dark:hover:border-white shadow-md dark:shadow-none dark:shadow-white hover:shadow-lg dark:hover:shadow-around flex items-center justify-center hover:cursor-pointer transition-all duration-300 ease-out;
 
     // img {
     //   @apply max-w-[70%] md:max-w-[60%] 3xl:max-w-[55%];
@@ -234,10 +249,11 @@ section#works {
 
 // personal project section
 section.project-section {
-  @apply pt-24 md:pt-28 pb-12 md:pb-20 px-4 lg:px-0;
+  @apply px-4 lg:px-0;
+  @include section-vertical-padding;
 
   h2 {
-    @apply mb-10;
+    @apply mb-7;
   }
 
   .project-grid {
@@ -334,7 +350,7 @@ section.contact-section {
   @apply px-10 pt-24 sm:pb-16 md:pb-7 md:pt-16 flex items-center justify-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-0 xl:pb-4 2xl:pb-0;
 
   @media screen and (min-width: 768px) {
-    height: calc(100vh - 173px);
+    height: calc(100vh - 227px);
   }
 
   .contact-section-width {
