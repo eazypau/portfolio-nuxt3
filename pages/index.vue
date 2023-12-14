@@ -1,25 +1,16 @@
 <template>
-  <NuxtLayout name="default">
+  <NuxtLayout name="main">
     <div>
-      <Modal
+      <!-- <Modal
         :is-open="isOpen"
         :close-modal="closeModal"
         :modal-content="currentModalContent"
-      />
+      /> -->
       <Header />
-      <TextLeftImgRight />
-      <Skills :skill-set="skillWithLogo" />
-      <TimelineSection :timeline="timeline" />
-      <WorkSection
+      <!-- <WorkSection
         :working-projects="workingProjects"
         :on-click-function="showModal"
-      />
-      <div id="projects"></div>
-      <ProjectSection :projects="projects" />
-      <HobbySection :hobbies="hobbies" />
-      <div class="bg-white dark:bg-[#121212]">
-        <Contact id="contact" />
-      </div>
+      /> -->
     </div>
   </NuxtLayout>
 </template>
@@ -63,33 +54,29 @@ definePageMeta({
   layout: false,
 });
 
-//const
-const { hobbies, skillWithLogo, projects, workingProjects, timeline } =
-  useConstants();
-
 // modal functionality
-const isOpen = ref(false);
-const currentModalContent = ref({});
-const showModal = (content) => {
-  // lock page height?
-  // fill up modals with details
-  // open modal
-  currentModalContent.value = content;
-  isOpen.value = true;
-  document.body.style.height = "100vh";
-  document.body.style.overflow = "hidden";
-};
-const closeModal = () => {
-  isOpen.value = false;
-  document.body.style.height = "auto";
-  document.body.style.overflow = "visible";
-};
+// const isOpen = ref(false);
+// const currentModalContent = ref({});
+// const showModal = (content) => {
+//   // lock page height?
+//   // fill up modals with details
+//   // open modal
+//   currentModalContent.value = content;
+//   isOpen.value = true;
+//   document.body.style.height = "100vh";
+//   document.body.style.overflow = "hidden";
+// };
+// const closeModal = () => {
+//   isOpen.value = false;
+//   document.body.style.height = "auto";
+//   document.body.style.overflow = "visible";
+// };
 
-onMounted(() => {
-  document.addEventListener("keyup", function (event) {
-    if (isOpen.value && event.key === "Escape") {
-      closeModal();
-    }
-  });
-});
+// onMounted(() => {
+//   document.addEventListener("keyup", function (event) {
+//     if (isOpen.value && event.key === "Escape") {
+//       closeModal();
+//     }
+//   });
+// });
 </script>
