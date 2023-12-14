@@ -35,7 +35,7 @@ h3 {
 nav#nav-bar {
   @apply z-30 flex items-center justify-between sticky top-0 w-full shadow transition-all duration-200 ease-in-out;
 
-  button {
+  .home-button {
     @apply flex items-center text-2xl font-bold cursor-pointer;
 
     img {
@@ -99,6 +99,14 @@ header {
   }
 }
 
+// about
+#about {
+  height: auto;
+  @media screen and (min-width: 768px) {
+    min-height: calc(100vh - 70px);
+  }
+}
+
 // profile section
 .profile-social-icons {
   @apply flex items-center mt-6 -mx-2;
@@ -137,7 +145,7 @@ header {
 }
 
 .profile-img-container {
-  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md p-1.5 dark:p-0 rounded-full shadow-btm-right group-hover:shadow-top-right transition-all duration-300 ease-in;
+  @apply relative max-w-xs lg:max-w-xxs xl:max-w-md rounded-full shadow-btm-right group-hover:shadow-top-right transition-all duration-300 ease-in;
 
   img {
     @apply bg-white object-cover object-top rounded-full group-hover:grayscale transition-all ease-out duration-300;
@@ -147,7 +155,8 @@ header {
 // timeline section
 section#timeline {
   @include sub-font-family;
-  @apply max-w-[600px] mx-auto px-1 md:px-0 py-20 md:pt-14 md:pb-24;
+  @include section-vertical-padding;
+  @apply max-w-[600px] mx-auto px-1.5 md:px-0;
 
   h3 {
     @apply md:text-xl text-black dark:text-white font-bold;
@@ -188,7 +197,8 @@ section#timeline {
 
 // skill section
 section#skills {
-  @apply flex flex-col items-center pt-24 md:pt-16 md:pb-20 px-1;
+  @apply flex flex-col items-center px-1;
+  @include section-vertical-padding;
 
   div {
     @apply mb-4 lg:mb-8;
@@ -234,10 +244,11 @@ section#works {
 
 // personal project section
 section.project-section {
-  @apply pt-24 md:pt-16 pb-12 md:pb-20 px-4 lg:px-0;
+  @apply px-4 lg:px-0;
+  @include section-vertical-padding;
 
   h2 {
-    @apply mb-10;
+    @apply mb-7;
   }
 
   .project-grid {
