@@ -47,3 +47,8 @@ onMounted(() => {
   });
 });
 </script>
+<style>
+.project-card {
+  opacity: 0;
+}
+</style>
