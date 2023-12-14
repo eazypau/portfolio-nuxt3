@@ -3,19 +3,15 @@
     <footer>
       <div class="social-icons-and-navigation">
         <!-- nav - start -->
-        <nav v-if="showNav">
-          <a
+        <nav>
+          <NuxtLink
             v-for="(item, index) in navigation"
+            v-if="index != 1"
             :key="item.id"
             :href="item.href"
             class="footerBtn"
-            >{{ item.name }}</a
+            >{{ item.name }}</NuxtLink
           >
-          <!-- <a href="/#about" class="footerBtn">About</a>
-          <a href="/#skills" class="footerBtn">Skills</a>
-          <a href="/#works" class="footerBtn">Works</a>
-          <a href="/#projects" class="footerBtn">Projects</a>
-          <a href="/#contact" class="footerBtn">Contact</a> -->
         </nav>
         <!-- nav - end -->
 
@@ -67,14 +63,6 @@
   </div>
 </template>
 <script setup>
-//props
-const props = defineProps({
-  showNav: {
-    type: Boolean,
-    default: true,
-  },
-});
-
 // utils and hooks
 const { navigation } = useConstants();
 const CURRENT_YEAR = new Date().getFullYear();

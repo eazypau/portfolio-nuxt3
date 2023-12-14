@@ -7,11 +7,11 @@
   >
     <div class="lg:w-1/12">
       <Transition appear name="fadeIn">
-        <button
+        <NuxtLink
           v-if="!loading"
-          type="button"
+          href="/"
+          class="home-button"
           aria-label="Website Logo"
-          @click="goToHome"
         >
           <img
             :src="logo"
@@ -21,18 +21,17 @@
             loading="lazy"
           />
           <p>YZ.</p>
-        </button>
+        </NuxtLink>
       </Transition>
     </div>
-    <div v-if="!loading && showNav" class="nav-links">
+    <div v-if="!loading" class="nav-links">
       <TransitionGroup appear @before-enter="before" @enter="entering">
-        <a
+        <NuxtLink
           v-for="(item, index) in navigation"
           :key="item.id"
           :data-index="index"
           :href="item.href"
-          class="underAnimation"
-          >{{ item.name }}</a
+          >{{ item.name }}</NuxtLink
         >
       </TransitionGroup>
     </div>
@@ -45,7 +44,7 @@
           </Transition>
         </button>
       </div>
-      <Menu v-if="showNav" as="div" class="mobile-hamburger">
+      <Menu as="div" class="mobile-hamburger">
         <div class="menu-button">
           <MenuButton aria-label="Menu">
             <Bars3Icon />
@@ -66,7 +65,7 @@
                 :key="item"
                 v-slot="{ active }"
               >
-                <a
+                <NuxtLink
                   :href="item.href"
                   :class="[
                     active ? 'bg-gray-500 text-white' : 'text-gray-900',
@@ -74,7 +73,7 @@
                   ]"
                 >
                   {{ item.name }}
-                </a>
+                </NuxtLink>
               </MenuItem>
             </div>
           </MenuItems>
@@ -102,20 +101,14 @@ useHead({
   ],
 });
 
-//props
-const props = defineProps({
-  showNav: {
-    type: Boolean,
-    default: true,
-  },
-});
-
 const { enabled, toggleTheme } = useTheme();
-let loading = ref(true);
 const route = useRoute();
 const { scrollTop } = useScrollToTop();
 const { trackNavBarPosition, currentOffsetHeight } = useTrackNavBar();
+const { trackTransitionCompleted, transitionCompletedOnce } =
+  useTransitionTracking();
 const { navigation } = useConstants();
+let loading = ref(transitionCompletedOnce.value ? false : true);
 const screenHeight = ref(0);
 const heightOfNav = ref(0);
 const currentScreenWidth = ref(0);
@@ -189,10 +182,12 @@ onMounted(() => {
   trackScroll();
   // use scroll event to update the current position of nav bar
   window.addEventListener("scroll", trackScroll);
+  const navigationBar = document.getElementById("nav-bar");
   screenHeight.value = window.innerHeight;
-  heightOfNav.value = document.getElementById("nav-bar").offsetHeight;
+  heightOfNav.value = navigationBar ? navigationBar.offsetHeight : 0;
   currentScreenWidth.value = window.innerWidth;
   loading.value = false;
+  trackTransitionCompleted();
 });
 </script>
 <style lang="scss" scoped>
