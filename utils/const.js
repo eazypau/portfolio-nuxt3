@@ -18,7 +18,7 @@ export function useConstants() {
     {
       id: 3,
       name: "Works",
-      href: "/#works",
+      href: "/works",
     },
     {
       id: 4,

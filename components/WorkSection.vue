@@ -1,6 +1,6 @@
 <template>
   <section id="works">
-    <h2 class="workTitle">Some Things I've Worked On</h2>
+    <h2 class="workTitle">Career Highlights</h2>
     <div class="work-card-lane">
       <CardsWorkCard
         v-for="project in workingProjects"
@@ -46,7 +46,7 @@ onMounted(() => {
 
   gsap.set(".work-card-container", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".work-card-container", {
-    start: "-130px center",
+    start: "-250px center",
     end: "top center",
     // markers: true,
     onEnter: (batch) =>
@@ -54,3 +54,8 @@ onMounted(() => {
   });
 });
 </script>
+<style>
+.work-card-container {
+  opacity: 0;
+}
+</style>
