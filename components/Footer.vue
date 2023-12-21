@@ -5,8 +5,7 @@
         <!-- nav - start -->
         <nav>
           <NuxtLink
-            v-for="(item, index) in navigation"
-            v-if="index != 1"
+            v-for="item in navigation"
             :key="item.id"
             :href="item.href"
             class="footerBtn"
