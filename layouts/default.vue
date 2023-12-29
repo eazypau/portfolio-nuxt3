@@ -1,17 +1,18 @@
 <template>
   <div>
     <NavBar />
-    <SideNavigation
+    <!-- <SideNavigation
       :left-link="leftLink"
       :right-link="rightLink"
       :show-right-link="showRightLink"
     >
       <slot />
-    </SideNavigation>
+    </SideNavigation> -->
+    <slot />
     <Footer />
   </div>
 </template>
-<script setup>
+<!-- <script setup>
 const route = useRoute();
 const { navigation } = useConstants();
 const leftLink = ref("");
@@ -39,4 +40,4 @@ const assignRoute = () => {
 onMounted(() => {
   assignRoute();
 });
-</script>
+</script> -->

@@ -1,8 +1,9 @@
 <template>
   <div>
     <NavBar />
-    <SideNavigation right-link="/about" :show-left-link="false">
+    <!-- <SideNavigation right-link="/about" :show-left-link="false">
       <slot />
-    </SideNavigation>
+    </SideNavigation> -->
+    <slot />
   </div>
 </template>
