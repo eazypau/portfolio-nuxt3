@@ -30,6 +30,11 @@ export function useConstants() {
       name: "Contact",
       href: "/contact",
     },
+    {
+      id: 6,
+      name: "Blog",
+      href: "https://my-blog-eazypau.vercel.app/",
+    },
   ];
 
   const skillWithLogo = [
