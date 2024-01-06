@@ -31,6 +31,7 @@
           :key="item.id"
           :data-index="index"
           :href="item.href"
+          class="underAnimation"
           >{{ item.name }}</NuxtLink
         >
       </TransitionGroup>
