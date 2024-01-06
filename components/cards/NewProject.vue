@@ -96,10 +96,10 @@
 <script setup>
 import { TransitionRoot } from "@headlessui/vue";
 const props = defineProps({
-  isReverse: {
-    type: Boolean,
-    default: false,
-  },
+  // isReverse: {
+  //   type: Boolean,
+  //   default: false,
+  // },
   projectDetails: {
     type: Object,
     default() {

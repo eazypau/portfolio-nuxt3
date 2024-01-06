@@ -172,6 +172,18 @@ export function useConstants() {
   const projects = [
     {
       isReverse: true,
+      title: "Personal Blog",
+      titleColor: "text-white",
+      filterColor: "bg-slate-900 bg-opacity-60",
+      imageUrl: "/project-ss/blog-page.png",
+      description: "A personal blog using NextJS and Notion API",
+      techStack: ["NextJS", "TS", "TailwindCSS", "@notionhq/client"],
+      isUrl: true,
+      urlLink: "https://my-blog-eazypau.vercel.app/",
+      githubLink: "https://github.com/eazypau/my-blog",
+    },
+    {
+      isReverse: true,
       title: "Order Management App",
       titleColor: "text-white",
       filterColor: "bg-slate-900 bg-opacity-60",
@@ -283,18 +295,18 @@ export function useConstants() {
       urlLink: "https://saloonbooking-95d49.web.app/",
       githubLink: "https://github.com/eazypau/saloonbooking",
     },
-    // {
-    //   isReverse: true,
-    //   title: "Tic Tac Toe",
-    //   titleColor: "text-white",
-    //   filterColor: "bg-zinc-700 mix-blend-hard-light",
-    //   imageUrl: "/project-ss/tictactoe-ss.webp",
-    //   description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
-    //   techStack: ["HTML", "CSS", "JavaScript"],
-    //   isUrl: true,
-    //   urlLink: "https://eazypau.github.io/tictactoe/",
-    //   githubLink: "https://github.com/eazypau/tictactoe",
-    // },
+    {
+      isReverse: true,
+      title: "Tic Tac Toe",
+      titleColor: "text-white",
+      filterColor: "bg-zinc-700 mix-blend-hard-light",
+      imageUrl: "/project-ss/tictactoe-ss.webp",
+      description: "A game of tic tac toe in HTML, CSS, and JavaScript.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      isUrl: true,
+      urlLink: "https://eazypau.github.io/tictactoe/",
+      githubLink: "https://github.com/eazypau/tictactoe",
+    },
   ];
   const workingProjects = [
     {
