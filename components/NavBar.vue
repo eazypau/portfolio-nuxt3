@@ -7,12 +7,7 @@
   >
     <div class="lg:w-1/12">
       <Transition appear name="fadeIn">
-        <NuxtLink
-          v-if="!loading"
-          href="/"
-          class="home-button"
-          aria-label="Website Logo"
-        >
+        <NuxtLink v-if="!loading" href="/" class="home-button" aria-label="YZ.">
           <img
             :src="logo"
             width="40"
