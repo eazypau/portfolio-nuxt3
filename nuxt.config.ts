@@ -64,4 +64,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ["gsap", "@headlessui/vue", "@heroicons/vue"],
   },
+  runtimeConfig: {
+    public: {
+      NUXT_GTM_ID: process.env.NUXT_GTM_ID,
+    },
+  },
 });
