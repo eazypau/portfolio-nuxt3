@@ -9,7 +9,6 @@
 </template>
 <script setup>
 const runtimeConfig = useRuntimeConfig();
-console.log(runtimeConfig.public);
 const gtag = `
 window.dataLayer = window.dataLayer || [];
 function gtag() {
