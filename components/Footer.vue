@@ -56,7 +56,7 @@
       </div>
 
       <div class="copyright">
-        © {{ CURRENT_YEAR }} - Present Po YZ. All rights reserved.
+        © {{ CURRENT_YEAR }} - Present Po Yi Zhi. All rights reserved.
       </div>
     </footer>
   </div>
