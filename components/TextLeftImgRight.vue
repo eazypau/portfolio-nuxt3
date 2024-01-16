@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="flex items-center bg-white py-8 2xl:pb-10 md:py-20 lg:py-0 dark:bg-[#121212]"
+    class="overflow-x-hidden flex items-center bg-white py-8 2xl:pb-10 md:py-20 lg:py-0 dark:bg-[#121212]"
   >
     <div class="px-6 mx-auto md:w-10/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12">
       <div class="items-center justify-between lg:flex lg:space-x-10">
