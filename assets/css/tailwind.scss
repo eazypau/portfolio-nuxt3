@@ -490,3 +490,8 @@ section.contact-section {
     }
   }
 }
+
+.smth-fun {
+  @include sub-font-family;
+  @apply text-center py-3;
+}

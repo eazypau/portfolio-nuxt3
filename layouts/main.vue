@@ -28,6 +28,10 @@ useHead({
       type: "text/javascript",
       innerHTML: gtag,
     },
+    {
+      type: "text/javascript",
+      src: "js/useCopy.js",
+    },
   ],
 });
 </script>
