@@ -48,6 +48,7 @@ $ npm run start
 - [Beautiful, High-Resolution No Cost Stock Images](https://negativespace.co/)
 - [15 Web Developer Portfolios to Inspire You](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
 - [How to create theme toggle composable](https://github.com/adityar15/nuxt3socket/blob/master/composables/useTheme.ts)
+- [NuroDev Developer Portfolio](https://nuro.dev/timeline)
 
 ## Remarks
 
