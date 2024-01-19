@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title: "Web developer portfolio | Front End Developer",
+      title: "Web Developer Portfolio | Po Yi Zhi",
       meta: [
         {
           name: "viewport",
@@ -23,12 +23,12 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, Po YZ, YZ Po, eazypau, Malaysia",
+            "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, eazypau, Malaysia",
         },
         // social meta tags
         {
           property: "og:site_name",
-          content: "Web developer portfolio | Front End Developer",
+          content: "Web Developer Portfolio | Po Yi Zhi",
         },
         {
           property: "og:site",
@@ -36,12 +36,12 @@ export default defineNuxtConfig({
         },
         {
           property: "og:title",
-          content: "Web developer portfolio | Front End Developer",
+          content: "Web Developer Portfolio | Po Yi Zhi",
         },
         {
           property: "og:description",
           content:
-            "Personal Portfolio Website. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+            "Personal Portfolio Website. Hi, I am Po Yi Zhi. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
         },
         // sharing thumbmail img
         {
