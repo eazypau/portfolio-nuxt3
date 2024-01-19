@@ -493,5 +493,5 @@ section.contact-section {
 
 .smth-fun {
   @include sub-font-family;
-  @apply text-center py-3;
+  @apply text-center pt-3 pb-1 tracking-wider;
 }

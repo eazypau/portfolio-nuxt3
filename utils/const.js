@@ -449,6 +449,7 @@ export function useConstants() {
         "Splide",
         "Modaal",
       ],
+      highlights: "Product Page Revamp & Cart Page Revamp",
       urls: [
         {
           name: "Flowerchimp MY",
@@ -551,6 +552,7 @@ export function useConstants() {
           linkedIn: "https://www.linkedin.com/in/sylviaachann/",
         },
       ],
+      highlights: "Home Page Revamp & Explosion Box Product Template Page",
       urls: [
         {
           name: "Cakerush MY",
@@ -590,6 +592,7 @@ export function useConstants() {
       help customers interact with the company in a meaningful way.`,
       techStack: ["Vue", "Nuxt3", "TailwindCSS", "HeadlessUI", "Heroicons"],
       teamMembers: [],
+      highlights: "Manage and work with the team to create the entire website.",
       urls: [
         {
           name: "THC Website",

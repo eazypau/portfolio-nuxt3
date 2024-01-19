@@ -30,6 +30,16 @@
                 <div class="lg:flex flex-col justify-between lg:w-1/2">
                   <div class="lg:mb-7">
                     <div
+                      v-if="modalContent.highlights"
+                      class="mt-3 mb-3 lg:mt-0"
+                    >
+                      <p class="text-sm lg:text-base">Highlight(s):</p>
+                      <p class="flex flex-wrap text-sm lg:text-base">
+                        {{ modalContent.highlights }}
+                      </p>
+                    </div>
+
+                    <div
                       v-if="modalContent.teamMembers.length > 0"
                       class="mt-3 mb-3 lg:mt-0"
                     >
