@@ -19,6 +19,10 @@ useHead({
   title: "Web Developer Portfolio | Career Highlights",
   meta: [
     {
+      property: "og:title",
+      content: "Web Developer Portfolio | Career Highlights",
+    },
+    {
       property: "og:site_name",
       content: "Web Developer Portfolio | Career Highlights",
     },
