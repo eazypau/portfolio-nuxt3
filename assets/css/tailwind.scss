@@ -15,7 +15,7 @@ html {
   background-color: $bg-light;
 }
 h1 {
-  @apply text-white flex flex-col justify-center text-4xl lg:text-6xl 2xl:text-[4.1rem] 3xl:text-7xl font-bold;
+  @apply h-full text-[#14213d] dark:text-[#d3d4d6] flex flex-col justify-center;
   @include header-font;
 }
 h2.profile-title {
@@ -87,16 +87,24 @@ header {
   @apply relative w-full overflow-hidden flex;
 
   div:first-child {
-    @apply absolute w-full h-full;
+    @apply absolute inset-0 blur-[1px] md:blur-[2px];
 
-    img {
-      @apply w-full h-full object-cover object-top;
+    div {
+      @apply absolute bg-white dark:bg-[#1a1a1a] border-t border-gray-100 dark:border-[#242424] shadow shadow-gray-300 dark:shadow-sm dark:shadow-gray-700;
     }
+
+    // img {
+    //   @apply w-full h-full object-cover object-top;
+    // }
   }
 
   div:last-child {
-    @apply relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10;
+    @apply relative mx-auto top-[25%] lg:top-[28%] w-[90%] md:w-4/5 lg:w-1/2 h-[40%] md:h-[35%] px-7 md:px-10 rounded-md bg-white dark:bg-[#171717] border-t border-gray-100 dark:border-2 dark:border-gray-400 shadow-lg shadow-gray-300 dark:shadow-none;
   }
+
+  // div:last-child {
+  //   @apply relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10;
+  // }
 }
 
 // about

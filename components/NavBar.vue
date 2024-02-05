@@ -139,36 +139,36 @@ const entering = (el, done) => {
 };
 
 watchEffect(() => {
-  if (route.path === "/") {
-    if (currentScreenWidth.value <= 640) {
-      if (
-        currentOffsetHeight.value >
-        screenHeight.value + heightOfNav.value / 2
-      ) {
-        // navbar style change on desktop view
-        navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-        logo.value = blackWhiteFavicon;
-      } else {
-        navBgTextColor.value = "bg-black text-white";
-        logo.value = whiteBlackFavicon;
-      }
-    } else {
-      if (
-        currentOffsetHeight.value >
-        screenHeight.value - heightOfNav.value / 2
-      ) {
-        // navbar style change on desktop view
-        navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-        logo.value = blackWhiteFavicon;
-      } else {
-        navBgTextColor.value = "bg-black text-white";
-        logo.value = whiteBlackFavicon;
-      }
-    }
-  } else {
-    navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-    logo.value = blackWhiteFavicon;
-  }
+  // if (route.path === "/") {
+  //   if (currentScreenWidth.value <= 640) {
+  //     if (
+  //       currentOffsetHeight.value >
+  //       screenHeight.value + heightOfNav.value / 2
+  //     ) {
+  //       // navbar style change on desktop view
+  //       navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
+  //       logo.value = blackWhiteFavicon;
+  //     } else {
+  //       navBgTextColor.value = "bg-black text-white";
+  //       logo.value = whiteBlackFavicon;
+  //     }
+  //   } else {
+  //     if (
+  //       currentOffsetHeight.value >
+  //       screenHeight.value - heightOfNav.value / 2
+  //     ) {
+  //       // navbar style change on desktop view
+  //       navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
+  //       logo.value = blackWhiteFavicon;
+  //     } else {
+  //       navBgTextColor.value = "bg-black text-white";
+  //       logo.value = whiteBlackFavicon;
+  //     }
+  //   }
+  // } else {
+  navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
+  logo.value = blackWhiteFavicon;
+  // }
   if (enabled.value) {
     logo.value = whiteBlackFavicon;
   }
