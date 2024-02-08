@@ -15,7 +15,7 @@ html {
   background-color: $bg-light;
 }
 h1 {
-  @apply h-full text-[#14213d] dark:text-[#d3d4d6] flex flex-col justify-center;
+  @apply h-full text-[#14213d] dark:text-white flex flex-col justify-center;
   @include header-font;
 }
 h2.profile-title {
@@ -86,20 +86,20 @@ nav#nav-bar {
 header {
   @apply relative w-full overflow-hidden flex;
 
-  div:first-child {
-    @apply absolute inset-0 blur-[1px] md:blur-[2px];
+  div.header-bg {
+    @apply absolute inset-0 dark:blur-sm;
 
     div {
-      @apply absolute bg-white dark:bg-[#1a1a1a] border-t border-gray-100 dark:border-[#242424] shadow shadow-gray-300 dark:shadow-sm dark:shadow-gray-700;
+      @apply absolute z-10 bg-white dark:bg-opacity-0 transition duration-300 ease-out;
     }
 
-    // img {
-    //   @apply w-full h-full object-cover object-top;
-    // }
+    img {
+      @apply absolute inset-0 w-full h-full object-cover object-top transition duration-300 ease-out;
+    }
   }
 
-  div:last-child {
-    @apply relative mx-auto top-[25%] lg:top-[28%] w-[90%] md:w-4/5 lg:w-1/2 h-[40%] md:h-[35%] px-7 md:px-10 rounded-md bg-white dark:bg-[#171717] border-t border-gray-100 dark:border-2 dark:border-gray-400 shadow-lg shadow-gray-300 dark:shadow-none;
+  div.content {
+    @apply relative z-20 mx-auto top-[25%] lg:top-[28%] w-[90%] md:w-4/5 lg:w-1/2 xl:w-[45%] h-[40%] lg:h-[40%] 2xl:h-[35%] px-7 md:px-10 rounded-md bg-white dark:bg-[#171717] border-t border-gray-100 dark:border-none shadow-lg shadow-gray-500 dark:shadow-gray-700 transition duration-300 ease-out;
   }
 
   // div:last-child {
