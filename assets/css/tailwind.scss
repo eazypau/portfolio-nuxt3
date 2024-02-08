@@ -501,5 +501,5 @@ section.contact-section {
 
 .smth-fun {
   @include sub-font-family;
-  @apply text-center pt-3 pb-1 tracking-wider;
+  @apply text-center pt-3 pb-1 tracking-wider dark:text-white;
 }
