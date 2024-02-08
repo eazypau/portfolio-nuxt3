@@ -231,7 +231,7 @@ section#works {
   height: auto;
   @include section-vertical-padding;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1580px) {
     height: calc(100vh - 227px);
   }
 
