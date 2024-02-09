@@ -12,7 +12,7 @@
       />
     </div> -->
     <TransitionGroup name="list" tag="div" class="header-bg">
-      <div v-for="rectang in rectangs" :key="rectang" :style="rectang"></div>
+      <div v-for="rectang in columns" :key="rectang" :style="rectang"></div>
       <img v-if="showBgImg" src="/red-blue.jpg" width="1920" height="1280" alt="blue red fusion" />
     </TransitionGroup>
     <div class="content">
@@ -31,17 +31,16 @@
   </header>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
 // const loading = ref(true);
-
-const rectangs = ref([]);
+const columns = ref([]);
 const counter = ref(0);
-const numOfRectang = ref(4);
+const numOfColumns = ref(4);
 const currentLeftPosition = ref(20)
 const width = 2
-const speed = 50;
-const rectangDelay = ref(1500)
-const typeWriterDelay = ref(2000)
+const typeSpeed = 50;
+const columnSpeed = 100;
+const rectangDelay = ref(1300)
+const typeWriterDelay = ref(2500)
 const showBgImg = ref(false)
 const { enabled } = useTheme()
 const { transitionCompletedOnce } = useTransitionTracking()
@@ -60,14 +59,14 @@ const intro = [
 ];
 
 
-const addSquare = () => {
-  if (counter.value < numOfRectang.value) {
+const addColumns = () => {
+  if (counter.value < numOfColumns.value) {
     const positionY = 0
     const styling = `height: 100%; width: ${width}%; top: ${positionY}; left: ${currentLeftPosition.value}%`;
-    rectangs.value.push(styling);
+    columns.value.push(styling);
     currentLeftPosition.value += 20
     counter.value++;
-    setTimeout(addSquare, speed);
+    setTimeout(addColumns, columnSpeed);
   }
 };
 
@@ -78,11 +77,11 @@ const typeWriter = () => {
     if (i.value < intro[j.value].length) {
       introObj.value[currentLine] += intro[j.value][i.value];
       i.value++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter, typeSpeed);
     } else {
       if (j.value < 2) i.value = 0;
       j.value++;
-      if (j.value < 3) setTimeout(typeWriter, speed);
+      if (j.value < 3) setTimeout(typeWriter, typeSpeed);
     }
   }
 };
@@ -90,17 +89,18 @@ const typeWriter = () => {
 const assignDelayAmount = () => {
   if (window.innerWidth < 500) {
     if (enabled.value) {
-      typeWriterDelay.value = 300
+      typeWriterDelay.value = 800
     } else {
-      rectangDelay.value = transitionCompletedOnce.value ? 0 : 600
-      typeWriterDelay.value = transitionCompletedOnce.value ? 400 : 1000
+      rectangDelay.value = 0
+      typeWriterDelay.value = 1200
     }
   } else {
     if (enabled.value) {
-      typeWriterDelay.value = transitionCompletedOnce.value ? 300 : 1200
+      rectangDelay.value = 0
+      typeWriterDelay.value = transitionCompletedOnce.value ? 800 : 2100
     } else {
-      rectangDelay.value = transitionCompletedOnce.value ? 0 : 1500
-      typeWriterDelay.value = transitionCompletedOnce.value ? 500 : 2000
+      rectangDelay.value = transitionCompletedOnce.value ? 0 : 1300
+      typeWriterDelay.value = transitionCompletedOnce.value ? 1200 : 2500
     }
   }
 }
@@ -109,18 +109,18 @@ watchEffect(() => {
   if (counter.value === 4 && !enabled.value) {
     setTimeout(() => {
       showBgImg.value = true
-    }, 500);
+    }, 200);
   } else if (enabled.value) {
     setTimeout(() => {
       showBgImg.value = true
-    }, 800);
+    }, transitionCompletedOnce ? 0 : 1200);
   }
 })
 
 onMounted(() => {
   assignDelayAmount()
   setTimeout(() => {
-    addSquare()
+    addColumns()
   }, rectangDelay.value);
   if (counter.value === 4 && !enabled.value) {
     setTimeout(() => {
@@ -129,7 +129,7 @@ onMounted(() => {
   } else if (enabled.value) {
     setTimeout(() => {
       showBgImg.value = true
-    }, 800);
+    }, transitionCompletedOnce ? 0 : 1200);
   }
   setTimeout(() => {
     typeWriter()
