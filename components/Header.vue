@@ -15,7 +15,7 @@
       <div v-for="rectang in columns" :key="rectang" :style="rectang"></div>
       <img v-if="showBgImg" src="/red-blue.jpg" width="1920" height="1280" alt="blue red fusion" />
     </TransitionGroup>
-    <div class="content">
+    <div class="content" :class="showContent ? 'opacity-100' : 'opacity-0'">
       <h1 class="leading-3">
         <span class="text-4xl md:text-5xl font-semibold">{{
           introObj.lineOne
@@ -40,8 +40,11 @@ const width = 2
 const typeSpeed = 50;
 const columnSpeed = 100;
 const rectangDelay = ref(1300)
-const typeWriterDelay = ref(2500)
+const typeWriterDelay = ref(2800)
+const contentContainerDelay = ref(2500)
 const showBgImg = ref(false)
+const showContent = ref(false)
+const isMobile = ref(false)
 const { enabled } = useTheme()
 const { transitionCompletedOnce } = useTransitionTracking()
 
@@ -88,33 +91,43 @@ const typeWriter = () => {
 
 const assignDelayAmount = () => {
   if (window.innerWidth < 500) {
+    isMobile.value = true
     if (enabled.value) {
-      typeWriterDelay.value = 800
+      contentContainerDelay.value = 800
+      typeWriterDelay.value = 1100
     } else {
       rectangDelay.value = 0
-      typeWriterDelay.value = 1200
+      contentContainerDelay.value = 1200
+      typeWriterDelay.value = 1500
     }
   } else {
     if (enabled.value) {
       rectangDelay.value = 0
-      typeWriterDelay.value = transitionCompletedOnce.value ? 800 : 2100
+      contentContainerDelay.value = transitionCompletedOnce.value ? 800 : 2100
+      typeWriterDelay.value = transitionCompletedOnce.value ? 1100 : 2400
     } else {
       rectangDelay.value = transitionCompletedOnce.value ? 0 : 1300
-      typeWriterDelay.value = transitionCompletedOnce.value ? 1200 : 2500
+      contentContainerDelay.value = transitionCompletedOnce.value ? 1200 : 2500
+      typeWriterDelay.value = transitionCompletedOnce.value ? 1500 : 2800
     }
   }
 }
 
-watchEffect(() => {
+const triggerRevealBackground = () => {
   if (counter.value === 4 && !enabled.value) {
     setTimeout(() => {
       showBgImg.value = true
     }, 200);
   } else if (enabled.value) {
+    const delay = transitionCompletedOnce.value ? 300 : isMobile.value ? 500 : 1200
     setTimeout(() => {
       showBgImg.value = true
-    }, transitionCompletedOnce ? 0 : 1200);
+    }, delay);
   }
+}
+
+watchEffect(() => {
+  triggerRevealBackground()
 })
 
 onMounted(() => {
@@ -122,15 +135,10 @@ onMounted(() => {
   setTimeout(() => {
     addColumns()
   }, rectangDelay.value);
-  if (counter.value === 4 && !enabled.value) {
-    setTimeout(() => {
-      showBgImg.value = true
-    }, enabled.value ? 0 : 500);
-  } else if (enabled.value) {
-    setTimeout(() => {
-      showBgImg.value = true
-    }, transitionCompletedOnce ? 0 : 1200);
-  }
+  triggerRevealBackground()
+  setTimeout(() => {
+    showContent.value = true
+  }, contentContainerDelay.value);
   setTimeout(() => {
     typeWriter()
   }, typeWriterDelay.value);
