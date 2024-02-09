@@ -13,7 +13,8 @@
     </div> -->
     <TransitionGroup name="list" tag="div" class="header-bg">
       <div v-for="rectang in columns" :key="rectang" :style="rectang"></div>
-      <img v-if="showBgImg" src="/red-blue.jpg" width="1920" height="1280" alt="blue red fusion" />
+      <img :class="showBgImg ? 'opacity-100' : 'opacity-0'" src="/red-blue.jpg" width="1920" height="1280"
+        alt="blue red fusion" />
     </TransitionGroup>
     <div class="content" :class="showContent ? 'opacity-100' : 'opacity-0'">
       <h1 class="leading-3">
