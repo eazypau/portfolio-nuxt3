@@ -176,8 +176,16 @@ export function useConstants() {
       titleColor: "text-white",
       filterColor: "bg-slate-900 bg-opacity-60",
       imageUrl: "/project-ss/blog-page.png",
-      description: "A personal blog using NextJS and Notion API",
-      techStack: ["NextJS", "TS", "TailwindCSS", "@notionhq/client"],
+      description:
+        "A personal blog using NextJS and Notion API. It has code syntax highlight and image viewer.",
+      techStack: [
+        "NextJS",
+        "TS",
+        "TailwindCSS",
+        "@notionhq/client",
+        "highlight.js",
+        "fslightbox-react",
+      ],
       isUrl: true,
       urlLink: "https://my-blog-eazypau.vercel.app/",
       githubLink: "https://github.com/eazypau/my-blog",
@@ -370,6 +378,7 @@ export function useConstants() {
         },
       ],
       techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
+      highlights: "Cart page layout and functionality",
       urls: [
         {
           name: "LVLY AU",
@@ -494,6 +503,8 @@ export function useConstants() {
           linkedIn: "https://www.linkedin.com/in/sin-yee-chan-2865bbaa/",
         },
       ],
+      highlights:
+        "Render selectable dates based on postcode input, website maintenance",
       urls: [
         {
           name: "Bloomeroo",
