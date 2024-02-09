@@ -15,7 +15,7 @@ html {
   background-color: $bg-light;
 }
 h1 {
-  @apply text-white flex flex-col justify-center text-4xl lg:text-6xl 2xl:text-[4.1rem] 3xl:text-7xl font-bold;
+  @apply h-full text-[#14213d] dark:text-white flex flex-col justify-center;
   @include header-font;
 }
 h2.profile-title {
@@ -86,17 +86,25 @@ nav#nav-bar {
 header {
   @apply relative w-full overflow-hidden flex;
 
-  div:first-child {
-    @apply absolute w-full h-full;
+  div.header-bg {
+    @apply absolute inset-0 dark:blur-sm;
+
+    div {
+      @apply absolute z-10 bg-white dark:bg-opacity-0 transition duration-300 ease-out;
+    }
 
     img {
-      @apply w-full h-full object-cover object-top;
+      @apply absolute inset-0 w-full h-full object-cover object-top transition duration-300 ease-out;
     }
   }
 
-  div:last-child {
-    @apply relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10;
+  div.content {
+    @apply relative z-20 mx-auto top-[25%] lg:top-[28%] w-[90%] md:w-4/5 lg:w-1/2 xl:w-[45%] h-[40%] lg:h-[40%] 2xl:h-[35%] px-7 md:px-10 rounded-md bg-white dark:bg-[#171717] border-t border-gray-100 dark:border-none shadow-lg shadow-gray-700 dark:shadow-md dark:shadow-gray-400 transition duration-300 ease-out;
   }
+
+  // div:last-child {
+  //   @apply relative w-full text-center px-1 md:px-16 lg:px-28 xl:px-40 pt-5 2xl:pt-10;
+  // }
 }
 
 // about
@@ -223,7 +231,7 @@ section#works {
   height: auto;
   @include section-vertical-padding;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1580px) {
     height: calc(100vh - 227px);
   }
 
@@ -350,7 +358,7 @@ section.contact-section {
   @apply px-10 pt-24 sm:pb-16 md:pb-7 md:pt-16 flex items-center justify-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-0 xl:pb-4 2xl:pb-0;
 
   @media screen and (min-width: 768px) {
-    height: calc(100vh - 227px);
+    height: calc(100vh - 175px);
   }
 
   .contact-section-width {
@@ -493,5 +501,5 @@ section.contact-section {
 
 .smth-fun {
   @include sub-font-family;
-  @apply text-center pt-3 pb-1 tracking-wider;
+  @apply text-center pt-3 pb-1 tracking-wider dark:text-white;
 }
