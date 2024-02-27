@@ -33,7 +33,7 @@ export function useConstants() {
     {
       id: 6,
       name: "Blog",
-      href: "https://my-blog-eazypau.vercel.app/",
+      href: "https://blog.eazypau.com/",
     },
   ];
 
