@@ -30,7 +30,7 @@
             <p v-if="isSeeking">
               If you have any questions, want to work together or just want to
               say hi. Feel free to reach me through my email or any of of my
-              contact information in my resume!
+              contact information in my resume.
             </p>
             <p v-else>
               Although I’m not looking for any new opportunities, my inbox is
