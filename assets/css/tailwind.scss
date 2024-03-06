@@ -388,7 +388,7 @@ section.contact-section {
 
       p {
         word-spacing: 5px;
-        @apply text-base md:text-center lg:text-justify text-gray-600 dark:text-white md:text-lg 2xl:text-xl;
+        @apply text-base text-center lg:text-left text-gray-600 dark:text-white md:text-lg 2xl:text-xl xl:leading-7;
       }
     }
 

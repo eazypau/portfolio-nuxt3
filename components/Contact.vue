@@ -20,32 +20,34 @@
         <div class="details-cta-container">
           <div>
             <h2>Get in touch with me</h2>
-            <!-- <p
-              class="text-base text-justify text-gray-600 md:text-lg 2xl:text-xl"
-              style="word-spacing: 5px"
-            >
-              I'm seeking opportunities to work with companies that can improve
-              my skills not just in tech but also to be able to learn to lead
-              and teach others. If I am the person you are looking for, feel
-              free to reach me through email or my contact information in my
-              resume.
+            <!-- <p v-if="isSeeking">
+              I'm currently seeking opportunities to work with companies that
+              can improve my skills not just in tech but also to be able to
+              learn to lead and teach others. If I am the person you are looking
+              for, feel free to reach me through email or my contact information
+              in my resume.
             </p> -->
-            <p>
-              Although I’m not currently looking for any new opportunities, my
-              inbox is always open. Whether you have a question, want to work
-              together or just want to say hi, I’ll try my best to get back to
-              you!
+            <p v-if="isSeeking">
+              If you have any questions, want to work together or just want to
+              say hi. Feel free to reach me through my email or any of of my
+              contact information in my resume!
+            </p>
+            <p v-else>
+              Although I’m not looking for any new opportunities, my inbox is
+              always open. Whether you have a question, want to work together or
+              just want to say hi, I’ll try my best to get back to you!
             </p>
           </div>
           <div>
-            <!-- <a
+            <a href="mailto:poyizhi@gmail.com"> <EnvelopeIcon /> Say Hello! </a>
+            <a
+              v-if="isSeeking"
               href="/resume/my-resume.pdf"
               download="resume_poyizhi"
               target="_blank"
             >
               <PaperClipIcon /> My Resume
-            </a> -->
-            <a href="mailto:poyizhi@gmail.com"> <EnvelopeIcon /> Say Hello! </a>
+            </a>
           </div>
         </div>
       </div>
@@ -54,4 +56,5 @@
 </template>
 <script setup>
 import { EnvelopeIcon, PaperClipIcon } from "@heroicons/vue/24/outline";
+const isSeeking = true;
 </script>
