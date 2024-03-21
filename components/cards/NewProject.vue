@@ -71,6 +71,7 @@
               </svg>
             </a>
             <a
+              v-if="projectDetails.githubLink"
               class="mx-2"
               :href="projectDetails.githubLink"
               target="blank"
