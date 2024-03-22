@@ -1,6 +1,8 @@
 <template>
-  <section id="about"
-    class="overflow-x-hidden flex items-center bg-white py-8 2xl:pb-10 md:py-20 lg:py-0 dark:bg-[#121212]">
+  <section
+    id="about"
+    class="overflow-x-hidden flex items-center bg-white py-8 2xl:pb-10 md:py-20 lg:py-0 dark:bg-[#121212]"
+  >
     <div class="px-6 mx-auto md:w-10/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12">
       <div class="items-center justify-between lg:flex lg:space-x-10">
         <div class="lg:w-7/12 leftText">
@@ -88,8 +90,11 @@
               After discovering my passion for web development, I made a career
               change and became a frontend web developer. Currently working as a
               Software Developer in
-              <a class="font-bold text-red-600 dark:text-red-300 hover:underline"
-                href="https://jagasolution.com/jagaapp/">JagaApp (RISB)</a>.
+              <a
+                class="font-bold text-red-600 dark:text-red-300 hover:underline"
+                href="https://jagasolution.com/jagaapp/"
+                >JagaApp (RISB)</a
+              >.
             </p>
 
             <p>
@@ -104,30 +109,48 @@
           <div class="summary-skill-list-container">
             <ul>
               <li>JavaScript</li>
+              <li>React</li>
+              <li>NextJs</li>
               <li>Vue</li>
-              <li>TailwindCSS</li>
             </ul>
             <ul>
-              <li>Shopify Liquid</li>
-              <li>React</li>
               <li>TypeScript</li>
+              <li>jQuery</li>
+              <li>Shopify Liquid</li>
+              <li>TailwindCSS</li>
             </ul>
           </div>
 
           <div class="profile-social-icons">
-            <a href="https://www.instagram.com/yzpo/" aria-label="Instagram" target="blank">
+            <a
+              href="https://www.instagram.com/yzpo/"
+              aria-label="Instagram"
+              target="blank"
+            >
               <IconsInstaIcon />
             </a>
 
-            <a href="https://www.facebook.com/yizhipo" aria-label="Facebook" target="blank">
+            <a
+              href="https://www.facebook.com/yizhipo"
+              aria-label="Facebook"
+              target="blank"
+            >
               <IconsFacebookIcon />
             </a>
 
-            <a href="https://www.linkedin.com/in/yzpo/" aria-label="Linkden" target="blank">
+            <a
+              href="https://www.linkedin.com/in/yzpo/"
+              aria-label="Linkden"
+              target="blank"
+            >
               <IconsLinkedInIcon />
             </a>
 
-            <a href="https://github.com/eazypau" aria-label="Github" target="blank">
+            <a
+              href="https://github.com/eazypau"
+              aria-label="Github"
+              target="blank"
+            >
               <IconsGithubIcon />
             </a>
           </div>
@@ -136,7 +159,13 @@
         <div class="mt-8 lg:mt-0 lg:w-4/12 xl:w-4/12 right-img-container">
           <div class="flex items-center justify-center lg:justify-end group">
             <div class="profile-img-container">
-              <img src="/profile-pics/profile.webp" width="350" height="350" alt="profile image" loading="lazy" />
+              <img
+                src="/profile-pics/profile.webp"
+                width="350"
+                height="350"
+                alt="profile image"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
