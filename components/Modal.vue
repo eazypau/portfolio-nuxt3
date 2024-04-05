@@ -50,12 +50,15 @@
                           :key="member.name"
                           class="text-sm lg:text-base"
                           ><a
+                            v-if="member.linkedIn"
                             :href="member.linkedIn"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             {{ member.name }}</a
-                          ><span
+                          >
+                          <span v-else>{{ member.name }}</span>
+                          <span
                             v-if="
                               index !== modalContent?.teamMembers.length - 1
                             "
