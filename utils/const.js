@@ -331,6 +331,64 @@ export function useConstants() {
   const workingProjects = [
     {
       image: {
+        src: "/work/jagaapp/jagaapp-logo.png",
+        alt: "JagaApp",
+        width: "225",
+        height: "225",
+        maxWidth: "max-w-[35%] md:max-w-[35%] 3xl:max-w-[40%]",
+      },
+      imageShowcase: [
+        {
+          title: "Visitor Setting",
+          src: "/work/jagaapp/visitor-setting.png",
+          alt: "Visitor Setting",
+          width: "1920",
+          height: "959",
+        },
+        {
+          title: "Visitor Setting - Note From Management",
+          src: "/work/jagaapp/visitor-setting-note.png",
+          alt: "Visitor Setting - Note From Management",
+          width: "1920",
+          height: "953",
+        },
+        {
+          title: "Facility Log",
+          src: "/work/jagaapp/facility-log.png",
+          alt: "Facility Log",
+          width: "1920",
+          height: "953",
+        },
+        {
+          title: "Revamped Visitor Log",
+          src: "/work/jagaapp/visitor-log.png",
+          alt: "Revamped Visitor Log",
+          width: "1920",
+          height: "953",
+        },
+      ],
+      heading: "JagaApp",
+      description: `JagaApp Admin Panel is a property management admin panel. It is mainly for internal and client (Management) 
+      side use. It can be use for managing visitors, post notice, managing user feedbacks, etc. *Disclaimer: all the data shown 
+      are testing/dummy data.`,
+      teamMembers: [
+        {
+          name: "Max Leong",
+          linkedIn: "",
+        },
+      ],
+      techStack: ["ReactJs", "NextJs", "Material-UI", "Firebase"],
+      highlights:
+        "Visitor Setting Enhancement, Creating Logs for monitoring, Module Migration",
+      urls: [
+        {
+          name: "JagaApp Admin Panel",
+          link: "https://admin.jagaapp.com/login",
+        },
+      ],
+    },
+    {
+      image: {
         src: "/work/LVLY_logo.webp",
         alt: "LVLY",
         width: "410",
@@ -366,16 +424,24 @@ export function useConstants() {
           width: "800",
           height: "520",
         },
+        {
+          title: "Product Page - Build A Bundle",
+          src: "/work/lvly/lvly-bab.png",
+          alt: "Product Page - Build A Bundle",
+          width: "1920",
+          height: "5503",
+        },
+        {
+          title: "General Product Page",
+          src: "/work/lvly/lvly-product-page.png",
+          alt: "General Product Page",
+          width: "1920",
+          height: "1902",
+        },
       ],
       heading: "LVLY",
-      // description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion.
-      // With its wide selection of blooms, LVLY is the perfect choice for those who are looking for a unique and special
-      // way to show their love and appreciation. From classic roses to exotic orchids, LVLY has something for everyone.
-      // Customers can choose from a variety of bouquets, vases and boxes to make sure that their gift is as special and
-      // unique as they are. With same-day delivery options,  LVLY ensures that its customers can get the perfect
-      // arrangement for any occasion.`,
       description: `LVLY is an online flower shop that offers beautiful, fragrant, fresh flowers for any occasion.
-      The aim was to work on the features for the cart page. Creating a step by step user interface to guide customer 
+      The aim was to work on the features for the cart page and product page. Creating a step by step user interface to guide customer 
       to checkout page. It allows the customer to pick their desired delivery date based on the postcode and suburb 
       provided. Moreover, customer can also provide their card message, choose their desired jar message and greeting 
       cards.`,
@@ -390,7 +456,8 @@ export function useConstants() {
         },
       ],
       techStack: ["HTML", "CSS", "JavaScript", "jQuery", "Shopify Liquid"],
-      highlights: "Cart page layout and functionality",
+      highlights:
+        "Cart page layout & functionality, Product Page Addons UI & functionality",
       urls: [
         {
           name: "LVLY AU",
@@ -441,11 +508,6 @@ export function useConstants() {
         },
       ],
       heading: "Flowerchimp",
-      // description: `LVLY, Bloomeroo, and Flowerchimp are e-commerce websites for selling flower products.
-      // This was created using Shopify Liquid, HTML, CSS, and Javascript. Customers can choose their desired
-      // delivery date and timeslot for their order. It allows customers to select their desired flower products
-      // , add-on products, and gifts for various occasions. The online stores are available mainly in Southeast
-      // Asia and Australia.`,
       description: `Flowerchimp is an online flower shop that offers a wide selection of beautiful bouquets and
       arrangements to suit any occasion. Customers can choose from a variety of flowers, vases and boxes to make
       sure their gift is special and unique. The aim was to work on revamping the product page and cart page. 
@@ -496,10 +558,6 @@ export function useConstants() {
         },
       ],
       heading: "Bloomeroo",
-      // description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day
-      // delivery in Australia. The company strives to provide customers with the best selection of flowers, from traditional
-      // roses to unique tropical and exotic blooms. Our same-day delivery service ensures that no matter where you are in
-      // the country, you can get the perfect bouquet delivered to your door. `,
       description: `Bloomeroo is an e-commerce website that specializes in selling fresh flowers and providing same-day
       delivery in Australia. The aim was to work on generating the date picker by postcode input for the cart page. This 
       requires user to provide postcode in order to choose their desired delivery date. Moreover, customer can also 
@@ -614,7 +672,20 @@ export function useConstants() {
       information. THC also offers a number of tools, such as a contact form, a blog, and registration forms, to
       help customers interact with the company in a meaningful way.`,
       techStack: ["Vue", "Nuxt3", "TailwindCSS", "HeadlessUI", "Heroicons"],
-      teamMembers: [],
+      teamMembers: [
+        {
+          name: "Bryan Liaw",
+          linkedIn: "",
+        },
+        {
+          name: "Pierce Ong",
+          linkedIn: "",
+        },
+        {
+          name: "Adri Shahri",
+          linkedIn: "",
+        },
+      ],
       highlights: "Manage and work with the team to create the entire website.",
       urls: [
         {
