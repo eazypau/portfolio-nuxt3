@@ -369,7 +369,7 @@ export function useConstants() {
       ],
       heading: "JagaApp",
       description: `JagaApp Admin Panel is a property management admin panel. It is mainly for internal and client (Management) 
-      side use. It can be use for managing visitors, post notice, managing user feedbacks, etc. *Disclaimer: all the data shown 
+      side use. It can be use for managing visitors, post notice, managing user feedbacks, etc. *Disclaimer: all data shown here 
       are testing/dummy data.`,
       teamMembers: [
         {
