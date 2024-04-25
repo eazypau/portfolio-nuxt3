@@ -10,11 +10,11 @@ export function useConstants() {
       name: "Skills",
       href: "/skills",
     },
-    {
-      id: 6,
-      name: "Timeline",
-      href: "/timeline",
-    },
+    // {
+    //   id: 6,
+    //   name: "Timeline",
+    //   href: "/timeline",
+    // },
     {
       id: 3,
       name: "Works",
@@ -184,7 +184,7 @@ export function useConstants() {
       filterColor: "bg-slate-900 bg-opacity-60",
       imageUrl: "/project-ss/blog-page.png",
       description:
-        "A personal blog using NextJS and Notion API. It has code syntax highlight and image viewer.",
+        "A personal blog using NextJS and Notion API. It has code syntax highlight, text to speech and image viewer.",
       techStack: [
         "NextJS",
         "TS",
@@ -335,7 +335,7 @@ export function useConstants() {
         alt: "JagaApp",
         width: "225",
         height: "225",
-        maxWidth: "max-w-[35%] md:max-w-[35%] 3xl:max-w-[40%]",
+        maxWidth: "max-w-[35%] 3xl:max-w-[35%]",
       },
       imageShowcase: [
         {
@@ -696,80 +696,135 @@ export function useConstants() {
     },
   ];
 
+  // const timeline = [
+  //   {
+  //     date: "July 2023",
+  //     title: "Started @ JagaApp",
+  //     description: "Joined the JagaApp team",
+  //     // icon: "",
+  //     link: {
+  //       text: "Visit JagaApp",
+  //       url: "https://jagasolution.com/jagaapp/",
+  //     },
+  //   },
+  //   {
+  //     date: "May 2022",
+  //     title: "Started @ Limitless Technologies",
+  //     description: "Joined the Limitless Technologies (LTG) team",
+  //     // icon: "",
+  //     link: {
+  //       text: "Visit LTG",
+  //       url: "https://limitless.my/",
+  //     },
+  //   },
+  //   {
+  //     date: "October 2021",
+  //     title: "First Developer Role",
+  //     description:
+  //       "Joined The Hacker Collective (THC) Team as Frontend Web Developer",
+  //     // icon: "",
+  //     link: {
+  //       text: "Visit THC",
+  //       url: "https://hackercollective.co/",
+  //     },
+  //   },
+  //   {
+  //     date: "April 2021",
+  //     title: "Self Taught Journey Begins",
+  //     description:
+  //       "Started my journey in self learning programming (web development)",
+  //     // icon: "",
+  //   },
+  //   {
+  //     date: "August 2019",
+  //     title: "First Mechanical Engineer Role",
+  //     description:
+  //       "Began my job as a Mechanical Engineer in M&E Consultancy at Durianê Professional",
+  //     // icon: "",
+  //     link: {
+  //       text: "Visit Durianê Professional",
+  //       url: "https://www.duriane.com/",
+  //     },
+  //   },
+  //   {
+  //     date: "May 2019",
+  //     title: "Graduated University",
+  //     description:
+  //       "Completed my Bachelor's Degree in Mechanical Engineering at Multimedia University (MMU)",
+  //     // icon: "",
+  //   },
+  //   {
+  //     date: "March 2018",
+  //     title: "Internship",
+  //     description:
+  //       "Began an internship as assistent engineer at Protech Builders",
+  //     // icon: "",
+  //   },
+  //   {
+  //     date: "June 2015",
+  //     title: "Start University",
+  //     description:
+  //       "Began my study in Mechanical Engineering at Multimedia University (MMU)",
+  //     // icon: "",
+  //     link: {
+  //       text: "Visit MMU",
+  //       url: "https://www.mmu.edu.my/",
+  //     },
+  //   },
+  // ];
+
+  // new timeline
   const timeline = [
     {
-      date: "July 2023",
-      title: "Started @ JagaApp",
-      description: "Joined the JagaApp team",
-      // icon: "",
-      link: {
-        text: "Visit JagaApp",
-        url: "https://jagasolution.com/jagaapp/",
-      },
+      logo: "/work/jagaapp/jagaapp-logo.png",
+      logoBorderColor: "#d90429",
+      companyName: "Red Ideas Sdn. Bhd. (JagaApp)",
+      duration: "July 2023 - Current",
+      jobScope: [
+        "Proactively addressed and resolved software issues by diligently troubleshooting and fixing bugs, as reported through raised bug tickets.",
+        "Managed module migration, strategically refactoring code to improve readability and performance.",
+        "Executed a comprehensive revamp of logs for existing modules, improving tracking and monitoring capabilities for enhanced system management.",
+        "Engaged in discussions with various departments to gather and understand their specific requirements, aligning development efforts with organizational objectives.",
+        "Acquired Kotlin to a proficient level to contribute in developing new features and modifications for existing Guard App.",
+      ],
     },
     {
-      date: "May 2022",
-      title: "Started @ Limitless Technologies",
-      description: "Joined the Limitless Technologies (LTG) team",
-      // icon: "",
-      link: {
-        text: "Visit LTG",
-        url: "https://limitless.my/",
-      },
+      logo: "/work/ltg/ltg-logo.jpeg",
+      logoBorderColor: "#7303C0",
+      companyName: "Limit Technology Group",
+      duration: "May 2022 - July 2023",
+      jobScope: [
+        "Create, troubleshoot, enhance and enrich e-commerce site in Shopify using Shopify Liquid, HTML, CSS, JavaScript and jQuery",
+        "Work in cross-functional team to build product features and improve user interface for the e-commerce website projects.",
+        "Improve the performance of the website by code splitting, lazy loading, defer scripts, reduce cumulative layout shirt and asset optimization.",
+        "Executed comprehensive refactoring for existing projects to improve readability, scalability and maintainability.",
+      ],
     },
     {
-      date: "October 2021",
-      title: "First Developer Role",
-      description:
-        "Joined The Hacker Collective (THC) Team as Frontend Web Developer",
-      // icon: "",
-      link: {
-        text: "Visit THC",
-        url: "https://hackercollective.co/",
-      },
+      logo: "/work/thc-logo.webp",
+      logoBorderColor: "transparent",
+      companyName: "The Hacker Collective",
+      duration: "October 2021 - April 2022",
+      jobScope: [
+        "Build reusable and maintainable components that helps to improve and speed up development processes.",
+        "Collaborate with Backend and Design team to develop website that are accessible across all platforms.",
+        "Leading a team to create a comprehensive company website.",
+      ],
     },
     {
-      date: "April 2021",
-      title: "Self Taught Journey Begins",
-      description:
-        "Started my journey in self learning programming (web development)",
-      // icon: "",
-    },
-    {
-      date: "August 2019",
-      title: "First Mechanical Engineer Role",
-      description:
-        "Began my job as a Mechanical Engineer in M&E Consultancy at Durianê Professional",
-      // icon: "",
-      link: {
-        text: "Visit Durianê Professional",
-        url: "https://www.duriane.com/",
-      },
-    },
-    {
-      date: "May 2019",
-      title: "Graduated University",
-      description:
-        "Completed my Bachelor's Degree in Mechanical Engineering at Multimedia University (MMU)",
-      // icon: "",
-    },
-    {
-      date: "March 2018",
-      title: "Internship",
-      description:
-        "Began an internship as assistent engineer at Protech Builders",
-      // icon: "",
-    },
-    {
-      date: "June 2015",
-      title: "Start University",
-      description:
-        "Began my study in Mechanical Engineering at Multimedia University (MMU)",
-      // icon: "",
-      link: {
-        text: "Visit MMU",
-        url: "https://www.mmu.edu.my/",
-      },
+      logo: "/work/duriane/duriane-logo.png",
+      logoBorderColor: "transparent",
+      companyName: "Durianê Professional Sdn Bhd",
+      duration: "August 2019 - October 2021",
+      jobScope: [
+        "Cold water and sanitary plumbing design",
+        "Design fire protection system for buildings in accordance to Malaysia Standard (MS), NFPA and FM",
+        "To prepare fully hydraulic calculation simulation for sprinkler system",
+        "Design air conditioning and mechanical ventilation system for buildings",
+        "Prepare tender documents for various mechanical service package",
+        "Evaluate compliance of tenderer submission",
+        "Work with other multidiscipline Engineers and other professional including Architect and Surveyor in projects",
+      ],
     },
   ];
 

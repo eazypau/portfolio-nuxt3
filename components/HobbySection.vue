@@ -1,6 +1,6 @@
 <template>
   <section id="hobbies">
-    <h2 class="hobbyTitle">Some of My Favourite Activities</h2>
+    <h2>Favourite Activities</h2>
     <div class="hobby-grid">
       <CardsHobby
         v-for="item in hobbies"
@@ -24,20 +24,20 @@ const props = defineProps({
   },
 });
 onMounted(() => {
-  let titleTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".hobbyTitle",
-      start: "-40px center",
-      end: "top center",
-      // markers: true,
-    },
-  });
-  titleTl
-    .addLabel("start")
-    .from(".hobbyTitle", { opacity: 0, translateX: "-100px" })
-    .addLabel("entering")
-    .to(".hobbyTitle", { opacity: 1, translateX: "0px", duration: 0.5 })
-    .addLabel("end");
+  // let titleTl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".hobbyTitle",
+  //     start: "-40px center",
+  //     end: "top center",
+  //     // markers: true,
+  //   },
+  // });
+  // titleTl
+  //   .addLabel("start")
+  //   .from(".hobbyTitle", { opacity: 0, translateX: "-100px" })
+  //   .addLabel("entering")
+  //   .to(".hobbyTitle", { opacity: 1, translateX: "0px", duration: 0.5 })
+  //   .addLabel("end");
 
   gsap.set(".hobby-card-container", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".hobby-card-container", {
