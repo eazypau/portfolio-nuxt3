@@ -279,8 +279,12 @@ section#works {
   height: auto;
   @include section-vertical-padding;
 
+  @media screen and (min-width: 1280px) {
+    height: calc(100vh - 171px);
+  }
+
   @media screen and (min-width: 1580px) {
-    height: calc(100vh - 227px);
+    height: calc(100vh - 187px);
   }
 
   h2 {

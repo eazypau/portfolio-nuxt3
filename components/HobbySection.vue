@@ -41,8 +41,8 @@ onMounted(() => {
 
   gsap.set(".hobby-card-container", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".hobby-card-container", {
-    start: "-70px center",
-    end: "top center",
+    start: "-250px center",
+    end: "-100px center",
     // markers: true,
     onEnter: (batch) =>
       gsap.to(batch, { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.15 }),
