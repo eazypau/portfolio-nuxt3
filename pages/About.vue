@@ -23,11 +23,11 @@ useHead({
             mechanical engineering (graduated from Multimedia University). After
             discovering my passion for web development, I made a career change
             and became a frontend web developer. Currently working as a Software
-            Developer in
+            Engineer in
             <a
-              class="font-bold text-red-600 dark:text-red-300 hover:underline"
-              href="https://jagasolution.com/jagaapp/"
-              >JagaApp (RISB)</a
+              class="font-bold text-blue-700 dark:text-blue-400 hover:underline"
+              href="https://renalworks.com/"
+              >Renalworks</a
             >.
           </p>
           <p class="mt-2">
@@ -48,9 +48,9 @@ useHead({
             </ul>
             <ul>
               <li>TypeScript</li>
+              <li>Redux</li>
+              <li>Material UI</li>
               <li>jQuery</li>
-              <li>Shopify Liquid</li>
-              <li>TailwindCSS</li>
             </ul>
           </div>
         </section>

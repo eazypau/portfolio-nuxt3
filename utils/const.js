@@ -60,20 +60,6 @@ export function useConstants() {
       height: 150,
     },
     {
-      imgUrl: "/logos/vuejs-original.svg",
-      name: "Vue",
-      alt: "Vue logo",
-      width: 150,
-      height: 150,
-    },
-    {
-      imgUrl: "/logos/nuxtjs-original.svg",
-      name: "NuxtJS",
-      alt: "NuxtJS logo",
-      width: 150,
-      height: 150,
-    },
-    {
       imgUrl: "/logos/react-original.svg",
       name: "React",
       alt: "React logo",
@@ -88,6 +74,48 @@ export function useConstants() {
       height: 150,
     },
     {
+      imgUrl: "/logos/typescript-original.svg",
+      name: "TypeScript",
+      alt: "TypeScript logo",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/vuejs-original.svg",
+      name: "Vue",
+      alt: "Vue logo",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/nuxtjs-original.svg",
+      name: "NuxtJS",
+      alt: "NuxtJS logo",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/materialui-original.svg",
+      name: "Material UI",
+      alt: "Material UI logo",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/redux-original.svg",
+      name: "Redux",
+      alt: "Redux logo",
+      width: 150,
+      height: 150,
+    },
+    {
+      imgUrl: "/logos/jest-plain.svg",
+      name: "Jest",
+      alt: "Jest logo",
+      width: 150,
+      height: 150,
+    },
+    {
       imgUrl: "/logos/tailwindcss-plain.svg",
       name: "TailwindCSS",
       alt: "TailwindCSS logo",
@@ -98,13 +126,6 @@ export function useConstants() {
       imgUrl: "/logos/firebase-plain.svg",
       name: "Firebase",
       alt: "Firebase logo",
-      width: 150,
-      height: 150,
-    },
-    {
-      imgUrl: "/logos/typescript-original.svg",
-      name: "TypeScript",
-      alt: "TypeScript logo",
       width: 150,
       height: 150,
     },
@@ -776,10 +797,20 @@ export function useConstants() {
   // new timeline
   const timeline = [
     {
+      logo: "/work/renalworks/renalworks-logo.jpg",
+      logoBorderColor: "#1C63A2",
+      companyName: "Renalworks Malaysia Sdn. Bhd.",
+      duration: "May 2024 - Current",
+      jobScope: [
+        "Working as a software engineer in the team to develop medical software.",
+        "Writing unit test to ensure code quality is up to standard.",
+      ],
+    },
+    {
       logo: "/work/jagaapp/jagaapp-logo.png",
       logoBorderColor: "#d90429",
       companyName: "Red Ideas Sdn. Bhd. (JagaApp)",
-      duration: "July 2023 - Current",
+      duration: "July 2023 - April 2024",
       jobScope: [
         "Proactively addressed and resolved software issues by diligently troubleshooting and fixing bugs, as reported through raised bug tickets.",
         "Managed module migration, strategically refactoring code to improve readability and performance.",
