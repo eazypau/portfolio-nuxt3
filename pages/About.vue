@@ -20,13 +20,19 @@ useHead({
           <h2>About</h2>
           <p class="mt-2">
             Hi there! I'm a self-taught developer with a background in
-            mechanical engineering (graduated from Multimedia University). After
-            discovering my passion for web development, I made a career change
-            and became a frontend web developer. Currently working as a Software
-            Engineer in
+            mechanical engineering (graduated from
             <a
-              class="font-bold text-blue-700 dark:text-blue-400 hover:underline"
+              class="font-bold text-blue-800 dark:text-blue-500 hover:underline"
+              href="https://www.mmu.edu.my/"
+              target="blank"
+              >Multimedia University</a
+            >). After discovering my passion for web development, I made a
+            career change and became a frontend web developer. Currently working
+            as a Software Engineer in
+            <a
+              class="font-bold text-blue-600 dark:text-blue-300 hover:underline"
               href="https://renalworks.com/"
+              target="blank"
               >Renalworks</a
             >.
           </p>
