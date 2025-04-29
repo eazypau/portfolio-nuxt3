@@ -164,6 +164,13 @@ export function useConstants() {
       width: 150,
       height: 150,
     },
+    {
+      imgUrl: "/logos/Chart.js_logo.svg.png",
+      name: "Chart.js",
+      alt: "ChartJs logo",
+      width: 150,
+      height: 150,
+    },
   ];
   const hobbies = [
     {
@@ -802,7 +809,12 @@ export function useConstants() {
       companyName: "Renalworks Malaysia Sdn. Bhd.",
       duration: "May 2024 - Current",
       jobScope: [
-        "Working as a software engineer in the team to develop medical software.",
+        "Developed front-end interface for managing anaemia treatments, enabling users to add, edit, and delete PRCA and Immunologist records for streamlined clinical workflows.",
+        "Documented technical findings and coding standards to ensure consistency and maintainability.",
+        "Actively share knowledge and best practices with team members through code reviews and collaborative sessions.",
+        "Created interactive lab charts from patient data to visually display lab readings, improving data clarity and supporting faster clinical decision-making.",
+        "Developed and implemented features in the inventory module of a medical software system to improve tracking, management, and reporting of medical supplies.",
+        // "Working as a software engineer in the team to develop medical software.",
         "Writing unit test to ensure code quality is up to standard.",
       ],
     },
