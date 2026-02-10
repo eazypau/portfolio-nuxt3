@@ -17,6 +17,7 @@ module.exports = {
         grocer: "url('/hobbies/grocer.webp')",
         journaling: "url('/hobbies/journaling.webp')",
         programming: "url('/hobbies/programming.webp')",
+        gym: "url('/hobbies/gym.jpg')",
       },
       minWidth: {
         sm: "20rem",

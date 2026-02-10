@@ -12,7 +12,7 @@
     </div>
     <article class="mt-3">
       <h1>Po Yi Zhi</h1>
-      <p class="text-center lg:text-left">Software Engineer</p>
+      <p class="text-center lg:text-left">Senior Software Engineer</p>
 
       <div class="profile-social-icons">
         <a

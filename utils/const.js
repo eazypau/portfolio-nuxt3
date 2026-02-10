@@ -171,6 +171,14 @@ export function useConstants() {
       width: 150,
       height: 150,
     },
+    {
+      initial: "S",
+      bgColor: "bg-gray-200",
+      name: "Slate.js",
+      alt: "Slate.js logo",
+      width: 111,
+      height: 111,
+    },
   ];
   const hobbies = [
     {
@@ -183,21 +191,21 @@ export function useConstants() {
       text: "To pen down my thoughts, memories and interesting things that occur in life",
       classBg: "bg-journaling",
     },
-    {
-      title: "Learning new technologies/framework",
-      text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
-      classBg: "bg-programming",
-    },
+    // {
+    //   title: "Learning new technologies/framework",
+    //   text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
+    //   classBg: "bg-programming",
+    // },
     // {
     //   title: "Blog Writing",
     //   text: "To pen down my thoughts",
     //   classBg: "bg-blog",
     // },
-    // {
-    //   title: "Grocery Shopping",
-    //   text: "Buy some of my favourite snacks",
-    //   classBg: "bg-grocer",
-    // },
+    {
+      title: "Sports/Gym",
+      text: "To stay active and healthy",
+      classBg: "bg-gym",
+    },
     {
       title: "Listening to music",
       text: "Recent favourites: MWAM, HONNE, Forester, Milet and Yoasobi",
@@ -359,11 +367,45 @@ export function useConstants() {
   const workingProjects = [
     {
       image: {
+        src: "/work/renalworks/renalworks-logo.webp",
+        alt: "Renalworks",
+        width: "894",
+        height: "198",
+        maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
+      },
+      imageShowcase: [
+        {
+          title: "Company Homepage",
+          src: "/work/renalworks/company-homepage.png",
+          alt: "Renalworks Company Homepage",
+          width: "1920",
+          height: "6041",
+        },
+      ],
+      heading: "Renalworks",
+      description: `Renalworks is a company that develops cloud-based Electronic Health Record (EHR) software specifically tailored for dialysis clinics and renal care.`,
+      teamMembers: [
+        {
+          name: "Sam Yap (BA/UIUX)",
+          linkedIn: "",
+        },
+      ],
+      techStack: ["Wordpress", "HTML", "CSS", "JavaScript"],
+      highlights: "Revamp company website - homepage with new design.",
+      urls: [
+        {
+          name: "Renalworks company website",
+          link: "https://renalworks.com/",
+        },
+      ],
+    },
+    {
+      image: {
         src: "/work/jagaapp/jagaapp-logo.png",
         alt: "JagaApp",
         width: "225",
         height: "225",
-        maxWidth: "max-w-[35%] 3xl:max-w-[35%]",
+        maxWidth: "max-w-[30%] md:max-w-[35%] 3xl:max-w-[35%]",
       },
       imageShowcase: [
         {
@@ -814,7 +856,7 @@ export function useConstants() {
         "Actively share knowledge and best practices with team members through code reviews and collaborative sessions.",
         "Created interactive lab charts from patient data to visually display lab readings, improving data clarity and supporting faster clinical decision-making.",
         "Developed and implemented features in the inventory module of a medical software system to improve tracking, management, and reporting of medical supplies.",
-        // "Working as a software engineer in the team to develop medical software.",
+        "Used AI-assisted development tools (GitHub Copilot, Antigravity, Gemini) to accelerate feature delivery, reduce repetitive boilerplate, and maintain consistent code quality across the frontend codebase.",
         "Writing unit test to ensure code quality is up to standard.",
       ],
     },

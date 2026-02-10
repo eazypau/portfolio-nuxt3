@@ -1,5 +1,4 @@
 <script setup>
-//const
 const { skillWithLogo } = useConstants();
 useHead({
   title: "Web Developer Portfolio | Skills",
