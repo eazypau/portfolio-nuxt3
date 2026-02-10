@@ -6,12 +6,16 @@
     <ul>
       <li v-for="skill in skillSet" :key="skill" class="skillStyle">
         <img
+          v-if="skill.imgUrl"
           :src="skill.imgUrl"
           :alt="skill.alt"
           :width="skill.width"
           :height="skill.height"
           loading="lazy"
         />
+        <div v-else :style="{ width: `${skill.width}px`, height: `${skill.height}px`, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 0 }" :class="skill.bgColor">
+          <p class="text-7xl">{{ skill.initial }}</p>
+        </div>
         <p>{{ skill.name }}</p>
       </li>
     </ul>

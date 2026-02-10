@@ -28,7 +28,7 @@ useHead({
               >Multimedia University</a
             >). After discovering my passion for web development, I made a
             career change and became a frontend web developer. Currently working
-            as a Software Engineer in
+            as a Senior Software Engineer in
             <a
               class="font-bold text-blue-600 dark:text-blue-300 hover:underline"
               href="https://renalworks.com/"

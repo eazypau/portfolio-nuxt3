@@ -68,7 +68,7 @@ const introObj = ref({
 });
 const intro = [
   "Po Yi Zhi",
-  "Software Engineer in Renalworks",
+  "Senior Software Engineer in Renalworks",
   "I specialise in building web app that helps to solve real world challenges.",
 ];
 
