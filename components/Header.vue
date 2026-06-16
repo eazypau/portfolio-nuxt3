@@ -46,13 +46,12 @@
 const columns = ref([]);
 const counter = ref(0);
 const numOfColumns = ref(4);
-const currentLeftPosition = ref(20);
 const width = 2;
-const typeSpeed = 50;
+const typeSpeed = 20;
 const columnSpeed = 100;
 const rectangDelay = ref(1300);
 const typeWriterDelay = ref(2800);
-const contentContainerDelay = ref(2500);
+const contentContainerDelay = ref(2000);
 const showBgImg = ref(false);
 const showContent = ref(false);
 const isMobile = ref(false);
@@ -73,11 +72,26 @@ const intro = [
 ];
 
 const addColumns = () => {
+  const screenWidth = window.innerWidth;
+  const desktopColWidth = 28;
+  // on mobile the column is sized as a % of the screen, so convert to px for the gap math
+  const colWidth = isMobile.value
+    ? (width / 100) * screenWidth
+    : desktopColWidth;
+  // numOfColumns columns create (numOfColumns + 1) equal gaps; reserve the columns' own width first
+  const gap =
+    (screenWidth - numOfColumns.value * colWidth) / (numOfColumns.value + 1);
+
   if (counter.value < numOfColumns.value) {
     const positionY = 0;
-    const styling = `height: 100%; width: ${width}%; top: ${positionY}; left: ${currentLeftPosition.value}%`;
+    // column n sits one gap in, plus every column + gap already placed before it
+    const left = gap + counter.value * (colWidth + gap);
+
+    const styling = isMobile.value
+      ? `height: 100%; width: ${width}%; top: ${positionY}px; left: ${left}px`
+      : `height: 100%; width: ${desktopColWidth}px; top: ${positionY}px; left: ${left}px`;
     columns.value.push(styling);
-    currentLeftPosition.value += 20;
+
     counter.value++;
     setTimeout(addColumns, columnSpeed);
   }
@@ -132,8 +146,8 @@ const triggerRevealBackground = () => {
     const delay = transitionCompletedOnce.value
       ? 300
       : isMobile.value
-      ? 500
-      : 1200;
+        ? 500
+        : 1200;
     setTimeout(() => {
       showBgImg.value = true;
     }, delay);
