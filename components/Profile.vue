@@ -1,10 +1,10 @@
 <template>
   <section class="profile">
-    <div class="w-48 mx-auto lg:ml-0">
+    <div class="w-64 mx-auto lg:ml-0">
       <img
-        src="/profile-pics/profile.webp"
-        width="350"
-        height="350"
+        src="/profile-pics/square-profile.jpeg"
+        width="819"
+        height="819"
         alt="profile image"
         loading="lazy"
         class="rounded-lg"

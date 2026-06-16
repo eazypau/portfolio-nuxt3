@@ -93,12 +93,14 @@
                       class="flex text-sm lg:text-base"
                     >
                       <a
+                        v-if="url.link"
                         class="block text-center text-gray-600 underline"
                         :href="url.link"
                         target="_blank"
                         rel="noopener noreferrer"
                         >{{ url.name }}</a
                       >
+                      <span v-else>{{ url.name }}</span>
                       <span v-if="index !== modalContent?.urls.length - 1"
                         >&nbsp;&#183;&nbsp;</span
                       >
@@ -110,6 +112,7 @@
               <div class="space-y-7 lg:space-y-12 px-2 pb-5">
                 <!-- right scrollable content -->
                 <div
+                  v-if="modalContent?.imageShowcase"
                   v-for="imageShowcase in modalContent?.imageShowcase"
                   :key="imageShowcase.alt"
                 >
@@ -124,6 +127,31 @@
                     class="shadow-md rounded-md"
                     :title="imageShowcase.title"
                   />
+                </div>
+                <div
+                  v-if="modalContent?.videoShowcase"
+                  v-for="videoShowcase in modalContent?.videoShowcase"
+                  class="flex row justify-center"
+                >
+                  <iframe
+                    class="w-80 md:w-[560px]"
+                    width="560"
+                    height="315"
+                    src="{{ videoShowcase.youtubeLink }}"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>

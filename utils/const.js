@@ -373,6 +373,59 @@ export function useConstants() {
         height: "198",
         maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
       },
+      videoShowcase: [
+        {
+          title: "RenalGenie",
+          youtubeLink:
+            "https://www.youtube.com/embed/vGfRxFysjx8?si=W3QrniGE_2Ci1ZfZ",
+        },
+      ],
+      heading: "RenalGenie",
+      description: `RenalGenie is an Electronic Health Record (EHR) software that focuses on dialysis management. It seamlessly integrates with dialysis machines and scales to capture real-time treatment data—blood flow, weights, and treatment parameters. This intelligence powers automated billing, claim submissions, and inventory management. Fully cloud-based, AI-enhanced, and eNRR-ready, RenalGenie streamlines patient monitoring, scheduling, records, and compliance—delivering everything dialysis clinics need in one secure, easy-to-use platform.`,
+      teamMembers: [
+        {
+          name: "Weng Khin (FE Team Lead)",
+          linkedIn: "",
+        },
+        {
+          name: "Jun Wei (Software Engineer)",
+          linkedIn: "",
+        },
+        {
+          name: "Sam Yap (BA/UIUX)",
+          linkedIn: "",
+        },
+      ],
+      techStack: [
+        "ReactJs",
+        "Webpack",
+        "Redux",
+        "Redux saga",
+        "ChartJs",
+        "SlateJs",
+        "Jest",
+      ],
+      highlights:
+        "Created the inventory modules - stock and purchase order management features, Created lab charts for patient data analysis, Created form with validations and text editor, Feature enhancements based on user needs, etc",
+      urls: [
+        {
+          name: "Tenant based (no public URLs available)",
+          link: "",
+        },
+        {
+          name: "For more infomation",
+          link: "https://renalworks.com/renalgenie-dialysis-management-software/",
+        },
+      ],
+    },
+    {
+      image: {
+        src: "/work/renalworks/renalworks-logo.webp",
+        alt: "Renalworks",
+        width: "894",
+        height: "198",
+        maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
+      },
       imageShowcase: [
         {
           title: "Company Homepage",
