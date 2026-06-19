@@ -7,12 +7,12 @@
         height="819"
         alt="profile image"
         loading="lazy"
-        class="rounded-lg"
+        class="rounded-lg profile-img"
       />
     </div>
     <article class="mt-3">
-      <h1>Po Yi Zhi</h1>
-      <p class="text-center lg:text-left">Senior Software Engineer</p>
+      <h1 class="profile-text">Po Yi Zhi</h1>
+      <p class="text-center lg:text-left profile-text">Senior Software Engineer</p>
 
       <div class="profile-social-icons">
         <a
