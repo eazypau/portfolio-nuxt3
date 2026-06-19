@@ -4,8 +4,9 @@
     <div class="work-card-lane">
       <CardsWorkCard
         v-for="project in workingProjects"
-        :key="project.imgSrc"
-        :image="project.image"
+        :key="project?.imgSrc"
+        :image="project?.image"
+        :preview-header="project?.previewHeader"
         :on-click-function="onClickFunction"
         :content="project"
       />

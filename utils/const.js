@@ -366,22 +366,19 @@ export function useConstants() {
   ];
   const workingProjects = [
     {
-      image: {
-        src: "/work/renalworks/renalworks-logo.webp",
-        alt: "Renalworks",
-        width: "894",
-        height: "198",
-        maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
+      previewHeader: {
+        text: "RenalGenie",
+        styling: "text-4xl font-bold preview-header",
+        // maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
       },
       videoShowcase: [
         {
           title: "RenalGenie",
-          youtubeLink:
-            "https://www.youtube.com/embed/vGfRxFysjx8?si=W3QrniGE_2Ci1ZfZ",
+          youtubeEmbed: `<iframe class="iframe-style" src="https://www.youtube.com/embed/vGfRxFysjx8?si=vFhEacULNSStje3y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         },
       ],
       heading: "RenalGenie",
-      description: `RenalGenie is an Electronic Health Record (EHR) software that focuses on dialysis management. It seamlessly integrates with dialysis machines and scales to capture real-time treatment data—blood flow, weights, and treatment parameters. This intelligence powers automated billing, claim submissions, and inventory management. Fully cloud-based, AI-enhanced, and eNRR-ready, RenalGenie streamlines patient monitoring, scheduling, records, and compliance—delivering everything dialysis clinics need in one secure, easy-to-use platform.`,
+      description: `RenalGenie is a cloud-based EHR platform built for dialysis clinics. It integrates with dialysis machines to capture real-time treatment data, automates billing and inventory, and consolidates patient monitoring, scheduling, and compliance into one AI-enhanced platform.`,
       teamMembers: [
         {
           name: "Weng Khin (FE Team Lead)",
@@ -398,7 +395,12 @@ export function useConstants() {
       ],
       techStack: [
         "ReactJs",
+        "TypeScript",
         "Webpack",
+        "Material UI",
+        "react-hook-form",
+        "axios",
+        "react-dnd",
         "Redux",
         "Redux saga",
         "ChartJs",
@@ -406,7 +408,7 @@ export function useConstants() {
         "Jest",
       ],
       highlights:
-        "Created the inventory modules - stock and purchase order management features, Created lab charts for patient data analysis, Created form with validations and text editor, Feature enhancements based on user needs, etc",
+        "Developed stock and purchase order management within the inventory module, built lab charts to visualize patient data, drag and drop sorting, and implemented form components with validation and rich text editing. Continuously shipped feature improvements based on user needs.",
       urls: [
         {
           name: "Tenant based (no public URLs available)",

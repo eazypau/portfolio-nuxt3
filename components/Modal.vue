@@ -128,31 +128,13 @@
                     :title="imageShowcase.title"
                   />
                 </div>
+
                 <div
                   v-if="modalContent?.videoShowcase"
                   v-for="videoShowcase in modalContent?.videoShowcase"
-                  class="flex row justify-center"
-                >
-                  <iframe
-                    class="w-80 md:w-[560px]"
-                    width="560"
-                    height="315"
-                    src="{{ videoShowcase.youtubeLink }}"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                  v-html="videoShowcase.youtubeEmbed"
+                  class="video-container"
+                ></div>
               </div>
             </div>
             <!-- list of images of work done -->
