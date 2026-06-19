@@ -366,6 +366,61 @@ export function useConstants() {
   ];
   const workingProjects = [
     {
+      previewHeader: {
+        text: "RenalGenie",
+        styling: "text-4xl font-bold preview-header",
+        // maxWidth: "max-w-[60%] md:max-w-[50%] 3xl:max-w-[55%]",
+      },
+      videoShowcase: [
+        {
+          title: "RenalGenie",
+          youtubeEmbed: `<iframe class="iframe-style" src="https://www.youtube.com/embed/vGfRxFysjx8?si=vFhEacULNSStje3y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+        },
+      ],
+      heading: "RenalGenie",
+      description: `RenalGenie is a cloud-based EHR platform built for dialysis clinics. It integrates with dialysis machines to capture real-time treatment data, automates billing and inventory, and consolidates patient monitoring, scheduling, and compliance into one AI-enhanced platform.`,
+      teamMembers: [
+        {
+          name: "Weng Khin (FE Team Lead)",
+          linkedIn: "",
+        },
+        {
+          name: "Jun Wei (Software Engineer)",
+          linkedIn: "",
+        },
+        {
+          name: "Sam Yap (BA/UIUX)",
+          linkedIn: "",
+        },
+      ],
+      techStack: [
+        "ReactJs",
+        "TypeScript",
+        "Webpack",
+        "Material UI",
+        "react-hook-form",
+        "axios",
+        "react-dnd",
+        "Redux",
+        "Redux saga",
+        "ChartJs",
+        "SlateJs",
+        "Jest",
+      ],
+      highlights:
+        "Developed stock and purchase order management within the inventory module, built lab charts to visualize patient data, drag and drop sorting, and implemented form components with validation and rich text editing. Continuously shipped feature improvements based on user needs.",
+      urls: [
+        {
+          name: "Tenant based (no public URLs available)",
+          link: "",
+        },
+        {
+          name: "For more infomation",
+          link: "https://renalworks.com/renalgenie-dialysis-management-software/",
+        },
+      ],
+    },
+    {
       image: {
         src: "/work/renalworks/renalworks-logo.webp",
         alt: "Renalworks",

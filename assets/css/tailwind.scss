@@ -558,3 +558,16 @@ section.contact-section {
   @include sub-font-family;
   @apply text-center pt-3 pb-1 tracking-wider dark:text-white;
 }
+
+.video-container {
+  @apply flex justify-center;
+}
+.iframe-style {
+  @apply w-72 md:w-[560px];
+  height: 315px;
+}
+
+.preview-header {
+  @include header-font;
+  color: #075480;
+}
