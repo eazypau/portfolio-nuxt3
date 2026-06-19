@@ -1,4 +1,6 @@
 <script setup>
+import ConceptA from "~/components/skills/ConceptA.vue";
+
 const { skillWithLogo } = useConstants();
 useHead({
   title: "Web Developer Portfolio | Skills",
@@ -20,6 +22,7 @@ useHead({
 </script>
 <template>
   <NuxtLayout name="default">
-    <Skills :skill-set="skillWithLogo" />
+    <!-- <Skills :skill-set="skillWithLogo" /> -->
+    <ConceptA />
   </NuxtLayout>
 </template>

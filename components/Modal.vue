@@ -93,12 +93,14 @@
                       class="flex text-sm lg:text-base"
                     >
                       <a
+                        v-if="url.link"
                         class="block text-center text-gray-600 underline"
                         :href="url.link"
                         target="_blank"
                         rel="noopener noreferrer"
                         >{{ url.name }}</a
                       >
+                      <span v-else>{{ url.name }}</span>
                       <span v-if="index !== modalContent?.urls.length - 1"
                         >&nbsp;&#183;&nbsp;</span
                       >
@@ -110,6 +112,7 @@
               <div class="space-y-7 lg:space-y-12 px-2 pb-5">
                 <!-- right scrollable content -->
                 <div
+                  v-if="modalContent?.imageShowcase"
                   v-for="imageShowcase in modalContent?.imageShowcase"
                   :key="imageShowcase.alt"
                 >
@@ -125,6 +128,13 @@
                     :title="imageShowcase.title"
                   />
                 </div>
+
+                <div
+                  v-if="modalContent?.videoShowcase"
+                  v-for="videoShowcase in modalContent?.videoShowcase"
+                  v-html="videoShowcase.youtubeEmbed"
+                  class="video-container"
+                ></div>
               </div>
             </div>
             <!-- list of images of work done -->
