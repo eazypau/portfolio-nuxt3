@@ -121,7 +121,7 @@ header {
 
   .profile {
     @include sub-font-family;
-    @apply lg:w-1/4 xl:w-1/6 py-5 lg:fixed top-[70px];
+    @apply lg:w-1/4 xl:w-1/6 py-5 lg:sticky lg:self-start top-[70px];
   }
 
   .empty-left-content {

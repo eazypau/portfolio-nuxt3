@@ -39,6 +39,26 @@
         <span class="text-xl md:text-2xl">{{ introObj.lineThree }}</span>
       </h1>
     </div>
+    <button
+      type="button"
+      class="scroll-indicator"
+      :class="showContent ? 'opacity-100' : 'opacity-0'"
+      aria-label="Scroll down to see more"
+      @click="scrollToNext"
+    >
+      <span class="text-xs uppercase tracking-widest">Scroll</span>
+      <svg
+        class="scroll-indicator-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+      </svg>
+    </button>
   </header>
 </template>
 <script setup>
@@ -173,6 +193,15 @@ onMounted(() => {
   // loading.value = false;
   // Promise.all([addSquare(), typeWriter()]);
 });
+
+const scrollToNext = () => {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  document.querySelector(".about-section")?.scrollIntoView({
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+  });
+};
 </script>
 <style lang="scss" scoped>
 .headerHeight {
@@ -187,5 +216,30 @@ onMounted(() => {
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
+}
+
+.scroll-indicator {
+  @apply absolute bottom-6 md:bottom-8 left-1/2 z-20 flex flex-col items-center gap-1 bg-transparent border-none cursor-pointer text-white dark:text-white transition-opacity duration-300 ease-out;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator-icon {
+  @apply w-5 h-5 md:w-6 md:h-6;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-indicator-icon {
+    animation: scroll-indicator-bounce 1.6s ease-in-out infinite;
+  }
+}
+
+@keyframes scroll-indicator-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
 }
 </style>
