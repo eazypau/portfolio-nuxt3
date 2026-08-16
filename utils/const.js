@@ -906,8 +906,8 @@ export function useConstants() {
       companyName: "Renalworks Malaysia Sdn. Bhd.",
       duration: "May 2024 - Current",
       jobScope: [
-        "Delivered 150+ production-ready features for a cloud-based Electronic Health Record (EHR) platform using React, TypeScript, Redux, and Material UI, expanding platform capabilities and enhancing clinical workflows",
-        "Led technical feasibility studies and proof-of-concepts (PoCs) for new product capabilities, evaluating architectural approaches and reducing implementation risks before development",
+        "Delivered 150+ production-ready features across 4 core modules and 1 supporting web application, with primary contributions to Clinical, Entity Management, Inventory Management, and Weight Data System, using React, TypeScript, Redux, and Material UI",
+        "Led 3 technical proof-of-concepts for data visualization, rich-text editing, and laboratory OCR, researching suitable libraries and developing prototypes to demonstrate feature feasibility to Business Analysts; all 3 PoCs were subsequently adopted as production features",
         "Facilitated sprint planning and effort estimation by leveraging historical delivery metrics, improving planning accuracy and enabling predictable sprint outcomes",
         "Reviewed pull requests to uphold engineering standards, improve maintainability, optimize performance, and promote knowledge sharing across the team",
         "Built reusable and maintainable UI components, reducing duplicated implementation and improving development consistency across multiple modules",
@@ -916,8 +916,7 @@ export function useConstants() {
         "Resolved 50+ critical production issues, performing root-cause analysis and delivering reliable fixes to maintain high system availability and minimize downtime",
         "Coordinated release activities across development and production environments, ensuring smooth deployments with minimal disruption to users",
         "Partnered with Product Owners, QA engineers, designers, and business stakeholders to translate complex business requirements into scalable technical solutions",
-        "Leveraged AI-assisted development tools to accelerate implementation, reduce repetitive work, and improve engineering productivity while maintaining high code quality",
-        "Authored technical documentation and implementation guides to improve onboarding, knowledge sharing, and long-term maintainability",
+        "Improved overall test coverage from 60% to 75% by expanding unit tests, updating existing test suites, and maintaining unit testing practices across development",
       ],
     },
     {
